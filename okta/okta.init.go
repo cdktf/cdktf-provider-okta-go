@@ -1515,6 +1515,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "destinationInput", GoGetter: "DestinationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "digestAlgorithm", GoGetter: "DigestAlgorithm"},
 			_jsii_.MemberProperty{JsiiProperty: "digestAlgorithmInput", GoGetter: "DigestAlgorithmInput"},
+			_jsii_.MemberProperty{JsiiProperty: "embedUrl", GoGetter: "EmbedUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "enduserNote", GoGetter: "EnduserNote"},
 			_jsii_.MemberProperty{JsiiProperty: "enduserNoteInput", GoGetter: "EnduserNoteInput"},
 			_jsii_.MemberProperty{JsiiProperty: "entityKey", GoGetter: "EntityKey"},
@@ -1555,6 +1556,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "keyId", GoGetter: "KeyId"},
 			_jsii_.MemberProperty{JsiiProperty: "keyName", GoGetter: "KeyName"},
 			_jsii_.MemberProperty{JsiiProperty: "keyNameInput", GoGetter: "KeyNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "keys", GoGetter: "Keys"},
 			_jsii_.MemberProperty{JsiiProperty: "keyYearsValid", GoGetter: "KeyYearsValid"},
 			_jsii_.MemberProperty{JsiiProperty: "keyYearsValidInput", GoGetter: "KeyYearsValidInput"},
 			_jsii_.MemberProperty{JsiiProperty: "label", GoGetter: "Label"},
@@ -1813,6 +1815,72 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.AppSamlConfig",
 		reflect.TypeOf((*AppSamlConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-okta.AppSamlKeys",
+		reflect.TypeOf((*AppSamlKeys)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-okta.AppSamlKeysList",
+		reflect.TypeOf((*AppSamlKeysList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AppSamlKeysList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-okta.AppSamlKeysOutputReference",
+		reflect.TypeOf((*AppSamlKeysOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "created", GoGetter: "Created"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "e", GoGetter: "E"},
+			_jsii_.MemberProperty{JsiiProperty: "expiresAt", GoGetter: "ExpiresAt"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "kid", GoGetter: "Kid"},
+			_jsii_.MemberProperty{JsiiProperty: "kty", GoGetter: "Kty"},
+			_jsii_.MemberProperty{JsiiProperty: "lastUpdated", GoGetter: "LastUpdated"},
+			_jsii_.MemberProperty{JsiiProperty: "n", GoGetter: "N"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "use", GoGetter: "Use"},
+			_jsii_.MemberProperty{JsiiProperty: "x5C", GoGetter: "X5C"},
+			_jsii_.MemberProperty{JsiiProperty: "x5TS256", GoGetter: "X5TS256"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AppSamlKeysOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.AppSamlUsers",
@@ -11388,6 +11456,8 @@ func init() {
 		"@cdktf/provider-okta.OktaProvider",
 		reflect.TypeOf((*OktaProvider)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "accessToken", GoGetter: "AccessToken"},
+			_jsii_.MemberProperty{JsiiProperty: "accessTokenInput", GoGetter: "AccessTokenInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
 			_jsii_.MemberProperty{JsiiProperty: "aliasInput", GoGetter: "AliasInput"},
@@ -11423,10 +11493,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "parallelism", GoGetter: "Parallelism"},
 			_jsii_.MemberProperty{JsiiProperty: "parallelismInput", GoGetter: "ParallelismInput"},
 			_jsii_.MemberProperty{JsiiProperty: "privateKey", GoGetter: "PrivateKey"},
+			_jsii_.MemberProperty{JsiiProperty: "privateKeyId", GoGetter: "PrivateKeyId"},
+			_jsii_.MemberProperty{JsiiProperty: "privateKeyIdInput", GoGetter: "PrivateKeyIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "privateKeyInput", GoGetter: "PrivateKeyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "requestTimeout", GoGetter: "RequestTimeout"},
 			_jsii_.MemberProperty{JsiiProperty: "requestTimeoutInput", GoGetter: "RequestTimeoutInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccessToken", GoMethod: "ResetAccessToken"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApiToken", GoMethod: "ResetApiToken"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBackoff", GoMethod: "ResetBackoff"},
@@ -11442,6 +11515,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetParallelism", GoMethod: "ResetParallelism"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrivateKey", GoMethod: "ResetPrivateKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPrivateKeyId", GoMethod: "ResetPrivateKeyId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestTimeout", GoMethod: "ResetRequestTimeout"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScopes", GoMethod: "ResetScopes"},
 			_jsii_.MemberProperty{JsiiProperty: "scopes", GoGetter: "Scopes"},
@@ -13944,6 +14018,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "destinationInput", GoGetter: "DestinationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "digestAlgorithm", GoGetter: "DigestAlgorithm"},
 			_jsii_.MemberProperty{JsiiProperty: "digestAlgorithmInput", GoGetter: "DigestAlgorithmInput"},
+			_jsii_.MemberProperty{JsiiProperty: "embedUrl", GoGetter: "EmbedUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "enduserNote", GoGetter: "EnduserNote"},
 			_jsii_.MemberProperty{JsiiProperty: "enduserNoteInput", GoGetter: "EnduserNoteInput"},
 			_jsii_.MemberProperty{JsiiProperty: "entityKey", GoGetter: "EntityKey"},
@@ -13984,6 +14059,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "keyId", GoGetter: "KeyId"},
 			_jsii_.MemberProperty{JsiiProperty: "keyName", GoGetter: "KeyName"},
 			_jsii_.MemberProperty{JsiiProperty: "keyNameInput", GoGetter: "KeyNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "keys", GoGetter: "Keys"},
 			_jsii_.MemberProperty{JsiiProperty: "keyYearsValid", GoGetter: "KeyYearsValid"},
 			_jsii_.MemberProperty{JsiiProperty: "keyYearsValidInput", GoGetter: "KeyYearsValidInput"},
 			_jsii_.MemberProperty{JsiiProperty: "label", GoGetter: "Label"},
@@ -14187,6 +14263,72 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.SamlAppConfig",
 		reflect.TypeOf((*SamlAppConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-okta.SamlAppKeys",
+		reflect.TypeOf((*SamlAppKeys)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-okta.SamlAppKeysList",
+		reflect.TypeOf((*SamlAppKeysList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SamlAppKeysList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-okta.SamlAppKeysOutputReference",
+		reflect.TypeOf((*SamlAppKeysOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "created", GoGetter: "Created"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "e", GoGetter: "E"},
+			_jsii_.MemberProperty{JsiiProperty: "expiresAt", GoGetter: "ExpiresAt"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "kid", GoGetter: "Kid"},
+			_jsii_.MemberProperty{JsiiProperty: "kty", GoGetter: "Kty"},
+			_jsii_.MemberProperty{JsiiProperty: "lastUpdated", GoGetter: "LastUpdated"},
+			_jsii_.MemberProperty{JsiiProperty: "n", GoGetter: "N"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "use", GoGetter: "Use"},
+			_jsii_.MemberProperty{JsiiProperty: "x5C", GoGetter: "X5C"},
+			_jsii_.MemberProperty{JsiiProperty: "x5TS256", GoGetter: "X5TS256"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SamlAppKeysOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.SamlAppUsers",
