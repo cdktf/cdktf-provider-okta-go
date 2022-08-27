@@ -134,6 +134,8 @@ type AutoLoginApp interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() AutoLoginAppTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	UserNameTemplate() *string
 	SetUserNameTemplate(val *string)
 	UserNameTemplateInput() *string
@@ -173,6 +175,7 @@ type AutoLoginApp interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *AutoLoginAppTimeouts)
 	PutUsers(value interface{})
 	ResetAccessibilityErrorRedirectUrl()
 	ResetAccessibilityLoginRedirectUrl()
@@ -200,6 +203,7 @@ type AutoLoginApp interface {
 	ResetSkipGroups()
 	ResetSkipUsers()
 	ResetStatus()
+	ResetTimeouts()
 	ResetUserNameTemplate()
 	ResetUserNameTemplatePushStatus()
 	ResetUserNameTemplateSuffix()
@@ -890,6 +894,26 @@ func (j *jsiiProxy_AutoLoginApp) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AutoLoginApp) Timeouts() AutoLoginAppTimeoutsOutputReference {
+	var returns AutoLoginAppTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoLoginApp) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AutoLoginApp) UserNameTemplate() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1486,6 +1510,14 @@ func (a *jsiiProxy_AutoLoginApp) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (a *jsiiProxy_AutoLoginApp) PutTimeouts(value *AutoLoginAppTimeouts) {
+	_jsii_.InvokeVoid(
+		a,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AutoLoginApp) PutUsers(value interface{}) {
 	_jsii_.InvokeVoid(
 		a,
@@ -1682,6 +1714,14 @@ func (a *jsiiProxy_AutoLoginApp) ResetStatus() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutoLoginApp) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

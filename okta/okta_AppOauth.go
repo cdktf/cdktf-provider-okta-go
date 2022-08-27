@@ -184,6 +184,8 @@ type AppOauth interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() AppOauthTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	TokenEndpointAuthMethod() *string
 	SetTokenEndpointAuthMethod(val *string)
 	TokenEndpointAuthMethodInput() *string
@@ -237,6 +239,7 @@ type AppOauth interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutGroupsClaim(value *AppOauthGroupsClaim)
 	PutJwks(value interface{})
+	PutTimeouts(value *AppOauthTimeouts)
 	PutUsers(value interface{})
 	ResetAccessibilityErrorRedirectUrl()
 	ResetAccessibilityLoginRedirectUrl()
@@ -281,6 +284,7 @@ type AppOauth interface {
 	ResetSkipGroups()
 	ResetSkipUsers()
 	ResetStatus()
+	ResetTimeouts()
 	ResetTokenEndpointAuthMethod()
 	ResetTosUri()
 	ResetUserNameTemplate()
@@ -1324,6 +1328,26 @@ func (j *jsiiProxy_AppOauth) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AppOauth) Timeouts() AppOauthTimeoutsOutputReference {
+	var returns AppOauthTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppOauth) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppOauth) TokenEndpointAuthMethod() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2168,6 +2192,14 @@ func (a *jsiiProxy_AppOauth) PutJwks(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AppOauth) PutTimeouts(value *AppOauthTimeouts) {
+	_jsii_.InvokeVoid(
+		a,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppOauth) PutUsers(value interface{}) {
 	_jsii_.InvokeVoid(
 		a,
@@ -2500,6 +2532,14 @@ func (a *jsiiProxy_AppOauth) ResetStatus() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppOauth) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

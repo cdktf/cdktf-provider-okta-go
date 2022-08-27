@@ -113,6 +113,8 @@ type BookmarkApp interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() BookmarkAppTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
@@ -143,6 +145,7 @@ type BookmarkApp interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *BookmarkAppTimeouts)
 	PutUsers(value interface{})
 	ResetAccessibilityErrorRedirectUrl()
 	ResetAccessibilityLoginRedirectUrl()
@@ -163,6 +166,7 @@ type BookmarkApp interface {
 	ResetSkipGroups()
 	ResetSkipUsers()
 	ResetStatus()
+	ResetTimeouts()
 	ResetUsers()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -709,6 +713,26 @@ func (j *jsiiProxy_BookmarkApp) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BookmarkApp) Timeouts() BookmarkAppTimeoutsOutputReference {
+	var returns BookmarkAppTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BookmarkApp) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BookmarkApp) Url() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1165,6 +1189,14 @@ func (b *jsiiProxy_BookmarkApp) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (b *jsiiProxy_BookmarkApp) PutTimeouts(value *BookmarkAppTimeouts) {
+	_jsii_.InvokeVoid(
+		b,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BookmarkApp) PutUsers(value interface{}) {
 	_jsii_.InvokeVoid(
 		b,
@@ -1305,6 +1337,14 @@ func (b *jsiiProxy_BookmarkApp) ResetStatus() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BookmarkApp) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

@@ -197,6 +197,10 @@ type OauthAppConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#status OauthApp#status}
 	Status *string `field:"optional" json:"status" yaml:"status"`
+	// timeouts block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#timeouts OauthApp#timeouts}
+	Timeouts *OauthAppTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// Requested authentication method for the token endpoint.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#token_endpoint_auth_method OauthApp#token_endpoint_auth_method}

@@ -113,6 +113,10 @@ type AppSharedCredentialsConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#status AppSharedCredentials#status}
 	Status *string `field:"optional" json:"status" yaml:"status"`
+	// timeouts block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#timeouts AppSharedCredentials#timeouts}
+	Timeouts *AppSharedCredentialsTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// Login URL.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#url AppSharedCredentials#url}

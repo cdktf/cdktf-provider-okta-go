@@ -143,6 +143,8 @@ type SecurePasswordStoreApp interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() SecurePasswordStoreAppTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
@@ -188,6 +190,7 @@ type SecurePasswordStoreApp interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *SecurePasswordStoreAppTimeouts)
 	PutUsers(value interface{})
 	ResetAccessibilityErrorRedirectUrl()
 	ResetAccessibilityLoginRedirectUrl()
@@ -217,6 +220,7 @@ type SecurePasswordStoreApp interface {
 	ResetSkipGroups()
 	ResetSkipUsers()
 	ResetStatus()
+	ResetTimeouts()
 	ResetUserNameTemplate()
 	ResetUserNameTemplatePushStatus()
 	ResetUserNameTemplateSuffix()
@@ -967,6 +971,26 @@ func (j *jsiiProxy_SecurePasswordStoreApp) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SecurePasswordStoreApp) Timeouts() SecurePasswordStoreAppTimeoutsOutputReference {
+	var returns SecurePasswordStoreAppTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurePasswordStoreApp) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecurePasswordStoreApp) Url() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1643,6 +1667,14 @@ func (s *jsiiProxy_SecurePasswordStoreApp) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (s *jsiiProxy_SecurePasswordStoreApp) PutTimeouts(value *SecurePasswordStoreAppTimeouts) {
+	_jsii_.InvokeVoid(
+		s,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SecurePasswordStoreApp) PutUsers(value interface{}) {
 	_jsii_.InvokeVoid(
 		s,
@@ -1855,6 +1887,14 @@ func (s *jsiiProxy_SecurePasswordStoreApp) ResetStatus() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurePasswordStoreApp) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

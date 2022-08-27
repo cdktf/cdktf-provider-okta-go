@@ -113,6 +113,8 @@ type AppBasicAuth interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() AppBasicAuthTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
@@ -143,6 +145,7 @@ type AppBasicAuth interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *AppBasicAuthTimeouts)
 	PutUsers(value interface{})
 	ResetAccessibilityErrorRedirectUrl()
 	ResetAccessibilityLoginRedirectUrl()
@@ -162,6 +165,7 @@ type AppBasicAuth interface {
 	ResetSkipGroups()
 	ResetSkipUsers()
 	ResetStatus()
+	ResetTimeouts()
 	ResetUsers()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -708,6 +712,26 @@ func (j *jsiiProxy_AppBasicAuth) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AppBasicAuth) Timeouts() AppBasicAuthTimeoutsOutputReference {
+	var returns AppBasicAuthTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppBasicAuth) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppBasicAuth) Url() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1164,6 +1188,14 @@ func (a *jsiiProxy_AppBasicAuth) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (a *jsiiProxy_AppBasicAuth) PutTimeouts(value *AppBasicAuthTimeouts) {
+	_jsii_.InvokeVoid(
+		a,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppBasicAuth) PutUsers(value interface{}) {
 	_jsii_.InvokeVoid(
 		a,
@@ -1296,6 +1328,14 @@ func (a *jsiiProxy_AppBasicAuth) ResetStatus() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppBasicAuth) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

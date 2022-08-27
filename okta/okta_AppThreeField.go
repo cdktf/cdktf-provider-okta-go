@@ -134,6 +134,8 @@ type AppThreeField interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() AppThreeFieldTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
@@ -182,6 +184,7 @@ type AppThreeField interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *AppThreeFieldTimeouts)
 	PutUsers(value interface{})
 	ResetAccessibilityErrorRedirectUrl()
 	ResetAccessibilityLoginRedirectUrl()
@@ -205,6 +208,7 @@ type AppThreeField interface {
 	ResetSkipGroups()
 	ResetSkipUsers()
 	ResetStatus()
+	ResetTimeouts()
 	ResetUrlRegex()
 	ResetUserNameTemplate()
 	ResetUserNameTemplatePushStatus()
@@ -896,6 +900,26 @@ func (j *jsiiProxy_AppThreeField) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AppThreeField) Timeouts() AppThreeFieldTimeoutsOutputReference {
+	var returns AppThreeFieldTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppThreeField) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppThreeField) Url() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1576,6 +1600,14 @@ func (a *jsiiProxy_AppThreeField) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (a *jsiiProxy_AppThreeField) PutTimeouts(value *AppThreeFieldTimeouts) {
+	_jsii_.InvokeVoid(
+		a,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppThreeField) PutUsers(value interface{}) {
 	_jsii_.InvokeVoid(
 		a,
@@ -1740,6 +1772,14 @@ func (a *jsiiProxy_AppThreeField) ResetStatus() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppThreeField) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

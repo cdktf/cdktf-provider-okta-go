@@ -125,6 +125,8 @@ type SwaApp interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() SwaAppTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
@@ -173,6 +175,7 @@ type SwaApp interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *SwaAppTimeouts)
 	PutUsers(value interface{})
 	ResetAccessibilityErrorRedirectUrl()
 	ResetAccessibilityLoginRedirectUrl()
@@ -197,6 +200,7 @@ type SwaApp interface {
 	ResetSkipGroups()
 	ResetSkipUsers()
 	ResetStatus()
+	ResetTimeouts()
 	ResetUrl()
 	ResetUrlRegex()
 	ResetUsernameField()
@@ -825,6 +829,26 @@ func (j *jsiiProxy_SwaApp) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SwaApp) Timeouts() SwaAppTimeoutsOutputReference {
+	var returns SwaAppTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SwaApp) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
 		&returns,
 	)
 	return returns
@@ -1486,6 +1510,14 @@ func (s *jsiiProxy_SwaApp) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_SwaApp) PutTimeouts(value *SwaAppTimeouts) {
+	_jsii_.InvokeVoid(
+		s,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SwaApp) PutUsers(value interface{}) {
 	_jsii_.InvokeVoid(
 		s,
@@ -1658,6 +1690,14 @@ func (s *jsiiProxy_SwaApp) ResetStatus() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SwaApp) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

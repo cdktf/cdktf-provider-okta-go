@@ -77,6 +77,8 @@ type AppGroupAssignment interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() AppGroupAssignmentTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -102,6 +104,7 @@ type AppGroupAssignment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *AppGroupAssignmentTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -109,6 +112,7 @@ type AppGroupAssignment interface {
 	ResetPriority()
 	ResetProfile()
 	ResetRetainAssignment()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -399,6 +403,26 @@ func (j *jsiiProxy_AppGroupAssignment) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppGroupAssignment) Timeouts() AppGroupAssignmentTimeoutsOutputReference {
+	var returns AppGroupAssignmentTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppGroupAssignment) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
 		&returns,
 	)
 	return returns
@@ -724,6 +748,14 @@ func (a *jsiiProxy_AppGroupAssignment) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (a *jsiiProxy_AppGroupAssignment) PutTimeouts(value *AppGroupAssignmentTimeouts) {
+	_jsii_.InvokeVoid(
+		a,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppGroupAssignment) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -760,6 +792,14 @@ func (a *jsiiProxy_AppGroupAssignment) ResetRetainAssignment() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRetainAssignment",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppGroupAssignment) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

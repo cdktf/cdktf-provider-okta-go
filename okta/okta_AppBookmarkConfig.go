@@ -89,6 +89,10 @@ type AppBookmarkConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#status AppBookmark#status}
 	Status *string `field:"optional" json:"status" yaml:"status"`
+	// timeouts block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#timeouts AppBookmark#timeouts}
+	Timeouts *AppBookmarkTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// users block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#users AppBookmark#users}

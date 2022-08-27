@@ -131,6 +131,8 @@ type AppSharedCredentials interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() AppSharedCredentialsTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
@@ -179,6 +181,7 @@ type AppSharedCredentials interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *AppSharedCredentialsTimeouts)
 	PutUsers(value interface{})
 	ResetAccessibilityErrorRedirectUrl()
 	ResetAccessibilityLoginRedirectUrl()
@@ -205,6 +208,7 @@ type AppSharedCredentials interface {
 	ResetSkipGroups()
 	ResetSkipUsers()
 	ResetStatus()
+	ResetTimeouts()
 	ResetUrl()
 	ResetUrlRegex()
 	ResetUsernameField()
@@ -873,6 +877,26 @@ func (j *jsiiProxy_AppSharedCredentials) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSharedCredentials) Timeouts() AppSharedCredentialsTimeoutsOutputReference {
+	var returns AppSharedCredentialsTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSharedCredentials) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
 		&returns,
 	)
 	return returns
@@ -1550,6 +1574,14 @@ func (a *jsiiProxy_AppSharedCredentials) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
+func (a *jsiiProxy_AppSharedCredentials) PutTimeouts(value *AppSharedCredentialsTimeouts) {
+	_jsii_.InvokeVoid(
+		a,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppSharedCredentials) PutUsers(value interface{}) {
 	_jsii_.InvokeVoid(
 		a,
@@ -1738,6 +1770,14 @@ func (a *jsiiProxy_AppSharedCredentials) ResetStatus() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSharedCredentials) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

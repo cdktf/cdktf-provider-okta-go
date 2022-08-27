@@ -125,6 +125,10 @@ type AppThreeFieldConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#status AppThreeField#status}
 	Status *string `field:"optional" json:"status" yaml:"status"`
+	// timeouts block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#timeouts AppThreeField#timeouts}
+	Timeouts *AppThreeFieldTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// A regex that further restricts URL to the specified regex.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#url_regex AppThreeField#url_regex}

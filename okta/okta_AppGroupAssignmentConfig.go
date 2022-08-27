@@ -43,5 +43,9 @@ type AppGroupAssignmentConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment#retain_assignment AppGroupAssignment#retain_assignment}
 	RetainAssignment interface{} `field:"optional" json:"retainAssignment" yaml:"retainAssignment"`
+	// timeouts block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment#timeouts AppGroupAssignment#timeouts}
+	Timeouts *AppGroupAssignmentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

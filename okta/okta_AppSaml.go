@@ -209,6 +209,8 @@ type AppSaml interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() AppSamlTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	UserNameTemplate() *string
 	SetUserNameTemplate(val *string)
 	UserNameTemplateInput() *string
@@ -249,6 +251,7 @@ type AppSaml interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAttributeStatements(value interface{})
+	PutTimeouts(value *AppSamlTimeouts)
 	PutUsers(value interface{})
 	ResetAccessibilityErrorRedirectUrl()
 	ResetAccessibilityLoginRedirectUrl()
@@ -298,6 +301,7 @@ type AppSaml interface {
 	ResetStatus()
 	ResetSubjectNameIdFormat()
 	ResetSubjectNameIdTemplate()
+	ResetTimeouts()
 	ResetUserNameTemplate()
 	ResetUserNameTemplatePushStatus()
 	ResetUserNameTemplateSuffix()
@@ -1528,6 +1532,26 @@ func (j *jsiiProxy_AppSaml) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AppSaml) Timeouts() AppSamlTimeoutsOutputReference {
+	var returns AppSamlTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSaml) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppSaml) UserNameTemplate() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2300,6 +2324,14 @@ func (a *jsiiProxy_AppSaml) PutAttributeStatements(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AppSaml) PutTimeouts(value *AppSamlTimeouts) {
+	_jsii_.InvokeVoid(
+		a,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppSaml) PutUsers(value interface{}) {
 	_jsii_.InvokeVoid(
 		a,
@@ -2672,6 +2704,14 @@ func (a *jsiiProxy_AppSaml) ResetSubjectNameIdTemplate() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSubjectNameIdTemplate",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSaml) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

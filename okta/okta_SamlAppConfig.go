@@ -205,6 +205,10 @@ type SamlAppConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#subject_name_id_template SamlApp#subject_name_id_template}
 	SubjectNameIdTemplate *string `field:"optional" json:"subjectNameIdTemplate" yaml:"subjectNameIdTemplate"`
+	// timeouts block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#timeouts SamlApp#timeouts}
+	Timeouts *SamlAppTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// Username template.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#user_name_template SamlApp#user_name_template}
