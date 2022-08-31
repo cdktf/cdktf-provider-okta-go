@@ -938,6 +938,9 @@ func (j *jsiiProxy_MfaPolicy) YubikeyTokenInput() *map[string]*string {
 func NewMfaPolicy(scope constructs.Construct, id *string, config *MfaPolicyConfig) MfaPolicy {
 	_init_.Initialize()
 
+	if err := validateNewMfaPolicyParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MfaPolicy{}
 
 	_jsii_.Create(
@@ -960,7 +963,10 @@ func NewMfaPolicy_Override(m MfaPolicy, scope constructs.Construct, id *string, 
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetConnection(val interface{}) {
+func (j *jsiiProxy_MfaPolicy)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -968,7 +974,7 @@ func (j *jsiiProxy_MfaPolicy) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetCount(val *float64) {
+func (j *jsiiProxy_MfaPolicy)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -976,7 +982,7 @@ func (j *jsiiProxy_MfaPolicy) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MfaPolicy)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -984,7 +990,10 @@ func (j *jsiiProxy_MfaPolicy) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetDescription(val *string) {
+func (j *jsiiProxy_MfaPolicy)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -992,7 +1001,10 @@ func (j *jsiiProxy_MfaPolicy) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetDuo(val *map[string]*string) {
+func (j *jsiiProxy_MfaPolicy)SetDuo(val *map[string]*string) {
+	if err := j.validateSetDuoParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"duo",
@@ -1000,7 +1012,10 @@ func (j *jsiiProxy_MfaPolicy) SetDuo(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetExternalIdp(val *map[string]*string) {
+func (j *jsiiProxy_MfaPolicy)SetExternalIdp(val *map[string]*string) {
+	if err := j.validateSetExternalIdpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"externalIdp",
@@ -1008,7 +1023,10 @@ func (j *jsiiProxy_MfaPolicy) SetExternalIdp(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetFidoU2F(val *map[string]*string) {
+func (j *jsiiProxy_MfaPolicy)SetFidoU2F(val *map[string]*string) {
+	if err := j.validateSetFidoU2FParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"fidoU2F",
@@ -1016,7 +1034,10 @@ func (j *jsiiProxy_MfaPolicy) SetFidoU2F(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetFidoWebauthn(val *map[string]*string) {
+func (j *jsiiProxy_MfaPolicy)SetFidoWebauthn(val *map[string]*string) {
+	if err := j.validateSetFidoWebauthnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"fidoWebauthn",
@@ -1024,7 +1045,7 @@ func (j *jsiiProxy_MfaPolicy) SetFidoWebauthn(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MfaPolicy)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1032,7 +1053,10 @@ func (j *jsiiProxy_MfaPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetGoogleOtp(val *map[string]*string) {
+func (j *jsiiProxy_MfaPolicy)SetGoogleOtp(val *map[string]*string) {
+	if err := j.validateSetGoogleOtpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"googleOtp",
@@ -1040,7 +1064,10 @@ func (j *jsiiProxy_MfaPolicy) SetGoogleOtp(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetGroupsIncluded(val *[]*string) {
+func (j *jsiiProxy_MfaPolicy)SetGroupsIncluded(val *[]*string) {
+	if err := j.validateSetGroupsIncludedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupsIncluded",
@@ -1048,7 +1075,10 @@ func (j *jsiiProxy_MfaPolicy) SetGroupsIncluded(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetHotp(val *map[string]*string) {
+func (j *jsiiProxy_MfaPolicy)SetHotp(val *map[string]*string) {
+	if err := j.validateSetHotpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"hotp",
@@ -1056,7 +1086,10 @@ func (j *jsiiProxy_MfaPolicy) SetHotp(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetId(val *string) {
+func (j *jsiiProxy_MfaPolicy)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -1064,7 +1097,10 @@ func (j *jsiiProxy_MfaPolicy) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetIsOie(val interface{}) {
+func (j *jsiiProxy_MfaPolicy)SetIsOie(val interface{}) {
+	if err := j.validateSetIsOieParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isOie",
@@ -1072,7 +1108,10 @@ func (j *jsiiProxy_MfaPolicy) SetIsOie(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MfaPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -1080,7 +1119,10 @@ func (j *jsiiProxy_MfaPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetName(val *string) {
+func (j *jsiiProxy_MfaPolicy)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -1088,7 +1130,10 @@ func (j *jsiiProxy_MfaPolicy) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetOktaCall(val *map[string]*string) {
+func (j *jsiiProxy_MfaPolicy)SetOktaCall(val *map[string]*string) {
+	if err := j.validateSetOktaCallParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"oktaCall",
@@ -1096,7 +1141,10 @@ func (j *jsiiProxy_MfaPolicy) SetOktaCall(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetOktaEmail(val *map[string]*string) {
+func (j *jsiiProxy_MfaPolicy)SetOktaEmail(val *map[string]*string) {
+	if err := j.validateSetOktaEmailParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"oktaEmail",
@@ -1104,7 +1152,10 @@ func (j *jsiiProxy_MfaPolicy) SetOktaEmail(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetOktaOtp(val *map[string]*string) {
+func (j *jsiiProxy_MfaPolicy)SetOktaOtp(val *map[string]*string) {
+	if err := j.validateSetOktaOtpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"oktaOtp",
@@ -1112,7 +1163,10 @@ func (j *jsiiProxy_MfaPolicy) SetOktaOtp(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetOktaPassword(val *map[string]*string) {
+func (j *jsiiProxy_MfaPolicy)SetOktaPassword(val *map[string]*string) {
+	if err := j.validateSetOktaPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"oktaPassword",
@@ -1120,7 +1174,10 @@ func (j *jsiiProxy_MfaPolicy) SetOktaPassword(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetOktaPush(val *map[string]*string) {
+func (j *jsiiProxy_MfaPolicy)SetOktaPush(val *map[string]*string) {
+	if err := j.validateSetOktaPushParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"oktaPush",
@@ -1128,7 +1185,10 @@ func (j *jsiiProxy_MfaPolicy) SetOktaPush(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetOktaQuestion(val *map[string]*string) {
+func (j *jsiiProxy_MfaPolicy)SetOktaQuestion(val *map[string]*string) {
+	if err := j.validateSetOktaQuestionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"oktaQuestion",
@@ -1136,7 +1196,10 @@ func (j *jsiiProxy_MfaPolicy) SetOktaQuestion(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetOktaSms(val *map[string]*string) {
+func (j *jsiiProxy_MfaPolicy)SetOktaSms(val *map[string]*string) {
+	if err := j.validateSetOktaSmsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"oktaSms",
@@ -1144,7 +1207,10 @@ func (j *jsiiProxy_MfaPolicy) SetOktaSms(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetOktaVerify(val *map[string]*string) {
+func (j *jsiiProxy_MfaPolicy)SetOktaVerify(val *map[string]*string) {
+	if err := j.validateSetOktaVerifyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"oktaVerify",
@@ -1152,7 +1218,10 @@ func (j *jsiiProxy_MfaPolicy) SetOktaVerify(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetOnpremMfa(val *map[string]*string) {
+func (j *jsiiProxy_MfaPolicy)SetOnpremMfa(val *map[string]*string) {
+	if err := j.validateSetOnpremMfaParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"onpremMfa",
@@ -1160,7 +1229,10 @@ func (j *jsiiProxy_MfaPolicy) SetOnpremMfa(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetPhoneNumber(val *map[string]*string) {
+func (j *jsiiProxy_MfaPolicy)SetPhoneNumber(val *map[string]*string) {
+	if err := j.validateSetPhoneNumberParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"phoneNumber",
@@ -1168,7 +1240,10 @@ func (j *jsiiProxy_MfaPolicy) SetPhoneNumber(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetPriority(val *float64) {
+func (j *jsiiProxy_MfaPolicy)SetPriority(val *float64) {
+	if err := j.validateSetPriorityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"priority",
@@ -1176,7 +1251,7 @@ func (j *jsiiProxy_MfaPolicy) SetPriority(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MfaPolicy)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1184,7 +1259,10 @@ func (j *jsiiProxy_MfaPolicy) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MfaPolicy)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1192,7 +1270,10 @@ func (j *jsiiProxy_MfaPolicy) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetRsaToken(val *map[string]*string) {
+func (j *jsiiProxy_MfaPolicy)SetRsaToken(val *map[string]*string) {
+	if err := j.validateSetRsaTokenParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rsaToken",
@@ -1200,7 +1281,10 @@ func (j *jsiiProxy_MfaPolicy) SetRsaToken(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetSecurityQuestion(val *map[string]*string) {
+func (j *jsiiProxy_MfaPolicy)SetSecurityQuestion(val *map[string]*string) {
+	if err := j.validateSetSecurityQuestionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"securityQuestion",
@@ -1208,7 +1292,10 @@ func (j *jsiiProxy_MfaPolicy) SetSecurityQuestion(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetStatus(val *string) {
+func (j *jsiiProxy_MfaPolicy)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"status",
@@ -1216,7 +1303,10 @@ func (j *jsiiProxy_MfaPolicy) SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetSymantecVip(val *map[string]*string) {
+func (j *jsiiProxy_MfaPolicy)SetSymantecVip(val *map[string]*string) {
+	if err := j.validateSetSymantecVipParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"symantecVip",
@@ -1224,7 +1314,10 @@ func (j *jsiiProxy_MfaPolicy) SetSymantecVip(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetWebauthn(val *map[string]*string) {
+func (j *jsiiProxy_MfaPolicy)SetWebauthn(val *map[string]*string) {
+	if err := j.validateSetWebauthnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"webauthn",
@@ -1232,7 +1325,10 @@ func (j *jsiiProxy_MfaPolicy) SetWebauthn(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy) SetYubikeyToken(val *map[string]*string) {
+func (j *jsiiProxy_MfaPolicy)SetYubikeyToken(val *map[string]*string) {
+	if err := j.validateSetYubikeyTokenParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"yubikeyToken",
@@ -1260,6 +1356,9 @@ func (j *jsiiProxy_MfaPolicy) SetYubikeyToken(val *map[string]*string) {
 func MfaPolicy_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateMfaPolicy_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1284,6 +1383,9 @@ func MfaPolicy_TfResourceType() *string {
 }
 
 func (m *jsiiProxy_MfaPolicy) AddOverride(path *string, value interface{}) {
+	if err := m.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
@@ -1292,6 +1394,9 @@ func (m *jsiiProxy_MfaPolicy) AddOverride(path *string, value interface{}) {
 }
 
 func (m *jsiiProxy_MfaPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1305,6 +1410,9 @@ func (m *jsiiProxy_MfaPolicy) GetAnyMapAttribute(terraformAttribute *string) *ma
 }
 
 func (m *jsiiProxy_MfaPolicy) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1318,6 +1426,9 @@ func (m *jsiiProxy_MfaPolicy) GetBooleanAttribute(terraformAttribute *string) cd
 }
 
 func (m *jsiiProxy_MfaPolicy) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1331,6 +1442,9 @@ func (m *jsiiProxy_MfaPolicy) GetBooleanMapAttribute(terraformAttribute *string)
 }
 
 func (m *jsiiProxy_MfaPolicy) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1344,6 +1458,9 @@ func (m *jsiiProxy_MfaPolicy) GetListAttribute(terraformAttribute *string) *[]*s
 }
 
 func (m *jsiiProxy_MfaPolicy) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1357,6 +1474,9 @@ func (m *jsiiProxy_MfaPolicy) GetNumberAttribute(terraformAttribute *string) *fl
 }
 
 func (m *jsiiProxy_MfaPolicy) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1370,6 +1490,9 @@ func (m *jsiiProxy_MfaPolicy) GetNumberListAttribute(terraformAttribute *string)
 }
 
 func (m *jsiiProxy_MfaPolicy) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1383,6 +1506,9 @@ func (m *jsiiProxy_MfaPolicy) GetNumberMapAttribute(terraformAttribute *string) 
 }
 
 func (m *jsiiProxy_MfaPolicy) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1396,6 +1522,9 @@ func (m *jsiiProxy_MfaPolicy) GetStringAttribute(terraformAttribute *string) *st
 }
 
 func (m *jsiiProxy_MfaPolicy) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1409,6 +1538,9 @@ func (m *jsiiProxy_MfaPolicy) GetStringMapAttribute(terraformAttribute *string) 
 }
 
 func (m *jsiiProxy_MfaPolicy) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1422,6 +1554,9 @@ func (m *jsiiProxy_MfaPolicy) InterpolationForAttribute(terraformAttribute *stri
 }
 
 func (m *jsiiProxy_MfaPolicy) OverrideLogicalId(newLogicalId *string) {
+	if err := m.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",

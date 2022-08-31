@@ -338,6 +338,9 @@ func (j *jsiiProxy_PolicyProfileEnrollment) TerraformResourceType() *string {
 func NewPolicyProfileEnrollment(scope constructs.Construct, id *string, config *PolicyProfileEnrollmentConfig) PolicyProfileEnrollment {
 	_init_.Initialize()
 
+	if err := validateNewPolicyProfileEnrollmentParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PolicyProfileEnrollment{}
 
 	_jsii_.Create(
@@ -360,7 +363,10 @@ func NewPolicyProfileEnrollment_Override(p PolicyProfileEnrollment, scope constr
 	)
 }
 
-func (j *jsiiProxy_PolicyProfileEnrollment) SetConnection(val interface{}) {
+func (j *jsiiProxy_PolicyProfileEnrollment)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -368,7 +374,7 @@ func (j *jsiiProxy_PolicyProfileEnrollment) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyProfileEnrollment) SetCount(val *float64) {
+func (j *jsiiProxy_PolicyProfileEnrollment)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -376,7 +382,7 @@ func (j *jsiiProxy_PolicyProfileEnrollment) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PolicyProfileEnrollment) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PolicyProfileEnrollment)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -384,7 +390,7 @@ func (j *jsiiProxy_PolicyProfileEnrollment) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyProfileEnrollment) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PolicyProfileEnrollment)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -392,7 +398,10 @@ func (j *jsiiProxy_PolicyProfileEnrollment) SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_PolicyProfileEnrollment) SetId(val *string) {
+func (j *jsiiProxy_PolicyProfileEnrollment)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -400,7 +409,10 @@ func (j *jsiiProxy_PolicyProfileEnrollment) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyProfileEnrollment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PolicyProfileEnrollment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -408,7 +420,10 @@ func (j *jsiiProxy_PolicyProfileEnrollment) SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_PolicyProfileEnrollment) SetName(val *string) {
+func (j *jsiiProxy_PolicyProfileEnrollment)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -416,7 +431,7 @@ func (j *jsiiProxy_PolicyProfileEnrollment) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyProfileEnrollment) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PolicyProfileEnrollment)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -424,7 +439,10 @@ func (j *jsiiProxy_PolicyProfileEnrollment) SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_PolicyProfileEnrollment) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PolicyProfileEnrollment)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -432,7 +450,10 @@ func (j *jsiiProxy_PolicyProfileEnrollment) SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_PolicyProfileEnrollment) SetStatus(val *string) {
+func (j *jsiiProxy_PolicyProfileEnrollment)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"status",
@@ -460,6 +481,9 @@ func (j *jsiiProxy_PolicyProfileEnrollment) SetStatus(val *string) {
 func PolicyProfileEnrollment_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validatePolicyProfileEnrollment_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -484,6 +508,9 @@ func PolicyProfileEnrollment_TfResourceType() *string {
 }
 
 func (p *jsiiProxy_PolicyProfileEnrollment) AddOverride(path *string, value interface{}) {
+	if err := p.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
@@ -492,6 +519,9 @@ func (p *jsiiProxy_PolicyProfileEnrollment) AddOverride(path *string, value inte
 }
 
 func (p *jsiiProxy_PolicyProfileEnrollment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -505,6 +535,9 @@ func (p *jsiiProxy_PolicyProfileEnrollment) GetAnyMapAttribute(terraformAttribut
 }
 
 func (p *jsiiProxy_PolicyProfileEnrollment) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -518,6 +551,9 @@ func (p *jsiiProxy_PolicyProfileEnrollment) GetBooleanAttribute(terraformAttribu
 }
 
 func (p *jsiiProxy_PolicyProfileEnrollment) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -531,6 +567,9 @@ func (p *jsiiProxy_PolicyProfileEnrollment) GetBooleanMapAttribute(terraformAttr
 }
 
 func (p *jsiiProxy_PolicyProfileEnrollment) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -544,6 +583,9 @@ func (p *jsiiProxy_PolicyProfileEnrollment) GetListAttribute(terraformAttribute 
 }
 
 func (p *jsiiProxy_PolicyProfileEnrollment) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -557,6 +599,9 @@ func (p *jsiiProxy_PolicyProfileEnrollment) GetNumberAttribute(terraformAttribut
 }
 
 func (p *jsiiProxy_PolicyProfileEnrollment) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -570,6 +615,9 @@ func (p *jsiiProxy_PolicyProfileEnrollment) GetNumberListAttribute(terraformAttr
 }
 
 func (p *jsiiProxy_PolicyProfileEnrollment) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -583,6 +631,9 @@ func (p *jsiiProxy_PolicyProfileEnrollment) GetNumberMapAttribute(terraformAttri
 }
 
 func (p *jsiiProxy_PolicyProfileEnrollment) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -596,6 +647,9 @@ func (p *jsiiProxy_PolicyProfileEnrollment) GetStringAttribute(terraformAttribut
 }
 
 func (p *jsiiProxy_PolicyProfileEnrollment) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -609,6 +663,9 @@ func (p *jsiiProxy_PolicyProfileEnrollment) GetStringMapAttribute(terraformAttri
 }
 
 func (p *jsiiProxy_PolicyProfileEnrollment) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -622,6 +679,9 @@ func (p *jsiiProxy_PolicyProfileEnrollment) InterpolationForAttribute(terraformA
 }
 
 func (p *jsiiProxy_PolicyProfileEnrollment) OverrideLogicalId(newLogicalId *string) {
+	if err := p.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",

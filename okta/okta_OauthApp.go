@@ -1533,6 +1533,9 @@ func (j *jsiiProxy_OauthApp) WildcardRedirectInput() *string {
 func NewOauthApp(scope constructs.Construct, id *string, config *OauthAppConfig) OauthApp {
 	_init_.Initialize()
 
+	if err := validateNewOauthAppParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OauthApp{}
 
 	_jsii_.Create(
@@ -1555,7 +1558,10 @@ func NewOauthApp_Override(o OauthApp, scope constructs.Construct, id *string, co
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetAccessibilityErrorRedirectUrl(val *string) {
+func (j *jsiiProxy_OauthApp)SetAccessibilityErrorRedirectUrl(val *string) {
+	if err := j.validateSetAccessibilityErrorRedirectUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accessibilityErrorRedirectUrl",
@@ -1563,7 +1569,10 @@ func (j *jsiiProxy_OauthApp) SetAccessibilityErrorRedirectUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetAccessibilityLoginRedirectUrl(val *string) {
+func (j *jsiiProxy_OauthApp)SetAccessibilityLoginRedirectUrl(val *string) {
+	if err := j.validateSetAccessibilityLoginRedirectUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accessibilityLoginRedirectUrl",
@@ -1571,7 +1580,10 @@ func (j *jsiiProxy_OauthApp) SetAccessibilityLoginRedirectUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetAccessibilitySelfService(val interface{}) {
+func (j *jsiiProxy_OauthApp)SetAccessibilitySelfService(val interface{}) {
+	if err := j.validateSetAccessibilitySelfServiceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accessibilitySelfService",
@@ -1579,7 +1591,10 @@ func (j *jsiiProxy_OauthApp) SetAccessibilitySelfService(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetAdminNote(val *string) {
+func (j *jsiiProxy_OauthApp)SetAdminNote(val *string) {
+	if err := j.validateSetAdminNoteParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"adminNote",
@@ -1587,7 +1602,10 @@ func (j *jsiiProxy_OauthApp) SetAdminNote(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetAppLinksJson(val *string) {
+func (j *jsiiProxy_OauthApp)SetAppLinksJson(val *string) {
+	if err := j.validateSetAppLinksJsonParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"appLinksJson",
@@ -1595,7 +1613,10 @@ func (j *jsiiProxy_OauthApp) SetAppLinksJson(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetAppSettingsJson(val *string) {
+func (j *jsiiProxy_OauthApp)SetAppSettingsJson(val *string) {
+	if err := j.validateSetAppSettingsJsonParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"appSettingsJson",
@@ -1603,7 +1624,10 @@ func (j *jsiiProxy_OauthApp) SetAppSettingsJson(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetAuthenticationPolicy(val *string) {
+func (j *jsiiProxy_OauthApp)SetAuthenticationPolicy(val *string) {
+	if err := j.validateSetAuthenticationPolicyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"authenticationPolicy",
@@ -1611,7 +1635,10 @@ func (j *jsiiProxy_OauthApp) SetAuthenticationPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetAutoKeyRotation(val interface{}) {
+func (j *jsiiProxy_OauthApp)SetAutoKeyRotation(val interface{}) {
+	if err := j.validateSetAutoKeyRotationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoKeyRotation",
@@ -1619,7 +1646,10 @@ func (j *jsiiProxy_OauthApp) SetAutoKeyRotation(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetAutoSubmitToolbar(val interface{}) {
+func (j *jsiiProxy_OauthApp)SetAutoSubmitToolbar(val interface{}) {
+	if err := j.validateSetAutoSubmitToolbarParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoSubmitToolbar",
@@ -1627,7 +1657,10 @@ func (j *jsiiProxy_OauthApp) SetAutoSubmitToolbar(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetClientBasicSecret(val *string) {
+func (j *jsiiProxy_OauthApp)SetClientBasicSecret(val *string) {
+	if err := j.validateSetClientBasicSecretParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientBasicSecret",
@@ -1635,7 +1668,10 @@ func (j *jsiiProxy_OauthApp) SetClientBasicSecret(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetClientId(val *string) {
+func (j *jsiiProxy_OauthApp)SetClientId(val *string) {
+	if err := j.validateSetClientIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientId",
@@ -1643,7 +1679,10 @@ func (j *jsiiProxy_OauthApp) SetClientId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetClientUri(val *string) {
+func (j *jsiiProxy_OauthApp)SetClientUri(val *string) {
+	if err := j.validateSetClientUriParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientUri",
@@ -1651,7 +1690,10 @@ func (j *jsiiProxy_OauthApp) SetClientUri(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetConnection(val interface{}) {
+func (j *jsiiProxy_OauthApp)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -1659,7 +1701,10 @@ func (j *jsiiProxy_OauthApp) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetConsentMethod(val *string) {
+func (j *jsiiProxy_OauthApp)SetConsentMethod(val *string) {
+	if err := j.validateSetConsentMethodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"consentMethod",
@@ -1667,7 +1712,7 @@ func (j *jsiiProxy_OauthApp) SetConsentMethod(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetCount(val *float64) {
+func (j *jsiiProxy_OauthApp)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -1675,7 +1720,10 @@ func (j *jsiiProxy_OauthApp) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetCustomClientId(val *string) {
+func (j *jsiiProxy_OauthApp)SetCustomClientId(val *string) {
+	if err := j.validateSetCustomClientIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"customClientId",
@@ -1683,7 +1731,7 @@ func (j *jsiiProxy_OauthApp) SetCustomClientId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OauthApp)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1691,7 +1739,10 @@ func (j *jsiiProxy_OauthApp) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetEnduserNote(val *string) {
+func (j *jsiiProxy_OauthApp)SetEnduserNote(val *string) {
+	if err := j.validateSetEnduserNoteParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enduserNote",
@@ -1699,7 +1750,7 @@ func (j *jsiiProxy_OauthApp) SetEnduserNote(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OauthApp)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1707,7 +1758,10 @@ func (j *jsiiProxy_OauthApp) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetGrantTypes(val *[]*string) {
+func (j *jsiiProxy_OauthApp)SetGrantTypes(val *[]*string) {
+	if err := j.validateSetGrantTypesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"grantTypes",
@@ -1715,7 +1769,10 @@ func (j *jsiiProxy_OauthApp) SetGrantTypes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetGroups(val *[]*string) {
+func (j *jsiiProxy_OauthApp)SetGroups(val *[]*string) {
+	if err := j.validateSetGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groups",
@@ -1723,7 +1780,10 @@ func (j *jsiiProxy_OauthApp) SetGroups(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetHideIos(val interface{}) {
+func (j *jsiiProxy_OauthApp)SetHideIos(val interface{}) {
+	if err := j.validateSetHideIosParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"hideIos",
@@ -1731,7 +1791,10 @@ func (j *jsiiProxy_OauthApp) SetHideIos(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetHideWeb(val interface{}) {
+func (j *jsiiProxy_OauthApp)SetHideWeb(val interface{}) {
+	if err := j.validateSetHideWebParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"hideWeb",
@@ -1739,7 +1802,10 @@ func (j *jsiiProxy_OauthApp) SetHideWeb(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetId(val *string) {
+func (j *jsiiProxy_OauthApp)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -1747,7 +1813,10 @@ func (j *jsiiProxy_OauthApp) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetImplicitAssignment(val interface{}) {
+func (j *jsiiProxy_OauthApp)SetImplicitAssignment(val interface{}) {
+	if err := j.validateSetImplicitAssignmentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"implicitAssignment",
@@ -1755,7 +1824,10 @@ func (j *jsiiProxy_OauthApp) SetImplicitAssignment(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetIssuerMode(val *string) {
+func (j *jsiiProxy_OauthApp)SetIssuerMode(val *string) {
+	if err := j.validateSetIssuerModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"issuerMode",
@@ -1763,7 +1835,10 @@ func (j *jsiiProxy_OauthApp) SetIssuerMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetLabel(val *string) {
+func (j *jsiiProxy_OauthApp)SetLabel(val *string) {
+	if err := j.validateSetLabelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"label",
@@ -1771,7 +1846,10 @@ func (j *jsiiProxy_OauthApp) SetLabel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OauthApp)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -1779,7 +1857,10 @@ func (j *jsiiProxy_OauthApp) SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetLoginMode(val *string) {
+func (j *jsiiProxy_OauthApp)SetLoginMode(val *string) {
+	if err := j.validateSetLoginModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"loginMode",
@@ -1787,7 +1868,10 @@ func (j *jsiiProxy_OauthApp) SetLoginMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetLoginScopes(val *[]*string) {
+func (j *jsiiProxy_OauthApp)SetLoginScopes(val *[]*string) {
+	if err := j.validateSetLoginScopesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"loginScopes",
@@ -1795,7 +1879,10 @@ func (j *jsiiProxy_OauthApp) SetLoginScopes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetLoginUri(val *string) {
+func (j *jsiiProxy_OauthApp)SetLoginUri(val *string) {
+	if err := j.validateSetLoginUriParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"loginUri",
@@ -1803,7 +1890,10 @@ func (j *jsiiProxy_OauthApp) SetLoginUri(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetLogo(val *string) {
+func (j *jsiiProxy_OauthApp)SetLogo(val *string) {
+	if err := j.validateSetLogoParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"logo",
@@ -1811,7 +1901,10 @@ func (j *jsiiProxy_OauthApp) SetLogo(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetLogoUri(val *string) {
+func (j *jsiiProxy_OauthApp)SetLogoUri(val *string) {
+	if err := j.validateSetLogoUriParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"logoUri",
@@ -1819,7 +1912,10 @@ func (j *jsiiProxy_OauthApp) SetLogoUri(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetOmitSecret(val interface{}) {
+func (j *jsiiProxy_OauthApp)SetOmitSecret(val interface{}) {
+	if err := j.validateSetOmitSecretParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"omitSecret",
@@ -1827,7 +1923,10 @@ func (j *jsiiProxy_OauthApp) SetOmitSecret(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetPolicyUri(val *string) {
+func (j *jsiiProxy_OauthApp)SetPolicyUri(val *string) {
+	if err := j.validateSetPolicyUriParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"policyUri",
@@ -1835,7 +1934,10 @@ func (j *jsiiProxy_OauthApp) SetPolicyUri(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetPostLogoutRedirectUris(val *[]*string) {
+func (j *jsiiProxy_OauthApp)SetPostLogoutRedirectUris(val *[]*string) {
+	if err := j.validateSetPostLogoutRedirectUrisParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"postLogoutRedirectUris",
@@ -1843,7 +1945,10 @@ func (j *jsiiProxy_OauthApp) SetPostLogoutRedirectUris(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetProfile(val *string) {
+func (j *jsiiProxy_OauthApp)SetProfile(val *string) {
+	if err := j.validateSetProfileParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"profile",
@@ -1851,7 +1956,7 @@ func (j *jsiiProxy_OauthApp) SetProfile(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OauthApp)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1859,7 +1964,10 @@ func (j *jsiiProxy_OauthApp) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OauthApp)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1867,7 +1975,10 @@ func (j *jsiiProxy_OauthApp) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetRedirectUris(val *[]*string) {
+func (j *jsiiProxy_OauthApp)SetRedirectUris(val *[]*string) {
+	if err := j.validateSetRedirectUrisParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"redirectUris",
@@ -1875,7 +1986,10 @@ func (j *jsiiProxy_OauthApp) SetRedirectUris(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetRefreshTokenLeeway(val *float64) {
+func (j *jsiiProxy_OauthApp)SetRefreshTokenLeeway(val *float64) {
+	if err := j.validateSetRefreshTokenLeewayParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"refreshTokenLeeway",
@@ -1883,7 +1997,10 @@ func (j *jsiiProxy_OauthApp) SetRefreshTokenLeeway(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetRefreshTokenRotation(val *string) {
+func (j *jsiiProxy_OauthApp)SetRefreshTokenRotation(val *string) {
+	if err := j.validateSetRefreshTokenRotationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"refreshTokenRotation",
@@ -1891,7 +2008,10 @@ func (j *jsiiProxy_OauthApp) SetRefreshTokenRotation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetResponseTypes(val *[]*string) {
+func (j *jsiiProxy_OauthApp)SetResponseTypes(val *[]*string) {
+	if err := j.validateSetResponseTypesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"responseTypes",
@@ -1899,7 +2019,10 @@ func (j *jsiiProxy_OauthApp) SetResponseTypes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetSkipGroups(val interface{}) {
+func (j *jsiiProxy_OauthApp)SetSkipGroups(val interface{}) {
+	if err := j.validateSetSkipGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"skipGroups",
@@ -1907,7 +2030,10 @@ func (j *jsiiProxy_OauthApp) SetSkipGroups(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetSkipUsers(val interface{}) {
+func (j *jsiiProxy_OauthApp)SetSkipUsers(val interface{}) {
+	if err := j.validateSetSkipUsersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"skipUsers",
@@ -1915,7 +2041,10 @@ func (j *jsiiProxy_OauthApp) SetSkipUsers(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetStatus(val *string) {
+func (j *jsiiProxy_OauthApp)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"status",
@@ -1923,7 +2052,10 @@ func (j *jsiiProxy_OauthApp) SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetTokenEndpointAuthMethod(val *string) {
+func (j *jsiiProxy_OauthApp)SetTokenEndpointAuthMethod(val *string) {
+	if err := j.validateSetTokenEndpointAuthMethodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenEndpointAuthMethod",
@@ -1931,7 +2063,10 @@ func (j *jsiiProxy_OauthApp) SetTokenEndpointAuthMethod(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetTosUri(val *string) {
+func (j *jsiiProxy_OauthApp)SetTosUri(val *string) {
+	if err := j.validateSetTosUriParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tosUri",
@@ -1939,7 +2074,10 @@ func (j *jsiiProxy_OauthApp) SetTosUri(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetType(val *string) {
+func (j *jsiiProxy_OauthApp)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -1947,7 +2085,10 @@ func (j *jsiiProxy_OauthApp) SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetUserNameTemplate(val *string) {
+func (j *jsiiProxy_OauthApp)SetUserNameTemplate(val *string) {
+	if err := j.validateSetUserNameTemplateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userNameTemplate",
@@ -1955,7 +2096,10 @@ func (j *jsiiProxy_OauthApp) SetUserNameTemplate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetUserNameTemplatePushStatus(val *string) {
+func (j *jsiiProxy_OauthApp)SetUserNameTemplatePushStatus(val *string) {
+	if err := j.validateSetUserNameTemplatePushStatusParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userNameTemplatePushStatus",
@@ -1963,7 +2107,10 @@ func (j *jsiiProxy_OauthApp) SetUserNameTemplatePushStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetUserNameTemplateSuffix(val *string) {
+func (j *jsiiProxy_OauthApp)SetUserNameTemplateSuffix(val *string) {
+	if err := j.validateSetUserNameTemplateSuffixParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userNameTemplateSuffix",
@@ -1971,7 +2118,10 @@ func (j *jsiiProxy_OauthApp) SetUserNameTemplateSuffix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetUserNameTemplateType(val *string) {
+func (j *jsiiProxy_OauthApp)SetUserNameTemplateType(val *string) {
+	if err := j.validateSetUserNameTemplateTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userNameTemplateType",
@@ -1979,7 +2129,10 @@ func (j *jsiiProxy_OauthApp) SetUserNameTemplateType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp) SetWildcardRedirect(val *string) {
+func (j *jsiiProxy_OauthApp)SetWildcardRedirect(val *string) {
+	if err := j.validateSetWildcardRedirectParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wildcardRedirect",
@@ -2007,6 +2160,9 @@ func (j *jsiiProxy_OauthApp) SetWildcardRedirect(val *string) {
 func OauthApp_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateOauthApp_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -2031,6 +2187,9 @@ func OauthApp_TfResourceType() *string {
 }
 
 func (o *jsiiProxy_OauthApp) AddOverride(path *string, value interface{}) {
+	if err := o.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
@@ -2039,6 +2198,9 @@ func (o *jsiiProxy_OauthApp) AddOverride(path *string, value interface{}) {
 }
 
 func (o *jsiiProxy_OauthApp) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -2052,6 +2214,9 @@ func (o *jsiiProxy_OauthApp) GetAnyMapAttribute(terraformAttribute *string) *map
 }
 
 func (o *jsiiProxy_OauthApp) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -2065,6 +2230,9 @@ func (o *jsiiProxy_OauthApp) GetBooleanAttribute(terraformAttribute *string) cdk
 }
 
 func (o *jsiiProxy_OauthApp) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -2078,6 +2246,9 @@ func (o *jsiiProxy_OauthApp) GetBooleanMapAttribute(terraformAttribute *string) 
 }
 
 func (o *jsiiProxy_OauthApp) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -2091,6 +2262,9 @@ func (o *jsiiProxy_OauthApp) GetListAttribute(terraformAttribute *string) *[]*st
 }
 
 func (o *jsiiProxy_OauthApp) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -2104,6 +2278,9 @@ func (o *jsiiProxy_OauthApp) GetNumberAttribute(terraformAttribute *string) *flo
 }
 
 func (o *jsiiProxy_OauthApp) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -2117,6 +2294,9 @@ func (o *jsiiProxy_OauthApp) GetNumberListAttribute(terraformAttribute *string) 
 }
 
 func (o *jsiiProxy_OauthApp) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -2130,6 +2310,9 @@ func (o *jsiiProxy_OauthApp) GetNumberMapAttribute(terraformAttribute *string) *
 }
 
 func (o *jsiiProxy_OauthApp) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -2143,6 +2326,9 @@ func (o *jsiiProxy_OauthApp) GetStringAttribute(terraformAttribute *string) *str
 }
 
 func (o *jsiiProxy_OauthApp) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -2156,6 +2342,9 @@ func (o *jsiiProxy_OauthApp) GetStringMapAttribute(terraformAttribute *string) *
 }
 
 func (o *jsiiProxy_OauthApp) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -2169,6 +2358,9 @@ func (o *jsiiProxy_OauthApp) InterpolationForAttribute(terraformAttribute *strin
 }
 
 func (o *jsiiProxy_OauthApp) OverrideLogicalId(newLogicalId *string) {
+	if err := o.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
@@ -2177,6 +2369,9 @@ func (o *jsiiProxy_OauthApp) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (o *jsiiProxy_OauthApp) PutGroupsClaim(value *OauthAppGroupsClaim) {
+	if err := o.validatePutGroupsClaimParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putGroupsClaim",
@@ -2185,6 +2380,9 @@ func (o *jsiiProxy_OauthApp) PutGroupsClaim(value *OauthAppGroupsClaim) {
 }
 
 func (o *jsiiProxy_OauthApp) PutJwks(value interface{}) {
+	if err := o.validatePutJwksParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putJwks",
@@ -2193,6 +2391,9 @@ func (o *jsiiProxy_OauthApp) PutJwks(value interface{}) {
 }
 
 func (o *jsiiProxy_OauthApp) PutTimeouts(value *OauthAppTimeouts) {
+	if err := o.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putTimeouts",
@@ -2201,6 +2402,9 @@ func (o *jsiiProxy_OauthApp) PutTimeouts(value *OauthAppTimeouts) {
 }
 
 func (o *jsiiProxy_OauthApp) PutUsers(value interface{}) {
+	if err := o.validatePutUsersParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putUsers",

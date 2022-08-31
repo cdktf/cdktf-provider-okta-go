@@ -247,6 +247,9 @@ func (j *jsiiProxy_DataOktaUserSearchOutputReference) ValueInput() *string {
 func NewDataOktaUserSearchOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataOktaUserSearchOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataOktaUserSearchOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOktaUserSearchOutputReference{}
 
 	_jsii_.Create(
@@ -268,7 +271,10 @@ func NewDataOktaUserSearchOutputReference_Override(d DataOktaUserSearchOutputRef
 	)
 }
 
-func (j *jsiiProxy_DataOktaUserSearchOutputReference) SetComparison(val *string) {
+func (j *jsiiProxy_DataOktaUserSearchOutputReference)SetComparison(val *string) {
+	if err := j.validateSetComparisonParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"comparison",
@@ -276,7 +282,10 @@ func (j *jsiiProxy_DataOktaUserSearchOutputReference) SetComparison(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataOktaUserSearchOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataOktaUserSearchOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -284,7 +293,10 @@ func (j *jsiiProxy_DataOktaUserSearchOutputReference) SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_DataOktaUserSearchOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataOktaUserSearchOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -292,7 +304,10 @@ func (j *jsiiProxy_DataOktaUserSearchOutputReference) SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_DataOktaUserSearchOutputReference) SetExpression(val *string) {
+func (j *jsiiProxy_DataOktaUserSearchOutputReference)SetExpression(val *string) {
+	if err := j.validateSetExpressionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"expression",
@@ -300,7 +315,10 @@ func (j *jsiiProxy_DataOktaUserSearchOutputReference) SetExpression(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataOktaUserSearchOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataOktaUserSearchOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -308,7 +326,10 @@ func (j *jsiiProxy_DataOktaUserSearchOutputReference) SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_DataOktaUserSearchOutputReference) SetName(val *string) {
+func (j *jsiiProxy_DataOktaUserSearchOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -316,7 +337,10 @@ func (j *jsiiProxy_DataOktaUserSearchOutputReference) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaUserSearchOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOktaUserSearchOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -324,7 +348,10 @@ func (j *jsiiProxy_DataOktaUserSearchOutputReference) SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_DataOktaUserSearchOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOktaUserSearchOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -332,7 +359,10 @@ func (j *jsiiProxy_DataOktaUserSearchOutputReference) SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_DataOktaUserSearchOutputReference) SetValue(val *string) {
+func (j *jsiiProxy_DataOktaUserSearchOutputReference)SetValue(val *string) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -354,6 +384,9 @@ func (d *jsiiProxy_DataOktaUserSearchOutputReference) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataOktaUserSearchOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -367,6 +400,9 @@ func (d *jsiiProxy_DataOktaUserSearchOutputReference) GetAnyMapAttribute(terrafo
 }
 
 func (d *jsiiProxy_DataOktaUserSearchOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -380,6 +416,9 @@ func (d *jsiiProxy_DataOktaUserSearchOutputReference) GetBooleanAttribute(terraf
 }
 
 func (d *jsiiProxy_DataOktaUserSearchOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -393,6 +432,9 @@ func (d *jsiiProxy_DataOktaUserSearchOutputReference) GetBooleanMapAttribute(ter
 }
 
 func (d *jsiiProxy_DataOktaUserSearchOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -406,6 +448,9 @@ func (d *jsiiProxy_DataOktaUserSearchOutputReference) GetListAttribute(terraform
 }
 
 func (d *jsiiProxy_DataOktaUserSearchOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -419,6 +464,9 @@ func (d *jsiiProxy_DataOktaUserSearchOutputReference) GetNumberAttribute(terrafo
 }
 
 func (d *jsiiProxy_DataOktaUserSearchOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -432,6 +480,9 @@ func (d *jsiiProxy_DataOktaUserSearchOutputReference) GetNumberListAttribute(ter
 }
 
 func (d *jsiiProxy_DataOktaUserSearchOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -445,6 +496,9 @@ func (d *jsiiProxy_DataOktaUserSearchOutputReference) GetNumberMapAttribute(terr
 }
 
 func (d *jsiiProxy_DataOktaUserSearchOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -458,6 +512,9 @@ func (d *jsiiProxy_DataOktaUserSearchOutputReference) GetStringAttribute(terrafo
 }
 
 func (d *jsiiProxy_DataOktaUserSearchOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -484,6 +541,9 @@ func (d *jsiiProxy_DataOktaUserSearchOutputReference) InterpolationAsList() cdkt
 }
 
 func (d *jsiiProxy_DataOktaUserSearchOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -529,6 +589,9 @@ func (d *jsiiProxy_DataOktaUserSearchOutputReference) ResetValue() {
 }
 
 func (d *jsiiProxy_DataOktaUserSearchOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

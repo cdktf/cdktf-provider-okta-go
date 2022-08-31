@@ -111,6 +111,9 @@ func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList) WrapsSet() *boo
 func NewUserSchemaPropertyMasterOverridePriorityList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserSchemaPropertyMasterOverridePriorityList {
 	_init_.Initialize()
 
+	if err := validateNewUserSchemaPropertyMasterOverridePriorityListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_UserSchemaPropertyMasterOverridePriorityList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewUserSchemaPropertyMasterOverridePriorityList_Override(u UserSchemaProper
 	)
 }
 
-func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList) SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList) ComputeFqn() *s
 }
 
 func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList) Get(index *float64) UserSchemaPropertyMasterOverridePriorityOutputReference {
+	if err := u.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns UserSchemaPropertyMasterOverridePriorityOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList) Get(index *floa
 }
 
 func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := u.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

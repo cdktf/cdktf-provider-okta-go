@@ -407,6 +407,9 @@ func (j *jsiiProxy_DomainCertificate) TypeInput() *string {
 func NewDomainCertificate(scope constructs.Construct, id *string, config *DomainCertificateConfig) DomainCertificate {
 	_init_.Initialize()
 
+	if err := validateNewDomainCertificateParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DomainCertificate{}
 
 	_jsii_.Create(
@@ -429,7 +432,10 @@ func NewDomainCertificate_Override(d DomainCertificate, scope constructs.Constru
 	)
 }
 
-func (j *jsiiProxy_DomainCertificate) SetCertificate(val *string) {
+func (j *jsiiProxy_DomainCertificate)SetCertificate(val *string) {
+	if err := j.validateSetCertificateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"certificate",
@@ -437,7 +443,10 @@ func (j *jsiiProxy_DomainCertificate) SetCertificate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DomainCertificate) SetCertificateChain(val *string) {
+func (j *jsiiProxy_DomainCertificate)SetCertificateChain(val *string) {
+	if err := j.validateSetCertificateChainParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"certificateChain",
@@ -445,7 +454,10 @@ func (j *jsiiProxy_DomainCertificate) SetCertificateChain(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DomainCertificate) SetConnection(val interface{}) {
+func (j *jsiiProxy_DomainCertificate)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -453,7 +465,7 @@ func (j *jsiiProxy_DomainCertificate) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DomainCertificate) SetCount(val *float64) {
+func (j *jsiiProxy_DomainCertificate)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -461,7 +473,7 @@ func (j *jsiiProxy_DomainCertificate) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DomainCertificate) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DomainCertificate)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -469,7 +481,10 @@ func (j *jsiiProxy_DomainCertificate) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DomainCertificate) SetDomainId(val *string) {
+func (j *jsiiProxy_DomainCertificate)SetDomainId(val *string) {
+	if err := j.validateSetDomainIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"domainId",
@@ -477,7 +492,7 @@ func (j *jsiiProxy_DomainCertificate) SetDomainId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DomainCertificate) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DomainCertificate)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -485,7 +500,10 @@ func (j *jsiiProxy_DomainCertificate) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DomainCertificate) SetId(val *string) {
+func (j *jsiiProxy_DomainCertificate)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -493,7 +511,10 @@ func (j *jsiiProxy_DomainCertificate) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DomainCertificate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DomainCertificate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -501,7 +522,10 @@ func (j *jsiiProxy_DomainCertificate) SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_DomainCertificate) SetPrivateKey(val *string) {
+func (j *jsiiProxy_DomainCertificate)SetPrivateKey(val *string) {
+	if err := j.validateSetPrivateKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"privateKey",
@@ -509,7 +533,7 @@ func (j *jsiiProxy_DomainCertificate) SetPrivateKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DomainCertificate) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DomainCertificate)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -517,7 +541,10 @@ func (j *jsiiProxy_DomainCertificate) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DomainCertificate) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DomainCertificate)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -525,7 +552,10 @@ func (j *jsiiProxy_DomainCertificate) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DomainCertificate) SetType(val *string) {
+func (j *jsiiProxy_DomainCertificate)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -553,6 +583,9 @@ func (j *jsiiProxy_DomainCertificate) SetType(val *string) {
 func DomainCertificate_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDomainCertificate_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -577,6 +610,9 @@ func DomainCertificate_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DomainCertificate) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -585,6 +621,9 @@ func (d *jsiiProxy_DomainCertificate) AddOverride(path *string, value interface{
 }
 
 func (d *jsiiProxy_DomainCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -598,6 +637,9 @@ func (d *jsiiProxy_DomainCertificate) GetAnyMapAttribute(terraformAttribute *str
 }
 
 func (d *jsiiProxy_DomainCertificate) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -611,6 +653,9 @@ func (d *jsiiProxy_DomainCertificate) GetBooleanAttribute(terraformAttribute *st
 }
 
 func (d *jsiiProxy_DomainCertificate) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -624,6 +669,9 @@ func (d *jsiiProxy_DomainCertificate) GetBooleanMapAttribute(terraformAttribute 
 }
 
 func (d *jsiiProxy_DomainCertificate) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -637,6 +685,9 @@ func (d *jsiiProxy_DomainCertificate) GetListAttribute(terraformAttribute *strin
 }
 
 func (d *jsiiProxy_DomainCertificate) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -650,6 +701,9 @@ func (d *jsiiProxy_DomainCertificate) GetNumberAttribute(terraformAttribute *str
 }
 
 func (d *jsiiProxy_DomainCertificate) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -663,6 +717,9 @@ func (d *jsiiProxy_DomainCertificate) GetNumberListAttribute(terraformAttribute 
 }
 
 func (d *jsiiProxy_DomainCertificate) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -676,6 +733,9 @@ func (d *jsiiProxy_DomainCertificate) GetNumberMapAttribute(terraformAttribute *
 }
 
 func (d *jsiiProxy_DomainCertificate) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -689,6 +749,9 @@ func (d *jsiiProxy_DomainCertificate) GetStringAttribute(terraformAttribute *str
 }
 
 func (d *jsiiProxy_DomainCertificate) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -702,6 +765,9 @@ func (d *jsiiProxy_DomainCertificate) GetStringMapAttribute(terraformAttribute *
 }
 
 func (d *jsiiProxy_DomainCertificate) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -715,6 +781,9 @@ func (d *jsiiProxy_DomainCertificate) InterpolationForAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DomainCertificate) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

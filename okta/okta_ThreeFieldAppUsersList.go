@@ -111,6 +111,9 @@ func (j *jsiiProxy_ThreeFieldAppUsersList) WrapsSet() *bool {
 func NewThreeFieldAppUsersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ThreeFieldAppUsersList {
 	_init_.Initialize()
 
+	if err := validateNewThreeFieldAppUsersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ThreeFieldAppUsersList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewThreeFieldAppUsersList_Override(t ThreeFieldAppUsersList, terraformResou
 	)
 }
 
-func (j *jsiiProxy_ThreeFieldAppUsersList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ThreeFieldAppUsersList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ThreeFieldAppUsersList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ThreeFieldAppUsersList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ThreeFieldAppUsersList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ThreeFieldAppUsersList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ThreeFieldAppUsersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ThreeFieldAppUsersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ThreeFieldAppUsersList) SetTerraformResource(val cdktf.IInter
 	)
 }
 
-func (j *jsiiProxy_ThreeFieldAppUsersList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ThreeFieldAppUsersList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (t *jsiiProxy_ThreeFieldAppUsersList) ComputeFqn() *string {
 }
 
 func (t *jsiiProxy_ThreeFieldAppUsersList) Get(index *float64) ThreeFieldAppUsersOutputReference {
+	if err := t.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ThreeFieldAppUsersOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (t *jsiiProxy_ThreeFieldAppUsersList) Get(index *float64) ThreeFieldAppUser
 }
 
 func (t *jsiiProxy_ThreeFieldAppUsersList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

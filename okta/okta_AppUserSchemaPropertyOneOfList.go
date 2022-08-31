@@ -111,6 +111,9 @@ func (j *jsiiProxy_AppUserSchemaPropertyOneOfList) WrapsSet() *bool {
 func NewAppUserSchemaPropertyOneOfList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppUserSchemaPropertyOneOfList {
 	_init_.Initialize()
 
+	if err := validateNewAppUserSchemaPropertyOneOfListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AppUserSchemaPropertyOneOfList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAppUserSchemaPropertyOneOfList_Override(a AppUserSchemaPropertyOneOfList
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaPropertyOneOfList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppUserSchemaPropertyOneOfList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AppUserSchemaPropertyOneOfList) SetInternalValue(val interfac
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaPropertyOneOfList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppUserSchemaPropertyOneOfList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AppUserSchemaPropertyOneOfList) SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaPropertyOneOfList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppUserSchemaPropertyOneOfList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AppUserSchemaPropertyOneOfList) SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaPropertyOneOfList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AppUserSchemaPropertyOneOfList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AppUserSchemaPropertyOneOfList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AppUserSchemaPropertyOneOfList) Get(index *float64) AppUserSchemaPropertyOneOfOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AppUserSchemaPropertyOneOfOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AppUserSchemaPropertyOneOfList) Get(index *float64) AppUserSc
 }
 
 func (a *jsiiProxy_AppUserSchemaPropertyOneOfList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

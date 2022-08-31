@@ -980,6 +980,9 @@ func (j *jsiiProxy_SocialIdp) UsernameTemplateInput() *string {
 func NewSocialIdp(scope constructs.Construct, id *string, config *SocialIdpConfig) SocialIdp {
 	_init_.Initialize()
 
+	if err := validateNewSocialIdpParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SocialIdp{}
 
 	_jsii_.Create(
@@ -1002,7 +1005,10 @@ func NewSocialIdp_Override(s SocialIdp, scope constructs.Construct, id *string, 
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetAccountLinkAction(val *string) {
+func (j *jsiiProxy_SocialIdp)SetAccountLinkAction(val *string) {
+	if err := j.validateSetAccountLinkActionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountLinkAction",
@@ -1010,7 +1016,10 @@ func (j *jsiiProxy_SocialIdp) SetAccountLinkAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetAccountLinkGroupInclude(val *[]*string) {
+func (j *jsiiProxy_SocialIdp)SetAccountLinkGroupInclude(val *[]*string) {
+	if err := j.validateSetAccountLinkGroupIncludeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountLinkGroupInclude",
@@ -1018,7 +1027,10 @@ func (j *jsiiProxy_SocialIdp) SetAccountLinkGroupInclude(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetAppleKid(val *string) {
+func (j *jsiiProxy_SocialIdp)SetAppleKid(val *string) {
+	if err := j.validateSetAppleKidParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"appleKid",
@@ -1026,7 +1038,10 @@ func (j *jsiiProxy_SocialIdp) SetAppleKid(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetApplePrivateKey(val *string) {
+func (j *jsiiProxy_SocialIdp)SetApplePrivateKey(val *string) {
+	if err := j.validateSetApplePrivateKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"applePrivateKey",
@@ -1034,7 +1049,10 @@ func (j *jsiiProxy_SocialIdp) SetApplePrivateKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetAppleTeamId(val *string) {
+func (j *jsiiProxy_SocialIdp)SetAppleTeamId(val *string) {
+	if err := j.validateSetAppleTeamIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"appleTeamId",
@@ -1042,7 +1060,10 @@ func (j *jsiiProxy_SocialIdp) SetAppleTeamId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetClientId(val *string) {
+func (j *jsiiProxy_SocialIdp)SetClientId(val *string) {
+	if err := j.validateSetClientIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientId",
@@ -1050,7 +1071,10 @@ func (j *jsiiProxy_SocialIdp) SetClientId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetClientSecret(val *string) {
+func (j *jsiiProxy_SocialIdp)SetClientSecret(val *string) {
+	if err := j.validateSetClientSecretParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientSecret",
@@ -1058,7 +1082,10 @@ func (j *jsiiProxy_SocialIdp) SetClientSecret(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetConnection(val interface{}) {
+func (j *jsiiProxy_SocialIdp)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -1066,7 +1093,7 @@ func (j *jsiiProxy_SocialIdp) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetCount(val *float64) {
+func (j *jsiiProxy_SocialIdp)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -1074,7 +1101,7 @@ func (j *jsiiProxy_SocialIdp) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SocialIdp)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1082,7 +1109,10 @@ func (j *jsiiProxy_SocialIdp) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetDeprovisionedAction(val *string) {
+func (j *jsiiProxy_SocialIdp)SetDeprovisionedAction(val *string) {
+	if err := j.validateSetDeprovisionedActionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"deprovisionedAction",
@@ -1090,7 +1120,7 @@ func (j *jsiiProxy_SocialIdp) SetDeprovisionedAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SocialIdp)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1098,7 +1128,10 @@ func (j *jsiiProxy_SocialIdp) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetGroupsAction(val *string) {
+func (j *jsiiProxy_SocialIdp)SetGroupsAction(val *string) {
+	if err := j.validateSetGroupsActionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupsAction",
@@ -1106,7 +1139,10 @@ func (j *jsiiProxy_SocialIdp) SetGroupsAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetGroupsAssignment(val *[]*string) {
+func (j *jsiiProxy_SocialIdp)SetGroupsAssignment(val *[]*string) {
+	if err := j.validateSetGroupsAssignmentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupsAssignment",
@@ -1114,7 +1150,10 @@ func (j *jsiiProxy_SocialIdp) SetGroupsAssignment(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetGroupsAttribute(val *string) {
+func (j *jsiiProxy_SocialIdp)SetGroupsAttribute(val *string) {
+	if err := j.validateSetGroupsAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupsAttribute",
@@ -1122,7 +1161,10 @@ func (j *jsiiProxy_SocialIdp) SetGroupsAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetGroupsFilter(val *[]*string) {
+func (j *jsiiProxy_SocialIdp)SetGroupsFilter(val *[]*string) {
+	if err := j.validateSetGroupsFilterParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupsFilter",
@@ -1130,7 +1172,10 @@ func (j *jsiiProxy_SocialIdp) SetGroupsFilter(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetId(val *string) {
+func (j *jsiiProxy_SocialIdp)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -1138,7 +1183,10 @@ func (j *jsiiProxy_SocialIdp) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetIssuerMode(val *string) {
+func (j *jsiiProxy_SocialIdp)SetIssuerMode(val *string) {
+	if err := j.validateSetIssuerModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"issuerMode",
@@ -1146,7 +1194,10 @@ func (j *jsiiProxy_SocialIdp) SetIssuerMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SocialIdp)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -1154,7 +1205,10 @@ func (j *jsiiProxy_SocialIdp) SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetMatchAttribute(val *string) {
+func (j *jsiiProxy_SocialIdp)SetMatchAttribute(val *string) {
+	if err := j.validateSetMatchAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"matchAttribute",
@@ -1162,7 +1216,10 @@ func (j *jsiiProxy_SocialIdp) SetMatchAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetMatchType(val *string) {
+func (j *jsiiProxy_SocialIdp)SetMatchType(val *string) {
+	if err := j.validateSetMatchTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"matchType",
@@ -1170,7 +1227,10 @@ func (j *jsiiProxy_SocialIdp) SetMatchType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetMaxClockSkew(val *float64) {
+func (j *jsiiProxy_SocialIdp)SetMaxClockSkew(val *float64) {
+	if err := j.validateSetMaxClockSkewParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxClockSkew",
@@ -1178,7 +1238,10 @@ func (j *jsiiProxy_SocialIdp) SetMaxClockSkew(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetName(val *string) {
+func (j *jsiiProxy_SocialIdp)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -1186,7 +1249,10 @@ func (j *jsiiProxy_SocialIdp) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetProfileMaster(val interface{}) {
+func (j *jsiiProxy_SocialIdp)SetProfileMaster(val interface{}) {
+	if err := j.validateSetProfileMasterParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"profileMaster",
@@ -1194,7 +1260,10 @@ func (j *jsiiProxy_SocialIdp) SetProfileMaster(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetProtocolType(val *string) {
+func (j *jsiiProxy_SocialIdp)SetProtocolType(val *string) {
+	if err := j.validateSetProtocolTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"protocolType",
@@ -1202,7 +1271,7 @@ func (j *jsiiProxy_SocialIdp) SetProtocolType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SocialIdp)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1210,7 +1279,10 @@ func (j *jsiiProxy_SocialIdp) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SocialIdp)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1218,7 +1290,10 @@ func (j *jsiiProxy_SocialIdp) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetProvisioningAction(val *string) {
+func (j *jsiiProxy_SocialIdp)SetProvisioningAction(val *string) {
+	if err := j.validateSetProvisioningActionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioningAction",
@@ -1226,7 +1301,10 @@ func (j *jsiiProxy_SocialIdp) SetProvisioningAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetScopes(val *[]*string) {
+func (j *jsiiProxy_SocialIdp)SetScopes(val *[]*string) {
+	if err := j.validateSetScopesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"scopes",
@@ -1234,7 +1312,10 @@ func (j *jsiiProxy_SocialIdp) SetScopes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetStatus(val *string) {
+func (j *jsiiProxy_SocialIdp)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"status",
@@ -1242,7 +1323,10 @@ func (j *jsiiProxy_SocialIdp) SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetSubjectMatchAttribute(val *string) {
+func (j *jsiiProxy_SocialIdp)SetSubjectMatchAttribute(val *string) {
+	if err := j.validateSetSubjectMatchAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"subjectMatchAttribute",
@@ -1250,7 +1334,10 @@ func (j *jsiiProxy_SocialIdp) SetSubjectMatchAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetSubjectMatchType(val *string) {
+func (j *jsiiProxy_SocialIdp)SetSubjectMatchType(val *string) {
+	if err := j.validateSetSubjectMatchTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"subjectMatchType",
@@ -1258,7 +1345,10 @@ func (j *jsiiProxy_SocialIdp) SetSubjectMatchType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetSuspendedAction(val *string) {
+func (j *jsiiProxy_SocialIdp)SetSuspendedAction(val *string) {
+	if err := j.validateSetSuspendedActionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"suspendedAction",
@@ -1266,7 +1356,10 @@ func (j *jsiiProxy_SocialIdp) SetSuspendedAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetType(val *string) {
+func (j *jsiiProxy_SocialIdp)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -1274,7 +1367,10 @@ func (j *jsiiProxy_SocialIdp) SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp) SetUsernameTemplate(val *string) {
+func (j *jsiiProxy_SocialIdp)SetUsernameTemplate(val *string) {
+	if err := j.validateSetUsernameTemplateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"usernameTemplate",
@@ -1302,6 +1398,9 @@ func (j *jsiiProxy_SocialIdp) SetUsernameTemplate(val *string) {
 func SocialIdp_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateSocialIdp_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1326,6 +1425,9 @@ func SocialIdp_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_SocialIdp) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -1334,6 +1436,9 @@ func (s *jsiiProxy_SocialIdp) AddOverride(path *string, value interface{}) {
 }
 
 func (s *jsiiProxy_SocialIdp) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1347,6 +1452,9 @@ func (s *jsiiProxy_SocialIdp) GetAnyMapAttribute(terraformAttribute *string) *ma
 }
 
 func (s *jsiiProxy_SocialIdp) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1360,6 +1468,9 @@ func (s *jsiiProxy_SocialIdp) GetBooleanAttribute(terraformAttribute *string) cd
 }
 
 func (s *jsiiProxy_SocialIdp) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1373,6 +1484,9 @@ func (s *jsiiProxy_SocialIdp) GetBooleanMapAttribute(terraformAttribute *string)
 }
 
 func (s *jsiiProxy_SocialIdp) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1386,6 +1500,9 @@ func (s *jsiiProxy_SocialIdp) GetListAttribute(terraformAttribute *string) *[]*s
 }
 
 func (s *jsiiProxy_SocialIdp) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1399,6 +1516,9 @@ func (s *jsiiProxy_SocialIdp) GetNumberAttribute(terraformAttribute *string) *fl
 }
 
 func (s *jsiiProxy_SocialIdp) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1412,6 +1532,9 @@ func (s *jsiiProxy_SocialIdp) GetNumberListAttribute(terraformAttribute *string)
 }
 
 func (s *jsiiProxy_SocialIdp) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1425,6 +1548,9 @@ func (s *jsiiProxy_SocialIdp) GetNumberMapAttribute(terraformAttribute *string) 
 }
 
 func (s *jsiiProxy_SocialIdp) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1438,6 +1564,9 @@ func (s *jsiiProxy_SocialIdp) GetStringAttribute(terraformAttribute *string) *st
 }
 
 func (s *jsiiProxy_SocialIdp) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1451,6 +1580,9 @@ func (s *jsiiProxy_SocialIdp) GetStringMapAttribute(terraformAttribute *string) 
 }
 
 func (s *jsiiProxy_SocialIdp) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1464,6 +1596,9 @@ func (s *jsiiProxy_SocialIdp) InterpolationForAttribute(terraformAttribute *stri
 }
 
 func (s *jsiiProxy_SocialIdp) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",

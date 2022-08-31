@@ -111,6 +111,9 @@ func (j *jsiiProxy_DataOktaUsersSearchList) WrapsSet() *bool {
 func NewDataOktaUsersSearchList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaUsersSearchList {
 	_init_.Initialize()
 
+	if err := validateNewDataOktaUsersSearchListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOktaUsersSearchList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDataOktaUsersSearchList_Override(d DataOktaUsersSearchList, terraformRes
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsersSearchList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataOktaUsersSearchList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DataOktaUsersSearchList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsersSearchList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOktaUsersSearchList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DataOktaUsersSearchList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsersSearchList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOktaUsersSearchList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DataOktaUsersSearchList) SetTerraformResource(val cdktf.IInte
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsersSearchList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOktaUsersSearchList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DataOktaUsersSearchList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataOktaUsersSearchList) Get(index *float64) DataOktaUsersSearchOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataOktaUsersSearchOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DataOktaUsersSearchList) Get(index *float64) DataOktaUsersSea
 }
 
 func (d *jsiiProxy_DataOktaUsersSearchList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

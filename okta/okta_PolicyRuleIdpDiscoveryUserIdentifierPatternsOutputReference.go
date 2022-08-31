@@ -199,6 +199,9 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) 
 func NewPolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewPolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewPolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference_Override(p P
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) SetMatchType(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference)SetMatchType(val *string) {
+	if err := j.validateSetMatchTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"matchType",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) SetValue(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference)SetValue(val *string) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -290,6 +314,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) 
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) 
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) 
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) 
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) 
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) 
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) 
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) 
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) 
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) 
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) 
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

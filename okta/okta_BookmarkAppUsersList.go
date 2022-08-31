@@ -111,6 +111,9 @@ func (j *jsiiProxy_BookmarkAppUsersList) WrapsSet() *bool {
 func NewBookmarkAppUsersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BookmarkAppUsersList {
 	_init_.Initialize()
 
+	if err := validateNewBookmarkAppUsersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_BookmarkAppUsersList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewBookmarkAppUsersList_Override(b BookmarkAppUsersList, terraformResource 
 	)
 }
 
-func (j *jsiiProxy_BookmarkAppUsersList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BookmarkAppUsersList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_BookmarkAppUsersList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BookmarkAppUsersList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BookmarkAppUsersList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_BookmarkAppUsersList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BookmarkAppUsersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BookmarkAppUsersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_BookmarkAppUsersList) SetTerraformResource(val cdktf.IInterpo
 	)
 }
 
-func (j *jsiiProxy_BookmarkAppUsersList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_BookmarkAppUsersList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (b *jsiiProxy_BookmarkAppUsersList) ComputeFqn() *string {
 }
 
 func (b *jsiiProxy_BookmarkAppUsersList) Get(index *float64) BookmarkAppUsersOutputReference {
+	if err := b.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns BookmarkAppUsersOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (b *jsiiProxy_BookmarkAppUsersList) Get(index *float64) BookmarkAppUsersOut
 }
 
 func (b *jsiiProxy_BookmarkAppUsersList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

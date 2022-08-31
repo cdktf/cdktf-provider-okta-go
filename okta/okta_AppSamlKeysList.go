@@ -99,6 +99,9 @@ func (j *jsiiProxy_AppSamlKeysList) WrapsSet() *bool {
 func NewAppSamlKeysList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSamlKeysList {
 	_init_.Initialize()
 
+	if err := validateNewAppSamlKeysListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AppSamlKeysList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewAppSamlKeysList_Override(a AppSamlKeysList, terraformResource cdktf.IInt
 	)
 }
 
-func (j *jsiiProxy_AppSamlKeysList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppSamlKeysList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_AppSamlKeysList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSamlKeysList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppSamlKeysList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_AppSamlKeysList) SetTerraformResource(val cdktf.IInterpolatin
 	)
 }
 
-func (j *jsiiProxy_AppSamlKeysList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AppSamlKeysList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (a *jsiiProxy_AppSamlKeysList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AppSamlKeysList) Get(index *float64) AppSamlKeysOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AppSamlKeysOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (a *jsiiProxy_AppSamlKeysList) Get(index *float64) AppSamlKeysOutputReferen
 }
 
 func (a *jsiiProxy_AppSamlKeysList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

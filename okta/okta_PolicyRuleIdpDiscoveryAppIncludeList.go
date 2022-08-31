@@ -111,6 +111,9 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeList) WrapsSet() *bool {
 func NewPolicyRuleIdpDiscoveryAppIncludeList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PolicyRuleIdpDiscoveryAppIncludeList {
 	_init_.Initialize()
 
+	if err := validateNewPolicyRuleIdpDiscoveryAppIncludeListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewPolicyRuleIdpDiscoveryAppIncludeList_Override(p PolicyRuleIdpDiscoveryAp
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeList) SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeList) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeList) SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeList) ComputeFqn() *string {
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeList) Get(index *float64) PolicyRuleIdpDiscoveryAppIncludeOutputReference {
+	if err := p.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns PolicyRuleIdpDiscoveryAppIncludeOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeList) Get(index *float64) Pol
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

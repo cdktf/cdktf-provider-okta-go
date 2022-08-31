@@ -222,6 +222,9 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) TypeInput() 
 func NewPolicyRuleIdpDiscoveryAppExcludeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PolicyRuleIdpDiscoveryAppExcludeOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewPolicyRuleIdpDiscoveryAppExcludeOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference{}
 
 	_jsii_.Create(
@@ -243,7 +246,10 @@ func NewPolicyRuleIdpDiscoveryAppExcludeOutputReference_Override(p PolicyRuleIdp
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -251,7 +257,10 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -259,7 +268,10 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) SetId(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -267,7 +279,10 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) SetId(val *s
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -275,7 +290,10 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) SetInternalV
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) SetName(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -283,7 +301,10 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) SetName(val 
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -291,7 +312,10 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -299,7 +323,10 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) SetType(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -321,6 +348,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) ComputeFqn()
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -334,6 +364,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) GetAnyMapAtt
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -347,6 +380,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) GetBooleanAt
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -360,6 +396,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) GetBooleanMa
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -373,6 +412,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) GetListAttri
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -386,6 +428,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) GetNumberAtt
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -399,6 +444,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) GetNumberLis
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -412,6 +460,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) GetNumberMap
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -425,6 +476,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) GetStringAtt
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -451,6 +505,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) Interpolatio
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -480,6 +537,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) ResetName() 
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

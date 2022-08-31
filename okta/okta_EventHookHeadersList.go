@@ -111,6 +111,9 @@ func (j *jsiiProxy_EventHookHeadersList) WrapsSet() *bool {
 func NewEventHookHeadersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventHookHeadersList {
 	_init_.Initialize()
 
+	if err := validateNewEventHookHeadersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_EventHookHeadersList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewEventHookHeadersList_Override(e EventHookHeadersList, terraformResource 
 	)
 }
 
-func (j *jsiiProxy_EventHookHeadersList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EventHookHeadersList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_EventHookHeadersList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EventHookHeadersList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EventHookHeadersList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_EventHookHeadersList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventHookHeadersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EventHookHeadersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_EventHookHeadersList) SetTerraformResource(val cdktf.IInterpo
 	)
 }
 
-func (j *jsiiProxy_EventHookHeadersList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_EventHookHeadersList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (e *jsiiProxy_EventHookHeadersList) ComputeFqn() *string {
 }
 
 func (e *jsiiProxy_EventHookHeadersList) Get(index *float64) EventHookHeadersOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns EventHookHeadersOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (e *jsiiProxy_EventHookHeadersList) Get(index *float64) EventHookHeadersOut
 }
 
 func (e *jsiiProxy_EventHookHeadersList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

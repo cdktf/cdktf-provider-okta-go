@@ -111,6 +111,9 @@ func (j *jsiiProxy_InlineHookHeadersList) WrapsSet() *bool {
 func NewInlineHookHeadersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) InlineHookHeadersList {
 	_init_.Initialize()
 
+	if err := validateNewInlineHookHeadersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_InlineHookHeadersList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewInlineHookHeadersList_Override(i InlineHookHeadersList, terraformResourc
 	)
 }
 
-func (j *jsiiProxy_InlineHookHeadersList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_InlineHookHeadersList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_InlineHookHeadersList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_InlineHookHeadersList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_InlineHookHeadersList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_InlineHookHeadersList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_InlineHookHeadersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_InlineHookHeadersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_InlineHookHeadersList) SetTerraformResource(val cdktf.IInterp
 	)
 }
 
-func (j *jsiiProxy_InlineHookHeadersList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_InlineHookHeadersList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (i *jsiiProxy_InlineHookHeadersList) ComputeFqn() *string {
 }
 
 func (i *jsiiProxy_InlineHookHeadersList) Get(index *float64) InlineHookHeadersOutputReference {
+	if err := i.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns InlineHookHeadersOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (i *jsiiProxy_InlineHookHeadersList) Get(index *float64) InlineHookHeadersO
 }
 
 func (i *jsiiProxy_InlineHookHeadersList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

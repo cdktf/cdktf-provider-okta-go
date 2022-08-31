@@ -99,6 +99,9 @@ func (j *jsiiProxy_EmailSenderDnsRecordsList) WrapsSet() *bool {
 func NewEmailSenderDnsRecordsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmailSenderDnsRecordsList {
 	_init_.Initialize()
 
+	if err := validateNewEmailSenderDnsRecordsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_EmailSenderDnsRecordsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewEmailSenderDnsRecordsList_Override(e EmailSenderDnsRecordsList, terrafor
 	)
 }
 
-func (j *jsiiProxy_EmailSenderDnsRecordsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EmailSenderDnsRecordsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_EmailSenderDnsRecordsList) SetTerraformAttribute(val *string)
 	)
 }
 
-func (j *jsiiProxy_EmailSenderDnsRecordsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EmailSenderDnsRecordsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_EmailSenderDnsRecordsList) SetTerraformResource(val cdktf.IIn
 	)
 }
 
-func (j *jsiiProxy_EmailSenderDnsRecordsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_EmailSenderDnsRecordsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (e *jsiiProxy_EmailSenderDnsRecordsList) ComputeFqn() *string {
 }
 
 func (e *jsiiProxy_EmailSenderDnsRecordsList) Get(index *float64) EmailSenderDnsRecordsOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns EmailSenderDnsRecordsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (e *jsiiProxy_EmailSenderDnsRecordsList) Get(index *float64) EmailSenderDns
 }
 
 func (e *jsiiProxy_EmailSenderDnsRecordsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

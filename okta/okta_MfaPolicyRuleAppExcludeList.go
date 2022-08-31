@@ -111,6 +111,9 @@ func (j *jsiiProxy_MfaPolicyRuleAppExcludeList) WrapsSet() *bool {
 func NewMfaPolicyRuleAppExcludeList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MfaPolicyRuleAppExcludeList {
 	_init_.Initialize()
 
+	if err := validateNewMfaPolicyRuleAppExcludeListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MfaPolicyRuleAppExcludeList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewMfaPolicyRuleAppExcludeList_Override(m MfaPolicyRuleAppExcludeList, terr
 	)
 }
 
-func (j *jsiiProxy_MfaPolicyRuleAppExcludeList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MfaPolicyRuleAppExcludeList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_MfaPolicyRuleAppExcludeList) SetInternalValue(val interface{}
 	)
 }
 
-func (j *jsiiProxy_MfaPolicyRuleAppExcludeList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MfaPolicyRuleAppExcludeList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_MfaPolicyRuleAppExcludeList) SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_MfaPolicyRuleAppExcludeList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MfaPolicyRuleAppExcludeList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_MfaPolicyRuleAppExcludeList) SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_MfaPolicyRuleAppExcludeList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MfaPolicyRuleAppExcludeList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (m *jsiiProxy_MfaPolicyRuleAppExcludeList) ComputeFqn() *string {
 }
 
 func (m *jsiiProxy_MfaPolicyRuleAppExcludeList) Get(index *float64) MfaPolicyRuleAppExcludeOutputReference {
+	if err := m.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns MfaPolicyRuleAppExcludeOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (m *jsiiProxy_MfaPolicyRuleAppExcludeList) Get(index *float64) MfaPolicyRul
 }
 
 func (m *jsiiProxy_MfaPolicyRuleAppExcludeList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

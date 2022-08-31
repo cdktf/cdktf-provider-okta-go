@@ -173,6 +173,9 @@ func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) Terrafor
 func NewDataOktaEmailTemplatesEmailTemplatesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataOktaEmailTemplatesEmailTemplatesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataOktaEmailTemplatesEmailTemplatesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference{}
 
 	_jsii_.Create(
@@ -194,7 +197,10 @@ func NewDataOktaEmailTemplatesEmailTemplatesOutputReference_Override(d DataOktaE
 	)
 }
 
-func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -202,7 +208,10 @@ func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -210,7 +219,10 @@ func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) SetInternalValue(val *DataOktaEmailTemplatesEmailTemplates) {
+func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference)SetInternalValue(val *DataOktaEmailTemplatesEmailTemplates) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -218,7 +230,10 @@ func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) SetInter
 	)
 }
 
-func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -226,7 +241,10 @@ func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) SetTerra
 	)
 }
 
-func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -248,6 +266,9 @@ func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) ComputeF
 }
 
 func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -261,6 +282,9 @@ func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) GetAnyMa
 }
 
 func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -274,6 +298,9 @@ func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) GetBoole
 }
 
 func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -287,6 +314,9 @@ func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) GetBoole
 }
 
 func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -300,6 +330,9 @@ func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) GetListA
 }
 
 func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -313,6 +346,9 @@ func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) GetNumbe
 }
 
 func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -326,6 +362,9 @@ func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) GetNumbe
 }
 
 func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -339,6 +378,9 @@ func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) GetNumbe
 }
 
 func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -352,6 +394,9 @@ func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) GetStrin
 }
 
 func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -378,6 +423,9 @@ func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) Interpol
 }
 
 func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -391,6 +439,9 @@ func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) Interpol
 }
 
 func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

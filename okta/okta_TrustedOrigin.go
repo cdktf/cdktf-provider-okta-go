@@ -384,6 +384,9 @@ func (j *jsiiProxy_TrustedOrigin) TerraformResourceType() *string {
 func NewTrustedOrigin(scope constructs.Construct, id *string, config *TrustedOriginConfig) TrustedOrigin {
 	_init_.Initialize()
 
+	if err := validateNewTrustedOriginParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_TrustedOrigin{}
 
 	_jsii_.Create(
@@ -406,7 +409,10 @@ func NewTrustedOrigin_Override(t TrustedOrigin, scope constructs.Construct, id *
 	)
 }
 
-func (j *jsiiProxy_TrustedOrigin) SetActive(val interface{}) {
+func (j *jsiiProxy_TrustedOrigin)SetActive(val interface{}) {
+	if err := j.validateSetActiveParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"active",
@@ -414,7 +420,10 @@ func (j *jsiiProxy_TrustedOrigin) SetActive(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TrustedOrigin) SetConnection(val interface{}) {
+func (j *jsiiProxy_TrustedOrigin)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -422,7 +431,7 @@ func (j *jsiiProxy_TrustedOrigin) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TrustedOrigin) SetCount(val *float64) {
+func (j *jsiiProxy_TrustedOrigin)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -430,7 +439,7 @@ func (j *jsiiProxy_TrustedOrigin) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_TrustedOrigin) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_TrustedOrigin)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -438,7 +447,7 @@ func (j *jsiiProxy_TrustedOrigin) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TrustedOrigin) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TrustedOrigin)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -446,7 +455,10 @@ func (j *jsiiProxy_TrustedOrigin) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_TrustedOrigin) SetId(val *string) {
+func (j *jsiiProxy_TrustedOrigin)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -454,7 +466,10 @@ func (j *jsiiProxy_TrustedOrigin) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TrustedOrigin) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TrustedOrigin)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -462,7 +477,10 @@ func (j *jsiiProxy_TrustedOrigin) SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_TrustedOrigin) SetName(val *string) {
+func (j *jsiiProxy_TrustedOrigin)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -470,7 +488,10 @@ func (j *jsiiProxy_TrustedOrigin) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TrustedOrigin) SetOrigin(val *string) {
+func (j *jsiiProxy_TrustedOrigin)SetOrigin(val *string) {
+	if err := j.validateSetOriginParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"origin",
@@ -478,7 +499,7 @@ func (j *jsiiProxy_TrustedOrigin) SetOrigin(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TrustedOrigin) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TrustedOrigin)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -486,7 +507,10 @@ func (j *jsiiProxy_TrustedOrigin) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_TrustedOrigin) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_TrustedOrigin)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -494,7 +518,10 @@ func (j *jsiiProxy_TrustedOrigin) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TrustedOrigin) SetScopes(val *[]*string) {
+func (j *jsiiProxy_TrustedOrigin)SetScopes(val *[]*string) {
+	if err := j.validateSetScopesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"scopes",
@@ -522,6 +549,9 @@ func (j *jsiiProxy_TrustedOrigin) SetScopes(val *[]*string) {
 func TrustedOrigin_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateTrustedOrigin_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -546,6 +576,9 @@ func TrustedOrigin_TfResourceType() *string {
 }
 
 func (t *jsiiProxy_TrustedOrigin) AddOverride(path *string, value interface{}) {
+	if err := t.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
@@ -554,6 +587,9 @@ func (t *jsiiProxy_TrustedOrigin) AddOverride(path *string, value interface{}) {
 }
 
 func (t *jsiiProxy_TrustedOrigin) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -567,6 +603,9 @@ func (t *jsiiProxy_TrustedOrigin) GetAnyMapAttribute(terraformAttribute *string)
 }
 
 func (t *jsiiProxy_TrustedOrigin) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -580,6 +619,9 @@ func (t *jsiiProxy_TrustedOrigin) GetBooleanAttribute(terraformAttribute *string
 }
 
 func (t *jsiiProxy_TrustedOrigin) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := t.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -593,6 +635,9 @@ func (t *jsiiProxy_TrustedOrigin) GetBooleanMapAttribute(terraformAttribute *str
 }
 
 func (t *jsiiProxy_TrustedOrigin) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := t.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -606,6 +651,9 @@ func (t *jsiiProxy_TrustedOrigin) GetListAttribute(terraformAttribute *string) *
 }
 
 func (t *jsiiProxy_TrustedOrigin) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := t.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -619,6 +667,9 @@ func (t *jsiiProxy_TrustedOrigin) GetNumberAttribute(terraformAttribute *string)
 }
 
 func (t *jsiiProxy_TrustedOrigin) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := t.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -632,6 +683,9 @@ func (t *jsiiProxy_TrustedOrigin) GetNumberListAttribute(terraformAttribute *str
 }
 
 func (t *jsiiProxy_TrustedOrigin) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := t.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -645,6 +699,9 @@ func (t *jsiiProxy_TrustedOrigin) GetNumberMapAttribute(terraformAttribute *stri
 }
 
 func (t *jsiiProxy_TrustedOrigin) GetStringAttribute(terraformAttribute *string) *string {
+	if err := t.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -658,6 +715,9 @@ func (t *jsiiProxy_TrustedOrigin) GetStringAttribute(terraformAttribute *string)
 }
 
 func (t *jsiiProxy_TrustedOrigin) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := t.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -671,6 +731,9 @@ func (t *jsiiProxy_TrustedOrigin) GetStringMapAttribute(terraformAttribute *stri
 }
 
 func (t *jsiiProxy_TrustedOrigin) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -684,6 +747,9 @@ func (t *jsiiProxy_TrustedOrigin) InterpolationForAttribute(terraformAttribute *
 }
 
 func (t *jsiiProxy_TrustedOrigin) OverrideLogicalId(newLogicalId *string) {
+	if err := t.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",

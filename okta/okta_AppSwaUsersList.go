@@ -111,6 +111,9 @@ func (j *jsiiProxy_AppSwaUsersList) WrapsSet() *bool {
 func NewAppSwaUsersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSwaUsersList {
 	_init_.Initialize()
 
+	if err := validateNewAppSwaUsersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AppSwaUsersList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAppSwaUsersList_Override(a AppSwaUsersList, terraformResource cdktf.IInt
 	)
 }
 
-func (j *jsiiProxy_AppSwaUsersList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppSwaUsersList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AppSwaUsersList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSwaUsersList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppSwaUsersList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AppSwaUsersList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSwaUsersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppSwaUsersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AppSwaUsersList) SetTerraformResource(val cdktf.IInterpolatin
 	)
 }
 
-func (j *jsiiProxy_AppSwaUsersList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AppSwaUsersList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AppSwaUsersList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AppSwaUsersList) Get(index *float64) AppSwaUsersOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AppSwaUsersOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AppSwaUsersList) Get(index *float64) AppSwaUsersOutputReferen
 }
 
 func (a *jsiiProxy_AppSwaUsersList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

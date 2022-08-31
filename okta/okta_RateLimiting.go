@@ -361,6 +361,9 @@ func (j *jsiiProxy_RateLimiting) TerraformResourceType() *string {
 func NewRateLimiting(scope constructs.Construct, id *string, config *RateLimitingConfig) RateLimiting {
 	_init_.Initialize()
 
+	if err := validateNewRateLimitingParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RateLimiting{}
 
 	_jsii_.Create(
@@ -383,7 +386,10 @@ func NewRateLimiting_Override(r RateLimiting, scope constructs.Construct, id *st
 	)
 }
 
-func (j *jsiiProxy_RateLimiting) SetAuthorize(val *string) {
+func (j *jsiiProxy_RateLimiting)SetAuthorize(val *string) {
+	if err := j.validateSetAuthorizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"authorize",
@@ -391,7 +397,10 @@ func (j *jsiiProxy_RateLimiting) SetAuthorize(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RateLimiting) SetCommunicationsEnabled(val interface{}) {
+func (j *jsiiProxy_RateLimiting)SetCommunicationsEnabled(val interface{}) {
+	if err := j.validateSetCommunicationsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"communicationsEnabled",
@@ -399,7 +408,10 @@ func (j *jsiiProxy_RateLimiting) SetCommunicationsEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RateLimiting) SetConnection(val interface{}) {
+func (j *jsiiProxy_RateLimiting)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -407,7 +419,7 @@ func (j *jsiiProxy_RateLimiting) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RateLimiting) SetCount(val *float64) {
+func (j *jsiiProxy_RateLimiting)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -415,7 +427,7 @@ func (j *jsiiProxy_RateLimiting) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RateLimiting) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RateLimiting)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -423,7 +435,7 @@ func (j *jsiiProxy_RateLimiting) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RateLimiting) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RateLimiting)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -431,7 +443,10 @@ func (j *jsiiProxy_RateLimiting) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_RateLimiting) SetId(val *string) {
+func (j *jsiiProxy_RateLimiting)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -439,7 +454,10 @@ func (j *jsiiProxy_RateLimiting) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RateLimiting) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RateLimiting)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -447,7 +465,10 @@ func (j *jsiiProxy_RateLimiting) SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_RateLimiting) SetLogin(val *string) {
+func (j *jsiiProxy_RateLimiting)SetLogin(val *string) {
+	if err := j.validateSetLoginParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"login",
@@ -455,7 +476,7 @@ func (j *jsiiProxy_RateLimiting) SetLogin(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RateLimiting) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RateLimiting)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -463,7 +484,10 @@ func (j *jsiiProxy_RateLimiting) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_RateLimiting) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RateLimiting)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -491,6 +515,9 @@ func (j *jsiiProxy_RateLimiting) SetProvisioners(val *[]interface{}) {
 func RateLimiting_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateRateLimiting_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -515,6 +542,9 @@ func RateLimiting_TfResourceType() *string {
 }
 
 func (r *jsiiProxy_RateLimiting) AddOverride(path *string, value interface{}) {
+	if err := r.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
@@ -523,6 +553,9 @@ func (r *jsiiProxy_RateLimiting) AddOverride(path *string, value interface{}) {
 }
 
 func (r *jsiiProxy_RateLimiting) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -536,6 +569,9 @@ func (r *jsiiProxy_RateLimiting) GetAnyMapAttribute(terraformAttribute *string) 
 }
 
 func (r *jsiiProxy_RateLimiting) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -549,6 +585,9 @@ func (r *jsiiProxy_RateLimiting) GetBooleanAttribute(terraformAttribute *string)
 }
 
 func (r *jsiiProxy_RateLimiting) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := r.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -562,6 +601,9 @@ func (r *jsiiProxy_RateLimiting) GetBooleanMapAttribute(terraformAttribute *stri
 }
 
 func (r *jsiiProxy_RateLimiting) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := r.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -575,6 +617,9 @@ func (r *jsiiProxy_RateLimiting) GetListAttribute(terraformAttribute *string) *[
 }
 
 func (r *jsiiProxy_RateLimiting) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := r.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -588,6 +633,9 @@ func (r *jsiiProxy_RateLimiting) GetNumberAttribute(terraformAttribute *string) 
 }
 
 func (r *jsiiProxy_RateLimiting) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := r.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -601,6 +649,9 @@ func (r *jsiiProxy_RateLimiting) GetNumberListAttribute(terraformAttribute *stri
 }
 
 func (r *jsiiProxy_RateLimiting) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := r.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -614,6 +665,9 @@ func (r *jsiiProxy_RateLimiting) GetNumberMapAttribute(terraformAttribute *strin
 }
 
 func (r *jsiiProxy_RateLimiting) GetStringAttribute(terraformAttribute *string) *string {
+	if err := r.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -627,6 +681,9 @@ func (r *jsiiProxy_RateLimiting) GetStringAttribute(terraformAttribute *string) 
 }
 
 func (r *jsiiProxy_RateLimiting) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := r.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -640,6 +697,9 @@ func (r *jsiiProxy_RateLimiting) GetStringMapAttribute(terraformAttribute *strin
 }
 
 func (r *jsiiProxy_RateLimiting) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -653,6 +713,9 @@ func (r *jsiiProxy_RateLimiting) InterpolationForAttribute(terraformAttribute *s
 }
 
 func (r *jsiiProxy_RateLimiting) OverrideLogicalId(newLogicalId *string) {
+	if err := r.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",

@@ -841,6 +841,9 @@ func (j *jsiiProxy_AppSignonPolicyRule) UserTypesIncludedInput() *[]*string {
 func NewAppSignonPolicyRule(scope constructs.Construct, id *string, config *AppSignonPolicyRuleConfig) AppSignonPolicyRule {
 	_init_.Initialize()
 
+	if err := validateNewAppSignonPolicyRuleParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AppSignonPolicyRule{}
 
 	_jsii_.Create(
@@ -863,7 +866,10 @@ func NewAppSignonPolicyRule_Override(a AppSignonPolicyRule, scope constructs.Con
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetAccess(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetAccess(val *string) {
+	if err := j.validateSetAccessParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"access",
@@ -871,7 +877,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetAccess(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetConnection(val interface{}) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -879,7 +888,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetConstraints(val *[]*string) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetConstraints(val *[]*string) {
+	if err := j.validateSetConstraintsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"constraints",
@@ -887,7 +899,7 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetConstraints(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetCount(val *float64) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -895,7 +907,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetCustomExpression(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetCustomExpression(val *string) {
+	if err := j.validateSetCustomExpressionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"customExpression",
@@ -903,7 +918,7 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetCustomExpression(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -911,7 +926,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetDeviceIsManaged(val interface{}) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetDeviceIsManaged(val interface{}) {
+	if err := j.validateSetDeviceIsManagedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"deviceIsManaged",
@@ -919,7 +937,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetDeviceIsManaged(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetDeviceIsRegistered(val interface{}) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetDeviceIsRegistered(val interface{}) {
+	if err := j.validateSetDeviceIsRegisteredParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"deviceIsRegistered",
@@ -927,7 +948,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetDeviceIsRegistered(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetFactorMode(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetFactorMode(val *string) {
+	if err := j.validateSetFactorModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"factorMode",
@@ -935,7 +959,7 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetFactorMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -943,7 +967,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetGroupsExcluded(val *[]*string) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetGroupsExcluded(val *[]*string) {
+	if err := j.validateSetGroupsExcludedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupsExcluded",
@@ -951,7 +978,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetGroupsExcluded(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetGroupsIncluded(val *[]*string) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetGroupsIncluded(val *[]*string) {
+	if err := j.validateSetGroupsIncludedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupsIncluded",
@@ -959,7 +989,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetGroupsIncluded(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetId(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -967,7 +1000,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetInactivityPeriod(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetInactivityPeriod(val *string) {
+	if err := j.validateSetInactivityPeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"inactivityPeriod",
@@ -975,7 +1011,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetInactivityPeriod(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -983,7 +1022,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetName(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -991,7 +1033,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetNetworkConnection(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetNetworkConnection(val *string) {
+	if err := j.validateSetNetworkConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"networkConnection",
@@ -999,7 +1044,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetNetworkConnection(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetNetworkExcludes(val *[]*string) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetNetworkExcludes(val *[]*string) {
+	if err := j.validateSetNetworkExcludesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"networkExcludes",
@@ -1007,7 +1055,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetNetworkExcludes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetNetworkIncludes(val *[]*string) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetNetworkIncludes(val *[]*string) {
+	if err := j.validateSetNetworkIncludesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"networkIncludes",
@@ -1015,7 +1066,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetNetworkIncludes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetPolicyId(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetPolicyId(val *string) {
+	if err := j.validateSetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"policyId",
@@ -1023,7 +1077,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetPolicyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetPriority(val *float64) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetPriority(val *float64) {
+	if err := j.validateSetPriorityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"priority",
@@ -1031,7 +1088,7 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetPriority(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1039,7 +1096,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1047,7 +1107,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetReAuthenticationFrequency(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetReAuthenticationFrequency(val *string) {
+	if err := j.validateSetReAuthenticationFrequencyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"reAuthenticationFrequency",
@@ -1055,7 +1118,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetReAuthenticationFrequency(val *string
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetStatus(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"status",
@@ -1063,7 +1129,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetType(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -1071,7 +1140,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetUsersExcluded(val *[]*string) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetUsersExcluded(val *[]*string) {
+	if err := j.validateSetUsersExcludedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"usersExcluded",
@@ -1079,7 +1151,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetUsersExcluded(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetUsersIncluded(val *[]*string) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetUsersIncluded(val *[]*string) {
+	if err := j.validateSetUsersIncludedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"usersIncluded",
@@ -1087,7 +1162,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetUsersIncluded(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetUserTypesExcluded(val *[]*string) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetUserTypesExcluded(val *[]*string) {
+	if err := j.validateSetUserTypesExcludedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userTypesExcluded",
@@ -1095,7 +1173,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetUserTypesExcluded(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) SetUserTypesIncluded(val *[]*string) {
+func (j *jsiiProxy_AppSignonPolicyRule)SetUserTypesIncluded(val *[]*string) {
+	if err := j.validateSetUserTypesIncludedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userTypesIncluded",
@@ -1123,6 +1204,9 @@ func (j *jsiiProxy_AppSignonPolicyRule) SetUserTypesIncluded(val *[]*string) {
 func AppSignonPolicyRule_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateAppSignonPolicyRule_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1147,6 +1231,9 @@ func AppSignonPolicyRule_TfResourceType() *string {
 }
 
 func (a *jsiiProxy_AppSignonPolicyRule) AddOverride(path *string, value interface{}) {
+	if err := a.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
@@ -1155,6 +1242,9 @@ func (a *jsiiProxy_AppSignonPolicyRule) AddOverride(path *string, value interfac
 }
 
 func (a *jsiiProxy_AppSignonPolicyRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1168,6 +1258,9 @@ func (a *jsiiProxy_AppSignonPolicyRule) GetAnyMapAttribute(terraformAttribute *s
 }
 
 func (a *jsiiProxy_AppSignonPolicyRule) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1181,6 +1274,9 @@ func (a *jsiiProxy_AppSignonPolicyRule) GetBooleanAttribute(terraformAttribute *
 }
 
 func (a *jsiiProxy_AppSignonPolicyRule) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1194,6 +1290,9 @@ func (a *jsiiProxy_AppSignonPolicyRule) GetBooleanMapAttribute(terraformAttribut
 }
 
 func (a *jsiiProxy_AppSignonPolicyRule) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1207,6 +1306,9 @@ func (a *jsiiProxy_AppSignonPolicyRule) GetListAttribute(terraformAttribute *str
 }
 
 func (a *jsiiProxy_AppSignonPolicyRule) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1220,6 +1322,9 @@ func (a *jsiiProxy_AppSignonPolicyRule) GetNumberAttribute(terraformAttribute *s
 }
 
 func (a *jsiiProxy_AppSignonPolicyRule) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1233,6 +1338,9 @@ func (a *jsiiProxy_AppSignonPolicyRule) GetNumberListAttribute(terraformAttribut
 }
 
 func (a *jsiiProxy_AppSignonPolicyRule) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1246,6 +1354,9 @@ func (a *jsiiProxy_AppSignonPolicyRule) GetNumberMapAttribute(terraformAttribute
 }
 
 func (a *jsiiProxy_AppSignonPolicyRule) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1259,6 +1370,9 @@ func (a *jsiiProxy_AppSignonPolicyRule) GetStringAttribute(terraformAttribute *s
 }
 
 func (a *jsiiProxy_AppSignonPolicyRule) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1272,6 +1386,9 @@ func (a *jsiiProxy_AppSignonPolicyRule) GetStringMapAttribute(terraformAttribute
 }
 
 func (a *jsiiProxy_AppSignonPolicyRule) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1285,6 +1402,9 @@ func (a *jsiiProxy_AppSignonPolicyRule) InterpolationForAttribute(terraformAttri
 }
 
 func (a *jsiiProxy_AppSignonPolicyRule) OverrideLogicalId(newLogicalId *string) {
+	if err := a.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
@@ -1293,6 +1413,9 @@ func (a *jsiiProxy_AppSignonPolicyRule) OverrideLogicalId(newLogicalId *string) 
 }
 
 func (a *jsiiProxy_AppSignonPolicyRule) PutPlatformInclude(value interface{}) {
+	if err := a.validatePutPlatformIncludeParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"putPlatformInclude",

@@ -223,6 +223,9 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) TypeInp
 func NewPolicyRuleIdpDiscoveryPlatformIncludeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PolicyRuleIdpDiscoveryPlatformIncludeOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewPolicyRuleIdpDiscoveryPlatformIncludeOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference{}
 
 	_jsii_.Create(
@@ -244,7 +247,10 @@ func NewPolicyRuleIdpDiscoveryPlatformIncludeOutputReference_Override(p PolicyRu
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -252,7 +258,10 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) SetComp
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -260,7 +269,10 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) SetComp
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -268,7 +280,10 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) SetInte
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) SetOsExpression(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetOsExpression(val *string) {
+	if err := j.validateSetOsExpressionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"osExpression",
@@ -276,7 +291,10 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) SetOsEx
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) SetOsType(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetOsType(val *string) {
+	if err := j.validateSetOsTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"osType",
@@ -284,7 +302,10 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) SetOsTy
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -292,7 +313,10 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) SetTerr
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -300,7 +324,10 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) SetTerr
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) SetType(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -322,6 +349,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) Compute
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -335,6 +365,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetAnyM
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -348,6 +381,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetBool
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -361,6 +397,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetBool
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -374,6 +413,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetList
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -387,6 +429,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetNumb
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -400,6 +445,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetNumb
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -413,6 +461,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetNumb
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -426,6 +477,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetStri
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -452,6 +506,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) Interpo
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -489,6 +546,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) ResetTy
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

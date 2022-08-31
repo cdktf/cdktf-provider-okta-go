@@ -1085,6 +1085,9 @@ func (j *jsiiProxy_AppThreeField) UsersInput() interface{} {
 func NewAppThreeField(scope constructs.Construct, id *string, config *AppThreeFieldConfig) AppThreeField {
 	_init_.Initialize()
 
+	if err := validateNewAppThreeFieldParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AppThreeField{}
 
 	_jsii_.Create(
@@ -1107,7 +1110,10 @@ func NewAppThreeField_Override(a AppThreeField, scope constructs.Construct, id *
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetAccessibilityErrorRedirectUrl(val *string) {
+func (j *jsiiProxy_AppThreeField)SetAccessibilityErrorRedirectUrl(val *string) {
+	if err := j.validateSetAccessibilityErrorRedirectUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accessibilityErrorRedirectUrl",
@@ -1115,7 +1121,10 @@ func (j *jsiiProxy_AppThreeField) SetAccessibilityErrorRedirectUrl(val *string) 
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetAccessibilityLoginRedirectUrl(val *string) {
+func (j *jsiiProxy_AppThreeField)SetAccessibilityLoginRedirectUrl(val *string) {
+	if err := j.validateSetAccessibilityLoginRedirectUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accessibilityLoginRedirectUrl",
@@ -1123,7 +1132,10 @@ func (j *jsiiProxy_AppThreeField) SetAccessibilityLoginRedirectUrl(val *string) 
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetAccessibilitySelfService(val interface{}) {
+func (j *jsiiProxy_AppThreeField)SetAccessibilitySelfService(val interface{}) {
+	if err := j.validateSetAccessibilitySelfServiceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accessibilitySelfService",
@@ -1131,7 +1143,10 @@ func (j *jsiiProxy_AppThreeField) SetAccessibilitySelfService(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetAdminNote(val *string) {
+func (j *jsiiProxy_AppThreeField)SetAdminNote(val *string) {
+	if err := j.validateSetAdminNoteParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"adminNote",
@@ -1139,7 +1154,10 @@ func (j *jsiiProxy_AppThreeField) SetAdminNote(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetAppLinksJson(val *string) {
+func (j *jsiiProxy_AppThreeField)SetAppLinksJson(val *string) {
+	if err := j.validateSetAppLinksJsonParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"appLinksJson",
@@ -1147,7 +1165,10 @@ func (j *jsiiProxy_AppThreeField) SetAppLinksJson(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetAutoSubmitToolbar(val interface{}) {
+func (j *jsiiProxy_AppThreeField)SetAutoSubmitToolbar(val interface{}) {
+	if err := j.validateSetAutoSubmitToolbarParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoSubmitToolbar",
@@ -1155,7 +1176,10 @@ func (j *jsiiProxy_AppThreeField) SetAutoSubmitToolbar(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetButtonSelector(val *string) {
+func (j *jsiiProxy_AppThreeField)SetButtonSelector(val *string) {
+	if err := j.validateSetButtonSelectorParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"buttonSelector",
@@ -1163,7 +1187,10 @@ func (j *jsiiProxy_AppThreeField) SetButtonSelector(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetConnection(val interface{}) {
+func (j *jsiiProxy_AppThreeField)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -1171,7 +1198,7 @@ func (j *jsiiProxy_AppThreeField) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetCount(val *float64) {
+func (j *jsiiProxy_AppThreeField)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -1179,7 +1206,10 @@ func (j *jsiiProxy_AppThreeField) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetCredentialsScheme(val *string) {
+func (j *jsiiProxy_AppThreeField)SetCredentialsScheme(val *string) {
+	if err := j.validateSetCredentialsSchemeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"credentialsScheme",
@@ -1187,7 +1217,7 @@ func (j *jsiiProxy_AppThreeField) SetCredentialsScheme(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AppThreeField)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1195,7 +1225,10 @@ func (j *jsiiProxy_AppThreeField) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetEnduserNote(val *string) {
+func (j *jsiiProxy_AppThreeField)SetEnduserNote(val *string) {
+	if err := j.validateSetEnduserNoteParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enduserNote",
@@ -1203,7 +1236,10 @@ func (j *jsiiProxy_AppThreeField) SetEnduserNote(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetExtraFieldSelector(val *string) {
+func (j *jsiiProxy_AppThreeField)SetExtraFieldSelector(val *string) {
+	if err := j.validateSetExtraFieldSelectorParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"extraFieldSelector",
@@ -1211,7 +1247,10 @@ func (j *jsiiProxy_AppThreeField) SetExtraFieldSelector(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetExtraFieldValue(val *string) {
+func (j *jsiiProxy_AppThreeField)SetExtraFieldValue(val *string) {
+	if err := j.validateSetExtraFieldValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"extraFieldValue",
@@ -1219,7 +1258,7 @@ func (j *jsiiProxy_AppThreeField) SetExtraFieldValue(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AppThreeField)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1227,7 +1266,10 @@ func (j *jsiiProxy_AppThreeField) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetGroups(val *[]*string) {
+func (j *jsiiProxy_AppThreeField)SetGroups(val *[]*string) {
+	if err := j.validateSetGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groups",
@@ -1235,7 +1277,10 @@ func (j *jsiiProxy_AppThreeField) SetGroups(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetHideIos(val interface{}) {
+func (j *jsiiProxy_AppThreeField)SetHideIos(val interface{}) {
+	if err := j.validateSetHideIosParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"hideIos",
@@ -1243,7 +1288,10 @@ func (j *jsiiProxy_AppThreeField) SetHideIos(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetHideWeb(val interface{}) {
+func (j *jsiiProxy_AppThreeField)SetHideWeb(val interface{}) {
+	if err := j.validateSetHideWebParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"hideWeb",
@@ -1251,7 +1299,10 @@ func (j *jsiiProxy_AppThreeField) SetHideWeb(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetId(val *string) {
+func (j *jsiiProxy_AppThreeField)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -1259,7 +1310,10 @@ func (j *jsiiProxy_AppThreeField) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetLabel(val *string) {
+func (j *jsiiProxy_AppThreeField)SetLabel(val *string) {
+	if err := j.validateSetLabelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"label",
@@ -1267,7 +1321,10 @@ func (j *jsiiProxy_AppThreeField) SetLabel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AppThreeField)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -1275,7 +1332,10 @@ func (j *jsiiProxy_AppThreeField) SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetLogo(val *string) {
+func (j *jsiiProxy_AppThreeField)SetLogo(val *string) {
+	if err := j.validateSetLogoParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"logo",
@@ -1283,7 +1343,10 @@ func (j *jsiiProxy_AppThreeField) SetLogo(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetPasswordSelector(val *string) {
+func (j *jsiiProxy_AppThreeField)SetPasswordSelector(val *string) {
+	if err := j.validateSetPasswordSelectorParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordSelector",
@@ -1291,7 +1354,7 @@ func (j *jsiiProxy_AppThreeField) SetPasswordSelector(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AppThreeField)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1299,7 +1362,10 @@ func (j *jsiiProxy_AppThreeField) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AppThreeField)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1307,7 +1373,10 @@ func (j *jsiiProxy_AppThreeField) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetRevealPassword(val interface{}) {
+func (j *jsiiProxy_AppThreeField)SetRevealPassword(val interface{}) {
+	if err := j.validateSetRevealPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"revealPassword",
@@ -1315,7 +1384,10 @@ func (j *jsiiProxy_AppThreeField) SetRevealPassword(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetSharedPassword(val *string) {
+func (j *jsiiProxy_AppThreeField)SetSharedPassword(val *string) {
+	if err := j.validateSetSharedPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sharedPassword",
@@ -1323,7 +1395,10 @@ func (j *jsiiProxy_AppThreeField) SetSharedPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetSharedUsername(val *string) {
+func (j *jsiiProxy_AppThreeField)SetSharedUsername(val *string) {
+	if err := j.validateSetSharedUsernameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sharedUsername",
@@ -1331,7 +1406,10 @@ func (j *jsiiProxy_AppThreeField) SetSharedUsername(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetSkipGroups(val interface{}) {
+func (j *jsiiProxy_AppThreeField)SetSkipGroups(val interface{}) {
+	if err := j.validateSetSkipGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"skipGroups",
@@ -1339,7 +1417,10 @@ func (j *jsiiProxy_AppThreeField) SetSkipGroups(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetSkipUsers(val interface{}) {
+func (j *jsiiProxy_AppThreeField)SetSkipUsers(val interface{}) {
+	if err := j.validateSetSkipUsersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"skipUsers",
@@ -1347,7 +1428,10 @@ func (j *jsiiProxy_AppThreeField) SetSkipUsers(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetStatus(val *string) {
+func (j *jsiiProxy_AppThreeField)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"status",
@@ -1355,7 +1439,10 @@ func (j *jsiiProxy_AppThreeField) SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetUrl(val *string) {
+func (j *jsiiProxy_AppThreeField)SetUrl(val *string) {
+	if err := j.validateSetUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"url",
@@ -1363,7 +1450,10 @@ func (j *jsiiProxy_AppThreeField) SetUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetUrlRegex(val *string) {
+func (j *jsiiProxy_AppThreeField)SetUrlRegex(val *string) {
+	if err := j.validateSetUrlRegexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"urlRegex",
@@ -1371,7 +1461,10 @@ func (j *jsiiProxy_AppThreeField) SetUrlRegex(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetUsernameSelector(val *string) {
+func (j *jsiiProxy_AppThreeField)SetUsernameSelector(val *string) {
+	if err := j.validateSetUsernameSelectorParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"usernameSelector",
@@ -1379,7 +1472,10 @@ func (j *jsiiProxy_AppThreeField) SetUsernameSelector(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetUserNameTemplate(val *string) {
+func (j *jsiiProxy_AppThreeField)SetUserNameTemplate(val *string) {
+	if err := j.validateSetUserNameTemplateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userNameTemplate",
@@ -1387,7 +1483,10 @@ func (j *jsiiProxy_AppThreeField) SetUserNameTemplate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetUserNameTemplatePushStatus(val *string) {
+func (j *jsiiProxy_AppThreeField)SetUserNameTemplatePushStatus(val *string) {
+	if err := j.validateSetUserNameTemplatePushStatusParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userNameTemplatePushStatus",
@@ -1395,7 +1494,10 @@ func (j *jsiiProxy_AppThreeField) SetUserNameTemplatePushStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetUserNameTemplateSuffix(val *string) {
+func (j *jsiiProxy_AppThreeField)SetUserNameTemplateSuffix(val *string) {
+	if err := j.validateSetUserNameTemplateSuffixParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userNameTemplateSuffix",
@@ -1403,7 +1505,10 @@ func (j *jsiiProxy_AppThreeField) SetUserNameTemplateSuffix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField) SetUserNameTemplateType(val *string) {
+func (j *jsiiProxy_AppThreeField)SetUserNameTemplateType(val *string) {
+	if err := j.validateSetUserNameTemplateTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userNameTemplateType",
@@ -1431,6 +1536,9 @@ func (j *jsiiProxy_AppThreeField) SetUserNameTemplateType(val *string) {
 func AppThreeField_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateAppThreeField_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1455,6 +1563,9 @@ func AppThreeField_TfResourceType() *string {
 }
 
 func (a *jsiiProxy_AppThreeField) AddOverride(path *string, value interface{}) {
+	if err := a.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
@@ -1463,6 +1574,9 @@ func (a *jsiiProxy_AppThreeField) AddOverride(path *string, value interface{}) {
 }
 
 func (a *jsiiProxy_AppThreeField) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1476,6 +1590,9 @@ func (a *jsiiProxy_AppThreeField) GetAnyMapAttribute(terraformAttribute *string)
 }
 
 func (a *jsiiProxy_AppThreeField) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1489,6 +1606,9 @@ func (a *jsiiProxy_AppThreeField) GetBooleanAttribute(terraformAttribute *string
 }
 
 func (a *jsiiProxy_AppThreeField) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1502,6 +1622,9 @@ func (a *jsiiProxy_AppThreeField) GetBooleanMapAttribute(terraformAttribute *str
 }
 
 func (a *jsiiProxy_AppThreeField) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1515,6 +1638,9 @@ func (a *jsiiProxy_AppThreeField) GetListAttribute(terraformAttribute *string) *
 }
 
 func (a *jsiiProxy_AppThreeField) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1528,6 +1654,9 @@ func (a *jsiiProxy_AppThreeField) GetNumberAttribute(terraformAttribute *string)
 }
 
 func (a *jsiiProxy_AppThreeField) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1541,6 +1670,9 @@ func (a *jsiiProxy_AppThreeField) GetNumberListAttribute(terraformAttribute *str
 }
 
 func (a *jsiiProxy_AppThreeField) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1554,6 +1686,9 @@ func (a *jsiiProxy_AppThreeField) GetNumberMapAttribute(terraformAttribute *stri
 }
 
 func (a *jsiiProxy_AppThreeField) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1567,6 +1702,9 @@ func (a *jsiiProxy_AppThreeField) GetStringAttribute(terraformAttribute *string)
 }
 
 func (a *jsiiProxy_AppThreeField) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1580,6 +1718,9 @@ func (a *jsiiProxy_AppThreeField) GetStringMapAttribute(terraformAttribute *stri
 }
 
 func (a *jsiiProxy_AppThreeField) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1593,6 +1734,9 @@ func (a *jsiiProxy_AppThreeField) InterpolationForAttribute(terraformAttribute *
 }
 
 func (a *jsiiProxy_AppThreeField) OverrideLogicalId(newLogicalId *string) {
+	if err := a.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
@@ -1601,6 +1745,9 @@ func (a *jsiiProxy_AppThreeField) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (a *jsiiProxy_AppThreeField) PutTimeouts(value *AppThreeFieldTimeouts) {
+	if err := a.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"putTimeouts",
@@ -1609,6 +1756,9 @@ func (a *jsiiProxy_AppThreeField) PutTimeouts(value *AppThreeFieldTimeouts) {
 }
 
 func (a *jsiiProxy_AppThreeField) PutUsers(value interface{}) {
+	if err := a.validatePutUsersParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"putUsers",

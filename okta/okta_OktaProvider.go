@@ -593,6 +593,9 @@ func (j *jsiiProxy_OktaProvider) TerraformResourceType() *string {
 func NewOktaProvider(scope constructs.Construct, id *string, config *OktaProviderConfig) OktaProvider {
 	_init_.Initialize()
 
+	if err := validateNewOktaProviderParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OktaProvider{}
 
 	_jsii_.Create(
@@ -615,7 +618,7 @@ func NewOktaProvider_Override(o OktaProvider, scope constructs.Construct, id *st
 	)
 }
 
-func (j *jsiiProxy_OktaProvider) SetAccessToken(val *string) {
+func (j *jsiiProxy_OktaProvider)SetAccessToken(val *string) {
 	_jsii_.Set(
 		j,
 		"accessToken",
@@ -623,7 +626,7 @@ func (j *jsiiProxy_OktaProvider) SetAccessToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider) SetAlias(val *string) {
+func (j *jsiiProxy_OktaProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -631,7 +634,7 @@ func (j *jsiiProxy_OktaProvider) SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider) SetApiToken(val *string) {
+func (j *jsiiProxy_OktaProvider)SetApiToken(val *string) {
 	_jsii_.Set(
 		j,
 		"apiToken",
@@ -639,7 +642,10 @@ func (j *jsiiProxy_OktaProvider) SetApiToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider) SetBackoff(val interface{}) {
+func (j *jsiiProxy_OktaProvider)SetBackoff(val interface{}) {
+	if err := j.validateSetBackoffParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backoff",
@@ -647,7 +653,7 @@ func (j *jsiiProxy_OktaProvider) SetBackoff(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider) SetBaseUrl(val *string) {
+func (j *jsiiProxy_OktaProvider)SetBaseUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"baseUrl",
@@ -655,7 +661,7 @@ func (j *jsiiProxy_OktaProvider) SetBaseUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider) SetClientId(val *string) {
+func (j *jsiiProxy_OktaProvider)SetClientId(val *string) {
 	_jsii_.Set(
 		j,
 		"clientId",
@@ -663,7 +669,7 @@ func (j *jsiiProxy_OktaProvider) SetClientId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider) SetHttpProxy(val *string) {
+func (j *jsiiProxy_OktaProvider)SetHttpProxy(val *string) {
 	_jsii_.Set(
 		j,
 		"httpProxy",
@@ -671,7 +677,7 @@ func (j *jsiiProxy_OktaProvider) SetHttpProxy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider) SetLogLevel(val *float64) {
+func (j *jsiiProxy_OktaProvider)SetLogLevel(val *float64) {
 	_jsii_.Set(
 		j,
 		"logLevel",
@@ -679,7 +685,7 @@ func (j *jsiiProxy_OktaProvider) SetLogLevel(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider) SetMaxApiCapacity(val *float64) {
+func (j *jsiiProxy_OktaProvider)SetMaxApiCapacity(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxApiCapacity",
@@ -687,7 +693,7 @@ func (j *jsiiProxy_OktaProvider) SetMaxApiCapacity(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider) SetMaxRetries(val *float64) {
+func (j *jsiiProxy_OktaProvider)SetMaxRetries(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxRetries",
@@ -695,7 +701,7 @@ func (j *jsiiProxy_OktaProvider) SetMaxRetries(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider) SetMaxWaitSeconds(val *float64) {
+func (j *jsiiProxy_OktaProvider)SetMaxWaitSeconds(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxWaitSeconds",
@@ -703,7 +709,7 @@ func (j *jsiiProxy_OktaProvider) SetMaxWaitSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider) SetMinWaitSeconds(val *float64) {
+func (j *jsiiProxy_OktaProvider)SetMinWaitSeconds(val *float64) {
 	_jsii_.Set(
 		j,
 		"minWaitSeconds",
@@ -711,7 +717,7 @@ func (j *jsiiProxy_OktaProvider) SetMinWaitSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider) SetOrgName(val *string) {
+func (j *jsiiProxy_OktaProvider)SetOrgName(val *string) {
 	_jsii_.Set(
 		j,
 		"orgName",
@@ -719,7 +725,7 @@ func (j *jsiiProxy_OktaProvider) SetOrgName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider) SetParallelism(val *float64) {
+func (j *jsiiProxy_OktaProvider)SetParallelism(val *float64) {
 	_jsii_.Set(
 		j,
 		"parallelism",
@@ -727,7 +733,7 @@ func (j *jsiiProxy_OktaProvider) SetParallelism(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider) SetPrivateKey(val *string) {
+func (j *jsiiProxy_OktaProvider)SetPrivateKey(val *string) {
 	_jsii_.Set(
 		j,
 		"privateKey",
@@ -735,7 +741,7 @@ func (j *jsiiProxy_OktaProvider) SetPrivateKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider) SetPrivateKeyId(val *string) {
+func (j *jsiiProxy_OktaProvider)SetPrivateKeyId(val *string) {
 	_jsii_.Set(
 		j,
 		"privateKeyId",
@@ -743,7 +749,7 @@ func (j *jsiiProxy_OktaProvider) SetPrivateKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider) SetRequestTimeout(val *float64) {
+func (j *jsiiProxy_OktaProvider)SetRequestTimeout(val *float64) {
 	_jsii_.Set(
 		j,
 		"requestTimeout",
@@ -751,7 +757,7 @@ func (j *jsiiProxy_OktaProvider) SetRequestTimeout(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider) SetScopes(val *[]*string) {
+func (j *jsiiProxy_OktaProvider)SetScopes(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"scopes",
@@ -779,6 +785,9 @@ func (j *jsiiProxy_OktaProvider) SetScopes(val *[]*string) {
 func OktaProvider_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateOktaProvider_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -803,6 +812,9 @@ func OktaProvider_TfResourceType() *string {
 }
 
 func (o *jsiiProxy_OktaProvider) AddOverride(path *string, value interface{}) {
+	if err := o.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
@@ -811,6 +823,9 @@ func (o *jsiiProxy_OktaProvider) AddOverride(path *string, value interface{}) {
 }
 
 func (o *jsiiProxy_OktaProvider) OverrideLogicalId(newLogicalId *string) {
+	if err := o.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",

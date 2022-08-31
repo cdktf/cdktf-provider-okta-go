@@ -297,6 +297,9 @@ func (j *jsiiProxy_DataOktaAuthServerClaims) TerraformResourceType() *string {
 func NewDataOktaAuthServerClaims(scope constructs.Construct, id *string, config *DataOktaAuthServerClaimsConfig) DataOktaAuthServerClaims {
 	_init_.Initialize()
 
+	if err := validateNewDataOktaAuthServerClaimsParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOktaAuthServerClaims{}
 
 	_jsii_.Create(
@@ -319,7 +322,10 @@ func NewDataOktaAuthServerClaims_Override(d DataOktaAuthServerClaims, scope cons
 	)
 }
 
-func (j *jsiiProxy_DataOktaAuthServerClaims) SetAuthServerId(val *string) {
+func (j *jsiiProxy_DataOktaAuthServerClaims)SetAuthServerId(val *string) {
+	if err := j.validateSetAuthServerIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"authServerId",
@@ -327,7 +333,7 @@ func (j *jsiiProxy_DataOktaAuthServerClaims) SetAuthServerId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaAuthServerClaims) SetCount(val *float64) {
+func (j *jsiiProxy_DataOktaAuthServerClaims)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -335,7 +341,7 @@ func (j *jsiiProxy_DataOktaAuthServerClaims) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaAuthServerClaims) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataOktaAuthServerClaims)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -343,7 +349,7 @@ func (j *jsiiProxy_DataOktaAuthServerClaims) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaAuthServerClaims) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataOktaAuthServerClaims)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -351,7 +357,10 @@ func (j *jsiiProxy_DataOktaAuthServerClaims) SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_DataOktaAuthServerClaims) SetId(val *string) {
+func (j *jsiiProxy_DataOktaAuthServerClaims)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -359,7 +368,10 @@ func (j *jsiiProxy_DataOktaAuthServerClaims) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaAuthServerClaims) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataOktaAuthServerClaims)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -367,7 +379,7 @@ func (j *jsiiProxy_DataOktaAuthServerClaims) SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_DataOktaAuthServerClaims) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataOktaAuthServerClaims)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -395,6 +407,9 @@ func (j *jsiiProxy_DataOktaAuthServerClaims) SetProvider(val cdktf.TerraformProv
 func DataOktaAuthServerClaims_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataOktaAuthServerClaims_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -419,6 +434,9 @@ func DataOktaAuthServerClaims_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataOktaAuthServerClaims) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -427,6 +445,9 @@ func (d *jsiiProxy_DataOktaAuthServerClaims) AddOverride(path *string, value int
 }
 
 func (d *jsiiProxy_DataOktaAuthServerClaims) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -440,6 +461,9 @@ func (d *jsiiProxy_DataOktaAuthServerClaims) GetAnyMapAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DataOktaAuthServerClaims) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -453,6 +477,9 @@ func (d *jsiiProxy_DataOktaAuthServerClaims) GetBooleanAttribute(terraformAttrib
 }
 
 func (d *jsiiProxy_DataOktaAuthServerClaims) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -466,6 +493,9 @@ func (d *jsiiProxy_DataOktaAuthServerClaims) GetBooleanMapAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DataOktaAuthServerClaims) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -479,6 +509,9 @@ func (d *jsiiProxy_DataOktaAuthServerClaims) GetListAttribute(terraformAttribute
 }
 
 func (d *jsiiProxy_DataOktaAuthServerClaims) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -492,6 +525,9 @@ func (d *jsiiProxy_DataOktaAuthServerClaims) GetNumberAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DataOktaAuthServerClaims) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -505,6 +541,9 @@ func (d *jsiiProxy_DataOktaAuthServerClaims) GetNumberListAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DataOktaAuthServerClaims) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -518,6 +557,9 @@ func (d *jsiiProxy_DataOktaAuthServerClaims) GetNumberMapAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataOktaAuthServerClaims) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -531,6 +573,9 @@ func (d *jsiiProxy_DataOktaAuthServerClaims) GetStringAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DataOktaAuthServerClaims) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -544,6 +589,9 @@ func (d *jsiiProxy_DataOktaAuthServerClaims) GetStringMapAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataOktaAuthServerClaims) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -557,6 +605,9 @@ func (d *jsiiProxy_DataOktaAuthServerClaims) InterpolationForAttribute(terraform
 }
 
 func (d *jsiiProxy_DataOktaAuthServerClaims) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

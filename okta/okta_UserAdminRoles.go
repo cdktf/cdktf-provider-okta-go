@@ -361,6 +361,9 @@ func (j *jsiiProxy_UserAdminRoles) UserIdInput() *string {
 func NewUserAdminRoles(scope constructs.Construct, id *string, config *UserAdminRolesConfig) UserAdminRoles {
 	_init_.Initialize()
 
+	if err := validateNewUserAdminRolesParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_UserAdminRoles{}
 
 	_jsii_.Create(
@@ -383,7 +386,10 @@ func NewUserAdminRoles_Override(u UserAdminRoles, scope constructs.Construct, id
 	)
 }
 
-func (j *jsiiProxy_UserAdminRoles) SetAdminRoles(val *[]*string) {
+func (j *jsiiProxy_UserAdminRoles)SetAdminRoles(val *[]*string) {
+	if err := j.validateSetAdminRolesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"adminRoles",
@@ -391,7 +397,10 @@ func (j *jsiiProxy_UserAdminRoles) SetAdminRoles(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_UserAdminRoles) SetConnection(val interface{}) {
+func (j *jsiiProxy_UserAdminRoles)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -399,7 +408,7 @@ func (j *jsiiProxy_UserAdminRoles) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserAdminRoles) SetCount(val *float64) {
+func (j *jsiiProxy_UserAdminRoles)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -407,7 +416,7 @@ func (j *jsiiProxy_UserAdminRoles) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_UserAdminRoles) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_UserAdminRoles)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -415,7 +424,10 @@ func (j *jsiiProxy_UserAdminRoles) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_UserAdminRoles) SetDisableNotifications(val interface{}) {
+func (j *jsiiProxy_UserAdminRoles)SetDisableNotifications(val interface{}) {
+	if err := j.validateSetDisableNotificationsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"disableNotifications",
@@ -423,7 +435,7 @@ func (j *jsiiProxy_UserAdminRoles) SetDisableNotifications(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserAdminRoles) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_UserAdminRoles)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -431,7 +443,10 @@ func (j *jsiiProxy_UserAdminRoles) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_UserAdminRoles) SetId(val *string) {
+func (j *jsiiProxy_UserAdminRoles)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -439,7 +454,10 @@ func (j *jsiiProxy_UserAdminRoles) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserAdminRoles) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_UserAdminRoles)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -447,7 +465,7 @@ func (j *jsiiProxy_UserAdminRoles) SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_UserAdminRoles) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_UserAdminRoles)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -455,7 +473,10 @@ func (j *jsiiProxy_UserAdminRoles) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_UserAdminRoles) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_UserAdminRoles)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -463,7 +484,10 @@ func (j *jsiiProxy_UserAdminRoles) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserAdminRoles) SetUserId(val *string) {
+func (j *jsiiProxy_UserAdminRoles)SetUserId(val *string) {
+	if err := j.validateSetUserIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userId",
@@ -491,6 +515,9 @@ func (j *jsiiProxy_UserAdminRoles) SetUserId(val *string) {
 func UserAdminRoles_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateUserAdminRoles_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -515,6 +542,9 @@ func UserAdminRoles_TfResourceType() *string {
 }
 
 func (u *jsiiProxy_UserAdminRoles) AddOverride(path *string, value interface{}) {
+	if err := u.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		u,
 		"addOverride",
@@ -523,6 +553,9 @@ func (u *jsiiProxy_UserAdminRoles) AddOverride(path *string, value interface{}) 
 }
 
 func (u *jsiiProxy_UserAdminRoles) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := u.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -536,6 +569,9 @@ func (u *jsiiProxy_UserAdminRoles) GetAnyMapAttribute(terraformAttribute *string
 }
 
 func (u *jsiiProxy_UserAdminRoles) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := u.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -549,6 +585,9 @@ func (u *jsiiProxy_UserAdminRoles) GetBooleanAttribute(terraformAttribute *strin
 }
 
 func (u *jsiiProxy_UserAdminRoles) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := u.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -562,6 +601,9 @@ func (u *jsiiProxy_UserAdminRoles) GetBooleanMapAttribute(terraformAttribute *st
 }
 
 func (u *jsiiProxy_UserAdminRoles) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := u.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -575,6 +617,9 @@ func (u *jsiiProxy_UserAdminRoles) GetListAttribute(terraformAttribute *string) 
 }
 
 func (u *jsiiProxy_UserAdminRoles) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := u.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -588,6 +633,9 @@ func (u *jsiiProxy_UserAdminRoles) GetNumberAttribute(terraformAttribute *string
 }
 
 func (u *jsiiProxy_UserAdminRoles) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := u.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -601,6 +649,9 @@ func (u *jsiiProxy_UserAdminRoles) GetNumberListAttribute(terraformAttribute *st
 }
 
 func (u *jsiiProxy_UserAdminRoles) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := u.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -614,6 +665,9 @@ func (u *jsiiProxy_UserAdminRoles) GetNumberMapAttribute(terraformAttribute *str
 }
 
 func (u *jsiiProxy_UserAdminRoles) GetStringAttribute(terraformAttribute *string) *string {
+	if err := u.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -627,6 +681,9 @@ func (u *jsiiProxy_UserAdminRoles) GetStringAttribute(terraformAttribute *string
 }
 
 func (u *jsiiProxy_UserAdminRoles) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := u.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -640,6 +697,9 @@ func (u *jsiiProxy_UserAdminRoles) GetStringMapAttribute(terraformAttribute *str
 }
 
 func (u *jsiiProxy_UserAdminRoles) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := u.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -653,6 +713,9 @@ func (u *jsiiProxy_UserAdminRoles) InterpolationForAttribute(terraformAttribute 
 }
 
 func (u *jsiiProxy_UserAdminRoles) OverrideLogicalId(newLogicalId *string) {
+	if err := u.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		u,
 		"overrideLogicalId",

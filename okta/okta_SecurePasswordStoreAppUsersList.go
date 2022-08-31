@@ -111,6 +111,9 @@ func (j *jsiiProxy_SecurePasswordStoreAppUsersList) WrapsSet() *bool {
 func NewSecurePasswordStoreAppUsersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurePasswordStoreAppUsersList {
 	_init_.Initialize()
 
+	if err := validateNewSecurePasswordStoreAppUsersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SecurePasswordStoreAppUsersList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewSecurePasswordStoreAppUsersList_Override(s SecurePasswordStoreAppUsersLi
 	)
 }
 
-func (j *jsiiProxy_SecurePasswordStoreAppUsersList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SecurePasswordStoreAppUsersList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_SecurePasswordStoreAppUsersList) SetInternalValue(val interfa
 	)
 }
 
-func (j *jsiiProxy_SecurePasswordStoreAppUsersList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SecurePasswordStoreAppUsersList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_SecurePasswordStoreAppUsersList) SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_SecurePasswordStoreAppUsersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SecurePasswordStoreAppUsersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_SecurePasswordStoreAppUsersList) SetTerraformResource(val cdk
 	)
 }
 
-func (j *jsiiProxy_SecurePasswordStoreAppUsersList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SecurePasswordStoreAppUsersList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_SecurePasswordStoreAppUsersList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_SecurePasswordStoreAppUsersList) Get(index *float64) SecurePasswordStoreAppUsersOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns SecurePasswordStoreAppUsersOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_SecurePasswordStoreAppUsersList) Get(index *float64) SecurePa
 }
 
 func (s *jsiiProxy_SecurePasswordStoreAppUsersList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

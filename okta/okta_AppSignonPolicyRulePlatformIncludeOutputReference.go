@@ -223,6 +223,9 @@ func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) TypeInput(
 func NewAppSignonPolicyRulePlatformIncludeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AppSignonPolicyRulePlatformIncludeOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAppSignonPolicyRulePlatformIncludeOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference{}
 
 	_jsii_.Create(
@@ -244,7 +247,10 @@ func NewAppSignonPolicyRulePlatformIncludeOutputReference_Override(a AppSignonPo
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -252,7 +258,10 @@ func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) SetComplex
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -260,7 +269,10 @@ func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) SetComplex
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -268,7 +280,10 @@ func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) SetInterna
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) SetOsExpression(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference)SetOsExpression(val *string) {
+	if err := j.validateSetOsExpressionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"osExpression",
@@ -276,7 +291,10 @@ func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) SetOsExpre
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) SetOsType(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference)SetOsType(val *string) {
+	if err := j.validateSetOsTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"osType",
@@ -284,7 +302,10 @@ func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) SetOsType(
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -292,7 +313,10 @@ func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -300,7 +324,10 @@ func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) SetType(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -322,6 +349,9 @@ func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) ComputeFqn
 }
 
 func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -335,6 +365,9 @@ func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) GetAnyMapA
 }
 
 func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -348,6 +381,9 @@ func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) GetBoolean
 }
 
 func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -361,6 +397,9 @@ func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) GetBoolean
 }
 
 func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -374,6 +413,9 @@ func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) GetListAtt
 }
 
 func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -387,6 +429,9 @@ func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) GetNumberA
 }
 
 func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -400,6 +445,9 @@ func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) GetNumberL
 }
 
 func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -413,6 +461,9 @@ func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) GetNumberM
 }
 
 func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -426,6 +477,9 @@ func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) GetStringA
 }
 
 func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -452,6 +506,9 @@ func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) Interpolat
 }
 
 func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -489,6 +546,9 @@ func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) ResetType(
 }
 
 func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

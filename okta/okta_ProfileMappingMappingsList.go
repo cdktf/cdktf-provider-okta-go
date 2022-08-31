@@ -111,6 +111,9 @@ func (j *jsiiProxy_ProfileMappingMappingsList) WrapsSet() *bool {
 func NewProfileMappingMappingsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProfileMappingMappingsList {
 	_init_.Initialize()
 
+	if err := validateNewProfileMappingMappingsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ProfileMappingMappingsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewProfileMappingMappingsList_Override(p ProfileMappingMappingsList, terraf
 	)
 }
 
-func (j *jsiiProxy_ProfileMappingMappingsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ProfileMappingMappingsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ProfileMappingMappingsList) SetInternalValue(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ProfileMappingMappingsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ProfileMappingMappingsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ProfileMappingMappingsList) SetTerraformAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_ProfileMappingMappingsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ProfileMappingMappingsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ProfileMappingMappingsList) SetTerraformResource(val cdktf.II
 	)
 }
 
-func (j *jsiiProxy_ProfileMappingMappingsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ProfileMappingMappingsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (p *jsiiProxy_ProfileMappingMappingsList) ComputeFqn() *string {
 }
 
 func (p *jsiiProxy_ProfileMappingMappingsList) Get(index *float64) ProfileMappingMappingsOutputReference {
+	if err := p.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ProfileMappingMappingsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (p *jsiiProxy_ProfileMappingMappingsList) Get(index *float64) ProfileMappin
 }
 
 func (p *jsiiProxy_ProfileMappingMappingsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

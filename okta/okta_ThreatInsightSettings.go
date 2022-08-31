@@ -338,6 +338,9 @@ func (j *jsiiProxy_ThreatInsightSettings) TerraformResourceType() *string {
 func NewThreatInsightSettings(scope constructs.Construct, id *string, config *ThreatInsightSettingsConfig) ThreatInsightSettings {
 	_init_.Initialize()
 
+	if err := validateNewThreatInsightSettingsParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ThreatInsightSettings{}
 
 	_jsii_.Create(
@@ -360,7 +363,10 @@ func NewThreatInsightSettings_Override(t ThreatInsightSettings, scope constructs
 	)
 }
 
-func (j *jsiiProxy_ThreatInsightSettings) SetAction(val *string) {
+func (j *jsiiProxy_ThreatInsightSettings)SetAction(val *string) {
+	if err := j.validateSetActionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"action",
@@ -368,7 +374,10 @@ func (j *jsiiProxy_ThreatInsightSettings) SetAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ThreatInsightSettings) SetConnection(val interface{}) {
+func (j *jsiiProxy_ThreatInsightSettings)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -376,7 +385,7 @@ func (j *jsiiProxy_ThreatInsightSettings) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ThreatInsightSettings) SetCount(val *float64) {
+func (j *jsiiProxy_ThreatInsightSettings)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -384,7 +393,7 @@ func (j *jsiiProxy_ThreatInsightSettings) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ThreatInsightSettings) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ThreatInsightSettings)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -392,7 +401,7 @@ func (j *jsiiProxy_ThreatInsightSettings) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ThreatInsightSettings) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ThreatInsightSettings)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -400,7 +409,10 @@ func (j *jsiiProxy_ThreatInsightSettings) SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_ThreatInsightSettings) SetId(val *string) {
+func (j *jsiiProxy_ThreatInsightSettings)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -408,7 +420,10 @@ func (j *jsiiProxy_ThreatInsightSettings) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ThreatInsightSettings) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ThreatInsightSettings)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -416,7 +431,10 @@ func (j *jsiiProxy_ThreatInsightSettings) SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_ThreatInsightSettings) SetNetworkExcludes(val *[]*string) {
+func (j *jsiiProxy_ThreatInsightSettings)SetNetworkExcludes(val *[]*string) {
+	if err := j.validateSetNetworkExcludesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"networkExcludes",
@@ -424,7 +442,7 @@ func (j *jsiiProxy_ThreatInsightSettings) SetNetworkExcludes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ThreatInsightSettings) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ThreatInsightSettings)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -432,7 +450,10 @@ func (j *jsiiProxy_ThreatInsightSettings) SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_ThreatInsightSettings) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ThreatInsightSettings)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -460,6 +481,9 @@ func (j *jsiiProxy_ThreatInsightSettings) SetProvisioners(val *[]interface{}) {
 func ThreatInsightSettings_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateThreatInsightSettings_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -484,6 +508,9 @@ func ThreatInsightSettings_TfResourceType() *string {
 }
 
 func (t *jsiiProxy_ThreatInsightSettings) AddOverride(path *string, value interface{}) {
+	if err := t.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
@@ -492,6 +519,9 @@ func (t *jsiiProxy_ThreatInsightSettings) AddOverride(path *string, value interf
 }
 
 func (t *jsiiProxy_ThreatInsightSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -505,6 +535,9 @@ func (t *jsiiProxy_ThreatInsightSettings) GetAnyMapAttribute(terraformAttribute 
 }
 
 func (t *jsiiProxy_ThreatInsightSettings) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -518,6 +551,9 @@ func (t *jsiiProxy_ThreatInsightSettings) GetBooleanAttribute(terraformAttribute
 }
 
 func (t *jsiiProxy_ThreatInsightSettings) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := t.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -531,6 +567,9 @@ func (t *jsiiProxy_ThreatInsightSettings) GetBooleanMapAttribute(terraformAttrib
 }
 
 func (t *jsiiProxy_ThreatInsightSettings) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := t.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -544,6 +583,9 @@ func (t *jsiiProxy_ThreatInsightSettings) GetListAttribute(terraformAttribute *s
 }
 
 func (t *jsiiProxy_ThreatInsightSettings) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := t.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -557,6 +599,9 @@ func (t *jsiiProxy_ThreatInsightSettings) GetNumberAttribute(terraformAttribute 
 }
 
 func (t *jsiiProxy_ThreatInsightSettings) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := t.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -570,6 +615,9 @@ func (t *jsiiProxy_ThreatInsightSettings) GetNumberListAttribute(terraformAttrib
 }
 
 func (t *jsiiProxy_ThreatInsightSettings) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := t.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -583,6 +631,9 @@ func (t *jsiiProxy_ThreatInsightSettings) GetNumberMapAttribute(terraformAttribu
 }
 
 func (t *jsiiProxy_ThreatInsightSettings) GetStringAttribute(terraformAttribute *string) *string {
+	if err := t.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -596,6 +647,9 @@ func (t *jsiiProxy_ThreatInsightSettings) GetStringAttribute(terraformAttribute 
 }
 
 func (t *jsiiProxy_ThreatInsightSettings) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := t.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -609,6 +663,9 @@ func (t *jsiiProxy_ThreatInsightSettings) GetStringMapAttribute(terraformAttribu
 }
 
 func (t *jsiiProxy_ThreatInsightSettings) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -622,6 +679,9 @@ func (t *jsiiProxy_ThreatInsightSettings) InterpolationForAttribute(terraformAtt
 }
 
 func (t *jsiiProxy_ThreatInsightSettings) OverrideLogicalId(newLogicalId *string) {
+	if err := t.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",

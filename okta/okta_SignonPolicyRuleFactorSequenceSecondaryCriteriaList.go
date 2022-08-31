@@ -111,6 +111,9 @@ func (j *jsiiProxy_SignonPolicyRuleFactorSequenceSecondaryCriteriaList) WrapsSet
 func NewSignonPolicyRuleFactorSequenceSecondaryCriteriaList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SignonPolicyRuleFactorSequenceSecondaryCriteriaList {
 	_init_.Initialize()
 
+	if err := validateNewSignonPolicyRuleFactorSequenceSecondaryCriteriaListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SignonPolicyRuleFactorSequenceSecondaryCriteriaList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewSignonPolicyRuleFactorSequenceSecondaryCriteriaList_Override(s SignonPol
 	)
 }
 
-func (j *jsiiProxy_SignonPolicyRuleFactorSequenceSecondaryCriteriaList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SignonPolicyRuleFactorSequenceSecondaryCriteriaList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_SignonPolicyRuleFactorSequenceSecondaryCriteriaList) SetInter
 	)
 }
 
-func (j *jsiiProxy_SignonPolicyRuleFactorSequenceSecondaryCriteriaList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SignonPolicyRuleFactorSequenceSecondaryCriteriaList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_SignonPolicyRuleFactorSequenceSecondaryCriteriaList) SetTerra
 	)
 }
 
-func (j *jsiiProxy_SignonPolicyRuleFactorSequenceSecondaryCriteriaList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SignonPolicyRuleFactorSequenceSecondaryCriteriaList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_SignonPolicyRuleFactorSequenceSecondaryCriteriaList) SetTerra
 	)
 }
 
-func (j *jsiiProxy_SignonPolicyRuleFactorSequenceSecondaryCriteriaList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SignonPolicyRuleFactorSequenceSecondaryCriteriaList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_SignonPolicyRuleFactorSequenceSecondaryCriteriaList) ComputeF
 }
 
 func (s *jsiiProxy_SignonPolicyRuleFactorSequenceSecondaryCriteriaList) Get(index *float64) SignonPolicyRuleFactorSequenceSecondaryCriteriaOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns SignonPolicyRuleFactorSequenceSecondaryCriteriaOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_SignonPolicyRuleFactorSequenceSecondaryCriteriaList) Get(inde
 }
 
 func (s *jsiiProxy_SignonPolicyRuleFactorSequenceSecondaryCriteriaList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

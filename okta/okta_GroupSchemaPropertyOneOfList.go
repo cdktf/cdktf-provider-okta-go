@@ -111,6 +111,9 @@ func (j *jsiiProxy_GroupSchemaPropertyOneOfList) WrapsSet() *bool {
 func NewGroupSchemaPropertyOneOfList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GroupSchemaPropertyOneOfList {
 	_init_.Initialize()
 
+	if err := validateNewGroupSchemaPropertyOneOfListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_GroupSchemaPropertyOneOfList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewGroupSchemaPropertyOneOfList_Override(g GroupSchemaPropertyOneOfList, te
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyOneOfList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GroupSchemaPropertyOneOfList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_GroupSchemaPropertyOneOfList) SetInternalValue(val interface{
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyOneOfList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GroupSchemaPropertyOneOfList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_GroupSchemaPropertyOneOfList) SetTerraformAttribute(val *stri
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyOneOfList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GroupSchemaPropertyOneOfList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_GroupSchemaPropertyOneOfList) SetTerraformResource(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyOneOfList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_GroupSchemaPropertyOneOfList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (g *jsiiProxy_GroupSchemaPropertyOneOfList) ComputeFqn() *string {
 }
 
 func (g *jsiiProxy_GroupSchemaPropertyOneOfList) Get(index *float64) GroupSchemaPropertyOneOfOutputReference {
+	if err := g.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns GroupSchemaPropertyOneOfOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (g *jsiiProxy_GroupSchemaPropertyOneOfList) Get(index *float64) GroupSchema
 }
 
 func (g *jsiiProxy_GroupSchemaPropertyOneOfList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

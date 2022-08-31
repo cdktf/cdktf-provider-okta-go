@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesList) WrapsSet() *bool {
 func NewDataOktaEmailTemplatesEmailTemplatesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaEmailTemplatesEmailTemplatesList {
 	_init_.Initialize()
 
+	if err := validateNewDataOktaEmailTemplatesEmailTemplatesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOktaEmailTemplatesEmailTemplatesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataOktaEmailTemplatesEmailTemplatesList_Override(d DataOktaEmailTemplat
 	)
 }
 
-func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesList) SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesList) SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesList) ComputeFqn() *strin
 }
 
 func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesList) Get(index *float64) DataOktaEmailTemplatesEmailTemplatesOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataOktaEmailTemplatesEmailTemplatesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesList) Get(index *float64)
 }
 
 func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -198,6 +198,9 @@ func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) Val
 func NewGroupSchemaPropertyMasterOverridePriorityOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GroupSchemaPropertyMasterOverridePriorityOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewGroupSchemaPropertyMasterOverridePriorityOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference{}
 
 	_jsii_.Create(
@@ -219,7 +222,10 @@ func NewGroupSchemaPropertyMasterOverridePriorityOutputReference_Override(g Grou
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -227,7 +233,10 @@ func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -235,7 +244,10 @@ func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -243,7 +255,10 @@ func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -251,7 +266,10 @@ func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -259,7 +277,10 @@ func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) SetType(val *string) {
+func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -267,7 +288,10 @@ func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) SetValue(val *string) {
+func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference)SetValue(val *string) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -289,6 +313,9 @@ func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) Com
 }
 
 func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -302,6 +329,9 @@ func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) Get
 }
 
 func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -315,6 +345,9 @@ func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) Get
 }
 
 func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -328,6 +361,9 @@ func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) Get
 }
 
 func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -341,6 +377,9 @@ func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) Get
 }
 
 func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -354,6 +393,9 @@ func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) Get
 }
 
 func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -367,6 +409,9 @@ func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) Get
 }
 
 func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -380,6 +425,9 @@ func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) Get
 }
 
 func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -393,6 +441,9 @@ func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) Get
 }
 
 func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -419,6 +470,9 @@ func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) Int
 }
 
 func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -440,6 +494,9 @@ func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) Res
 }
 
 func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

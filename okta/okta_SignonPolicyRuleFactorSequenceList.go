@@ -111,6 +111,9 @@ func (j *jsiiProxy_SignonPolicyRuleFactorSequenceList) WrapsSet() *bool {
 func NewSignonPolicyRuleFactorSequenceList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SignonPolicyRuleFactorSequenceList {
 	_init_.Initialize()
 
+	if err := validateNewSignonPolicyRuleFactorSequenceListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SignonPolicyRuleFactorSequenceList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewSignonPolicyRuleFactorSequenceList_Override(s SignonPolicyRuleFactorSequ
 	)
 }
 
-func (j *jsiiProxy_SignonPolicyRuleFactorSequenceList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SignonPolicyRuleFactorSequenceList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_SignonPolicyRuleFactorSequenceList) SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_SignonPolicyRuleFactorSequenceList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SignonPolicyRuleFactorSequenceList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_SignonPolicyRuleFactorSequenceList) SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_SignonPolicyRuleFactorSequenceList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SignonPolicyRuleFactorSequenceList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_SignonPolicyRuleFactorSequenceList) SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_SignonPolicyRuleFactorSequenceList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SignonPolicyRuleFactorSequenceList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_SignonPolicyRuleFactorSequenceList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_SignonPolicyRuleFactorSequenceList) Get(index *float64) SignonPolicyRuleFactorSequenceOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns SignonPolicyRuleFactorSequenceOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_SignonPolicyRuleFactorSequenceList) Get(index *float64) Signo
 }
 
 func (s *jsiiProxy_SignonPolicyRuleFactorSequenceList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

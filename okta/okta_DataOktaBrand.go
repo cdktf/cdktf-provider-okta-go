@@ -306,6 +306,9 @@ func (j *jsiiProxy_DataOktaBrand) TerraformResourceType() *string {
 func NewDataOktaBrand(scope constructs.Construct, id *string, config *DataOktaBrandConfig) DataOktaBrand {
 	_init_.Initialize()
 
+	if err := validateNewDataOktaBrandParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOktaBrand{}
 
 	_jsii_.Create(
@@ -328,7 +331,10 @@ func NewDataOktaBrand_Override(d DataOktaBrand, scope constructs.Construct, id *
 	)
 }
 
-func (j *jsiiProxy_DataOktaBrand) SetBrandId(val *string) {
+func (j *jsiiProxy_DataOktaBrand)SetBrandId(val *string) {
+	if err := j.validateSetBrandIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"brandId",
@@ -336,7 +342,7 @@ func (j *jsiiProxy_DataOktaBrand) SetBrandId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaBrand) SetCount(val *float64) {
+func (j *jsiiProxy_DataOktaBrand)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -344,7 +350,7 @@ func (j *jsiiProxy_DataOktaBrand) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaBrand) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataOktaBrand)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -352,7 +358,7 @@ func (j *jsiiProxy_DataOktaBrand) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaBrand) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataOktaBrand)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -360,7 +366,10 @@ func (j *jsiiProxy_DataOktaBrand) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaBrand) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataOktaBrand)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -368,7 +377,7 @@ func (j *jsiiProxy_DataOktaBrand) SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_DataOktaBrand) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataOktaBrand)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -396,6 +405,9 @@ func (j *jsiiProxy_DataOktaBrand) SetProvider(val cdktf.TerraformProvider) {
 func DataOktaBrand_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataOktaBrand_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -420,6 +432,9 @@ func DataOktaBrand_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataOktaBrand) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -428,6 +443,9 @@ func (d *jsiiProxy_DataOktaBrand) AddOverride(path *string, value interface{}) {
 }
 
 func (d *jsiiProxy_DataOktaBrand) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -441,6 +459,9 @@ func (d *jsiiProxy_DataOktaBrand) GetAnyMapAttribute(terraformAttribute *string)
 }
 
 func (d *jsiiProxy_DataOktaBrand) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -454,6 +475,9 @@ func (d *jsiiProxy_DataOktaBrand) GetBooleanAttribute(terraformAttribute *string
 }
 
 func (d *jsiiProxy_DataOktaBrand) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -467,6 +491,9 @@ func (d *jsiiProxy_DataOktaBrand) GetBooleanMapAttribute(terraformAttribute *str
 }
 
 func (d *jsiiProxy_DataOktaBrand) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -480,6 +507,9 @@ func (d *jsiiProxy_DataOktaBrand) GetListAttribute(terraformAttribute *string) *
 }
 
 func (d *jsiiProxy_DataOktaBrand) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -493,6 +523,9 @@ func (d *jsiiProxy_DataOktaBrand) GetNumberAttribute(terraformAttribute *string)
 }
 
 func (d *jsiiProxy_DataOktaBrand) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -506,6 +539,9 @@ func (d *jsiiProxy_DataOktaBrand) GetNumberListAttribute(terraformAttribute *str
 }
 
 func (d *jsiiProxy_DataOktaBrand) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -519,6 +555,9 @@ func (d *jsiiProxy_DataOktaBrand) GetNumberMapAttribute(terraformAttribute *stri
 }
 
 func (d *jsiiProxy_DataOktaBrand) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -532,6 +571,9 @@ func (d *jsiiProxy_DataOktaBrand) GetStringAttribute(terraformAttribute *string)
 }
 
 func (d *jsiiProxy_DataOktaBrand) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -545,6 +587,9 @@ func (d *jsiiProxy_DataOktaBrand) GetStringMapAttribute(terraformAttribute *stri
 }
 
 func (d *jsiiProxy_DataOktaBrand) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -558,6 +603,9 @@ func (d *jsiiProxy_DataOktaBrand) InterpolationForAttribute(terraformAttribute *
 }
 
 func (d *jsiiProxy_DataOktaBrand) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

@@ -111,6 +111,9 @@ func (j *jsiiProxy_AppSamlAttributeStatementsList) WrapsSet() *bool {
 func NewAppSamlAttributeStatementsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSamlAttributeStatementsList {
 	_init_.Initialize()
 
+	if err := validateNewAppSamlAttributeStatementsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AppSamlAttributeStatementsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAppSamlAttributeStatementsList_Override(a AppSamlAttributeStatementsList
 	)
 }
 
-func (j *jsiiProxy_AppSamlAttributeStatementsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppSamlAttributeStatementsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AppSamlAttributeStatementsList) SetInternalValue(val interfac
 	)
 }
 
-func (j *jsiiProxy_AppSamlAttributeStatementsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppSamlAttributeStatementsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AppSamlAttributeStatementsList) SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_AppSamlAttributeStatementsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppSamlAttributeStatementsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AppSamlAttributeStatementsList) SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_AppSamlAttributeStatementsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AppSamlAttributeStatementsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AppSamlAttributeStatementsList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AppSamlAttributeStatementsList) Get(index *float64) AppSamlAttributeStatementsOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AppSamlAttributeStatementsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AppSamlAttributeStatementsList) Get(index *float64) AppSamlAt
 }
 
 func (a *jsiiProxy_AppSamlAttributeStatementsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

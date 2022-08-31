@@ -111,6 +111,9 @@ func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeList) WrapsSet() *bool {
 func NewAppSignonPolicyRulePlatformIncludeList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSignonPolicyRulePlatformIncludeList {
 	_init_.Initialize()
 
+	if err := validateNewAppSignonPolicyRulePlatformIncludeListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AppSignonPolicyRulePlatformIncludeList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAppSignonPolicyRulePlatformIncludeList_Override(a AppSignonPolicyRulePla
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeList) SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeList) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeList) SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeList) ComputeFqn() *string 
 }
 
 func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeList) Get(index *float64) AppSignonPolicyRulePlatformIncludeOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AppSignonPolicyRulePlatformIncludeOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeList) Get(index *float64) A
 }
 
 func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

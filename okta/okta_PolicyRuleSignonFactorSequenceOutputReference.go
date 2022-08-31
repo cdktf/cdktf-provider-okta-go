@@ -221,6 +221,9 @@ func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) TerraformResou
 func NewPolicyRuleSignonFactorSequenceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PolicyRuleSignonFactorSequenceOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewPolicyRuleSignonFactorSequenceOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference{}
 
 	_jsii_.Create(
@@ -242,7 +245,10 @@ func NewPolicyRuleSignonFactorSequenceOutputReference_Override(p PolicyRuleSigno
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -250,7 +256,10 @@ func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -258,7 +267,10 @@ func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -266,7 +278,10 @@ func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) SetPrimaryCriteriaFactorType(val *string) {
+func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference)SetPrimaryCriteriaFactorType(val *string) {
+	if err := j.validateSetPrimaryCriteriaFactorTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"primaryCriteriaFactorType",
@@ -274,7 +289,10 @@ func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) SetPrimaryCrit
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) SetPrimaryCriteriaProvider(val *string) {
+func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference)SetPrimaryCriteriaProvider(val *string) {
+	if err := j.validateSetPrimaryCriteriaProviderParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"primaryCriteriaProvider",
@@ -282,7 +300,10 @@ func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) SetPrimaryCrit
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -290,7 +311,10 @@ func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -312,6 +336,9 @@ func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) ComputeFqn() *
 }
 
 func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -325,6 +352,9 @@ func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) GetAnyMapAttri
 }
 
 func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -338,6 +368,9 @@ func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) GetBooleanAttr
 }
 
 func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -351,6 +384,9 @@ func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) GetBooleanMapA
 }
 
 func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -364,6 +400,9 @@ func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) GetListAttribu
 }
 
 func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -377,6 +416,9 @@ func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) GetNumberAttri
 }
 
 func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -390,6 +432,9 @@ func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) GetNumberListA
 }
 
 func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -403,6 +448,9 @@ func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) GetNumberMapAt
 }
 
 func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -416,6 +464,9 @@ func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) GetStringAttri
 }
 
 func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -442,6 +493,9 @@ func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) InterpolationA
 }
 
 func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -455,6 +509,9 @@ func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) InterpolationF
 }
 
 func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) PutSecondaryCriteria(value interface{}) {
+	if err := p.validatePutSecondaryCriteriaParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"putSecondaryCriteria",
@@ -471,6 +528,9 @@ func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) ResetSecondary
 }
 
 func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

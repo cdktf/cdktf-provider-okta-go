@@ -411,6 +411,9 @@ func (j *jsiiProxy_SecurityNotificationEmails) TerraformResourceType() *string {
 func NewSecurityNotificationEmails(scope constructs.Construct, id *string, config *SecurityNotificationEmailsConfig) SecurityNotificationEmails {
 	_init_.Initialize()
 
+	if err := validateNewSecurityNotificationEmailsParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SecurityNotificationEmails{}
 
 	_jsii_.Create(
@@ -433,7 +436,10 @@ func NewSecurityNotificationEmails_Override(s SecurityNotificationEmails, scope 
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) SetConnection(val interface{}) {
+func (j *jsiiProxy_SecurityNotificationEmails)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -441,7 +447,7 @@ func (j *jsiiProxy_SecurityNotificationEmails) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) SetCount(val *float64) {
+func (j *jsiiProxy_SecurityNotificationEmails)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -449,7 +455,7 @@ func (j *jsiiProxy_SecurityNotificationEmails) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SecurityNotificationEmails)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -457,7 +463,7 @@ func (j *jsiiProxy_SecurityNotificationEmails) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SecurityNotificationEmails)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -465,7 +471,10 @@ func (j *jsiiProxy_SecurityNotificationEmails) SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) SetId(val *string) {
+func (j *jsiiProxy_SecurityNotificationEmails)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -473,7 +482,10 @@ func (j *jsiiProxy_SecurityNotificationEmails) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SecurityNotificationEmails)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -481,7 +493,7 @@ func (j *jsiiProxy_SecurityNotificationEmails) SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SecurityNotificationEmails)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -489,7 +501,10 @@ func (j *jsiiProxy_SecurityNotificationEmails) SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SecurityNotificationEmails)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -497,7 +512,10 @@ func (j *jsiiProxy_SecurityNotificationEmails) SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) SetReportSuspiciousActivityEnabled(val interface{}) {
+func (j *jsiiProxy_SecurityNotificationEmails)SetReportSuspiciousActivityEnabled(val interface{}) {
+	if err := j.validateSetReportSuspiciousActivityEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"reportSuspiciousActivityEnabled",
@@ -505,7 +523,10 @@ func (j *jsiiProxy_SecurityNotificationEmails) SetReportSuspiciousActivityEnable
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) SetSendEmailForFactorEnrollmentEnabled(val interface{}) {
+func (j *jsiiProxy_SecurityNotificationEmails)SetSendEmailForFactorEnrollmentEnabled(val interface{}) {
+	if err := j.validateSetSendEmailForFactorEnrollmentEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sendEmailForFactorEnrollmentEnabled",
@@ -513,7 +534,10 @@ func (j *jsiiProxy_SecurityNotificationEmails) SetSendEmailForFactorEnrollmentEn
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) SetSendEmailForFactorResetEnabled(val interface{}) {
+func (j *jsiiProxy_SecurityNotificationEmails)SetSendEmailForFactorResetEnabled(val interface{}) {
+	if err := j.validateSetSendEmailForFactorResetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sendEmailForFactorResetEnabled",
@@ -521,7 +545,10 @@ func (j *jsiiProxy_SecurityNotificationEmails) SetSendEmailForFactorResetEnabled
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) SetSendEmailForNewDeviceEnabled(val interface{}) {
+func (j *jsiiProxy_SecurityNotificationEmails)SetSendEmailForNewDeviceEnabled(val interface{}) {
+	if err := j.validateSetSendEmailForNewDeviceEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sendEmailForNewDeviceEnabled",
@@ -529,7 +556,10 @@ func (j *jsiiProxy_SecurityNotificationEmails) SetSendEmailForNewDeviceEnabled(v
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) SetSendEmailForPasswordChangedEnabled(val interface{}) {
+func (j *jsiiProxy_SecurityNotificationEmails)SetSendEmailForPasswordChangedEnabled(val interface{}) {
+	if err := j.validateSetSendEmailForPasswordChangedEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sendEmailForPasswordChangedEnabled",
@@ -557,6 +587,9 @@ func (j *jsiiProxy_SecurityNotificationEmails) SetSendEmailForPasswordChangedEna
 func SecurityNotificationEmails_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateSecurityNotificationEmails_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -581,6 +614,9 @@ func SecurityNotificationEmails_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_SecurityNotificationEmails) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -589,6 +625,9 @@ func (s *jsiiProxy_SecurityNotificationEmails) AddOverride(path *string, value i
 }
 
 func (s *jsiiProxy_SecurityNotificationEmails) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -602,6 +641,9 @@ func (s *jsiiProxy_SecurityNotificationEmails) GetAnyMapAttribute(terraformAttri
 }
 
 func (s *jsiiProxy_SecurityNotificationEmails) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -615,6 +657,9 @@ func (s *jsiiProxy_SecurityNotificationEmails) GetBooleanAttribute(terraformAttr
 }
 
 func (s *jsiiProxy_SecurityNotificationEmails) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -628,6 +673,9 @@ func (s *jsiiProxy_SecurityNotificationEmails) GetBooleanMapAttribute(terraformA
 }
 
 func (s *jsiiProxy_SecurityNotificationEmails) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -641,6 +689,9 @@ func (s *jsiiProxy_SecurityNotificationEmails) GetListAttribute(terraformAttribu
 }
 
 func (s *jsiiProxy_SecurityNotificationEmails) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -654,6 +705,9 @@ func (s *jsiiProxy_SecurityNotificationEmails) GetNumberAttribute(terraformAttri
 }
 
 func (s *jsiiProxy_SecurityNotificationEmails) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -667,6 +721,9 @@ func (s *jsiiProxy_SecurityNotificationEmails) GetNumberListAttribute(terraformA
 }
 
 func (s *jsiiProxy_SecurityNotificationEmails) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -680,6 +737,9 @@ func (s *jsiiProxy_SecurityNotificationEmails) GetNumberMapAttribute(terraformAt
 }
 
 func (s *jsiiProxy_SecurityNotificationEmails) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -693,6 +753,9 @@ func (s *jsiiProxy_SecurityNotificationEmails) GetStringAttribute(terraformAttri
 }
 
 func (s *jsiiProxy_SecurityNotificationEmails) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -706,6 +769,9 @@ func (s *jsiiProxy_SecurityNotificationEmails) GetStringMapAttribute(terraformAt
 }
 
 func (s *jsiiProxy_SecurityNotificationEmails) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -719,6 +785,9 @@ func (s *jsiiProxy_SecurityNotificationEmails) InterpolationForAttribute(terrafo
 }
 
 func (s *jsiiProxy_SecurityNotificationEmails) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",

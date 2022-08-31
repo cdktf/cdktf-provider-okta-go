@@ -222,6 +222,9 @@ func (j *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) TypeInput() *string {
 func NewMfaPolicyRuleAppIncludeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MfaPolicyRuleAppIncludeOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewMfaPolicyRuleAppIncludeOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MfaPolicyRuleAppIncludeOutputReference{}
 
 	_jsii_.Create(
@@ -243,7 +246,10 @@ func NewMfaPolicyRuleAppIncludeOutputReference_Override(m MfaPolicyRuleAppInclud
 	)
 }
 
-func (j *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -251,7 +257,10 @@ func (j *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -259,7 +268,10 @@ func (j *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) SetId(val *string) {
+func (j *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -267,7 +279,10 @@ func (j *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -275,7 +290,10 @@ func (j *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) SetName(val *string) {
+func (j *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -283,7 +301,10 @@ func (j *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) SetName(val *string) 
 	)
 }
 
-func (j *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -291,7 +312,10 @@ func (j *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -299,7 +323,10 @@ func (j *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) SetType(val *string) {
+func (j *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -321,6 +348,9 @@ func (m *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) ComputeFqn() *string 
 }
 
 func (m *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -334,6 +364,9 @@ func (m *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) GetAnyMapAttribute(te
 }
 
 func (m *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -347,6 +380,9 @@ func (m *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) GetBooleanAttribute(t
 }
 
 func (m *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -360,6 +396,9 @@ func (m *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) GetBooleanMapAttribut
 }
 
 func (m *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -373,6 +412,9 @@ func (m *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) GetListAttribute(terr
 }
 
 func (m *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -386,6 +428,9 @@ func (m *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) GetNumberAttribute(te
 }
 
 func (m *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -399,6 +444,9 @@ func (m *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) GetNumberListAttribut
 }
 
 func (m *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -412,6 +460,9 @@ func (m *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) GetNumberMapAttribute
 }
 
 func (m *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -425,6 +476,9 @@ func (m *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) GetStringAttribute(te
 }
 
 func (m *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -451,6 +505,9 @@ func (m *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) InterpolationAsList()
 }
 
 func (m *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -480,6 +537,9 @@ func (m *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) ResetName() {
 }
 
 func (m *jsiiProxy_MfaPolicyRuleAppIncludeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

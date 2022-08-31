@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataOktaAppSamlAttributeStatementsList) WrapsSet() *bool {
 func NewDataOktaAppSamlAttributeStatementsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaAppSamlAttributeStatementsList {
 	_init_.Initialize()
 
+	if err := validateNewDataOktaAppSamlAttributeStatementsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOktaAppSamlAttributeStatementsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataOktaAppSamlAttributeStatementsList_Override(d DataOktaAppSamlAttribu
 	)
 }
 
-func (j *jsiiProxy_DataOktaAppSamlAttributeStatementsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOktaAppSamlAttributeStatementsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataOktaAppSamlAttributeStatementsList) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_DataOktaAppSamlAttributeStatementsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOktaAppSamlAttributeStatementsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataOktaAppSamlAttributeStatementsList) SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_DataOktaAppSamlAttributeStatementsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOktaAppSamlAttributeStatementsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataOktaAppSamlAttributeStatementsList) ComputeFqn() *string 
 }
 
 func (d *jsiiProxy_DataOktaAppSamlAttributeStatementsList) Get(index *float64) DataOktaAppSamlAttributeStatementsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataOktaAppSamlAttributeStatementsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataOktaAppSamlAttributeStatementsList) Get(index *float64) D
 }
 
 func (d *jsiiProxy_DataOktaAppSamlAttributeStatementsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

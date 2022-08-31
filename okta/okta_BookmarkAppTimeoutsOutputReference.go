@@ -223,6 +223,9 @@ func (j *jsiiProxy_BookmarkAppTimeoutsOutputReference) UpdateInput() *string {
 func NewBookmarkAppTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BookmarkAppTimeoutsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewBookmarkAppTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_BookmarkAppTimeoutsOutputReference{}
 
 	_jsii_.Create(
@@ -244,7 +247,10 @@ func NewBookmarkAppTimeoutsOutputReference_Override(b BookmarkAppTimeoutsOutputR
 	)
 }
 
-func (j *jsiiProxy_BookmarkAppTimeoutsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BookmarkAppTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -252,7 +258,10 @@ func (j *jsiiProxy_BookmarkAppTimeoutsOutputReference) SetComplexObjectIndex(val
 	)
 }
 
-func (j *jsiiProxy_BookmarkAppTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BookmarkAppTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -260,7 +269,10 @@ func (j *jsiiProxy_BookmarkAppTimeoutsOutputReference) SetComplexObjectIsFromSet
 	)
 }
 
-func (j *jsiiProxy_BookmarkAppTimeoutsOutputReference) SetCreate(val *string) {
+func (j *jsiiProxy_BookmarkAppTimeoutsOutputReference)SetCreate(val *string) {
+	if err := j.validateSetCreateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"create",
@@ -268,7 +280,10 @@ func (j *jsiiProxy_BookmarkAppTimeoutsOutputReference) SetCreate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BookmarkAppTimeoutsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BookmarkAppTimeoutsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -276,7 +291,10 @@ func (j *jsiiProxy_BookmarkAppTimeoutsOutputReference) SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_BookmarkAppTimeoutsOutputReference) SetRead(val *string) {
+func (j *jsiiProxy_BookmarkAppTimeoutsOutputReference)SetRead(val *string) {
+	if err := j.validateSetReadParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"read",
@@ -284,7 +302,10 @@ func (j *jsiiProxy_BookmarkAppTimeoutsOutputReference) SetRead(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BookmarkAppTimeoutsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BookmarkAppTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -292,7 +313,10 @@ func (j *jsiiProxy_BookmarkAppTimeoutsOutputReference) SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_BookmarkAppTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BookmarkAppTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -300,7 +324,10 @@ func (j *jsiiProxy_BookmarkAppTimeoutsOutputReference) SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_BookmarkAppTimeoutsOutputReference) SetUpdate(val *string) {
+func (j *jsiiProxy_BookmarkAppTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"update",
@@ -322,6 +349,9 @@ func (b *jsiiProxy_BookmarkAppTimeoutsOutputReference) ComputeFqn() *string {
 }
 
 func (b *jsiiProxy_BookmarkAppTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -335,6 +365,9 @@ func (b *jsiiProxy_BookmarkAppTimeoutsOutputReference) GetAnyMapAttribute(terraf
 }
 
 func (b *jsiiProxy_BookmarkAppTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -348,6 +381,9 @@ func (b *jsiiProxy_BookmarkAppTimeoutsOutputReference) GetBooleanAttribute(terra
 }
 
 func (b *jsiiProxy_BookmarkAppTimeoutsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := b.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -361,6 +397,9 @@ func (b *jsiiProxy_BookmarkAppTimeoutsOutputReference) GetBooleanMapAttribute(te
 }
 
 func (b *jsiiProxy_BookmarkAppTimeoutsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := b.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -374,6 +413,9 @@ func (b *jsiiProxy_BookmarkAppTimeoutsOutputReference) GetListAttribute(terrafor
 }
 
 func (b *jsiiProxy_BookmarkAppTimeoutsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := b.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -387,6 +429,9 @@ func (b *jsiiProxy_BookmarkAppTimeoutsOutputReference) GetNumberAttribute(terraf
 }
 
 func (b *jsiiProxy_BookmarkAppTimeoutsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := b.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -400,6 +445,9 @@ func (b *jsiiProxy_BookmarkAppTimeoutsOutputReference) GetNumberListAttribute(te
 }
 
 func (b *jsiiProxy_BookmarkAppTimeoutsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := b.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -413,6 +461,9 @@ func (b *jsiiProxy_BookmarkAppTimeoutsOutputReference) GetNumberMapAttribute(ter
 }
 
 func (b *jsiiProxy_BookmarkAppTimeoutsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := b.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -426,6 +477,9 @@ func (b *jsiiProxy_BookmarkAppTimeoutsOutputReference) GetStringAttribute(terraf
 }
 
 func (b *jsiiProxy_BookmarkAppTimeoutsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := b.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -452,6 +506,9 @@ func (b *jsiiProxy_BookmarkAppTimeoutsOutputReference) InterpolationAsList() cdk
 }
 
 func (b *jsiiProxy_BookmarkAppTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -489,6 +546,9 @@ func (b *jsiiProxy_BookmarkAppTimeoutsOutputReference) ResetUpdate() {
 }
 
 func (b *jsiiProxy_BookmarkAppTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

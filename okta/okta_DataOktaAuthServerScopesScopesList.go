@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataOktaAuthServerScopesScopesList) WrapsSet() *bool {
 func NewDataOktaAuthServerScopesScopesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaAuthServerScopesScopesList {
 	_init_.Initialize()
 
+	if err := validateNewDataOktaAuthServerScopesScopesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOktaAuthServerScopesScopesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataOktaAuthServerScopesScopesList_Override(d DataOktaAuthServerScopesSc
 	)
 }
 
-func (j *jsiiProxy_DataOktaAuthServerScopesScopesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOktaAuthServerScopesScopesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataOktaAuthServerScopesScopesList) SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_DataOktaAuthServerScopesScopesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOktaAuthServerScopesScopesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataOktaAuthServerScopesScopesList) SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_DataOktaAuthServerScopesScopesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOktaAuthServerScopesScopesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataOktaAuthServerScopesScopesList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataOktaAuthServerScopesScopesList) Get(index *float64) DataOktaAuthServerScopesScopesOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataOktaAuthServerScopesScopesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataOktaAuthServerScopesScopesList) Get(index *float64) DataO
 }
 
 func (d *jsiiProxy_DataOktaAuthServerScopesScopesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

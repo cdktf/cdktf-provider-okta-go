@@ -255,6 +255,9 @@ func (j *jsiiProxy_AppOauthGroupsClaimOutputReference) ValueInput() *string {
 func NewAppOauthGroupsClaimOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppOauthGroupsClaimOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAppOauthGroupsClaimOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AppOauthGroupsClaimOutputReference{}
 
 	_jsii_.Create(
@@ -276,7 +279,10 @@ func NewAppOauthGroupsClaimOutputReference_Override(a AppOauthGroupsClaimOutputR
 	)
 }
 
-func (j *jsiiProxy_AppOauthGroupsClaimOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppOauthGroupsClaimOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -284,7 +290,10 @@ func (j *jsiiProxy_AppOauthGroupsClaimOutputReference) SetComplexObjectIndex(val
 	)
 }
 
-func (j *jsiiProxy_AppOauthGroupsClaimOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppOauthGroupsClaimOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -292,7 +301,10 @@ func (j *jsiiProxy_AppOauthGroupsClaimOutputReference) SetComplexObjectIsFromSet
 	)
 }
 
-func (j *jsiiProxy_AppOauthGroupsClaimOutputReference) SetFilterType(val *string) {
+func (j *jsiiProxy_AppOauthGroupsClaimOutputReference)SetFilterType(val *string) {
+	if err := j.validateSetFilterTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"filterType",
@@ -300,7 +312,10 @@ func (j *jsiiProxy_AppOauthGroupsClaimOutputReference) SetFilterType(val *string
 	)
 }
 
-func (j *jsiiProxy_AppOauthGroupsClaimOutputReference) SetInternalValue(val *AppOauthGroupsClaim) {
+func (j *jsiiProxy_AppOauthGroupsClaimOutputReference)SetInternalValue(val *AppOauthGroupsClaim) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -308,7 +323,10 @@ func (j *jsiiProxy_AppOauthGroupsClaimOutputReference) SetInternalValue(val *App
 	)
 }
 
-func (j *jsiiProxy_AppOauthGroupsClaimOutputReference) SetName(val *string) {
+func (j *jsiiProxy_AppOauthGroupsClaimOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -316,7 +334,10 @@ func (j *jsiiProxy_AppOauthGroupsClaimOutputReference) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauthGroupsClaimOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppOauthGroupsClaimOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -324,7 +345,10 @@ func (j *jsiiProxy_AppOauthGroupsClaimOutputReference) SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_AppOauthGroupsClaimOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppOauthGroupsClaimOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -332,7 +356,10 @@ func (j *jsiiProxy_AppOauthGroupsClaimOutputReference) SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_AppOauthGroupsClaimOutputReference) SetType(val *string) {
+func (j *jsiiProxy_AppOauthGroupsClaimOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -340,7 +367,10 @@ func (j *jsiiProxy_AppOauthGroupsClaimOutputReference) SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauthGroupsClaimOutputReference) SetValue(val *string) {
+func (j *jsiiProxy_AppOauthGroupsClaimOutputReference)SetValue(val *string) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -362,6 +392,9 @@ func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -375,6 +408,9 @@ func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) GetAnyMapAttribute(terraf
 }
 
 func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -388,6 +424,9 @@ func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) GetBooleanAttribute(terra
 }
 
 func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -401,6 +440,9 @@ func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) GetBooleanMapAttribute(te
 }
 
 func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -414,6 +456,9 @@ func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) GetListAttribute(terrafor
 }
 
 func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -427,6 +472,9 @@ func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) GetNumberAttribute(terraf
 }
 
 func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -440,6 +488,9 @@ func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) GetNumberListAttribute(te
 }
 
 func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -453,6 +504,9 @@ func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) GetNumberMapAttribute(ter
 }
 
 func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -466,6 +520,9 @@ func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) GetStringAttribute(terraf
 }
 
 func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -492,6 +549,9 @@ func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) InterpolationAsList() cdk
 }
 
 func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -513,6 +573,9 @@ func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) ResetFilterType() {
 }
 
 func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

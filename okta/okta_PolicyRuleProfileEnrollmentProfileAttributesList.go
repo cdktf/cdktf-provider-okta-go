@@ -111,6 +111,9 @@ func (j *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesList) WrapsSet() 
 func NewPolicyRuleProfileEnrollmentProfileAttributesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PolicyRuleProfileEnrollmentProfileAttributesList {
 	_init_.Initialize()
 
+	if err := validateNewPolicyRuleProfileEnrollmentProfileAttributesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewPolicyRuleProfileEnrollmentProfileAttributesList_Override(p PolicyRulePr
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesList) SetInternal
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesList) SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesList) SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (p *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesList) ComputeFqn(
 }
 
 func (p *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesList) Get(index *float64) PolicyRuleProfileEnrollmentProfileAttributesOutputReference {
+	if err := p.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns PolicyRuleProfileEnrollmentProfileAttributesOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (p *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesList) Get(index *
 }
 
 func (p *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

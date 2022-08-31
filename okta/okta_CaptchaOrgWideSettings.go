@@ -339,6 +339,9 @@ func (j *jsiiProxy_CaptchaOrgWideSettings) TerraformResourceType() *string {
 func NewCaptchaOrgWideSettings(scope constructs.Construct, id *string, config *CaptchaOrgWideSettingsConfig) CaptchaOrgWideSettings {
 	_init_.Initialize()
 
+	if err := validateNewCaptchaOrgWideSettingsParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CaptchaOrgWideSettings{}
 
 	_jsii_.Create(
@@ -361,7 +364,10 @@ func NewCaptchaOrgWideSettings_Override(c CaptchaOrgWideSettings, scope construc
 	)
 }
 
-func (j *jsiiProxy_CaptchaOrgWideSettings) SetCaptchaId(val *string) {
+func (j *jsiiProxy_CaptchaOrgWideSettings)SetCaptchaId(val *string) {
+	if err := j.validateSetCaptchaIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"captchaId",
@@ -369,7 +375,10 @@ func (j *jsiiProxy_CaptchaOrgWideSettings) SetCaptchaId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CaptchaOrgWideSettings) SetConnection(val interface{}) {
+func (j *jsiiProxy_CaptchaOrgWideSettings)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -377,7 +386,7 @@ func (j *jsiiProxy_CaptchaOrgWideSettings) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CaptchaOrgWideSettings) SetCount(val *float64) {
+func (j *jsiiProxy_CaptchaOrgWideSettings)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -385,7 +394,7 @@ func (j *jsiiProxy_CaptchaOrgWideSettings) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CaptchaOrgWideSettings) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CaptchaOrgWideSettings)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -393,7 +402,10 @@ func (j *jsiiProxy_CaptchaOrgWideSettings) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CaptchaOrgWideSettings) SetEnabledFor(val *[]*string) {
+func (j *jsiiProxy_CaptchaOrgWideSettings)SetEnabledFor(val *[]*string) {
+	if err := j.validateSetEnabledForParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabledFor",
@@ -401,7 +413,7 @@ func (j *jsiiProxy_CaptchaOrgWideSettings) SetEnabledFor(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CaptchaOrgWideSettings) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CaptchaOrgWideSettings)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -409,7 +421,10 @@ func (j *jsiiProxy_CaptchaOrgWideSettings) SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_CaptchaOrgWideSettings) SetId(val *string) {
+func (j *jsiiProxy_CaptchaOrgWideSettings)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -417,7 +432,10 @@ func (j *jsiiProxy_CaptchaOrgWideSettings) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CaptchaOrgWideSettings) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CaptchaOrgWideSettings)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -425,7 +443,7 @@ func (j *jsiiProxy_CaptchaOrgWideSettings) SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_CaptchaOrgWideSettings) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CaptchaOrgWideSettings)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -433,7 +451,10 @@ func (j *jsiiProxy_CaptchaOrgWideSettings) SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_CaptchaOrgWideSettings) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CaptchaOrgWideSettings)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -461,6 +482,9 @@ func (j *jsiiProxy_CaptchaOrgWideSettings) SetProvisioners(val *[]interface{}) {
 func CaptchaOrgWideSettings_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateCaptchaOrgWideSettings_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -485,6 +509,9 @@ func CaptchaOrgWideSettings_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_CaptchaOrgWideSettings) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -493,6 +520,9 @@ func (c *jsiiProxy_CaptchaOrgWideSettings) AddOverride(path *string, value inter
 }
 
 func (c *jsiiProxy_CaptchaOrgWideSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -506,6 +536,9 @@ func (c *jsiiProxy_CaptchaOrgWideSettings) GetAnyMapAttribute(terraformAttribute
 }
 
 func (c *jsiiProxy_CaptchaOrgWideSettings) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -519,6 +552,9 @@ func (c *jsiiProxy_CaptchaOrgWideSettings) GetBooleanAttribute(terraformAttribut
 }
 
 func (c *jsiiProxy_CaptchaOrgWideSettings) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -532,6 +568,9 @@ func (c *jsiiProxy_CaptchaOrgWideSettings) GetBooleanMapAttribute(terraformAttri
 }
 
 func (c *jsiiProxy_CaptchaOrgWideSettings) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -545,6 +584,9 @@ func (c *jsiiProxy_CaptchaOrgWideSettings) GetListAttribute(terraformAttribute *
 }
 
 func (c *jsiiProxy_CaptchaOrgWideSettings) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -558,6 +600,9 @@ func (c *jsiiProxy_CaptchaOrgWideSettings) GetNumberAttribute(terraformAttribute
 }
 
 func (c *jsiiProxy_CaptchaOrgWideSettings) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -571,6 +616,9 @@ func (c *jsiiProxy_CaptchaOrgWideSettings) GetNumberListAttribute(terraformAttri
 }
 
 func (c *jsiiProxy_CaptchaOrgWideSettings) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -584,6 +632,9 @@ func (c *jsiiProxy_CaptchaOrgWideSettings) GetNumberMapAttribute(terraformAttrib
 }
 
 func (c *jsiiProxy_CaptchaOrgWideSettings) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -597,6 +648,9 @@ func (c *jsiiProxy_CaptchaOrgWideSettings) GetStringAttribute(terraformAttribute
 }
 
 func (c *jsiiProxy_CaptchaOrgWideSettings) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -610,6 +664,9 @@ func (c *jsiiProxy_CaptchaOrgWideSettings) GetStringMapAttribute(terraformAttrib
 }
 
 func (c *jsiiProxy_CaptchaOrgWideSettings) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -623,6 +680,9 @@ func (c *jsiiProxy_CaptchaOrgWideSettings) InterpolationForAttribute(terraformAt
 }
 
 func (c *jsiiProxy_CaptchaOrgWideSettings) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",

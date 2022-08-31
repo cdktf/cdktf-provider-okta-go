@@ -245,6 +245,9 @@ func (j *jsiiProxy_OauthAppJwksOutputReference) TerraformResource() cdktf.IInter
 func NewOauthAppJwksOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OauthAppJwksOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOauthAppJwksOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OauthAppJwksOutputReference{}
 
 	_jsii_.Create(
@@ -266,7 +269,10 @@ func NewOauthAppJwksOutputReference_Override(o OauthAppJwksOutputReference, terr
 	)
 }
 
-func (j *jsiiProxy_OauthAppJwksOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OauthAppJwksOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -274,7 +280,10 @@ func (j *jsiiProxy_OauthAppJwksOutputReference) SetComplexObjectIndex(val interf
 	)
 }
 
-func (j *jsiiProxy_OauthAppJwksOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OauthAppJwksOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -282,7 +291,10 @@ func (j *jsiiProxy_OauthAppJwksOutputReference) SetComplexObjectIsFromSet(val *b
 	)
 }
 
-func (j *jsiiProxy_OauthAppJwksOutputReference) SetE(val *string) {
+func (j *jsiiProxy_OauthAppJwksOutputReference)SetE(val *string) {
+	if err := j.validateSetEParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"e",
@@ -290,7 +302,10 @@ func (j *jsiiProxy_OauthAppJwksOutputReference) SetE(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthAppJwksOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OauthAppJwksOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -298,7 +313,10 @@ func (j *jsiiProxy_OauthAppJwksOutputReference) SetInternalValue(val interface{}
 	)
 }
 
-func (j *jsiiProxy_OauthAppJwksOutputReference) SetKid(val *string) {
+func (j *jsiiProxy_OauthAppJwksOutputReference)SetKid(val *string) {
+	if err := j.validateSetKidParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"kid",
@@ -306,7 +324,10 @@ func (j *jsiiProxy_OauthAppJwksOutputReference) SetKid(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthAppJwksOutputReference) SetKty(val *string) {
+func (j *jsiiProxy_OauthAppJwksOutputReference)SetKty(val *string) {
+	if err := j.validateSetKtyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"kty",
@@ -314,7 +335,10 @@ func (j *jsiiProxy_OauthAppJwksOutputReference) SetKty(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthAppJwksOutputReference) SetN(val *string) {
+func (j *jsiiProxy_OauthAppJwksOutputReference)SetN(val *string) {
+	if err := j.validateSetNParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"n",
@@ -322,7 +346,10 @@ func (j *jsiiProxy_OauthAppJwksOutputReference) SetN(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthAppJwksOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OauthAppJwksOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -330,7 +357,10 @@ func (j *jsiiProxy_OauthAppJwksOutputReference) SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_OauthAppJwksOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OauthAppJwksOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -352,6 +382,9 @@ func (o *jsiiProxy_OauthAppJwksOutputReference) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_OauthAppJwksOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -365,6 +398,9 @@ func (o *jsiiProxy_OauthAppJwksOutputReference) GetAnyMapAttribute(terraformAttr
 }
 
 func (o *jsiiProxy_OauthAppJwksOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -378,6 +414,9 @@ func (o *jsiiProxy_OauthAppJwksOutputReference) GetBooleanAttribute(terraformAtt
 }
 
 func (o *jsiiProxy_OauthAppJwksOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -391,6 +430,9 @@ func (o *jsiiProxy_OauthAppJwksOutputReference) GetBooleanMapAttribute(terraform
 }
 
 func (o *jsiiProxy_OauthAppJwksOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -404,6 +446,9 @@ func (o *jsiiProxy_OauthAppJwksOutputReference) GetListAttribute(terraformAttrib
 }
 
 func (o *jsiiProxy_OauthAppJwksOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -417,6 +462,9 @@ func (o *jsiiProxy_OauthAppJwksOutputReference) GetNumberAttribute(terraformAttr
 }
 
 func (o *jsiiProxy_OauthAppJwksOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -430,6 +478,9 @@ func (o *jsiiProxy_OauthAppJwksOutputReference) GetNumberListAttribute(terraform
 }
 
 func (o *jsiiProxy_OauthAppJwksOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -443,6 +494,9 @@ func (o *jsiiProxy_OauthAppJwksOutputReference) GetNumberMapAttribute(terraformA
 }
 
 func (o *jsiiProxy_OauthAppJwksOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -456,6 +510,9 @@ func (o *jsiiProxy_OauthAppJwksOutputReference) GetStringAttribute(terraformAttr
 }
 
 func (o *jsiiProxy_OauthAppJwksOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -482,6 +539,9 @@ func (o *jsiiProxy_OauthAppJwksOutputReference) InterpolationAsList() cdktf.IRes
 }
 
 func (o *jsiiProxy_OauthAppJwksOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -511,6 +571,9 @@ func (o *jsiiProxy_OauthAppJwksOutputReference) ResetN() {
 }
 
 func (o *jsiiProxy_OauthAppJwksOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

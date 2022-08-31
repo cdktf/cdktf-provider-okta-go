@@ -111,6 +111,9 @@ func (j *jsiiProxy_TemplateEmailTranslationsList) WrapsSet() *bool {
 func NewTemplateEmailTranslationsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TemplateEmailTranslationsList {
 	_init_.Initialize()
 
+	if err := validateNewTemplateEmailTranslationsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_TemplateEmailTranslationsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewTemplateEmailTranslationsList_Override(t TemplateEmailTranslationsList, 
 	)
 }
 
-func (j *jsiiProxy_TemplateEmailTranslationsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_TemplateEmailTranslationsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_TemplateEmailTranslationsList) SetInternalValue(val interface
 	)
 }
 
-func (j *jsiiProxy_TemplateEmailTranslationsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TemplateEmailTranslationsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_TemplateEmailTranslationsList) SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_TemplateEmailTranslationsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TemplateEmailTranslationsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_TemplateEmailTranslationsList) SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_TemplateEmailTranslationsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_TemplateEmailTranslationsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (t *jsiiProxy_TemplateEmailTranslationsList) ComputeFqn() *string {
 }
 
 func (t *jsiiProxy_TemplateEmailTranslationsList) Get(index *float64) TemplateEmailTranslationsOutputReference {
+	if err := t.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns TemplateEmailTranslationsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (t *jsiiProxy_TemplateEmailTranslationsList) Get(index *float64) TemplateEm
 }
 
 func (t *jsiiProxy_TemplateEmailTranslationsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

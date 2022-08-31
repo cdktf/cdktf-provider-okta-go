@@ -111,6 +111,9 @@ func (j *jsiiProxy_AppAutoLoginUsersList) WrapsSet() *bool {
 func NewAppAutoLoginUsersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppAutoLoginUsersList {
 	_init_.Initialize()
 
+	if err := validateNewAppAutoLoginUsersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AppAutoLoginUsersList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAppAutoLoginUsersList_Override(a AppAutoLoginUsersList, terraformResourc
 	)
 }
 
-func (j *jsiiProxy_AppAutoLoginUsersList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppAutoLoginUsersList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AppAutoLoginUsersList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppAutoLoginUsersList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppAutoLoginUsersList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AppAutoLoginUsersList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppAutoLoginUsersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppAutoLoginUsersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AppAutoLoginUsersList) SetTerraformResource(val cdktf.IInterp
 	)
 }
 
-func (j *jsiiProxy_AppAutoLoginUsersList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AppAutoLoginUsersList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AppAutoLoginUsersList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AppAutoLoginUsersList) Get(index *float64) AppAutoLoginUsersOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AppAutoLoginUsersOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AppAutoLoginUsersList) Get(index *float64) AppAutoLoginUsersO
 }
 
 func (a *jsiiProxy_AppAutoLoginUsersList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataOktaUsersUsersList) WrapsSet() *bool {
 func NewDataOktaUsersUsersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaUsersUsersList {
 	_init_.Initialize()
 
+	if err := validateNewDataOktaUsersUsersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOktaUsersUsersList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataOktaUsersUsersList_Override(d DataOktaUsersUsersList, terraformResou
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsersUsersList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOktaUsersUsersList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataOktaUsersUsersList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsersUsersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOktaUsersUsersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataOktaUsersUsersList) SetTerraformResource(val cdktf.IInter
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsersUsersList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOktaUsersUsersList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataOktaUsersUsersList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataOktaUsersUsersList) Get(index *float64) DataOktaUsersUsersOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataOktaUsersUsersOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataOktaUsersUsersList) Get(index *float64) DataOktaUsersUser
 }
 
 func (d *jsiiProxy_DataOktaUsersUsersList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

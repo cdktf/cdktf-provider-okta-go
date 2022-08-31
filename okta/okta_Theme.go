@@ -633,6 +633,9 @@ func (j *jsiiProxy_Theme) ThemeIdInput() *string {
 func NewTheme(scope constructs.Construct, id *string, config *ThemeConfig) Theme {
 	_init_.Initialize()
 
+	if err := validateNewThemeParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_Theme{}
 
 	_jsii_.Create(
@@ -655,7 +658,10 @@ func NewTheme_Override(t Theme, scope constructs.Construct, id *string, config *
 	)
 }
 
-func (j *jsiiProxy_Theme) SetBackgroundImage(val *string) {
+func (j *jsiiProxy_Theme)SetBackgroundImage(val *string) {
+	if err := j.validateSetBackgroundImageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backgroundImage",
@@ -663,7 +669,10 @@ func (j *jsiiProxy_Theme) SetBackgroundImage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Theme) SetBrandId(val *string) {
+func (j *jsiiProxy_Theme)SetBrandId(val *string) {
+	if err := j.validateSetBrandIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"brandId",
@@ -671,7 +680,10 @@ func (j *jsiiProxy_Theme) SetBrandId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Theme) SetConnection(val interface{}) {
+func (j *jsiiProxy_Theme)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -679,7 +691,7 @@ func (j *jsiiProxy_Theme) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Theme) SetCount(val *float64) {
+func (j *jsiiProxy_Theme)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -687,7 +699,7 @@ func (j *jsiiProxy_Theme) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Theme) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Theme)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -695,7 +707,10 @@ func (j *jsiiProxy_Theme) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Theme) SetEmailTemplateTouchPointVariant(val *string) {
+func (j *jsiiProxy_Theme)SetEmailTemplateTouchPointVariant(val *string) {
+	if err := j.validateSetEmailTemplateTouchPointVariantParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"emailTemplateTouchPointVariant",
@@ -703,7 +718,10 @@ func (j *jsiiProxy_Theme) SetEmailTemplateTouchPointVariant(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Theme) SetEndUserDashboardTouchPointVariant(val *string) {
+func (j *jsiiProxy_Theme)SetEndUserDashboardTouchPointVariant(val *string) {
+	if err := j.validateSetEndUserDashboardTouchPointVariantParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"endUserDashboardTouchPointVariant",
@@ -711,7 +729,10 @@ func (j *jsiiProxy_Theme) SetEndUserDashboardTouchPointVariant(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Theme) SetErrorPageTouchPointVariant(val *string) {
+func (j *jsiiProxy_Theme)SetErrorPageTouchPointVariant(val *string) {
+	if err := j.validateSetErrorPageTouchPointVariantParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"errorPageTouchPointVariant",
@@ -719,7 +740,10 @@ func (j *jsiiProxy_Theme) SetErrorPageTouchPointVariant(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Theme) SetFavicon(val *string) {
+func (j *jsiiProxy_Theme)SetFavicon(val *string) {
+	if err := j.validateSetFaviconParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"favicon",
@@ -727,7 +751,7 @@ func (j *jsiiProxy_Theme) SetFavicon(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Theme) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Theme)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -735,7 +759,10 @@ func (j *jsiiProxy_Theme) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Theme) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Theme)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -743,7 +770,10 @@ func (j *jsiiProxy_Theme) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Theme) SetLogo(val *string) {
+func (j *jsiiProxy_Theme)SetLogo(val *string) {
+	if err := j.validateSetLogoParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"logo",
@@ -751,7 +781,10 @@ func (j *jsiiProxy_Theme) SetLogo(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Theme) SetPrimaryColorContrastHex(val *string) {
+func (j *jsiiProxy_Theme)SetPrimaryColorContrastHex(val *string) {
+	if err := j.validateSetPrimaryColorContrastHexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"primaryColorContrastHex",
@@ -759,7 +792,10 @@ func (j *jsiiProxy_Theme) SetPrimaryColorContrastHex(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Theme) SetPrimaryColorHex(val *string) {
+func (j *jsiiProxy_Theme)SetPrimaryColorHex(val *string) {
+	if err := j.validateSetPrimaryColorHexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"primaryColorHex",
@@ -767,7 +803,7 @@ func (j *jsiiProxy_Theme) SetPrimaryColorHex(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Theme) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Theme)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -775,7 +811,10 @@ func (j *jsiiProxy_Theme) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Theme) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Theme)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -783,7 +822,10 @@ func (j *jsiiProxy_Theme) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Theme) SetSecondaryColorContrastHex(val *string) {
+func (j *jsiiProxy_Theme)SetSecondaryColorContrastHex(val *string) {
+	if err := j.validateSetSecondaryColorContrastHexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"secondaryColorContrastHex",
@@ -791,7 +833,10 @@ func (j *jsiiProxy_Theme) SetSecondaryColorContrastHex(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Theme) SetSecondaryColorHex(val *string) {
+func (j *jsiiProxy_Theme)SetSecondaryColorHex(val *string) {
+	if err := j.validateSetSecondaryColorHexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"secondaryColorHex",
@@ -799,7 +844,10 @@ func (j *jsiiProxy_Theme) SetSecondaryColorHex(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Theme) SetSignInPageTouchPointVariant(val *string) {
+func (j *jsiiProxy_Theme)SetSignInPageTouchPointVariant(val *string) {
+	if err := j.validateSetSignInPageTouchPointVariantParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"signInPageTouchPointVariant",
@@ -807,7 +855,10 @@ func (j *jsiiProxy_Theme) SetSignInPageTouchPointVariant(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Theme) SetThemeId(val *string) {
+func (j *jsiiProxy_Theme)SetThemeId(val *string) {
+	if err := j.validateSetThemeIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"themeId",
@@ -835,6 +886,9 @@ func (j *jsiiProxy_Theme) SetThemeId(val *string) {
 func Theme_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateTheme_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -859,6 +913,9 @@ func Theme_TfResourceType() *string {
 }
 
 func (t *jsiiProxy_Theme) AddOverride(path *string, value interface{}) {
+	if err := t.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
@@ -867,6 +924,9 @@ func (t *jsiiProxy_Theme) AddOverride(path *string, value interface{}) {
 }
 
 func (t *jsiiProxy_Theme) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -880,6 +940,9 @@ func (t *jsiiProxy_Theme) GetAnyMapAttribute(terraformAttribute *string) *map[st
 }
 
 func (t *jsiiProxy_Theme) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -893,6 +956,9 @@ func (t *jsiiProxy_Theme) GetBooleanAttribute(terraformAttribute *string) cdktf.
 }
 
 func (t *jsiiProxy_Theme) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := t.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -906,6 +972,9 @@ func (t *jsiiProxy_Theme) GetBooleanMapAttribute(terraformAttribute *string) *ma
 }
 
 func (t *jsiiProxy_Theme) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := t.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -919,6 +988,9 @@ func (t *jsiiProxy_Theme) GetListAttribute(terraformAttribute *string) *[]*strin
 }
 
 func (t *jsiiProxy_Theme) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := t.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -932,6 +1004,9 @@ func (t *jsiiProxy_Theme) GetNumberAttribute(terraformAttribute *string) *float6
 }
 
 func (t *jsiiProxy_Theme) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := t.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -945,6 +1020,9 @@ func (t *jsiiProxy_Theme) GetNumberListAttribute(terraformAttribute *string) *[]
 }
 
 func (t *jsiiProxy_Theme) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := t.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -958,6 +1036,9 @@ func (t *jsiiProxy_Theme) GetNumberMapAttribute(terraformAttribute *string) *map
 }
 
 func (t *jsiiProxy_Theme) GetStringAttribute(terraformAttribute *string) *string {
+	if err := t.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -971,6 +1052,9 @@ func (t *jsiiProxy_Theme) GetStringAttribute(terraformAttribute *string) *string
 }
 
 func (t *jsiiProxy_Theme) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := t.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -984,6 +1068,9 @@ func (t *jsiiProxy_Theme) GetStringMapAttribute(terraformAttribute *string) *map
 }
 
 func (t *jsiiProxy_Theme) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -997,6 +1084,9 @@ func (t *jsiiProxy_Theme) InterpolationForAttribute(terraformAttribute *string) 
 }
 
 func (t *jsiiProxy_Theme) OverrideLogicalId(newLogicalId *string) {
+	if err := t.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",

@@ -111,6 +111,9 @@ func (j *jsiiProxy_OauthAppUsersList) WrapsSet() *bool {
 func NewOauthAppUsersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OauthAppUsersList {
 	_init_.Initialize()
 
+	if err := validateNewOauthAppUsersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OauthAppUsersList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewOauthAppUsersList_Override(o OauthAppUsersList, terraformResource cdktf.
 	)
 }
 
-func (j *jsiiProxy_OauthAppUsersList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OauthAppUsersList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_OauthAppUsersList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OauthAppUsersList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OauthAppUsersList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_OauthAppUsersList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthAppUsersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OauthAppUsersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_OauthAppUsersList) SetTerraformResource(val cdktf.IInterpolat
 	)
 }
 
-func (j *jsiiProxy_OauthAppUsersList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OauthAppUsersList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_OauthAppUsersList) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_OauthAppUsersList) Get(index *float64) OauthAppUsersOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns OauthAppUsersOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_OauthAppUsersList) Get(index *float64) OauthAppUsersOutputRef
 }
 
 func (o *jsiiProxy_OauthAppUsersList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

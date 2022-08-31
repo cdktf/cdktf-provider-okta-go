@@ -933,6 +933,9 @@ func (j *jsiiProxy_PolicyPasswordDefault) TerraformResourceType() *string {
 func NewPolicyPasswordDefault(scope constructs.Construct, id *string, config *PolicyPasswordDefaultConfig) PolicyPasswordDefault {
 	_init_.Initialize()
 
+	if err := validateNewPolicyPasswordDefaultParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PolicyPasswordDefault{}
 
 	_jsii_.Create(
@@ -955,7 +958,10 @@ func NewPolicyPasswordDefault_Override(p PolicyPasswordDefault, scope constructs
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetCallRecovery(val *string) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetCallRecovery(val *string) {
+	if err := j.validateSetCallRecoveryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"callRecovery",
@@ -963,7 +969,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetCallRecovery(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetConnection(val interface{}) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -971,7 +980,7 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetCount(val *float64) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -979,7 +988,7 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -987,7 +996,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetEmailRecovery(val *string) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetEmailRecovery(val *string) {
+	if err := j.validateSetEmailRecoveryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"emailRecovery",
@@ -995,7 +1007,7 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetEmailRecovery(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1003,7 +1015,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetId(val *string) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -1011,7 +1026,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -1019,7 +1037,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordAutoUnlockMinutes(val *float64) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetPasswordAutoUnlockMinutes(val *float64) {
+	if err := j.validateSetPasswordAutoUnlockMinutesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordAutoUnlockMinutes",
@@ -1027,7 +1048,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordAutoUnlockMinutes(val *floa
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordDictionaryLookup(val interface{}) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetPasswordDictionaryLookup(val interface{}) {
+	if err := j.validateSetPasswordDictionaryLookupParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordDictionaryLookup",
@@ -1035,7 +1059,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordDictionaryLookup(val interf
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordExcludeFirstName(val interface{}) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetPasswordExcludeFirstName(val interface{}) {
+	if err := j.validateSetPasswordExcludeFirstNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordExcludeFirstName",
@@ -1043,7 +1070,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordExcludeFirstName(val interf
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordExcludeLastName(val interface{}) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetPasswordExcludeLastName(val interface{}) {
+	if err := j.validateSetPasswordExcludeLastNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordExcludeLastName",
@@ -1051,7 +1081,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordExcludeLastName(val interfa
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordExcludeUsername(val interface{}) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetPasswordExcludeUsername(val interface{}) {
+	if err := j.validateSetPasswordExcludeUsernameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordExcludeUsername",
@@ -1059,7 +1092,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordExcludeUsername(val interfa
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordExpireWarnDays(val *float64) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetPasswordExpireWarnDays(val *float64) {
+	if err := j.validateSetPasswordExpireWarnDaysParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordExpireWarnDays",
@@ -1067,7 +1103,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordExpireWarnDays(val *float64
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordHistoryCount(val *float64) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetPasswordHistoryCount(val *float64) {
+	if err := j.validateSetPasswordHistoryCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordHistoryCount",
@@ -1075,7 +1114,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordHistoryCount(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordLockoutNotificationChannels(val *[]*string) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetPasswordLockoutNotificationChannels(val *[]*string) {
+	if err := j.validateSetPasswordLockoutNotificationChannelsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordLockoutNotificationChannels",
@@ -1083,7 +1125,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordLockoutNotificationChannels
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordMaxAgeDays(val *float64) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetPasswordMaxAgeDays(val *float64) {
+	if err := j.validateSetPasswordMaxAgeDaysParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordMaxAgeDays",
@@ -1091,7 +1136,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordMaxAgeDays(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordMaxLockoutAttempts(val *float64) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetPasswordMaxLockoutAttempts(val *float64) {
+	if err := j.validateSetPasswordMaxLockoutAttemptsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordMaxLockoutAttempts",
@@ -1099,7 +1147,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordMaxLockoutAttempts(val *flo
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordMinAgeMinutes(val *float64) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetPasswordMinAgeMinutes(val *float64) {
+	if err := j.validateSetPasswordMinAgeMinutesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordMinAgeMinutes",
@@ -1107,7 +1158,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordMinAgeMinutes(val *float64)
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordMinLength(val *float64) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetPasswordMinLength(val *float64) {
+	if err := j.validateSetPasswordMinLengthParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordMinLength",
@@ -1115,7 +1169,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordMinLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordMinLowercase(val *float64) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetPasswordMinLowercase(val *float64) {
+	if err := j.validateSetPasswordMinLowercaseParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordMinLowercase",
@@ -1123,7 +1180,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordMinLowercase(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordMinNumber(val *float64) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetPasswordMinNumber(val *float64) {
+	if err := j.validateSetPasswordMinNumberParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordMinNumber",
@@ -1131,7 +1191,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordMinNumber(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordMinSymbol(val *float64) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetPasswordMinSymbol(val *float64) {
+	if err := j.validateSetPasswordMinSymbolParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordMinSymbol",
@@ -1139,7 +1202,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordMinSymbol(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordMinUppercase(val *float64) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetPasswordMinUppercase(val *float64) {
+	if err := j.validateSetPasswordMinUppercaseParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordMinUppercase",
@@ -1147,7 +1213,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordMinUppercase(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordShowLockoutFailures(val interface{}) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetPasswordShowLockoutFailures(val interface{}) {
+	if err := j.validateSetPasswordShowLockoutFailuresParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordShowLockoutFailures",
@@ -1155,7 +1224,7 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetPasswordShowLockoutFailures(val int
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1163,7 +1232,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1171,7 +1243,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetQuestionMinLength(val *float64) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetQuestionMinLength(val *float64) {
+	if err := j.validateSetQuestionMinLengthParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"questionMinLength",
@@ -1179,7 +1254,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetQuestionMinLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetQuestionRecovery(val *string) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetQuestionRecovery(val *string) {
+	if err := j.validateSetQuestionRecoveryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"questionRecovery",
@@ -1187,7 +1265,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetQuestionRecovery(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetRecoveryEmailToken(val *float64) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetRecoveryEmailToken(val *float64) {
+	if err := j.validateSetRecoveryEmailTokenParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"recoveryEmailToken",
@@ -1195,7 +1276,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetRecoveryEmailToken(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetSkipUnlock(val interface{}) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetSkipUnlock(val interface{}) {
+	if err := j.validateSetSkipUnlockParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"skipUnlock",
@@ -1203,7 +1287,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetSkipUnlock(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyPasswordDefault) SetSmsRecovery(val *string) {
+func (j *jsiiProxy_PolicyPasswordDefault)SetSmsRecovery(val *string) {
+	if err := j.validateSetSmsRecoveryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"smsRecovery",
@@ -1231,6 +1318,9 @@ func (j *jsiiProxy_PolicyPasswordDefault) SetSmsRecovery(val *string) {
 func PolicyPasswordDefault_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validatePolicyPasswordDefault_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1255,6 +1345,9 @@ func PolicyPasswordDefault_TfResourceType() *string {
 }
 
 func (p *jsiiProxy_PolicyPasswordDefault) AddOverride(path *string, value interface{}) {
+	if err := p.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
@@ -1263,6 +1356,9 @@ func (p *jsiiProxy_PolicyPasswordDefault) AddOverride(path *string, value interf
 }
 
 func (p *jsiiProxy_PolicyPasswordDefault) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1276,6 +1372,9 @@ func (p *jsiiProxy_PolicyPasswordDefault) GetAnyMapAttribute(terraformAttribute 
 }
 
 func (p *jsiiProxy_PolicyPasswordDefault) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1289,6 +1388,9 @@ func (p *jsiiProxy_PolicyPasswordDefault) GetBooleanAttribute(terraformAttribute
 }
 
 func (p *jsiiProxy_PolicyPasswordDefault) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1302,6 +1404,9 @@ func (p *jsiiProxy_PolicyPasswordDefault) GetBooleanMapAttribute(terraformAttrib
 }
 
 func (p *jsiiProxy_PolicyPasswordDefault) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1315,6 +1420,9 @@ func (p *jsiiProxy_PolicyPasswordDefault) GetListAttribute(terraformAttribute *s
 }
 
 func (p *jsiiProxy_PolicyPasswordDefault) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1328,6 +1436,9 @@ func (p *jsiiProxy_PolicyPasswordDefault) GetNumberAttribute(terraformAttribute 
 }
 
 func (p *jsiiProxy_PolicyPasswordDefault) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1341,6 +1452,9 @@ func (p *jsiiProxy_PolicyPasswordDefault) GetNumberListAttribute(terraformAttrib
 }
 
 func (p *jsiiProxy_PolicyPasswordDefault) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1354,6 +1468,9 @@ func (p *jsiiProxy_PolicyPasswordDefault) GetNumberMapAttribute(terraformAttribu
 }
 
 func (p *jsiiProxy_PolicyPasswordDefault) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1367,6 +1484,9 @@ func (p *jsiiProxy_PolicyPasswordDefault) GetStringAttribute(terraformAttribute 
 }
 
 func (p *jsiiProxy_PolicyPasswordDefault) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1380,6 +1500,9 @@ func (p *jsiiProxy_PolicyPasswordDefault) GetStringMapAttribute(terraformAttribu
 }
 
 func (p *jsiiProxy_PolicyPasswordDefault) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1393,6 +1516,9 @@ func (p *jsiiProxy_PolicyPasswordDefault) InterpolationForAttribute(terraformAtt
 }
 
 func (p *jsiiProxy_PolicyPasswordDefault) OverrideLogicalId(newLogicalId *string) {
+	if err := p.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",

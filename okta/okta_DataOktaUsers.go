@@ -418,6 +418,9 @@ func (j *jsiiProxy_DataOktaUsers) Users() DataOktaUsersUsersList {
 func NewDataOktaUsers(scope constructs.Construct, id *string, config *DataOktaUsersConfig) DataOktaUsers {
 	_init_.Initialize()
 
+	if err := validateNewDataOktaUsersParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataOktaUsers{}
 
 	_jsii_.Create(
@@ -440,7 +443,10 @@ func NewDataOktaUsers_Override(d DataOktaUsers, scope constructs.Construct, id *
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsers) SetCompoundSearchOperator(val *string) {
+func (j *jsiiProxy_DataOktaUsers)SetCompoundSearchOperator(val *string) {
+	if err := j.validateSetCompoundSearchOperatorParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"compoundSearchOperator",
@@ -448,7 +454,7 @@ func (j *jsiiProxy_DataOktaUsers) SetCompoundSearchOperator(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsers) SetCount(val *float64) {
+func (j *jsiiProxy_DataOktaUsers)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -456,7 +462,10 @@ func (j *jsiiProxy_DataOktaUsers) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsers) SetDelayReadSeconds(val *string) {
+func (j *jsiiProxy_DataOktaUsers)SetDelayReadSeconds(val *string) {
+	if err := j.validateSetDelayReadSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"delayReadSeconds",
@@ -464,7 +473,7 @@ func (j *jsiiProxy_DataOktaUsers) SetDelayReadSeconds(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsers) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataOktaUsers)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -472,7 +481,7 @@ func (j *jsiiProxy_DataOktaUsers) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsers) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataOktaUsers)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -480,7 +489,10 @@ func (j *jsiiProxy_DataOktaUsers) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsers) SetGroupId(val *string) {
+func (j *jsiiProxy_DataOktaUsers)SetGroupId(val *string) {
+	if err := j.validateSetGroupIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupId",
@@ -488,7 +500,10 @@ func (j *jsiiProxy_DataOktaUsers) SetGroupId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsers) SetId(val *string) {
+func (j *jsiiProxy_DataOktaUsers)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -496,7 +511,10 @@ func (j *jsiiProxy_DataOktaUsers) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsers) SetIncludeGroups(val interface{}) {
+func (j *jsiiProxy_DataOktaUsers)SetIncludeGroups(val interface{}) {
+	if err := j.validateSetIncludeGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"includeGroups",
@@ -504,7 +522,10 @@ func (j *jsiiProxy_DataOktaUsers) SetIncludeGroups(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsers) SetIncludeRoles(val interface{}) {
+func (j *jsiiProxy_DataOktaUsers)SetIncludeRoles(val interface{}) {
+	if err := j.validateSetIncludeRolesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"includeRoles",
@@ -512,7 +533,10 @@ func (j *jsiiProxy_DataOktaUsers) SetIncludeRoles(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsers) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataOktaUsers)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -520,7 +544,7 @@ func (j *jsiiProxy_DataOktaUsers) SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsers) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataOktaUsers)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -548,6 +572,9 @@ func (j *jsiiProxy_DataOktaUsers) SetProvider(val cdktf.TerraformProvider) {
 func DataOktaUsers_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataOktaUsers_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -572,6 +599,9 @@ func DataOktaUsers_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataOktaUsers) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -580,6 +610,9 @@ func (d *jsiiProxy_DataOktaUsers) AddOverride(path *string, value interface{}) {
 }
 
 func (d *jsiiProxy_DataOktaUsers) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -593,6 +626,9 @@ func (d *jsiiProxy_DataOktaUsers) GetAnyMapAttribute(terraformAttribute *string)
 }
 
 func (d *jsiiProxy_DataOktaUsers) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -606,6 +642,9 @@ func (d *jsiiProxy_DataOktaUsers) GetBooleanAttribute(terraformAttribute *string
 }
 
 func (d *jsiiProxy_DataOktaUsers) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -619,6 +658,9 @@ func (d *jsiiProxy_DataOktaUsers) GetBooleanMapAttribute(terraformAttribute *str
 }
 
 func (d *jsiiProxy_DataOktaUsers) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -632,6 +674,9 @@ func (d *jsiiProxy_DataOktaUsers) GetListAttribute(terraformAttribute *string) *
 }
 
 func (d *jsiiProxy_DataOktaUsers) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -645,6 +690,9 @@ func (d *jsiiProxy_DataOktaUsers) GetNumberAttribute(terraformAttribute *string)
 }
 
 func (d *jsiiProxy_DataOktaUsers) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -658,6 +706,9 @@ func (d *jsiiProxy_DataOktaUsers) GetNumberListAttribute(terraformAttribute *str
 }
 
 func (d *jsiiProxy_DataOktaUsers) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -671,6 +722,9 @@ func (d *jsiiProxy_DataOktaUsers) GetNumberMapAttribute(terraformAttribute *stri
 }
 
 func (d *jsiiProxy_DataOktaUsers) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -684,6 +738,9 @@ func (d *jsiiProxy_DataOktaUsers) GetStringAttribute(terraformAttribute *string)
 }
 
 func (d *jsiiProxy_DataOktaUsers) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -697,6 +754,9 @@ func (d *jsiiProxy_DataOktaUsers) GetStringMapAttribute(terraformAttribute *stri
 }
 
 func (d *jsiiProxy_DataOktaUsers) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -710,6 +770,9 @@ func (d *jsiiProxy_DataOktaUsers) InterpolationForAttribute(terraformAttribute *
 }
 
 func (d *jsiiProxy_DataOktaUsers) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
@@ -718,6 +781,9 @@ func (d *jsiiProxy_DataOktaUsers) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (d *jsiiProxy_DataOktaUsers) PutSearch(value interface{}) {
+	if err := d.validatePutSearchParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putSearch",

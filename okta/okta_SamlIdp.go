@@ -1064,6 +1064,9 @@ func (j *jsiiProxy_SamlIdp) UserTypeId() *string {
 func NewSamlIdp(scope constructs.Construct, id *string, config *SamlIdpConfig) SamlIdp {
 	_init_.Initialize()
 
+	if err := validateNewSamlIdpParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SamlIdp{}
 
 	_jsii_.Create(
@@ -1086,7 +1089,10 @@ func NewSamlIdp_Override(s SamlIdp, scope constructs.Construct, id *string, conf
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetAccountLinkAction(val *string) {
+func (j *jsiiProxy_SamlIdp)SetAccountLinkAction(val *string) {
+	if err := j.validateSetAccountLinkActionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountLinkAction",
@@ -1094,7 +1100,10 @@ func (j *jsiiProxy_SamlIdp) SetAccountLinkAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetAccountLinkGroupInclude(val *[]*string) {
+func (j *jsiiProxy_SamlIdp)SetAccountLinkGroupInclude(val *[]*string) {
+	if err := j.validateSetAccountLinkGroupIncludeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountLinkGroupInclude",
@@ -1102,7 +1111,10 @@ func (j *jsiiProxy_SamlIdp) SetAccountLinkGroupInclude(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetAcsBinding(val *string) {
+func (j *jsiiProxy_SamlIdp)SetAcsBinding(val *string) {
+	if err := j.validateSetAcsBindingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"acsBinding",
@@ -1110,7 +1122,10 @@ func (j *jsiiProxy_SamlIdp) SetAcsBinding(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetAcsType(val *string) {
+func (j *jsiiProxy_SamlIdp)SetAcsType(val *string) {
+	if err := j.validateSetAcsTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"acsType",
@@ -1118,7 +1133,10 @@ func (j *jsiiProxy_SamlIdp) SetAcsType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetConnection(val interface{}) {
+func (j *jsiiProxy_SamlIdp)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -1126,7 +1144,7 @@ func (j *jsiiProxy_SamlIdp) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetCount(val *float64) {
+func (j *jsiiProxy_SamlIdp)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -1134,7 +1152,7 @@ func (j *jsiiProxy_SamlIdp) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SamlIdp)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1142,7 +1160,10 @@ func (j *jsiiProxy_SamlIdp) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetDeprovisionedAction(val *string) {
+func (j *jsiiProxy_SamlIdp)SetDeprovisionedAction(val *string) {
+	if err := j.validateSetDeprovisionedActionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"deprovisionedAction",
@@ -1150,7 +1171,7 @@ func (j *jsiiProxy_SamlIdp) SetDeprovisionedAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SamlIdp)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1158,7 +1179,10 @@ func (j *jsiiProxy_SamlIdp) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetGroupsAction(val *string) {
+func (j *jsiiProxy_SamlIdp)SetGroupsAction(val *string) {
+	if err := j.validateSetGroupsActionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupsAction",
@@ -1166,7 +1190,10 @@ func (j *jsiiProxy_SamlIdp) SetGroupsAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetGroupsAssignment(val *[]*string) {
+func (j *jsiiProxy_SamlIdp)SetGroupsAssignment(val *[]*string) {
+	if err := j.validateSetGroupsAssignmentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupsAssignment",
@@ -1174,7 +1201,10 @@ func (j *jsiiProxy_SamlIdp) SetGroupsAssignment(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetGroupsAttribute(val *string) {
+func (j *jsiiProxy_SamlIdp)SetGroupsAttribute(val *string) {
+	if err := j.validateSetGroupsAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupsAttribute",
@@ -1182,7 +1212,10 @@ func (j *jsiiProxy_SamlIdp) SetGroupsAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetGroupsFilter(val *[]*string) {
+func (j *jsiiProxy_SamlIdp)SetGroupsFilter(val *[]*string) {
+	if err := j.validateSetGroupsFilterParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupsFilter",
@@ -1190,7 +1223,10 @@ func (j *jsiiProxy_SamlIdp) SetGroupsFilter(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetId(val *string) {
+func (j *jsiiProxy_SamlIdp)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -1198,7 +1234,10 @@ func (j *jsiiProxy_SamlIdp) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetIssuer(val *string) {
+func (j *jsiiProxy_SamlIdp)SetIssuer(val *string) {
+	if err := j.validateSetIssuerParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"issuer",
@@ -1206,7 +1245,10 @@ func (j *jsiiProxy_SamlIdp) SetIssuer(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetIssuerMode(val *string) {
+func (j *jsiiProxy_SamlIdp)SetIssuerMode(val *string) {
+	if err := j.validateSetIssuerModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"issuerMode",
@@ -1214,7 +1256,10 @@ func (j *jsiiProxy_SamlIdp) SetIssuerMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetKid(val *string) {
+func (j *jsiiProxy_SamlIdp)SetKid(val *string) {
+	if err := j.validateSetKidParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"kid",
@@ -1222,7 +1267,10 @@ func (j *jsiiProxy_SamlIdp) SetKid(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SamlIdp)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -1230,7 +1278,10 @@ func (j *jsiiProxy_SamlIdp) SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetMaxClockSkew(val *float64) {
+func (j *jsiiProxy_SamlIdp)SetMaxClockSkew(val *float64) {
+	if err := j.validateSetMaxClockSkewParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxClockSkew",
@@ -1238,7 +1289,10 @@ func (j *jsiiProxy_SamlIdp) SetMaxClockSkew(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetName(val *string) {
+func (j *jsiiProxy_SamlIdp)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -1246,7 +1300,10 @@ func (j *jsiiProxy_SamlIdp) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetNameFormat(val *string) {
+func (j *jsiiProxy_SamlIdp)SetNameFormat(val *string) {
+	if err := j.validateSetNameFormatParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"nameFormat",
@@ -1254,7 +1311,10 @@ func (j *jsiiProxy_SamlIdp) SetNameFormat(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetProfileMaster(val interface{}) {
+func (j *jsiiProxy_SamlIdp)SetProfileMaster(val interface{}) {
+	if err := j.validateSetProfileMasterParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"profileMaster",
@@ -1262,7 +1322,7 @@ func (j *jsiiProxy_SamlIdp) SetProfileMaster(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SamlIdp)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1270,7 +1330,10 @@ func (j *jsiiProxy_SamlIdp) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SamlIdp)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1278,7 +1341,10 @@ func (j *jsiiProxy_SamlIdp) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetProvisioningAction(val *string) {
+func (j *jsiiProxy_SamlIdp)SetProvisioningAction(val *string) {
+	if err := j.validateSetProvisioningActionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioningAction",
@@ -1286,7 +1352,10 @@ func (j *jsiiProxy_SamlIdp) SetProvisioningAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetRequestSignatureAlgorithm(val *string) {
+func (j *jsiiProxy_SamlIdp)SetRequestSignatureAlgorithm(val *string) {
+	if err := j.validateSetRequestSignatureAlgorithmParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"requestSignatureAlgorithm",
@@ -1294,7 +1363,10 @@ func (j *jsiiProxy_SamlIdp) SetRequestSignatureAlgorithm(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetRequestSignatureScope(val *string) {
+func (j *jsiiProxy_SamlIdp)SetRequestSignatureScope(val *string) {
+	if err := j.validateSetRequestSignatureScopeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"requestSignatureScope",
@@ -1302,7 +1374,10 @@ func (j *jsiiProxy_SamlIdp) SetRequestSignatureScope(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetResponseSignatureAlgorithm(val *string) {
+func (j *jsiiProxy_SamlIdp)SetResponseSignatureAlgorithm(val *string) {
+	if err := j.validateSetResponseSignatureAlgorithmParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"responseSignatureAlgorithm",
@@ -1310,7 +1385,10 @@ func (j *jsiiProxy_SamlIdp) SetResponseSignatureAlgorithm(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetResponseSignatureScope(val *string) {
+func (j *jsiiProxy_SamlIdp)SetResponseSignatureScope(val *string) {
+	if err := j.validateSetResponseSignatureScopeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"responseSignatureScope",
@@ -1318,7 +1396,10 @@ func (j *jsiiProxy_SamlIdp) SetResponseSignatureScope(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetSsoBinding(val *string) {
+func (j *jsiiProxy_SamlIdp)SetSsoBinding(val *string) {
+	if err := j.validateSetSsoBindingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ssoBinding",
@@ -1326,7 +1407,10 @@ func (j *jsiiProxy_SamlIdp) SetSsoBinding(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetSsoDestination(val *string) {
+func (j *jsiiProxy_SamlIdp)SetSsoDestination(val *string) {
+	if err := j.validateSetSsoDestinationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ssoDestination",
@@ -1334,7 +1418,10 @@ func (j *jsiiProxy_SamlIdp) SetSsoDestination(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetSsoUrl(val *string) {
+func (j *jsiiProxy_SamlIdp)SetSsoUrl(val *string) {
+	if err := j.validateSetSsoUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ssoUrl",
@@ -1342,7 +1429,10 @@ func (j *jsiiProxy_SamlIdp) SetSsoUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetStatus(val *string) {
+func (j *jsiiProxy_SamlIdp)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"status",
@@ -1350,7 +1440,10 @@ func (j *jsiiProxy_SamlIdp) SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetSubjectFilter(val *string) {
+func (j *jsiiProxy_SamlIdp)SetSubjectFilter(val *string) {
+	if err := j.validateSetSubjectFilterParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"subjectFilter",
@@ -1358,7 +1451,10 @@ func (j *jsiiProxy_SamlIdp) SetSubjectFilter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetSubjectFormat(val *[]*string) {
+func (j *jsiiProxy_SamlIdp)SetSubjectFormat(val *[]*string) {
+	if err := j.validateSetSubjectFormatParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"subjectFormat",
@@ -1366,7 +1462,10 @@ func (j *jsiiProxy_SamlIdp) SetSubjectFormat(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetSubjectMatchAttribute(val *string) {
+func (j *jsiiProxy_SamlIdp)SetSubjectMatchAttribute(val *string) {
+	if err := j.validateSetSubjectMatchAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"subjectMatchAttribute",
@@ -1374,7 +1473,10 @@ func (j *jsiiProxy_SamlIdp) SetSubjectMatchAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetSubjectMatchType(val *string) {
+func (j *jsiiProxy_SamlIdp)SetSubjectMatchType(val *string) {
+	if err := j.validateSetSubjectMatchTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"subjectMatchType",
@@ -1382,7 +1484,10 @@ func (j *jsiiProxy_SamlIdp) SetSubjectMatchType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetSuspendedAction(val *string) {
+func (j *jsiiProxy_SamlIdp)SetSuspendedAction(val *string) {
+	if err := j.validateSetSuspendedActionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"suspendedAction",
@@ -1390,7 +1495,10 @@ func (j *jsiiProxy_SamlIdp) SetSuspendedAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdp) SetUsernameTemplate(val *string) {
+func (j *jsiiProxy_SamlIdp)SetUsernameTemplate(val *string) {
+	if err := j.validateSetUsernameTemplateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"usernameTemplate",
@@ -1418,6 +1526,9 @@ func (j *jsiiProxy_SamlIdp) SetUsernameTemplate(val *string) {
 func SamlIdp_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateSamlIdp_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1442,6 +1553,9 @@ func SamlIdp_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_SamlIdp) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -1450,6 +1564,9 @@ func (s *jsiiProxy_SamlIdp) AddOverride(path *string, value interface{}) {
 }
 
 func (s *jsiiProxy_SamlIdp) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1463,6 +1580,9 @@ func (s *jsiiProxy_SamlIdp) GetAnyMapAttribute(terraformAttribute *string) *map[
 }
 
 func (s *jsiiProxy_SamlIdp) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1476,6 +1596,9 @@ func (s *jsiiProxy_SamlIdp) GetBooleanAttribute(terraformAttribute *string) cdkt
 }
 
 func (s *jsiiProxy_SamlIdp) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1489,6 +1612,9 @@ func (s *jsiiProxy_SamlIdp) GetBooleanMapAttribute(terraformAttribute *string) *
 }
 
 func (s *jsiiProxy_SamlIdp) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1502,6 +1628,9 @@ func (s *jsiiProxy_SamlIdp) GetListAttribute(terraformAttribute *string) *[]*str
 }
 
 func (s *jsiiProxy_SamlIdp) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1515,6 +1644,9 @@ func (s *jsiiProxy_SamlIdp) GetNumberAttribute(terraformAttribute *string) *floa
 }
 
 func (s *jsiiProxy_SamlIdp) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1528,6 +1660,9 @@ func (s *jsiiProxy_SamlIdp) GetNumberListAttribute(terraformAttribute *string) *
 }
 
 func (s *jsiiProxy_SamlIdp) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1541,6 +1676,9 @@ func (s *jsiiProxy_SamlIdp) GetNumberMapAttribute(terraformAttribute *string) *m
 }
 
 func (s *jsiiProxy_SamlIdp) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1554,6 +1692,9 @@ func (s *jsiiProxy_SamlIdp) GetStringAttribute(terraformAttribute *string) *stri
 }
 
 func (s *jsiiProxy_SamlIdp) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1567,6 +1708,9 @@ func (s *jsiiProxy_SamlIdp) GetStringMapAttribute(terraformAttribute *string) *m
 }
 
 func (s *jsiiProxy_SamlIdp) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1580,6 +1724,9 @@ func (s *jsiiProxy_SamlIdp) InterpolationForAttribute(terraformAttribute *string
 }
 
 func (s *jsiiProxy_SamlIdp) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",

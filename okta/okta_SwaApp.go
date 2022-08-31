@@ -1019,6 +1019,9 @@ func (j *jsiiProxy_SwaApp) UsersInput() interface{} {
 func NewSwaApp(scope constructs.Construct, id *string, config *SwaAppConfig) SwaApp {
 	_init_.Initialize()
 
+	if err := validateNewSwaAppParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SwaApp{}
 
 	_jsii_.Create(
@@ -1041,7 +1044,10 @@ func NewSwaApp_Override(s SwaApp, scope constructs.Construct, id *string, config
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetAccessibilityErrorRedirectUrl(val *string) {
+func (j *jsiiProxy_SwaApp)SetAccessibilityErrorRedirectUrl(val *string) {
+	if err := j.validateSetAccessibilityErrorRedirectUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accessibilityErrorRedirectUrl",
@@ -1049,7 +1055,10 @@ func (j *jsiiProxy_SwaApp) SetAccessibilityErrorRedirectUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetAccessibilityLoginRedirectUrl(val *string) {
+func (j *jsiiProxy_SwaApp)SetAccessibilityLoginRedirectUrl(val *string) {
+	if err := j.validateSetAccessibilityLoginRedirectUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accessibilityLoginRedirectUrl",
@@ -1057,7 +1066,10 @@ func (j *jsiiProxy_SwaApp) SetAccessibilityLoginRedirectUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetAccessibilitySelfService(val interface{}) {
+func (j *jsiiProxy_SwaApp)SetAccessibilitySelfService(val interface{}) {
+	if err := j.validateSetAccessibilitySelfServiceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accessibilitySelfService",
@@ -1065,7 +1077,10 @@ func (j *jsiiProxy_SwaApp) SetAccessibilitySelfService(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetAdminNote(val *string) {
+func (j *jsiiProxy_SwaApp)SetAdminNote(val *string) {
+	if err := j.validateSetAdminNoteParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"adminNote",
@@ -1073,7 +1088,10 @@ func (j *jsiiProxy_SwaApp) SetAdminNote(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetAppLinksJson(val *string) {
+func (j *jsiiProxy_SwaApp)SetAppLinksJson(val *string) {
+	if err := j.validateSetAppLinksJsonParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"appLinksJson",
@@ -1081,7 +1099,10 @@ func (j *jsiiProxy_SwaApp) SetAppLinksJson(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetAutoSubmitToolbar(val interface{}) {
+func (j *jsiiProxy_SwaApp)SetAutoSubmitToolbar(val interface{}) {
+	if err := j.validateSetAutoSubmitToolbarParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoSubmitToolbar",
@@ -1089,7 +1110,10 @@ func (j *jsiiProxy_SwaApp) SetAutoSubmitToolbar(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetButtonField(val *string) {
+func (j *jsiiProxy_SwaApp)SetButtonField(val *string) {
+	if err := j.validateSetButtonFieldParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"buttonField",
@@ -1097,7 +1121,10 @@ func (j *jsiiProxy_SwaApp) SetButtonField(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetCheckbox(val *string) {
+func (j *jsiiProxy_SwaApp)SetCheckbox(val *string) {
+	if err := j.validateSetCheckboxParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"checkbox",
@@ -1105,7 +1132,10 @@ func (j *jsiiProxy_SwaApp) SetCheckbox(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetConnection(val interface{}) {
+func (j *jsiiProxy_SwaApp)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -1113,7 +1143,7 @@ func (j *jsiiProxy_SwaApp) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetCount(val *float64) {
+func (j *jsiiProxy_SwaApp)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -1121,7 +1151,7 @@ func (j *jsiiProxy_SwaApp) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SwaApp)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1129,7 +1159,10 @@ func (j *jsiiProxy_SwaApp) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetEnduserNote(val *string) {
+func (j *jsiiProxy_SwaApp)SetEnduserNote(val *string) {
+	if err := j.validateSetEnduserNoteParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enduserNote",
@@ -1137,7 +1170,7 @@ func (j *jsiiProxy_SwaApp) SetEnduserNote(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SwaApp)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1145,7 +1178,10 @@ func (j *jsiiProxy_SwaApp) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetGroups(val *[]*string) {
+func (j *jsiiProxy_SwaApp)SetGroups(val *[]*string) {
+	if err := j.validateSetGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groups",
@@ -1153,7 +1189,10 @@ func (j *jsiiProxy_SwaApp) SetGroups(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetHideIos(val interface{}) {
+func (j *jsiiProxy_SwaApp)SetHideIos(val interface{}) {
+	if err := j.validateSetHideIosParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"hideIos",
@@ -1161,7 +1200,10 @@ func (j *jsiiProxy_SwaApp) SetHideIos(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetHideWeb(val interface{}) {
+func (j *jsiiProxy_SwaApp)SetHideWeb(val interface{}) {
+	if err := j.validateSetHideWebParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"hideWeb",
@@ -1169,7 +1211,10 @@ func (j *jsiiProxy_SwaApp) SetHideWeb(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetId(val *string) {
+func (j *jsiiProxy_SwaApp)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -1177,7 +1222,10 @@ func (j *jsiiProxy_SwaApp) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetLabel(val *string) {
+func (j *jsiiProxy_SwaApp)SetLabel(val *string) {
+	if err := j.validateSetLabelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"label",
@@ -1185,7 +1233,10 @@ func (j *jsiiProxy_SwaApp) SetLabel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SwaApp)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -1193,7 +1244,10 @@ func (j *jsiiProxy_SwaApp) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetLogo(val *string) {
+func (j *jsiiProxy_SwaApp)SetLogo(val *string) {
+	if err := j.validateSetLogoParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"logo",
@@ -1201,7 +1255,10 @@ func (j *jsiiProxy_SwaApp) SetLogo(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetPasswordField(val *string) {
+func (j *jsiiProxy_SwaApp)SetPasswordField(val *string) {
+	if err := j.validateSetPasswordFieldParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordField",
@@ -1209,7 +1266,10 @@ func (j *jsiiProxy_SwaApp) SetPasswordField(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetPreconfiguredApp(val *string) {
+func (j *jsiiProxy_SwaApp)SetPreconfiguredApp(val *string) {
+	if err := j.validateSetPreconfiguredAppParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"preconfiguredApp",
@@ -1217,7 +1277,7 @@ func (j *jsiiProxy_SwaApp) SetPreconfiguredApp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SwaApp)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1225,7 +1285,10 @@ func (j *jsiiProxy_SwaApp) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SwaApp)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1233,7 +1296,10 @@ func (j *jsiiProxy_SwaApp) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetRedirectUrl(val *string) {
+func (j *jsiiProxy_SwaApp)SetRedirectUrl(val *string) {
+	if err := j.validateSetRedirectUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"redirectUrl",
@@ -1241,7 +1307,10 @@ func (j *jsiiProxy_SwaApp) SetRedirectUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetSkipGroups(val interface{}) {
+func (j *jsiiProxy_SwaApp)SetSkipGroups(val interface{}) {
+	if err := j.validateSetSkipGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"skipGroups",
@@ -1249,7 +1318,10 @@ func (j *jsiiProxy_SwaApp) SetSkipGroups(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetSkipUsers(val interface{}) {
+func (j *jsiiProxy_SwaApp)SetSkipUsers(val interface{}) {
+	if err := j.validateSetSkipUsersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"skipUsers",
@@ -1257,7 +1329,10 @@ func (j *jsiiProxy_SwaApp) SetSkipUsers(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetStatus(val *string) {
+func (j *jsiiProxy_SwaApp)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"status",
@@ -1265,7 +1340,10 @@ func (j *jsiiProxy_SwaApp) SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetUrl(val *string) {
+func (j *jsiiProxy_SwaApp)SetUrl(val *string) {
+	if err := j.validateSetUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"url",
@@ -1273,7 +1351,10 @@ func (j *jsiiProxy_SwaApp) SetUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetUrlRegex(val *string) {
+func (j *jsiiProxy_SwaApp)SetUrlRegex(val *string) {
+	if err := j.validateSetUrlRegexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"urlRegex",
@@ -1281,7 +1362,10 @@ func (j *jsiiProxy_SwaApp) SetUrlRegex(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetUsernameField(val *string) {
+func (j *jsiiProxy_SwaApp)SetUsernameField(val *string) {
+	if err := j.validateSetUsernameFieldParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"usernameField",
@@ -1289,7 +1373,10 @@ func (j *jsiiProxy_SwaApp) SetUsernameField(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetUserNameTemplate(val *string) {
+func (j *jsiiProxy_SwaApp)SetUserNameTemplate(val *string) {
+	if err := j.validateSetUserNameTemplateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userNameTemplate",
@@ -1297,7 +1384,10 @@ func (j *jsiiProxy_SwaApp) SetUserNameTemplate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetUserNameTemplatePushStatus(val *string) {
+func (j *jsiiProxy_SwaApp)SetUserNameTemplatePushStatus(val *string) {
+	if err := j.validateSetUserNameTemplatePushStatusParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userNameTemplatePushStatus",
@@ -1305,7 +1395,10 @@ func (j *jsiiProxy_SwaApp) SetUserNameTemplatePushStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetUserNameTemplateSuffix(val *string) {
+func (j *jsiiProxy_SwaApp)SetUserNameTemplateSuffix(val *string) {
+	if err := j.validateSetUserNameTemplateSuffixParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userNameTemplateSuffix",
@@ -1313,7 +1406,10 @@ func (j *jsiiProxy_SwaApp) SetUserNameTemplateSuffix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp) SetUserNameTemplateType(val *string) {
+func (j *jsiiProxy_SwaApp)SetUserNameTemplateType(val *string) {
+	if err := j.validateSetUserNameTemplateTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userNameTemplateType",
@@ -1341,6 +1437,9 @@ func (j *jsiiProxy_SwaApp) SetUserNameTemplateType(val *string) {
 func SwaApp_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateSwaApp_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1365,6 +1464,9 @@ func SwaApp_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_SwaApp) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -1373,6 +1475,9 @@ func (s *jsiiProxy_SwaApp) AddOverride(path *string, value interface{}) {
 }
 
 func (s *jsiiProxy_SwaApp) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1386,6 +1491,9 @@ func (s *jsiiProxy_SwaApp) GetAnyMapAttribute(terraformAttribute *string) *map[s
 }
 
 func (s *jsiiProxy_SwaApp) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1399,6 +1507,9 @@ func (s *jsiiProxy_SwaApp) GetBooleanAttribute(terraformAttribute *string) cdktf
 }
 
 func (s *jsiiProxy_SwaApp) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1412,6 +1523,9 @@ func (s *jsiiProxy_SwaApp) GetBooleanMapAttribute(terraformAttribute *string) *m
 }
 
 func (s *jsiiProxy_SwaApp) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1425,6 +1539,9 @@ func (s *jsiiProxy_SwaApp) GetListAttribute(terraformAttribute *string) *[]*stri
 }
 
 func (s *jsiiProxy_SwaApp) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1438,6 +1555,9 @@ func (s *jsiiProxy_SwaApp) GetNumberAttribute(terraformAttribute *string) *float
 }
 
 func (s *jsiiProxy_SwaApp) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1451,6 +1571,9 @@ func (s *jsiiProxy_SwaApp) GetNumberListAttribute(terraformAttribute *string) *[
 }
 
 func (s *jsiiProxy_SwaApp) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1464,6 +1587,9 @@ func (s *jsiiProxy_SwaApp) GetNumberMapAttribute(terraformAttribute *string) *ma
 }
 
 func (s *jsiiProxy_SwaApp) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1477,6 +1603,9 @@ func (s *jsiiProxy_SwaApp) GetStringAttribute(terraformAttribute *string) *strin
 }
 
 func (s *jsiiProxy_SwaApp) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1490,6 +1619,9 @@ func (s *jsiiProxy_SwaApp) GetStringMapAttribute(terraformAttribute *string) *ma
 }
 
 func (s *jsiiProxy_SwaApp) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1503,6 +1635,9 @@ func (s *jsiiProxy_SwaApp) InterpolationForAttribute(terraformAttribute *string)
 }
 
 func (s *jsiiProxy_SwaApp) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
@@ -1511,6 +1646,9 @@ func (s *jsiiProxy_SwaApp) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (s *jsiiProxy_SwaApp) PutTimeouts(value *SwaAppTimeouts) {
+	if err := s.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
@@ -1519,6 +1657,9 @@ func (s *jsiiProxy_SwaApp) PutTimeouts(value *SwaAppTimeouts) {
 }
 
 func (s *jsiiProxy_SwaApp) PutUsers(value interface{}) {
+	if err := s.validatePutUsersParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putUsers",

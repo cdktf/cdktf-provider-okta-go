@@ -480,6 +480,9 @@ func (j *jsiiProxy_UserBaseSchemaProperty) UserTypeInput() *string {
 func NewUserBaseSchemaProperty(scope constructs.Construct, id *string, config *UserBaseSchemaPropertyConfig) UserBaseSchemaProperty {
 	_init_.Initialize()
 
+	if err := validateNewUserBaseSchemaPropertyParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_UserBaseSchemaProperty{}
 
 	_jsii_.Create(
@@ -502,7 +505,10 @@ func NewUserBaseSchemaProperty_Override(u UserBaseSchemaProperty, scope construc
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) SetConnection(val interface{}) {
+func (j *jsiiProxy_UserBaseSchemaProperty)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -510,7 +516,7 @@ func (j *jsiiProxy_UserBaseSchemaProperty) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) SetCount(val *float64) {
+func (j *jsiiProxy_UserBaseSchemaProperty)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -518,7 +524,7 @@ func (j *jsiiProxy_UserBaseSchemaProperty) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_UserBaseSchemaProperty)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -526,7 +532,7 @@ func (j *jsiiProxy_UserBaseSchemaProperty) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_UserBaseSchemaProperty)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -534,7 +540,10 @@ func (j *jsiiProxy_UserBaseSchemaProperty) SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) SetId(val *string) {
+func (j *jsiiProxy_UserBaseSchemaProperty)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -542,7 +551,10 @@ func (j *jsiiProxy_UserBaseSchemaProperty) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) SetIndex(val *string) {
+func (j *jsiiProxy_UserBaseSchemaProperty)SetIndex(val *string) {
+	if err := j.validateSetIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"index",
@@ -550,7 +562,10 @@ func (j *jsiiProxy_UserBaseSchemaProperty) SetIndex(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_UserBaseSchemaProperty)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -558,7 +573,10 @@ func (j *jsiiProxy_UserBaseSchemaProperty) SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) SetMaster(val *string) {
+func (j *jsiiProxy_UserBaseSchemaProperty)SetMaster(val *string) {
+	if err := j.validateSetMasterParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"master",
@@ -566,7 +584,10 @@ func (j *jsiiProxy_UserBaseSchemaProperty) SetMaster(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) SetPattern(val *string) {
+func (j *jsiiProxy_UserBaseSchemaProperty)SetPattern(val *string) {
+	if err := j.validateSetPatternParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pattern",
@@ -574,7 +595,10 @@ func (j *jsiiProxy_UserBaseSchemaProperty) SetPattern(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) SetPermissions(val *string) {
+func (j *jsiiProxy_UserBaseSchemaProperty)SetPermissions(val *string) {
+	if err := j.validateSetPermissionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"permissions",
@@ -582,7 +606,7 @@ func (j *jsiiProxy_UserBaseSchemaProperty) SetPermissions(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_UserBaseSchemaProperty)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -590,7 +614,10 @@ func (j *jsiiProxy_UserBaseSchemaProperty) SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_UserBaseSchemaProperty)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -598,7 +625,10 @@ func (j *jsiiProxy_UserBaseSchemaProperty) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) SetRequired(val interface{}) {
+func (j *jsiiProxy_UserBaseSchemaProperty)SetRequired(val interface{}) {
+	if err := j.validateSetRequiredParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"required",
@@ -606,7 +636,10 @@ func (j *jsiiProxy_UserBaseSchemaProperty) SetRequired(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) SetTitle(val *string) {
+func (j *jsiiProxy_UserBaseSchemaProperty)SetTitle(val *string) {
+	if err := j.validateSetTitleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"title",
@@ -614,7 +647,10 @@ func (j *jsiiProxy_UserBaseSchemaProperty) SetTitle(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) SetType(val *string) {
+func (j *jsiiProxy_UserBaseSchemaProperty)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -622,7 +658,10 @@ func (j *jsiiProxy_UserBaseSchemaProperty) SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) SetUserType(val *string) {
+func (j *jsiiProxy_UserBaseSchemaProperty)SetUserType(val *string) {
+	if err := j.validateSetUserTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userType",
@@ -650,6 +689,9 @@ func (j *jsiiProxy_UserBaseSchemaProperty) SetUserType(val *string) {
 func UserBaseSchemaProperty_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateUserBaseSchemaProperty_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -674,6 +716,9 @@ func UserBaseSchemaProperty_TfResourceType() *string {
 }
 
 func (u *jsiiProxy_UserBaseSchemaProperty) AddOverride(path *string, value interface{}) {
+	if err := u.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		u,
 		"addOverride",
@@ -682,6 +727,9 @@ func (u *jsiiProxy_UserBaseSchemaProperty) AddOverride(path *string, value inter
 }
 
 func (u *jsiiProxy_UserBaseSchemaProperty) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := u.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -695,6 +743,9 @@ func (u *jsiiProxy_UserBaseSchemaProperty) GetAnyMapAttribute(terraformAttribute
 }
 
 func (u *jsiiProxy_UserBaseSchemaProperty) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := u.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -708,6 +759,9 @@ func (u *jsiiProxy_UserBaseSchemaProperty) GetBooleanAttribute(terraformAttribut
 }
 
 func (u *jsiiProxy_UserBaseSchemaProperty) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := u.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -721,6 +775,9 @@ func (u *jsiiProxy_UserBaseSchemaProperty) GetBooleanMapAttribute(terraformAttri
 }
 
 func (u *jsiiProxy_UserBaseSchemaProperty) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := u.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -734,6 +791,9 @@ func (u *jsiiProxy_UserBaseSchemaProperty) GetListAttribute(terraformAttribute *
 }
 
 func (u *jsiiProxy_UserBaseSchemaProperty) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := u.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -747,6 +807,9 @@ func (u *jsiiProxy_UserBaseSchemaProperty) GetNumberAttribute(terraformAttribute
 }
 
 func (u *jsiiProxy_UserBaseSchemaProperty) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := u.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -760,6 +823,9 @@ func (u *jsiiProxy_UserBaseSchemaProperty) GetNumberListAttribute(terraformAttri
 }
 
 func (u *jsiiProxy_UserBaseSchemaProperty) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := u.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -773,6 +839,9 @@ func (u *jsiiProxy_UserBaseSchemaProperty) GetNumberMapAttribute(terraformAttrib
 }
 
 func (u *jsiiProxy_UserBaseSchemaProperty) GetStringAttribute(terraformAttribute *string) *string {
+	if err := u.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -786,6 +855,9 @@ func (u *jsiiProxy_UserBaseSchemaProperty) GetStringAttribute(terraformAttribute
 }
 
 func (u *jsiiProxy_UserBaseSchemaProperty) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := u.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -799,6 +871,9 @@ func (u *jsiiProxy_UserBaseSchemaProperty) GetStringMapAttribute(terraformAttrib
 }
 
 func (u *jsiiProxy_UserBaseSchemaProperty) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := u.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -812,6 +887,9 @@ func (u *jsiiProxy_UserBaseSchemaProperty) InterpolationForAttribute(terraformAt
 }
 
 func (u *jsiiProxy_UserBaseSchemaProperty) OverrideLogicalId(newLogicalId *string) {
+	if err := u.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		u,
 		"overrideLogicalId",
