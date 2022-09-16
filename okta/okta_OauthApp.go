@@ -137,6 +137,9 @@ type OauthApp interface {
 	OmitSecret() interface{}
 	SetOmitSecret(val interface{})
 	OmitSecretInput() interface{}
+	PkceRequired() interface{}
+	SetPkceRequired(val interface{})
+	PkceRequiredInput() interface{}
 	PolicyUri() *string
 	SetPolicyUri(val *string)
 	PolicyUriInput() *string
@@ -274,6 +277,7 @@ type OauthApp interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPkceRequired()
 	ResetPolicyUri()
 	ResetPostLogoutRedirectUris()
 	ResetProfile()
@@ -1053,6 +1057,26 @@ func (j *jsiiProxy_OauthApp) OmitSecretInput() interface{} {
 	_jsii_.Get(
 		j,
 		"omitSecretInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OauthApp) PkceRequired() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pkceRequired",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OauthApp) PkceRequiredInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pkceRequiredInput",
 		&returns,
 	)
 	return returns
@@ -1923,6 +1947,17 @@ func (j *jsiiProxy_OauthApp)SetOmitSecret(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_OauthApp)SetPkceRequired(val interface{}) {
+	if err := j.validateSetPkceRequiredParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pkceRequired",
+		val,
+	)
+}
+
 func (j *jsiiProxy_OauthApp)SetPolicyUri(val *string) {
 	if err := j.validateSetPolicyUriParameters(val); err != nil {
 		panic(err)
@@ -2656,6 +2691,14 @@ func (o *jsiiProxy_OauthApp) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OauthApp) ResetPkceRequired() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetPkceRequired",
 		nil, // no parameters
 	)
 }

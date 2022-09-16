@@ -20,6 +20,7 @@ type DataOktaAppOauth interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClientId() *string
+	ClientSecret() *string
 	ClientUri() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
@@ -184,6 +185,16 @@ func (j *jsiiProxy_DataOktaAppOauth) ClientId() *string {
 	_jsii_.Get(
 		j,
 		"clientId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOktaAppOauth) ClientSecret() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientSecret",
 		&returns,
 	)
 	return returns

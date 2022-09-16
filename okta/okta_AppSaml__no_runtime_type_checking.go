@@ -138,10 +138,6 @@ func (j *jsiiProxy_AppSaml) validateSetEnduserNoteParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_AppSaml) validateSetFeaturesParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AppSaml) validateSetGroupsParameters(val *[]*string) error {
 	return nil
 }

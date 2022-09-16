@@ -84,8 +84,6 @@ type SamlApp interface {
 	EntityKey() *string
 	EntityUrl() *string
 	Features() *[]*string
-	SetFeatures(val *[]*string)
-	FeaturesInput() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -270,7 +268,6 @@ type SamlApp interface {
 	ResetDestination()
 	ResetDigestAlgorithm()
 	ResetEnduserNote()
-	ResetFeatures()
 	ResetGroups()
 	ResetHideIos()
 	ResetHideWeb()
@@ -757,16 +754,6 @@ func (j *jsiiProxy_SamlApp) Features() *[]*string {
 	_jsii_.Get(
 		j,
 		"features",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SamlApp) FeaturesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"featuresInput",
 		&returns,
 	)
 	return returns
@@ -1885,17 +1872,6 @@ func (j *jsiiProxy_SamlApp)SetEnduserNote(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlApp)SetFeatures(val *[]*string) {
-	if err := j.validateSetFeaturesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"features",
-		val,
-	)
-}
-
 func (j *jsiiProxy_SamlApp)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -2679,14 +2655,6 @@ func (s *jsiiProxy_SamlApp) ResetEnduserNote() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetEnduserNote",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SamlApp) ResetFeatures() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetFeatures",
 		nil, // no parameters
 	)
 }

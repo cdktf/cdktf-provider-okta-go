@@ -92,10 +92,6 @@ type SamlAppConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#enduser_note SamlApp#enduser_note}
 	EnduserNote *string `field:"optional" json:"enduserNote" yaml:"enduserNote"`
-	// features to enable.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#features SamlApp#features}
-	Features *[]*string `field:"optional" json:"features" yaml:"features"`
 	// Groups associated with the application.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#groups SamlApp#groups}

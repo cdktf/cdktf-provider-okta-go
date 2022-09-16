@@ -26,7 +26,9 @@ type IdpSocialConfig struct {
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#scopes IdpSocial#scopes}.
 	Scopes *[]*string `field:"required" json:"scopes" yaml:"scopes"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#type IdpSocial#type}.
+	// Identity Provider Types: https://developer.okta.com/docs/reference/api/idps/#identity-provider-type.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#type IdpSocial#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#account_link_action IdpSocial#account_link_action}.
 	AccountLinkAction *string `field:"optional" json:"accountLinkAction" yaml:"accountLinkAction"`

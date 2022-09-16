@@ -155,6 +155,12 @@ type AppOauthConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#omit_secret AppOauth#omit_secret}
 	OmitSecret interface{} `field:"optional" json:"omitSecret" yaml:"omitSecret"`
+	// Require Proof Key for Code Exchange (PKCE) for additional verification key rotation mode.
+	//
+	// `true` for `browser` and `native` application types.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#pkce_required AppOauth#pkce_required}
+	PkceRequired interface{} `field:"optional" json:"pkceRequired" yaml:"pkceRequired"`
 	// URI to web page providing client policy document.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#policy_uri AppOauth#policy_uri}

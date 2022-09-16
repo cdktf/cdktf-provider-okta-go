@@ -198,6 +198,10 @@ func (j *jsiiProxy_AppOauth) validateSetOmitSecretParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_AppOauth) validateSetPkceRequiredParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppOauth) validateSetPolicyUriParameters(val *string) error {
 	return nil
 }
