@@ -169,6 +169,14 @@ func (j *jsiiProxy_EmailCustomization) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_EmailCustomization) validateSetForceIsDefaultParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_EmailCustomization) validateSetIsDefaultParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

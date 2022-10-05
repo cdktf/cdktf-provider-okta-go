@@ -97,6 +97,10 @@ func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetTargetGroupIdParamete
 	return nil
 }
 
+func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetUiSchemaIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetUnknownUserActionParameters(val *string) error {
 	return nil
 }

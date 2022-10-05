@@ -31,6 +31,12 @@ type EmailCustomizationConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_customization#body EmailCustomization#body}
 	Body *string `field:"optional" json:"body" yaml:"body"`
+	// Force is_default on the create and delete by deleting all email customizations.
+	//
+	// Comma separated string with values of 'create' or 'destroy' or both `create,destroy'.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_customization#force_is_default EmailCustomization#force_is_default}
+	ForceIsDefault *string `field:"optional" json:"forceIsDefault" yaml:"forceIsDefault"`
 	// Whether the customization is the default.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_customization#is_default EmailCustomization#is_default}

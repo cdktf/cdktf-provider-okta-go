@@ -80,6 +80,9 @@ type PolicyRuleProfileEnrollment interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UiSchemaId() *string
+	SetUiSchemaId(val *string)
+	UiSchemaIdInput() *string
 	UnknownUserAction() *string
 	SetUnknownUserAction(val *string)
 	UnknownUserActionInput() *string
@@ -118,6 +121,7 @@ type PolicyRuleProfileEnrollment interface {
 	ResetOverrideLogicalId()
 	ResetProfileAttributes()
 	ResetTargetGroupId()
+	ResetUiSchemaId()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -453,6 +457,26 @@ func (j *jsiiProxy_PolicyRuleProfileEnrollment) TerraformResourceType() *string 
 	return returns
 }
 
+func (j *jsiiProxy_PolicyRuleProfileEnrollment) UiSchemaId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uiSchemaId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PolicyRuleProfileEnrollment) UiSchemaIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uiSchemaIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PolicyRuleProfileEnrollment) UnknownUserAction() *string {
 	var returns *string
 	_jsii_.Get(
@@ -630,6 +654,17 @@ func (j *jsiiProxy_PolicyRuleProfileEnrollment)SetTargetGroupId(val *string) {
 	_jsii_.Set(
 		j,
 		"targetGroupId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PolicyRuleProfileEnrollment)SetUiSchemaId(val *string) {
+	if err := j.validateSetUiSchemaIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"uiSchemaId",
 		val,
 	)
 }
@@ -936,6 +971,14 @@ func (p *jsiiProxy_PolicyRuleProfileEnrollment) ResetTargetGroupId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetTargetGroupId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PolicyRuleProfileEnrollment) ResetUiSchemaId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetUiSchemaId",
 		nil, // no parameters
 	)
 }

@@ -34,6 +34,9 @@ type EmailCustomization interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ForceIsDefault() *string
+	SetForceIsDefault(val *string)
+	ForceIsDefaultInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -104,6 +107,7 @@ type EmailCustomization interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetBody()
+	ResetForceIsDefault()
 	ResetIsDefault()
 	ResetLanguage()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -210,6 +214,26 @@ func (j *jsiiProxy_EmailCustomization) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmailCustomization) ForceIsDefault() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"forceIsDefault",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmailCustomization) ForceIsDefaultInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"forceIsDefaultInput",
 		&returns,
 	)
 	return returns
@@ -500,6 +524,17 @@ func (j *jsiiProxy_EmailCustomization)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmailCustomization)SetForceIsDefault(val *string) {
+	if err := j.validateSetForceIsDefaultParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceIsDefault",
 		val,
 	)
 }
@@ -818,6 +853,14 @@ func (e *jsiiProxy_EmailCustomization) ResetBody() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetBody",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmailCustomization) ResetForceIsDefault() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetForceIsDefault",
 		nil, // no parameters
 	)
 }

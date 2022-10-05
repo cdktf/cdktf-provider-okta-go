@@ -52,5 +52,9 @@ type PolicyRuleProfileEnrollmentConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment#target_group_id PolicyRuleProfileEnrollment#target_group_id}
 	TargetGroupId *string `field:"optional" json:"targetGroupId" yaml:"targetGroupId"`
+	// Value created by the backend. If present all policy updates must include this attribute/value.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment#ui_schema_id PolicyRuleProfileEnrollment#ui_schema_id}
+	UiSchemaId *string `field:"optional" json:"uiSchemaId" yaml:"uiSchemaId"`
 }
 

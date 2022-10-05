@@ -298,6 +298,14 @@ func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetTargetGroupIdParamete
 	return nil
 }
 
+func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetUiSchemaIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetUnknownUserActionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
