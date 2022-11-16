@@ -56,6 +56,14 @@ func validateAppUserBaseSchemaProperty_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateAppUserBaseSchemaProperty_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppUserBaseSchemaProperty_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppUserBaseSchemaProperty) validateSetAppIdParameters(val *string) error {
 	return nil
 }

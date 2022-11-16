@@ -56,6 +56,14 @@ func validateRateLimiting_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRateLimiting_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRateLimiting_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RateLimiting) validateSetAuthorizeParameters(val *string) error {
 	return nil
 }

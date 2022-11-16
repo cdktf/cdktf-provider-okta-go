@@ -64,6 +64,14 @@ func validateAppSharedCredentials_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppSharedCredentials_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppSharedCredentials_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppSharedCredentials) validateSetAccessibilityErrorRedirectUrlParameters(val *string) error {
 	return nil
 }

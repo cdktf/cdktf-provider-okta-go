@@ -2,10 +2,10 @@ package dataoktaappmetadatasaml
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v3/dataoktaappmetadatasaml/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v4/dataoktaappmetadatasaml/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -504,6 +504,44 @@ func DataOktaAppMetadataSaml_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSaml",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataOktaAppMetadataSaml_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataOktaAppMetadataSaml_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSaml",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataOktaAppMetadataSaml_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataOktaAppMetadataSaml_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSaml",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

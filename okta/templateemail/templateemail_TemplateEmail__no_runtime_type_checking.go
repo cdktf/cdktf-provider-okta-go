@@ -60,6 +60,14 @@ func validateTemplateEmail_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateTemplateEmail_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTemplateEmail_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TemplateEmail) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

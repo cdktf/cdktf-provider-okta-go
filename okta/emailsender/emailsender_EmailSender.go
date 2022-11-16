@@ -2,10 +2,10 @@ package emailsender
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v3/emailsender/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v4/emailsender/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -543,6 +543,44 @@ func EmailSender_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.emailSender.EmailSender",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func EmailSender_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEmailSender_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.emailSender.EmailSender",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func EmailSender_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEmailSender_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.emailSender.EmailSender",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

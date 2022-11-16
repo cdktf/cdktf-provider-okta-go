@@ -64,6 +64,14 @@ func validateAppBasicAuth_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppBasicAuth_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppBasicAuth_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppBasicAuth) validateSetAccessibilityErrorRedirectUrlParameters(val *string) error {
 	return nil
 }

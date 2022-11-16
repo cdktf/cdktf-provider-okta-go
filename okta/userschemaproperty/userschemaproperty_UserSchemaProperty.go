@@ -2,10 +2,10 @@ package userschemaproperty
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v3/userschemaproperty/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v4/userschemaproperty/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1118,6 +1118,44 @@ func UserSchemaProperty_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.userSchemaProperty.UserSchemaProperty",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func UserSchemaProperty_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateUserSchemaProperty_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.userSchemaProperty.UserSchemaProperty",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func UserSchemaProperty_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateUserSchemaProperty_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.userSchemaProperty.UserSchemaProperty",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

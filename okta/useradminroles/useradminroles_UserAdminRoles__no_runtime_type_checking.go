@@ -56,6 +56,14 @@ func validateUserAdminRoles_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateUserAdminRoles_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateUserAdminRoles_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_UserAdminRoles) validateSetAdminRolesParameters(val *[]*string) error {
 	return nil
 }

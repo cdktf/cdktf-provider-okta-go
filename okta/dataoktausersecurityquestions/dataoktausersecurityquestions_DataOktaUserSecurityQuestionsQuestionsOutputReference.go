@@ -2,9 +2,9 @@ package dataoktausersecurityquestions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v4/jsii"
 
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v3/dataoktausersecurityquestions/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v4/dataoktausersecurityquestions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

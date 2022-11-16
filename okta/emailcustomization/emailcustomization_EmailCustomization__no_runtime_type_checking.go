@@ -56,6 +56,14 @@ func validateEmailCustomization_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEmailCustomization_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEmailCustomization_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmailCustomization) validateSetBodyParameters(val *string) error {
 	return nil
 }

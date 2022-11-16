@@ -64,6 +64,14 @@ func validateAppAutoLogin_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppAutoLogin_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppAutoLogin_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppAutoLogin) validateSetAccessibilityErrorRedirectUrlParameters(val *string) error {
 	return nil
 }

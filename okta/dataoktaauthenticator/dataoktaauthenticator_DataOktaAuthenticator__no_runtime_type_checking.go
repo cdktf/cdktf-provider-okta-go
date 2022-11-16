@@ -56,6 +56,14 @@ func validateDataOktaAuthenticator_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataOktaAuthenticator_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOktaAuthenticator_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOktaAuthenticator) validateSetIdParameters(val *string) error {
 	return nil
 }

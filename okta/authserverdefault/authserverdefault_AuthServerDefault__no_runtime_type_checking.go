@@ -56,6 +56,14 @@ func validateAuthServerDefault_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAuthServerDefault_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAuthServerDefault_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AuthServerDefault) validateSetAudiencesParameters(val *[]*string) error {
 	return nil
 }

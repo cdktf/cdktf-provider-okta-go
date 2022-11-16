@@ -56,6 +56,14 @@ func validateEmailSenderVerification_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateEmailSenderVerification_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEmailSenderVerification_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmailSenderVerification) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

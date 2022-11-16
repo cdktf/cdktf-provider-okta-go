@@ -60,6 +60,14 @@ func validatePolicyRuleSignon_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePolicyRuleSignon_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePolicyRuleSignon_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PolicyRuleSignon) validateSetAccessParameters(val *string) error {
 	return nil
 }

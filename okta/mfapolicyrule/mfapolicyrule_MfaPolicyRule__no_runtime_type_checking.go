@@ -64,6 +64,14 @@ func validateMfaPolicyRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMfaPolicyRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMfaPolicyRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MfaPolicyRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

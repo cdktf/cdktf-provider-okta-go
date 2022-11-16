@@ -56,6 +56,14 @@ func validateLinkDefinition_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLinkDefinition_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLinkDefinition_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinkDefinition) validateSetAssociatedDescriptionParameters(val *string) error {
 	return nil
 }

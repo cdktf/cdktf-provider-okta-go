@@ -56,6 +56,14 @@ func validateAdminRoleCustom_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAdminRoleCustom_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAdminRoleCustom_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AdminRoleCustom) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

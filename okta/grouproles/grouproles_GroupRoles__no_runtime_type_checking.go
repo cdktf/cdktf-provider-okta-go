@@ -56,6 +56,14 @@ func validateGroupRoles_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGroupRoles_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGroupRoles_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupRoles) validateSetAdminRolesParameters(val *[]*string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateSecurityNotificationEmails_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateSecurityNotificationEmails_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSecurityNotificationEmails_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityNotificationEmails) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

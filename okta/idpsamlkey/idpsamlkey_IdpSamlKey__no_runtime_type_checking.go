@@ -56,6 +56,14 @@ func validateIdpSamlKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIdpSamlKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIdpSamlKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdpSamlKey) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

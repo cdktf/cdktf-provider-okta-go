@@ -56,6 +56,14 @@ func validateAppOauthRedirectUri_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppOauthRedirectUri_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppOauthRedirectUri_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppOauthRedirectUri) validateSetAppIdParameters(val *string) error {
 	return nil
 }

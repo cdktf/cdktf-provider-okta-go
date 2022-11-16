@@ -56,6 +56,14 @@ func validateAuthServerClaim_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAuthServerClaim_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAuthServerClaim_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AuthServerClaim) validateSetAlwaysIncludeInTokenParameters(val interface{}) error {
 	return nil
 }

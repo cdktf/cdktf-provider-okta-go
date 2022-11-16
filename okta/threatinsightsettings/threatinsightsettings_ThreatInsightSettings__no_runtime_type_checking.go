@@ -56,6 +56,14 @@ func validateThreatInsightSettings_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateThreatInsightSettings_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateThreatInsightSettings_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ThreatInsightSettings) validateSetActionParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateOrgConfiguration_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOrgConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOrgConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OrgConfiguration) validateSetAddress1Parameters(val *string) error {
 	return nil
 }

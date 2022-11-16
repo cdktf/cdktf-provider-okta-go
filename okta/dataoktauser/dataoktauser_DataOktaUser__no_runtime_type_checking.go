@@ -60,6 +60,14 @@ func validateDataOktaUser_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataOktaUser_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOktaUser_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOktaUser) validateSetCompoundSearchOperatorParameters(val *string) error {
 	return nil
 }

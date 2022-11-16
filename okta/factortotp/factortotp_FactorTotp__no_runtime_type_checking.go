@@ -56,6 +56,14 @@ func validateFactorTotp_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateFactorTotp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFactorTotp_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FactorTotp) validateSetClockDriftIntervalParameters(val *float64) error {
 	return nil
 }

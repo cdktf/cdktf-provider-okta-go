@@ -2,10 +2,10 @@ package dataoktauser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v3/dataoktauser/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v4/dataoktauser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -953,6 +953,44 @@ func DataOktaUser_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaUser.DataOktaUser",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataOktaUser_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataOktaUser_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.dataOktaUser.DataOktaUser",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataOktaUser_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataOktaUser_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.dataOktaUser.DataOktaUser",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

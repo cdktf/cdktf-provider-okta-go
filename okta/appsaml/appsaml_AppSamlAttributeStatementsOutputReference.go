@@ -2,9 +2,9 @@ package appsaml
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v4/jsii"
 
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v3/appsaml/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v4/appsaml/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

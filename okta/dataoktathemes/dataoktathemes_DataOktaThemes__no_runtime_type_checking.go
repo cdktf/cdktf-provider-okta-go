@@ -56,6 +56,14 @@ func validateDataOktaThemes_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataOktaThemes_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOktaThemes_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOktaThemes) validateSetBrandIdParameters(val *string) error {
 	return nil
 }

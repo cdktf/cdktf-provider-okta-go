@@ -56,6 +56,14 @@ func validateBrand_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBrand_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBrand_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Brand) validateSetAgreeToCustomPrivacyPolicyParameters(val interface{}) error {
 	return nil
 }

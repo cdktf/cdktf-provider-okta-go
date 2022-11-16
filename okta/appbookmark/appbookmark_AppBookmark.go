@@ -2,10 +2,10 @@ package appbookmark
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v3/appbookmark/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v4/appbookmark/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1093,6 +1093,44 @@ func AppBookmark_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appBookmark.AppBookmark",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AppBookmark_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAppBookmark_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.appBookmark.AppBookmark",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AppBookmark_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAppBookmark_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.appBookmark.AppBookmark",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

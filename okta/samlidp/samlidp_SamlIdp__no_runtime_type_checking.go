@@ -56,6 +56,14 @@ func validateSamlIdp_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSamlIdp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSamlIdp_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SamlIdp) validateSetAccountLinkActionParameters(val *string) error {
 	return nil
 }

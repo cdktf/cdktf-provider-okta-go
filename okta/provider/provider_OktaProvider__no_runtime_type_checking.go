@@ -16,6 +16,14 @@ func validateOktaProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOktaProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOktaProvider_IsTerraformProviderParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OktaProvider) validateSetBackoffParameters(val interface{}) error {
 	return nil
 }

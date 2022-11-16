@@ -56,6 +56,14 @@ func validateAppOauthPostLogoutRedirectUri_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateAppOauthPostLogoutRedirectUri_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppOauthPostLogoutRedirectUri_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppOauthPostLogoutRedirectUri) validateSetAppIdParameters(val *string) error {
 	return nil
 }

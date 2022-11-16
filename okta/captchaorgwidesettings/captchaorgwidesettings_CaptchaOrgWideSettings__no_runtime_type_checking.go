@@ -56,6 +56,14 @@ func validateCaptchaOrgWideSettings_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCaptchaOrgWideSettings_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCaptchaOrgWideSettings_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CaptchaOrgWideSettings) validateSetCaptchaIdParameters(val *string) error {
 	return nil
 }

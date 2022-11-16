@@ -56,6 +56,14 @@ func validateLinkValue_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLinkValue_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLinkValue_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinkValue) validateSetAssociatedUserIdsParameters(val *[]*string) error {
 	return nil
 }

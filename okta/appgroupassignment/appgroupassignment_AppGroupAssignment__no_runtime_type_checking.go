@@ -60,6 +60,14 @@ func validateAppGroupAssignment_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppGroupAssignment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppGroupAssignment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppGroupAssignment) validateSetAppIdParameters(val *string) error {
 	return nil
 }

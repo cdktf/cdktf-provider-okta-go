@@ -56,6 +56,14 @@ func validateAppOauthApiScope_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppOauthApiScope_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppOauthApiScope_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppOauthApiScope) validateSetAppIdParameters(val *string) error {
 	return nil
 }

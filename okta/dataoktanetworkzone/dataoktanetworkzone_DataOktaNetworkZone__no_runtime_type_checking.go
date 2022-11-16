@@ -56,6 +56,14 @@ func validateDataOktaNetworkZone_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataOktaNetworkZone_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOktaNetworkZone_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOktaNetworkZone) validateSetIdParameters(val *string) error {
 	return nil
 }

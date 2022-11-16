@@ -64,6 +64,14 @@ func validateAppSecurePasswordStore_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppSecurePasswordStore_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppSecurePasswordStore_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppSecurePasswordStore) validateSetAccessibilityErrorRedirectUrlParameters(val *string) error {
 	return nil
 }

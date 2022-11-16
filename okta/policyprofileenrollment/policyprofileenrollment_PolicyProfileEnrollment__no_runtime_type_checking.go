@@ -56,6 +56,14 @@ func validatePolicyProfileEnrollment_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validatePolicyProfileEnrollment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePolicyProfileEnrollment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PolicyProfileEnrollment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

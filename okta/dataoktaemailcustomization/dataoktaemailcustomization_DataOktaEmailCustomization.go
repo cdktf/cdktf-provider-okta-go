@@ -2,10 +2,10 @@ package dataoktaemailcustomization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v3/dataoktaemailcustomization/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v4/dataoktaemailcustomization/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -502,6 +502,44 @@ func DataOktaEmailCustomization_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataOktaEmailCustomization_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataOktaEmailCustomization_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataOktaEmailCustomization_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataOktaEmailCustomization_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

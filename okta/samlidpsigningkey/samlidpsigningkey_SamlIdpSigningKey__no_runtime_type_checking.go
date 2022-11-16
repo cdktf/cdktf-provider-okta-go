@@ -56,6 +56,14 @@ func validateSamlIdpSigningKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSamlIdpSigningKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSamlIdpSigningKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SamlIdpSigningKey) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

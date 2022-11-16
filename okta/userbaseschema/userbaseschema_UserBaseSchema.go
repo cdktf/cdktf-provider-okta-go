@@ -2,10 +2,10 @@ package userbaseschema
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v3/userbaseschema/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v4/userbaseschema/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -696,6 +696,44 @@ func UserBaseSchema_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.userBaseSchema.UserBaseSchema",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func UserBaseSchema_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateUserBaseSchema_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.userBaseSchema.UserBaseSchema",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func UserBaseSchema_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateUserBaseSchema_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.userBaseSchema.UserBaseSchema",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

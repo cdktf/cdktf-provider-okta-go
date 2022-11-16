@@ -2,10 +2,10 @@ package groupschemaproperty
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v3/groupschemaproperty/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v4/groupschemaproperty/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1048,6 +1048,44 @@ func GroupSchemaProperty_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GroupSchemaProperty_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGroupSchemaProperty_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GroupSchemaProperty_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGroupSchemaProperty_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

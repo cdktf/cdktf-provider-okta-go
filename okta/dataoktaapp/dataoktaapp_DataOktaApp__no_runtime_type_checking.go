@@ -56,6 +56,14 @@ func validateDataOktaApp_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataOktaApp_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOktaApp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOktaApp) validateSetActiveOnlyParameters(val interface{}) error {
 	return nil
 }

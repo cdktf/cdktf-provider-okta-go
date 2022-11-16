@@ -56,6 +56,14 @@ func validateDataOktaGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataOktaGroup_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOktaGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOktaGroup) validateSetDelayReadSecondsParameters(val *string) error {
 	return nil
 }

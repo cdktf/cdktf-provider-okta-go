@@ -60,6 +60,14 @@ func validateProfileMapping_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateProfileMapping_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateProfileMapping_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProfileMapping) validateSetAlwaysApplyParameters(val interface{}) error {
 	return nil
 }

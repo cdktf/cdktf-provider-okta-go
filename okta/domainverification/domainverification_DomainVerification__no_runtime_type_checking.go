@@ -56,6 +56,14 @@ func validateDomainVerification_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDomainVerification_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDomainVerification_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DomainVerification) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

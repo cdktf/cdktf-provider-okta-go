@@ -68,6 +68,14 @@ func validateGroupSchemaProperty_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGroupSchemaProperty_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGroupSchemaProperty_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupSchemaProperty) validateSetArrayEnumParameters(val *[]*string) error {
 	return nil
 }

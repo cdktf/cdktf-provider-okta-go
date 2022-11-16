@@ -56,6 +56,14 @@ func validateEventHookVerification_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEventHookVerification_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEventHookVerification_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventHookVerification) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

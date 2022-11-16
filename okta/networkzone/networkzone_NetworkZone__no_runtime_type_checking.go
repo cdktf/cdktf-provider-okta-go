@@ -56,6 +56,14 @@ func validateNetworkZone_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNetworkZone_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkZone_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkZone) validateSetAsnsParameters(val *[]*string) error {
 	return nil
 }

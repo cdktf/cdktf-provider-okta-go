@@ -56,6 +56,14 @@ func validateTheme_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateTheme_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTheme_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Theme) validateSetBackgroundImageParameters(val *string) error {
 	return nil
 }

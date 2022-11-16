@@ -119,6 +119,22 @@ func validatePolicyProfileEnrollmentApps_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validatePolicyProfileEnrollmentApps_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validatePolicyProfileEnrollmentApps_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PolicyProfileEnrollmentApps) validateSetAppsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

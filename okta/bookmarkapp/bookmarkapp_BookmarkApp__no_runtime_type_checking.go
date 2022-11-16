@@ -64,6 +64,14 @@ func validateBookmarkApp_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBookmarkApp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBookmarkApp_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BookmarkApp) validateSetAccessibilityErrorRedirectUrlParameters(val *string) error {
 	return nil
 }

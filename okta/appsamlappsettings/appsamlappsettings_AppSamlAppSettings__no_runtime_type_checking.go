@@ -56,6 +56,14 @@ func validateAppSamlAppSettings_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppSamlAppSettings_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppSamlAppSettings_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppSamlAppSettings) validateSetAppIdParameters(val *string) error {
 	return nil
 }

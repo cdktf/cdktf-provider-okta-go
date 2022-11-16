@@ -64,6 +64,14 @@ func validateSwaApp_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSwaApp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSwaApp_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SwaApp) validateSetAccessibilityErrorRedirectUrlParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,14 @@ func validateUserSchema_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateUserSchema_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateUserSchema_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_UserSchema) validateSetArrayEnumParameters(val *[]*string) error {
 	return nil
 }

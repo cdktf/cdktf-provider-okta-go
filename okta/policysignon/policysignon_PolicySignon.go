@@ -2,10 +2,10 @@ package policysignon
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v3/policysignon/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v4/policysignon/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -593,6 +593,44 @@ func PolicySignon_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policySignon.PolicySignon",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PolicySignon_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePolicySignon_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.policySignon.PolicySignon",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PolicySignon_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePolicySignon_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.policySignon.PolicySignon",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

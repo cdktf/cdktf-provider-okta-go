@@ -2,10 +2,10 @@ package templateemail
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v3/templateemail/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v4/templateemail/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -511,6 +511,44 @@ func TemplateEmail_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.templateEmail.TemplateEmail",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func TemplateEmail_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateTemplateEmail_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.templateEmail.TemplateEmail",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func TemplateEmail_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateTemplateEmail_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.templateEmail.TemplateEmail",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

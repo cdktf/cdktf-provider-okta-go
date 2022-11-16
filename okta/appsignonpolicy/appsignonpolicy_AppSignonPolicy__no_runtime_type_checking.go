@@ -56,6 +56,14 @@ func validateAppSignonPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppSignonPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppSignonPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppSignonPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

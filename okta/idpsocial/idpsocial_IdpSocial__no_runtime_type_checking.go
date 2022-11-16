@@ -56,6 +56,14 @@ func validateIdpSocial_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIdpSocial_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIdpSocial_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdpSocial) validateSetAccountLinkActionParameters(val *string) error {
 	return nil
 }

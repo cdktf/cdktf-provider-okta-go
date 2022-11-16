@@ -56,6 +56,14 @@ func validateIdp_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIdp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIdp_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Idp) validateSetAccountLinkActionParameters(val *string) error {
 	return nil
 }

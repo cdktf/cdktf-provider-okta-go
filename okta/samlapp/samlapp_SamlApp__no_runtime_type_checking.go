@@ -68,6 +68,14 @@ func validateSamlApp_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSamlApp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSamlApp_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SamlApp) validateSetAccessibilityErrorRedirectUrlParameters(val *string) error {
 	return nil
 }

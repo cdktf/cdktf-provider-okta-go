@@ -56,6 +56,14 @@ func validateDataOktaEmailCustomizations_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataOktaEmailCustomizations_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOktaEmailCustomizations_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOktaEmailCustomizations) validateSetBrandIdParameters(val *string) error {
 	return nil
 }

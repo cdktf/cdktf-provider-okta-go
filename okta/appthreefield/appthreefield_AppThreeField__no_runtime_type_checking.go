@@ -64,6 +64,14 @@ func validateAppThreeField_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppThreeField_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppThreeField_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppThreeField) validateSetAccessibilityErrorRedirectUrlParameters(val *string) error {
 	return nil
 }

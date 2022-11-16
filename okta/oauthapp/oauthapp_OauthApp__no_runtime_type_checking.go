@@ -72,6 +72,14 @@ func validateOauthApp_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOauthApp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOauthApp_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OauthApp) validateSetAccessibilityErrorRedirectUrlParameters(val *string) error {
 	return nil
 }

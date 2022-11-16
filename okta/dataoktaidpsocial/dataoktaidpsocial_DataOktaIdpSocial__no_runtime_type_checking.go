@@ -56,6 +56,14 @@ func validateDataOktaIdpSocial_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataOktaIdpSocial_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOktaIdpSocial_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOktaIdpSocial) validateSetIdParameters(val *string) error {
 	return nil
 }

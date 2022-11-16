@@ -2,10 +2,10 @@ package samlidpsigningkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v3/samlidpsigningkey/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v4/samlidpsigningkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -519,6 +519,44 @@ func SamlIdpSigningKey_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKey",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SamlIdpSigningKey_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSamlIdpSigningKey_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKey",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SamlIdpSigningKey_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSamlIdpSigningKey_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKey",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

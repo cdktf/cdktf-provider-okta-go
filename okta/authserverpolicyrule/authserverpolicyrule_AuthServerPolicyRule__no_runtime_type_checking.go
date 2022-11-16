@@ -56,6 +56,14 @@ func validateAuthServerPolicyRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAuthServerPolicyRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAuthServerPolicyRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AuthServerPolicyRule) validateSetAccessTokenLifetimeMinutesParameters(val *float64) error {
 	return nil
 }

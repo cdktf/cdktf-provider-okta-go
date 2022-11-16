@@ -2,10 +2,10 @@ package behavior
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v3/behavior/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v4/behavior/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -662,6 +662,44 @@ func Behavior_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.behavior.Behavior",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Behavior_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBehavior_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.behavior.Behavior",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Behavior_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBehavior_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.behavior.Behavior",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

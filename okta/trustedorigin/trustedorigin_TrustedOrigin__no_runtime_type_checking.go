@@ -56,6 +56,14 @@ func validateTrustedOrigin_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateTrustedOrigin_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTrustedOrigin_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TrustedOrigin) validateSetActiveParameters(val interface{}) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package appoauth
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v3/appoauth/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v4/appoauth/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -2202,6 +2202,44 @@ func AppOauth_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appOauth.AppOauth",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AppOauth_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAppOauth_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.appOauth.AppOauth",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AppOauth_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAppOauth_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.appOauth.AppOauth",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

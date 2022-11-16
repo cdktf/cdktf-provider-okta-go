@@ -2,10 +2,10 @@ package securitynotificationemails
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v3/securitynotificationemails/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v4/securitynotificationemails/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -594,6 +594,44 @@ func SecurityNotificationEmails_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.securityNotificationEmails.SecurityNotificationEmails",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SecurityNotificationEmails_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSecurityNotificationEmails_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.securityNotificationEmails.SecurityNotificationEmails",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SecurityNotificationEmails_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSecurityNotificationEmails_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.securityNotificationEmails.SecurityNotificationEmails",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

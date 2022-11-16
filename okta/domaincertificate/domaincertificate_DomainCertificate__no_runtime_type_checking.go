@@ -56,6 +56,14 @@ func validateDomainCertificate_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDomainCertificate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDomainCertificate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DomainCertificate) validateSetCertificateParameters(val *string) error {
 	return nil
 }

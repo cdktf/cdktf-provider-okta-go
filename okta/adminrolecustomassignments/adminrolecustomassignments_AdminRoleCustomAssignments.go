@@ -2,10 +2,10 @@ package adminrolecustomassignments
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v3/adminrolecustomassignments/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v4/adminrolecustomassignments/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -522,6 +522,44 @@ func AdminRoleCustomAssignments_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.adminRoleCustomAssignments.AdminRoleCustomAssignments",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AdminRoleCustomAssignments_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAdminRoleCustomAssignments_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.adminRoleCustomAssignments.AdminRoleCustomAssignments",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AdminRoleCustomAssignments_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAdminRoleCustomAssignments_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.adminRoleCustomAssignments.AdminRoleCustomAssignments",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

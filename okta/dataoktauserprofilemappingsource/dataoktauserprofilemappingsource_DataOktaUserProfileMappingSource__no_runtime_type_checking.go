@@ -56,6 +56,14 @@ func validateDataOktaUserProfileMappingSource_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateDataOktaUserProfileMappingSource_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataOktaUserProfileMappingSource_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOktaUserProfileMappingSource) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

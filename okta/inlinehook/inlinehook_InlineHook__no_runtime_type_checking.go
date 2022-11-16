@@ -60,6 +60,14 @@ func validateInlineHook_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateInlineHook_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateInlineHook_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_InlineHook) validateSetAuthParameters(val *map[string]*string) error {
 	return nil
 }
