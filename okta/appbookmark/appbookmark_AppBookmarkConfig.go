@@ -45,6 +45,10 @@ type AppBookmarkConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#app_links_json AppBookmark#app_links_json}
 	AppLinksJson *string `field:"optional" json:"appLinksJson" yaml:"appLinksJson"`
+	// Id of this apps authentication policy.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#authentication_policy AppBookmark#authentication_policy}
+	AuthenticationPolicy *string `field:"optional" json:"authenticationPolicy" yaml:"authenticationPolicy"`
 	// Display auto submit toolbar.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#auto_submit_toolbar AppBookmark#auto_submit_toolbar}

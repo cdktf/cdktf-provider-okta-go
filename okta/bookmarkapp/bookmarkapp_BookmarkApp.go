@@ -27,6 +27,9 @@ type BookmarkApp interface {
 	AppLinksJson() *string
 	SetAppLinksJson(val *string)
 	AppLinksJsonInput() *string
+	AuthenticationPolicy() *string
+	SetAuthenticationPolicy(val *string)
+	AuthenticationPolicyInput() *string
 	AutoSubmitToolbar() interface{}
 	SetAutoSubmitToolbar(val interface{})
 	AutoSubmitToolbarInput() interface{}
@@ -151,6 +154,7 @@ type BookmarkApp interface {
 	ResetAccessibilitySelfService()
 	ResetAdminNote()
 	ResetAppLinksJson()
+	ResetAuthenticationPolicy()
 	ResetAutoSubmitToolbar()
 	ResetEnduserNote()
 	ResetGroups()
@@ -277,6 +281,26 @@ func (j *jsiiProxy_BookmarkApp) AppLinksJsonInput() *string {
 	_jsii_.Get(
 		j,
 		"appLinksJsonInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BookmarkApp) AuthenticationPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authenticationPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BookmarkApp) AuthenticationPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authenticationPolicyInput",
 		&returns,
 	)
 	return returns
@@ -857,6 +881,17 @@ func (j *jsiiProxy_BookmarkApp)SetAppLinksJson(val *string) {
 	)
 }
 
+func (j *jsiiProxy_BookmarkApp)SetAuthenticationPolicy(val *string) {
+	if err := j.validateSetAuthenticationPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authenticationPolicy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_BookmarkApp)SetAutoSubmitToolbar(val interface{}) {
 	if err := j.validateSetAutoSubmitToolbarParameters(val); err != nil {
 		panic(err)
@@ -1389,6 +1424,14 @@ func (b *jsiiProxy_BookmarkApp) ResetAppLinksJson() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetAppLinksJson",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BookmarkApp) ResetAuthenticationPolicy() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetAuthenticationPolicy",
 		nil, // no parameters
 	)
 }

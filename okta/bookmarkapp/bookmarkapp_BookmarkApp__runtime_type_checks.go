@@ -229,6 +229,14 @@ func (j *jsiiProxy_BookmarkApp) validateSetAppLinksJsonParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_BookmarkApp) validateSetAuthenticationPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_BookmarkApp) validateSetAutoSubmitToolbarParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

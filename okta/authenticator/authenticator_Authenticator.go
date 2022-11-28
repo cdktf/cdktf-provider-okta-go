@@ -58,10 +58,22 @@ type Authenticator interface {
 	ProviderAuthPort() *float64
 	SetProviderAuthPort(val *float64)
 	ProviderAuthPortInput() *float64
+	ProviderHost() *string
+	SetProviderHost(val *string)
+	ProviderHostInput() *string
 	ProviderHostname() *string
 	SetProviderHostname(val *string)
 	ProviderHostnameInput() *string
 	ProviderInstanceId() *string
+	ProviderIntegrationKey() *string
+	SetProviderIntegrationKey(val *string)
+	ProviderIntegrationKeyInput() *string
+	ProviderJson() *string
+	SetProviderJson(val *string)
+	ProviderJsonInput() *string
+	ProviderSecretKey() *string
+	SetProviderSecretKey(val *string)
+	ProviderSecretKeyInput() *string
 	ProviderSharedSecret() *string
 	SetProviderSharedSecret(val *string)
 	ProviderSharedSecretInput() *string
@@ -118,7 +130,11 @@ type Authenticator interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProviderAuthPort()
+	ResetProviderHost()
 	ResetProviderHostname()
+	ResetProviderIntegrationKey()
+	ResetProviderJson()
+	ResetProviderSecretKey()
 	ResetProviderSharedSecret()
 	ResetProviderUserNameTemplate()
 	ResetSettings()
@@ -328,6 +344,26 @@ func (j *jsiiProxy_Authenticator) ProviderAuthPortInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_Authenticator) ProviderHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"providerHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Authenticator) ProviderHostInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"providerHostInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Authenticator) ProviderHostname() *string {
 	var returns *string
 	_jsii_.Get(
@@ -353,6 +389,66 @@ func (j *jsiiProxy_Authenticator) ProviderInstanceId() *string {
 	_jsii_.Get(
 		j,
 		"providerInstanceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Authenticator) ProviderIntegrationKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"providerIntegrationKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Authenticator) ProviderIntegrationKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"providerIntegrationKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Authenticator) ProviderJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"providerJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Authenticator) ProviderJsonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"providerJsonInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Authenticator) ProviderSecretKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"providerSecretKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Authenticator) ProviderSecretKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"providerSecretKeyInput",
 		&returns,
 	)
 	return returns
@@ -636,6 +732,17 @@ func (j *jsiiProxy_Authenticator)SetProviderAuthPort(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_Authenticator)SetProviderHost(val *string) {
+	if err := j.validateSetProviderHostParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"providerHost",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Authenticator)SetProviderHostname(val *string) {
 	if err := j.validateSetProviderHostnameParameters(val); err != nil {
 		panic(err)
@@ -643,6 +750,39 @@ func (j *jsiiProxy_Authenticator)SetProviderHostname(val *string) {
 	_jsii_.Set(
 		j,
 		"providerHostname",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Authenticator)SetProviderIntegrationKey(val *string) {
+	if err := j.validateSetProviderIntegrationKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"providerIntegrationKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Authenticator)SetProviderJson(val *string) {
+	if err := j.validateSetProviderJsonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"providerJson",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Authenticator)SetProviderSecretKey(val *string) {
+	if err := j.validateSetProviderSecretKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"providerSecretKey",
 		val,
 	)
 }
@@ -992,10 +1132,42 @@ func (a *jsiiProxy_Authenticator) ResetProviderAuthPort() {
 	)
 }
 
+func (a *jsiiProxy_Authenticator) ResetProviderHost() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetProviderHost",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_Authenticator) ResetProviderHostname() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetProviderHostname",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Authenticator) ResetProviderIntegrationKey() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetProviderIntegrationKey",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Authenticator) ResetProviderJson() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetProviderJson",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Authenticator) ResetProviderSecretKey() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetProviderSecretKey",
 		nil, // no parameters
 	)
 }

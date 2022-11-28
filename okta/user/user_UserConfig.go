@@ -168,6 +168,10 @@ type UserConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#second_email User#second_email}
 	SecondEmail *string `field:"optional" json:"secondEmail" yaml:"secondEmail"`
+	// Do not populate user roles information (prevents additional API call).
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#skip_roles User#skip_roles}
+	SkipRoles interface{} `field:"optional" json:"skipRoles" yaml:"skipRoles"`
 	// User state or region.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#state User#state}

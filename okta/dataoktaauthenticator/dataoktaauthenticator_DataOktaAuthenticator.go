@@ -54,6 +54,7 @@ type DataOktaAuthenticator interface {
 	ProviderAuthPort() *float64
 	ProviderHostname() *string
 	ProviderInstanceId() *string
+	ProviderJson() *string
 	ProviderType() *string
 	ProviderUserNameTemplate() *string
 	// Experimental.
@@ -298,6 +299,16 @@ func (j *jsiiProxy_DataOktaAuthenticator) ProviderInstanceId() *string {
 	_jsii_.Get(
 		j,
 		"providerInstanceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOktaAuthenticator) ProviderJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"providerJson",
 		&returns,
 	)
 	return returns

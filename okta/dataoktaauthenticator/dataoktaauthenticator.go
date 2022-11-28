@@ -42,6 +42,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "providerAuthPort", GoGetter: "ProviderAuthPort"},
 			_jsii_.MemberProperty{JsiiProperty: "providerHostname", GoGetter: "ProviderHostname"},
 			_jsii_.MemberProperty{JsiiProperty: "providerInstanceId", GoGetter: "ProviderInstanceId"},
+			_jsii_.MemberProperty{JsiiProperty: "providerJson", GoGetter: "ProviderJson"},
 			_jsii_.MemberProperty{JsiiProperty: "providerType", GoGetter: "ProviderType"},
 			_jsii_.MemberProperty{JsiiProperty: "providerUserNameTemplate", GoGetter: "ProviderUserNameTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},

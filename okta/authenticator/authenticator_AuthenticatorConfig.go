@@ -36,10 +36,26 @@ type AuthenticatorConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#provider_auth_port Authenticator#provider_auth_port}
 	ProviderAuthPort *float64 `field:"optional" json:"providerAuthPort" yaml:"providerAuthPort"`
+	// The Duo Security API hostname.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#provider_host Authenticator#provider_host}
+	ProviderHost *string `field:"optional" json:"providerHost" yaml:"providerHost"`
 	// Server host name or IP address.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#provider_hostname Authenticator#provider_hostname}
 	ProviderHostname *string `field:"optional" json:"providerHostname" yaml:"providerHostname"`
+	// The Duo Security integration key.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#provider_integration_key Authenticator#provider_integration_key}
+	ProviderIntegrationKey *string `field:"optional" json:"providerIntegrationKey" yaml:"providerIntegrationKey"`
+	// Provider in JSON format.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#provider_json Authenticator#provider_json}
+	ProviderJson *string `field:"optional" json:"providerJson" yaml:"providerJson"`
+	// The Duo Security secret key.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#provider_secret_key Authenticator#provider_secret_key}
+	ProviderSecretKey *string `field:"optional" json:"providerSecretKey" yaml:"providerSecretKey"`
 	// An authentication key that must be defined when the RADIUS server is configured, and must be the same on both the RADIUS client and server.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#provider_shared_secret Authenticator#provider_shared_secret}

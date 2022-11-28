@@ -160,6 +160,9 @@ type User interface {
 	SecondEmail() *string
 	SetSecondEmail(val *string)
 	SecondEmailInput() *string
+	SkipRoles() interface{}
+	SetSkipRoles(val interface{})
+	SkipRolesInput() interface{}
 	State() *string
 	SetState(val *string)
 	StateInput() *string
@@ -248,6 +251,7 @@ type User interface {
 	ResetRecoveryAnswer()
 	ResetRecoveryQuestion()
 	ResetSecondEmail()
+	ResetSkipRoles()
 	ResetState()
 	ResetStatus()
 	ResetStreetAddress()
@@ -1130,6 +1134,26 @@ func (j *jsiiProxy_User) SecondEmailInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_User) SkipRoles() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipRoles",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_User) SkipRolesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipRolesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_User) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1780,6 +1804,17 @@ func (j *jsiiProxy_User)SetSecondEmail(val *string) {
 	)
 }
 
+func (j *jsiiProxy_User)SetSkipRoles(val interface{}) {
+	if err := j.validateSetSkipRolesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipRoles",
+		val,
+	)
+}
+
 func (j *jsiiProxy_User)SetState(val *string) {
 	if err := j.validateSetStateParameters(val); err != nil {
 		panic(err)
@@ -2394,6 +2429,14 @@ func (u *jsiiProxy_User) ResetSecondEmail() {
 	_jsii_.InvokeVoid(
 		u,
 		"resetSecondEmail",
+		nil, // no parameters
+	)
+}
+
+func (u *jsiiProxy_User) ResetSkipRoles() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetSkipRoles",
 		nil, // no parameters
 	)
 }

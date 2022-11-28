@@ -92,6 +92,10 @@ func (j *jsiiProxy_BookmarkApp) validateSetAppLinksJsonParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_BookmarkApp) validateSetAuthenticationPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BookmarkApp) validateSetAutoSubmitToolbarParameters(val interface{}) error {
 	return nil
 }

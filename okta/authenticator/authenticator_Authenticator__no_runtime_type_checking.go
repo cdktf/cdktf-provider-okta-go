@@ -88,7 +88,23 @@ func (j *jsiiProxy_Authenticator) validateSetProviderAuthPortParameters(val *flo
 	return nil
 }
 
+func (j *jsiiProxy_Authenticator) validateSetProviderHostParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Authenticator) validateSetProviderHostnameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Authenticator) validateSetProviderIntegrationKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Authenticator) validateSetProviderJsonParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Authenticator) validateSetProviderSecretKeyParameters(val *string) error {
 	return nil
 }
 
