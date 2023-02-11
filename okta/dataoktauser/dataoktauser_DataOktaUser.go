@@ -80,6 +80,7 @@ type DataOktaUser interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Roles() *[]*string
 	Search() DataOktaUserSearchList
 	SearchInput() interface{}
 	SecondEmail() *string
@@ -591,6 +592,16 @@ func (j *jsiiProxy_DataOktaUser) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOktaUser) Roles() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"roles",
 		&returns,
 	)
 	return returns

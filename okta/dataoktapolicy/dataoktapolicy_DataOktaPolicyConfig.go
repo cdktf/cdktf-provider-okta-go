@@ -23,7 +23,7 @@ type DataOktaPolicyConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/policy#name DataOktaPolicy#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Policy type: OKTA_SIGN_ON, PASSWORD, MFA_ENROLL, or IDP_DISCOVERY.
+	// Policy type, see https://developer.okta.com/docs/reference/api/policy/#policy-object.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/policy#type DataOktaPolicy#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
