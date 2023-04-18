@@ -80,6 +80,10 @@ func (j *jsiiProxy_AuthServerClaim) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_AuthServerClaim) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AuthServerClaim) validateSetGroupFilterTypeParameters(val *string) error {
 	return nil
 }

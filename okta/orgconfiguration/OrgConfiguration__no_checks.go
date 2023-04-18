@@ -88,6 +88,10 @@ func (j *jsiiProxy_OrgConfiguration) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_OrgConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OrgConfiguration) validateSetCountryParameters(val *string) error {
 	return nil
 }

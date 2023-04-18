@@ -2,14 +2,14 @@ package dataoktaappsaml
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaappsaml/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaappsaml/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_saml okta_app_saml}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_saml okta_app_saml}.
 type DataOktaAppSaml interface {
 	cdktf.TerraformDataSource
 	AccessibilityErrorRedirectUrl() *string
@@ -30,9 +30,9 @@ type DataOktaAppSaml interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultRelayState() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -301,8 +301,8 @@ func (j *jsiiProxy_DataOktaAppSaml) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaAppSaml) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataOktaAppSaml) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -842,7 +842,7 @@ func (j *jsiiProxy_DataOktaAppSaml) Users() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/d/app_saml okta_app_saml} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_saml okta_app_saml} Data Source.
 func NewDataOktaAppSaml(scope constructs.Construct, id *string, config *DataOktaAppSamlConfig) DataOktaAppSaml {
 	_init_.Initialize()
 
@@ -860,7 +860,7 @@ func NewDataOktaAppSaml(scope constructs.Construct, id *string, config *DataOkta
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/d/app_saml okta_app_saml} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_saml okta_app_saml} Data Source.
 func NewDataOktaAppSaml_Override(d DataOktaAppSaml, scope constructs.Construct, id *string, config *DataOktaAppSamlConfig) {
 	_init_.Initialize()
 
@@ -882,7 +882,10 @@ func (j *jsiiProxy_DataOktaAppSaml)SetActiveOnly(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaAppSaml)SetCount(val *float64) {
+func (j *jsiiProxy_DataOktaAppSaml)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

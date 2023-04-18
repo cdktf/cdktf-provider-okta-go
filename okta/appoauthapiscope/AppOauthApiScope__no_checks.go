@@ -72,6 +72,10 @@ func (j *jsiiProxy_AppOauthApiScope) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_AppOauthApiScope) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppOauthApiScope) validateSetIdParameters(val *string) error {
 	return nil
 }

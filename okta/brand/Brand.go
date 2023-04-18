@@ -2,14 +2,14 @@ package brand
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/brand/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/brand/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/brand okta_brand}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/brand okta_brand}.
 type Brand interface {
 	cdktf.TerraformResource
 	AgreeToCustomPrivacyPolicy() interface{}
@@ -27,9 +27,9 @@ type Brand interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomPrivacyPolicyUrl() *string
 	SetCustomPrivacyPolicyUrl(val *string)
 	CustomPrivacyPolicyUrlInput() *string
@@ -189,8 +189,8 @@ func (j *jsiiProxy_Brand) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Brand) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Brand) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -380,7 +380,7 @@ func (j *jsiiProxy_Brand) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/brand okta_brand} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/brand okta_brand} Resource.
 func NewBrand(scope constructs.Construct, id *string, config *BrandConfig) Brand {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewBrand(scope constructs.Construct, id *string, config *BrandConfig) Brand
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/brand okta_brand} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/brand okta_brand} Resource.
 func NewBrand_Override(b Brand, scope constructs.Construct, id *string, config *BrandConfig) {
 	_init_.Initialize()
 
@@ -442,7 +442,10 @@ func (j *jsiiProxy_Brand)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Brand)SetCount(val *float64) {
+func (j *jsiiProxy_Brand)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

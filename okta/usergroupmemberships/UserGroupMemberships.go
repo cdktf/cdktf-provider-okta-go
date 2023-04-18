@@ -2,14 +2,14 @@ package usergroupmemberships
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/usergroupmemberships/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/usergroupmemberships/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_group_memberships okta_user_group_memberships}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_group_memberships okta_user_group_memberships}.
 type UserGroupMemberships interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type UserGroupMemberships interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -141,8 +141,8 @@ func (j *jsiiProxy_UserGroupMemberships) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_UserGroupMemberships) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_UserGroupMemberships) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_UserGroupMemberships) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/user_group_memberships okta_user_group_memberships} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_group_memberships okta_user_group_memberships} Resource.
 func NewUserGroupMemberships(scope constructs.Construct, id *string, config *UserGroupMembershipsConfig) UserGroupMemberships {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewUserGroupMemberships(scope constructs.Construct, id *string, config *Use
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/user_group_memberships okta_user_group_memberships} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_group_memberships okta_user_group_memberships} Resource.
 func NewUserGroupMemberships_Override(u UserGroupMemberships, scope constructs.Construct, id *string, config *UserGroupMembershipsConfig) {
 	_init_.Initialize()
 
@@ -372,7 +372,10 @@ func (j *jsiiProxy_UserGroupMemberships)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserGroupMemberships)SetCount(val *float64) {
+func (j *jsiiProxy_UserGroupMemberships)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

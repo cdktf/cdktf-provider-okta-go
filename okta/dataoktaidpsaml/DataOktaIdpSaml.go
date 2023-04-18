@@ -2,14 +2,14 @@ package dataoktaidpsaml
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaidpsaml/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaidpsaml/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/d/idp_saml okta_idp_saml}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/idp_saml okta_idp_saml}.
 type DataOktaIdpSaml interface {
 	cdktf.TerraformDataSource
 	AcsBinding() *string
@@ -20,9 +20,9 @@ type DataOktaIdpSaml interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -163,8 +163,8 @@ func (j *jsiiProxy_DataOktaIdpSaml) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaIdpSaml) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataOktaIdpSaml) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -414,7 +414,7 @@ func (j *jsiiProxy_DataOktaIdpSaml) Type() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/d/idp_saml okta_idp_saml} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/idp_saml okta_idp_saml} Data Source.
 func NewDataOktaIdpSaml(scope constructs.Construct, id *string, config *DataOktaIdpSamlConfig) DataOktaIdpSaml {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewDataOktaIdpSaml(scope constructs.Construct, id *string, config *DataOkta
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/d/idp_saml okta_idp_saml} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/idp_saml okta_idp_saml} Data Source.
 func NewDataOktaIdpSaml_Override(d DataOktaIdpSaml, scope constructs.Construct, id *string, config *DataOktaIdpSamlConfig) {
 	_init_.Initialize()
 
@@ -443,7 +443,10 @@ func NewDataOktaIdpSaml_Override(d DataOktaIdpSaml, scope constructs.Construct, 
 	)
 }
 
-func (j *jsiiProxy_DataOktaIdpSaml)SetCount(val *float64) {
+func (j *jsiiProxy_DataOktaIdpSaml)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

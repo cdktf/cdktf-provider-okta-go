@@ -68,6 +68,10 @@ func (j *jsiiProxy_DomainVerification) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_DomainVerification) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DomainVerification) validateSetDomainIdParameters(val *string) error {
 	return nil
 }

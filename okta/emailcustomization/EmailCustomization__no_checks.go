@@ -76,6 +76,10 @@ func (j *jsiiProxy_EmailCustomization) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_EmailCustomization) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmailCustomization) validateSetForceIsDefaultParameters(val *string) error {
 	return nil
 }

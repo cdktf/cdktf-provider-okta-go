@@ -2,14 +2,14 @@ package appuserbaseschemaproperty
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/appuserbaseschemaproperty/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/appuserbaseschemaproperty/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property okta_app_user_base_schema_property}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user_base_schema_property okta_app_user_base_schema_property}.
 type AppUserBaseSchemaProperty interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -24,9 +24,9 @@ type AppUserBaseSchemaProperty interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -187,8 +187,8 @@ func (j *jsiiProxy_AppUserBaseSchemaProperty) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_AppUserBaseSchemaProperty) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AppUserBaseSchemaProperty) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -498,7 +498,7 @@ func (j *jsiiProxy_AppUserBaseSchemaProperty) UserTypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property okta_app_user_base_schema_property} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user_base_schema_property okta_app_user_base_schema_property} Resource.
 func NewAppUserBaseSchemaProperty(scope constructs.Construct, id *string, config *AppUserBaseSchemaPropertyConfig) AppUserBaseSchemaProperty {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewAppUserBaseSchemaProperty(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property okta_app_user_base_schema_property} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user_base_schema_property okta_app_user_base_schema_property} Resource.
 func NewAppUserBaseSchemaProperty_Override(a AppUserBaseSchemaProperty, scope constructs.Construct, id *string, config *AppUserBaseSchemaPropertyConfig) {
 	_init_.Initialize()
 
@@ -549,7 +549,10 @@ func (j *jsiiProxy_AppUserBaseSchemaProperty)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppUserBaseSchemaProperty)SetCount(val *float64) {
+func (j *jsiiProxy_AppUserBaseSchemaProperty)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

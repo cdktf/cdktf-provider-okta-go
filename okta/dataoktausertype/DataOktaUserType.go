@@ -2,14 +2,14 @@ package dataoktausertype
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktausertype/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktausertype/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/d/user_type okta_user_type}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user_type okta_user_type}.
 type DataOktaUserType interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataOktaUserType interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -122,8 +122,8 @@ func (j *jsiiProxy_DataOktaUserType) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaUserType) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataOktaUserType) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -303,7 +303,7 @@ func (j *jsiiProxy_DataOktaUserType) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/d/user_type okta_user_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user_type okta_user_type} Data Source.
 func NewDataOktaUserType(scope constructs.Construct, id *string, config *DataOktaUserTypeConfig) DataOktaUserType {
 	_init_.Initialize()
 
@@ -321,7 +321,7 @@ func NewDataOktaUserType(scope constructs.Construct, id *string, config *DataOkt
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/d/user_type okta_user_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user_type okta_user_type} Data Source.
 func NewDataOktaUserType_Override(d DataOktaUserType, scope constructs.Construct, id *string, config *DataOktaUserTypeConfig) {
 	_init_.Initialize()
 
@@ -332,7 +332,10 @@ func NewDataOktaUserType_Override(d DataOktaUserType, scope constructs.Construct
 	)
 }
 
-func (j *jsiiProxy_DataOktaUserType)SetCount(val *float64) {
+func (j *jsiiProxy_DataOktaUserType)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

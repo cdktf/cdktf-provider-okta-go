@@ -68,6 +68,10 @@ func (j *jsiiProxy_GroupRole) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_GroupRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupRole) validateSetDisableNotificationsParameters(val interface{}) error {
 	return nil
 }

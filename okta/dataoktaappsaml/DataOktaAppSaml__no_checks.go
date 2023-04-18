@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataOktaAppSaml) validateSetActiveOnlyParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataOktaAppSaml) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOktaAppSaml) validateSetIdParameters(val *string) error {
 	return nil
 }

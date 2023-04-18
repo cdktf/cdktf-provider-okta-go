@@ -108,6 +108,10 @@ func (j *jsiiProxy_AppSharedCredentials) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_AppSharedCredentials) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppSharedCredentials) validateSetEnduserNoteParameters(val *string) error {
 	return nil
 }

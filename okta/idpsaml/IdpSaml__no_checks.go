@@ -84,6 +84,10 @@ func (j *jsiiProxy_IdpSaml) validateSetConnectionParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_IdpSaml) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdpSaml) validateSetDeprovisionedActionParameters(val *string) error {
 	return nil
 }

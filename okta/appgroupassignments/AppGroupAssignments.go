@@ -2,14 +2,14 @@ package appgroupassignments
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/appgroupassignments/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/appgroupassignments/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments okta_app_group_assignments}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_group_assignments okta_app_group_assignments}.
 type AppGroupAssignments interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -24,9 +24,9 @@ type AppGroupAssignments interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -161,8 +161,8 @@ func (j *jsiiProxy_AppGroupAssignments) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_AppGroupAssignments) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AppGroupAssignments) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_AppGroupAssignments) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments okta_app_group_assignments} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_group_assignments okta_app_group_assignments} Resource.
 func NewAppGroupAssignments(scope constructs.Construct, id *string, config *AppGroupAssignmentsConfig) AppGroupAssignments {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewAppGroupAssignments(scope constructs.Construct, id *string, config *AppG
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments okta_app_group_assignments} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_group_assignments okta_app_group_assignments} Resource.
 func NewAppGroupAssignments_Override(a AppGroupAssignments, scope constructs.Construct, id *string, config *AppGroupAssignmentsConfig) {
 	_init_.Initialize()
 
@@ -383,7 +383,10 @@ func (j *jsiiProxy_AppGroupAssignments)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppGroupAssignments)SetCount(val *float64) {
+func (j *jsiiProxy_AppGroupAssignments)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

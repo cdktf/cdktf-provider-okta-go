@@ -2,14 +2,14 @@ package autologinapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/autologinapp/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/autologinapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app okta_auto_login_app}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auto_login_app okta_auto_login_app}.
 type AutoLoginApp interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -42,9 +42,9 @@ type AutoLoginApp interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CredentialsScheme() *string
 	SetCredentialsScheme(val *string)
 	CredentialsSchemeInput() *string
@@ -393,8 +393,8 @@ func (j *jsiiProxy_AutoLoginApp) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_AutoLoginApp) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AutoLoginApp) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -1014,7 +1014,7 @@ func (j *jsiiProxy_AutoLoginApp) UsersInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app okta_auto_login_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auto_login_app okta_auto_login_app} Resource.
 func NewAutoLoginApp(scope constructs.Construct, id *string, config *AutoLoginAppConfig) AutoLoginApp {
 	_init_.Initialize()
 
@@ -1032,7 +1032,7 @@ func NewAutoLoginApp(scope constructs.Construct, id *string, config *AutoLoginAp
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app okta_auto_login_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auto_login_app okta_auto_login_app} Resource.
 func NewAutoLoginApp_Override(a AutoLoginApp, scope constructs.Construct, id *string, config *AutoLoginAppConfig) {
 	_init_.Initialize()
 
@@ -1131,7 +1131,10 @@ func (j *jsiiProxy_AutoLoginApp)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AutoLoginApp)SetCount(val *float64) {
+func (j *jsiiProxy_AutoLoginApp)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package dataoktabehaviors
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktabehaviors/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktabehaviors/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/d/behaviors okta_behaviors}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/behaviors okta_behaviors}.
 type DataOktaBehaviors interface {
 	cdktf.TerraformDataSource
 	Behaviors() DataOktaBehaviorsBehaviorsList
@@ -18,9 +18,9 @@ type DataOktaBehaviors interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataOktaBehaviors) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaBehaviors) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataOktaBehaviors) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -293,7 +293,7 @@ func (j *jsiiProxy_DataOktaBehaviors) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/d/behaviors okta_behaviors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/behaviors okta_behaviors} Data Source.
 func NewDataOktaBehaviors(scope constructs.Construct, id *string, config *DataOktaBehaviorsConfig) DataOktaBehaviors {
 	_init_.Initialize()
 
@@ -311,7 +311,7 @@ func NewDataOktaBehaviors(scope constructs.Construct, id *string, config *DataOk
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/d/behaviors okta_behaviors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/behaviors okta_behaviors} Data Source.
 func NewDataOktaBehaviors_Override(d DataOktaBehaviors, scope constructs.Construct, id *string, config *DataOktaBehaviorsConfig) {
 	_init_.Initialize()
 
@@ -322,7 +322,10 @@ func NewDataOktaBehaviors_Override(d DataOktaBehaviors, scope constructs.Constru
 	)
 }
 
-func (j *jsiiProxy_DataOktaBehaviors)SetCount(val *float64) {
+func (j *jsiiProxy_DataOktaBehaviors)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

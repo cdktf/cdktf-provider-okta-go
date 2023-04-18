@@ -2,14 +2,14 @@ package dataoktaauthserverclaims
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaauthserverclaims/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaauthserverclaims/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claims okta_auth_server_claims}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/auth_server_claims okta_auth_server_claims}.
 type DataOktaAuthServerClaims interface {
 	cdktf.TerraformDataSource
 	AuthServerId() *string
@@ -21,9 +21,9 @@ type DataOktaAuthServerClaims interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -151,8 +151,8 @@ func (j *jsiiProxy_DataOktaAuthServerClaims) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaAuthServerClaims) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataOktaAuthServerClaims) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataOktaAuthServerClaims) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claims okta_auth_server_claims} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/auth_server_claims okta_auth_server_claims} Data Source.
 func NewDataOktaAuthServerClaims(scope constructs.Construct, id *string, config *DataOktaAuthServerClaimsConfig) DataOktaAuthServerClaims {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataOktaAuthServerClaims(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claims okta_auth_server_claims} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/auth_server_claims okta_auth_server_claims} Data Source.
 func NewDataOktaAuthServerClaims_Override(d DataOktaAuthServerClaims, scope constructs.Construct, id *string, config *DataOktaAuthServerClaimsConfig) {
 	_init_.Initialize()
 
@@ -332,7 +332,10 @@ func (j *jsiiProxy_DataOktaAuthServerClaims)SetAuthServerId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaAuthServerClaims)SetCount(val *float64) {
+func (j *jsiiProxy_DataOktaAuthServerClaims)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

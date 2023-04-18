@@ -2,14 +2,14 @@ package idpsaml
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/idpsaml/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/idpsaml/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/idp_saml okta_idp_saml}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_saml okta_idp_saml}.
 type IdpSaml interface {
 	cdktf.TerraformResource
 	AccountLinkAction() *string
@@ -34,9 +34,9 @@ type IdpSaml interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -348,8 +348,8 @@ func (j *jsiiProxy_IdpSaml) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IdpSaml) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IdpSaml) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -1059,7 +1059,7 @@ func (j *jsiiProxy_IdpSaml) UserTypeId() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/idp_saml okta_idp_saml} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_saml okta_idp_saml} Resource.
 func NewIdpSaml(scope constructs.Construct, id *string, config *IdpSamlConfig) IdpSaml {
 	_init_.Initialize()
 
@@ -1077,7 +1077,7 @@ func NewIdpSaml(scope constructs.Construct, id *string, config *IdpSamlConfig) I
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/idp_saml okta_idp_saml} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_saml okta_idp_saml} Resource.
 func NewIdpSaml_Override(i IdpSaml, scope constructs.Construct, id *string, config *IdpSamlConfig) {
 	_init_.Initialize()
 
@@ -1143,7 +1143,10 @@ func (j *jsiiProxy_IdpSaml)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IdpSaml)SetCount(val *float64) {
+func (j *jsiiProxy_IdpSaml)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

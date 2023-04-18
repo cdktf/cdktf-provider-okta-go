@@ -68,6 +68,10 @@ func (j *jsiiProxy_PolicyMfaDefault) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_PolicyMfaDefault) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PolicyMfaDefault) validateSetDuoParameters(val *map[string]*string) error {
 	return nil
 }

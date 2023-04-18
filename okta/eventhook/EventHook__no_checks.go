@@ -80,6 +80,10 @@ func (j *jsiiProxy_EventHook) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_EventHook) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventHook) validateSetEventsParameters(val *[]*string) error {
 	return nil
 }

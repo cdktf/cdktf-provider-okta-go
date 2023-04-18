@@ -2,14 +2,14 @@ package appoauthapiscope
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/appoauthapiscope/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/appoauthapiscope/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope okta_app_oauth_api_scope}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth_api_scope okta_app_oauth_api_scope}.
 type AppOauthApiScope interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -24,9 +24,9 @@ type AppOauthApiScope interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -164,8 +164,8 @@ func (j *jsiiProxy_AppOauthApiScope) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_AppOauthApiScope) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AppOauthApiScope) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -355,7 +355,7 @@ func (j *jsiiProxy_AppOauthApiScope) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope okta_app_oauth_api_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth_api_scope okta_app_oauth_api_scope} Resource.
 func NewAppOauthApiScope(scope constructs.Construct, id *string, config *AppOauthApiScopeConfig) AppOauthApiScope {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewAppOauthApiScope(scope constructs.Construct, id *string, config *AppOaut
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope okta_app_oauth_api_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth_api_scope okta_app_oauth_api_scope} Resource.
 func NewAppOauthApiScope_Override(a AppOauthApiScope, scope constructs.Construct, id *string, config *AppOauthApiScopeConfig) {
 	_init_.Initialize()
 
@@ -406,7 +406,10 @@ func (j *jsiiProxy_AppOauthApiScope)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppOauthApiScope)SetCount(val *float64) {
+func (j *jsiiProxy_AppOauthApiScope)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

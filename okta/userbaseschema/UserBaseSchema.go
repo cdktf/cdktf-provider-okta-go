@@ -2,14 +2,14 @@ package userbaseschema
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/userbaseschema/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/userbaseschema/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema okta_user_base_schema}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_base_schema okta_user_base_schema}.
 type UserBaseSchema interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type UserBaseSchema interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -164,8 +164,8 @@ func (j *jsiiProxy_UserBaseSchema) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_UserBaseSchema) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_UserBaseSchema) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -475,7 +475,7 @@ func (j *jsiiProxy_UserBaseSchema) UserTypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema okta_user_base_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_base_schema okta_user_base_schema} Resource.
 func NewUserBaseSchema(scope constructs.Construct, id *string, config *UserBaseSchemaConfig) UserBaseSchema {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewUserBaseSchema(scope constructs.Construct, id *string, config *UserBaseS
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema okta_user_base_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_base_schema okta_user_base_schema} Resource.
 func NewUserBaseSchema_Override(u UserBaseSchema, scope constructs.Construct, id *string, config *UserBaseSchemaConfig) {
 	_init_.Initialize()
 
@@ -515,7 +515,10 @@ func (j *jsiiProxy_UserBaseSchema)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchema)SetCount(val *float64) {
+func (j *jsiiProxy_UserBaseSchema)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

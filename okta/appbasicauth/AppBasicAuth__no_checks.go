@@ -104,6 +104,10 @@ func (j *jsiiProxy_AppBasicAuth) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_AppBasicAuth) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppBasicAuth) validateSetEnduserNoteParameters(val *string) error {
 	return nil
 }

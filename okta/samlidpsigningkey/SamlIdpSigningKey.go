@@ -2,14 +2,14 @@ package samlidpsigningkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/samlidpsigningkey/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/samlidpsigningkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/saml_idp_signing_key okta_saml_idp_signing_key}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/saml_idp_signing_key okta_saml_idp_signing_key}.
 type SamlIdpSigningKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type SamlIdpSigningKey interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Created() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -144,8 +144,8 @@ func (j *jsiiProxy_SamlIdpSigningKey) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_SamlIdpSigningKey) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SamlIdpSigningKey) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -375,7 +375,7 @@ func (j *jsiiProxy_SamlIdpSigningKey) X5TS256() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/saml_idp_signing_key okta_saml_idp_signing_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/saml_idp_signing_key okta_saml_idp_signing_key} Resource.
 func NewSamlIdpSigningKey(scope constructs.Construct, id *string, config *SamlIdpSigningKeyConfig) SamlIdpSigningKey {
 	_init_.Initialize()
 
@@ -393,7 +393,7 @@ func NewSamlIdpSigningKey(scope constructs.Construct, id *string, config *SamlId
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/saml_idp_signing_key okta_saml_idp_signing_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/saml_idp_signing_key okta_saml_idp_signing_key} Resource.
 func NewSamlIdpSigningKey_Override(s SamlIdpSigningKey, scope constructs.Construct, id *string, config *SamlIdpSigningKeyConfig) {
 	_init_.Initialize()
 
@@ -415,7 +415,10 @@ func (j *jsiiProxy_SamlIdpSigningKey)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SamlIdpSigningKey)SetCount(val *float64) {
+func (j *jsiiProxy_SamlIdpSigningKey)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

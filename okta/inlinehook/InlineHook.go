@@ -2,14 +2,14 @@ package inlinehook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/inlinehook/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/inlinehook/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/inline_hook okta_inline_hook}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/inline_hook okta_inline_hook}.
 type InlineHook interface {
 	cdktf.TerraformResource
 	Auth() *map[string]*string
@@ -27,9 +27,9 @@ type InlineHook interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -199,8 +199,8 @@ func (j *jsiiProxy_InlineHook) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_InlineHook) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_InlineHook) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -450,7 +450,7 @@ func (j *jsiiProxy_InlineHook) VersionInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/inline_hook okta_inline_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/inline_hook okta_inline_hook} Resource.
 func NewInlineHook(scope constructs.Construct, id *string, config *InlineHookConfig) InlineHook {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewInlineHook(scope constructs.Construct, id *string, config *InlineHookCon
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/inline_hook okta_inline_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/inline_hook okta_inline_hook} Resource.
 func NewInlineHook_Override(i InlineHook, scope constructs.Construct, id *string, config *InlineHookConfig) {
 	_init_.Initialize()
 
@@ -512,7 +512,10 @@ func (j *jsiiProxy_InlineHook)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_InlineHook)SetCount(val *float64) {
+func (j *jsiiProxy_InlineHook)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

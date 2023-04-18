@@ -68,6 +68,10 @@ func (j *jsiiProxy_SecurityNotificationEmails) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_SecurityNotificationEmails) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityNotificationEmails) validateSetIdParameters(val *string) error {
 	return nil
 }

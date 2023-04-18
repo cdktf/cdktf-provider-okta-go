@@ -68,6 +68,10 @@ func (j *jsiiProxy_EmailSender) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_EmailSender) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmailSender) validateSetFromAddressParameters(val *string) error {
 	return nil
 }

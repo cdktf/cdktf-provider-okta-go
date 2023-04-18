@@ -2,14 +2,14 @@ package policyrulesignon
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/policyrulesignon/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/policyrulesignon/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon okta_policy_rule_signon}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_signon okta_policy_rule_signon}.
 type PolicyRuleSignon interface {
 	cdktf.TerraformResource
 	Access() *string
@@ -30,9 +30,9 @@ type PolicyRuleSignon interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -290,8 +290,8 @@ func (j *jsiiProxy_PolicyRuleSignon) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRuleSignon) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PolicyRuleSignon) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -861,7 +861,7 @@ func (j *jsiiProxy_PolicyRuleSignon) UsersExcludedInput() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon okta_policy_rule_signon} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_signon okta_policy_rule_signon} Resource.
 func NewPolicyRuleSignon(scope constructs.Construct, id *string, config *PolicyRuleSignonConfig) PolicyRuleSignon {
 	_init_.Initialize()
 
@@ -879,7 +879,7 @@ func NewPolicyRuleSignon(scope constructs.Construct, id *string, config *PolicyR
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon okta_policy_rule_signon} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_signon okta_policy_rule_signon} Resource.
 func NewPolicyRuleSignon_Override(p PolicyRuleSignon, scope constructs.Construct, id *string, config *PolicyRuleSignonConfig) {
 	_init_.Initialize()
 
@@ -934,7 +934,10 @@ func (j *jsiiProxy_PolicyRuleSignon)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleSignon)SetCount(val *float64) {
+func (j *jsiiProxy_PolicyRuleSignon)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

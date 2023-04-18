@@ -68,6 +68,10 @@ func (j *jsiiProxy_EventHookVerification) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_EventHookVerification) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventHookVerification) validateSetEventHookIdParameters(val *string) error {
 	return nil
 }

@@ -136,6 +136,10 @@ func (j *jsiiProxy_OauthApp) validateSetConsentMethodParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_OauthApp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OauthApp) validateSetCustomClientIdParameters(val *string) error {
 	return nil
 }

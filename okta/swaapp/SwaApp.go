@@ -2,14 +2,14 @@ package swaapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/swaapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/swa_app okta_swa_app}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app okta_swa_app}.
 type SwaApp interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -45,9 +45,9 @@ type SwaApp interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -413,8 +413,8 @@ func (j *jsiiProxy_SwaApp) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SwaApp) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SwaApp) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -1014,7 +1014,7 @@ func (j *jsiiProxy_SwaApp) UsersInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/swa_app okta_swa_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app okta_swa_app} Resource.
 func NewSwaApp(scope constructs.Construct, id *string, config *SwaAppConfig) SwaApp {
 	_init_.Initialize()
 
@@ -1032,7 +1032,7 @@ func NewSwaApp(scope constructs.Construct, id *string, config *SwaAppConfig) Swa
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/swa_app okta_swa_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app okta_swa_app} Resource.
 func NewSwaApp_Override(s SwaApp, scope constructs.Construct, id *string, config *SwaAppConfig) {
 	_init_.Initialize()
 
@@ -1142,7 +1142,10 @@ func (j *jsiiProxy_SwaApp)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SwaApp)SetCount(val *float64) {
+func (j *jsiiProxy_SwaApp)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

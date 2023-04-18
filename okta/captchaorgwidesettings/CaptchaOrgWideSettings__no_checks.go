@@ -72,6 +72,10 @@ func (j *jsiiProxy_CaptchaOrgWideSettings) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_CaptchaOrgWideSettings) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CaptchaOrgWideSettings) validateSetEnabledForParameters(val *[]*string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package eventhookverification
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/eventhookverification/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/eventhookverification/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/event_hook_verification okta_event_hook_verification}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/event_hook_verification okta_event_hook_verification}.
 type EventHookVerification interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type EventHookVerification interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -138,8 +138,8 @@ func (j *jsiiProxy_EventHookVerification) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_EventHookVerification) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_EventHookVerification) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -309,7 +309,7 @@ func (j *jsiiProxy_EventHookVerification) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/event_hook_verification okta_event_hook_verification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/event_hook_verification okta_event_hook_verification} Resource.
 func NewEventHookVerification(scope constructs.Construct, id *string, config *EventHookVerificationConfig) EventHookVerification {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewEventHookVerification(scope constructs.Construct, id *string, config *Ev
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/event_hook_verification okta_event_hook_verification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/event_hook_verification okta_event_hook_verification} Resource.
 func NewEventHookVerification_Override(e EventHookVerification, scope constructs.Construct, id *string, config *EventHookVerificationConfig) {
 	_init_.Initialize()
 
@@ -349,7 +349,10 @@ func (j *jsiiProxy_EventHookVerification)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EventHookVerification)SetCount(val *float64) {
+func (j *jsiiProxy_EventHookVerification)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

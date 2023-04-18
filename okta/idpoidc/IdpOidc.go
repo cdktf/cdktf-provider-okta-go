@@ -2,14 +2,14 @@ package idpoidc
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/idpoidc/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/idpoidc/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc okta_idp_oidc}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_oidc okta_idp_oidc}.
 type IdpOidc interface {
 	cdktf.TerraformResource
 	AccountLinkAction() *string
@@ -39,9 +39,9 @@ type IdpOidc interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -374,8 +374,8 @@ func (j *jsiiProxy_IdpOidc) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IdpOidc) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IdpOidc) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -1065,7 +1065,7 @@ func (j *jsiiProxy_IdpOidc) UserTypeId() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc okta_idp_oidc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_oidc okta_idp_oidc} Resource.
 func NewIdpOidc(scope constructs.Construct, id *string, config *IdpOidcConfig) IdpOidc {
 	_init_.Initialize()
 
@@ -1083,7 +1083,7 @@ func NewIdpOidc(scope constructs.Construct, id *string, config *IdpOidcConfig) I
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc okta_idp_oidc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_oidc okta_idp_oidc} Resource.
 func NewIdpOidc_Override(i IdpOidc, scope constructs.Construct, id *string, config *IdpOidcConfig) {
 	_init_.Initialize()
 
@@ -1171,7 +1171,10 @@ func (j *jsiiProxy_IdpOidc)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IdpOidc)SetCount(val *float64) {
+func (j *jsiiProxy_IdpOidc)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

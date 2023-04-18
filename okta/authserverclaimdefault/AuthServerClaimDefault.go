@@ -2,14 +2,14 @@ package authserverclaimdefault
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/authserverclaimdefault/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/authserverclaimdefault/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default okta_auth_server_claim_default}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_claim_default okta_auth_server_claim_default}.
 type AuthServerClaimDefault interface {
 	cdktf.TerraformResource
 	AlwaysIncludeInToken() interface{}
@@ -28,9 +28,9 @@ type AuthServerClaimDefault interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -203,8 +203,8 @@ func (j *jsiiProxy_AuthServerClaimDefault) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_AuthServerClaimDefault) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AuthServerClaimDefault) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -424,7 +424,7 @@ func (j *jsiiProxy_AuthServerClaimDefault) ValueType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default okta_auth_server_claim_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_claim_default okta_auth_server_claim_default} Resource.
 func NewAuthServerClaimDefault(scope constructs.Construct, id *string, config *AuthServerClaimDefaultConfig) AuthServerClaimDefault {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewAuthServerClaimDefault(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default okta_auth_server_claim_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_claim_default okta_auth_server_claim_default} Resource.
 func NewAuthServerClaimDefault_Override(a AuthServerClaimDefault, scope constructs.Construct, id *string, config *AuthServerClaimDefaultConfig) {
 	_init_.Initialize()
 
@@ -486,7 +486,10 @@ func (j *jsiiProxy_AuthServerClaimDefault)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AuthServerClaimDefault)SetCount(val *float64) {
+func (j *jsiiProxy_AuthServerClaimDefault)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

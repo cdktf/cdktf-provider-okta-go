@@ -68,6 +68,10 @@ func (j *jsiiProxy_PasswordPolicyRule) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_PasswordPolicyRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PasswordPolicyRule) validateSetIdParameters(val *string) error {
 	return nil
 }

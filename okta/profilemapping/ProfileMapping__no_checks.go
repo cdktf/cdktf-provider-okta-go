@@ -76,6 +76,10 @@ func (j *jsiiProxy_ProfileMapping) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_ProfileMapping) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProfileMapping) validateSetDeleteWhenAbsentParameters(val interface{}) error {
 	return nil
 }

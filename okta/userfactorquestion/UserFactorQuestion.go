@@ -2,14 +2,14 @@ package userfactorquestion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/userfactorquestion/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/userfactorquestion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_factor_question okta_user_factor_question}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_factor_question okta_user_factor_question}.
 type UserFactorQuestion interface {
 	cdktf.TerraformResource
 	Answer() *string
@@ -24,9 +24,9 @@ type UserFactorQuestion interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -166,8 +166,8 @@ func (j *jsiiProxy_UserFactorQuestion) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_UserFactorQuestion) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_UserFactorQuestion) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -377,7 +377,7 @@ func (j *jsiiProxy_UserFactorQuestion) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/user_factor_question okta_user_factor_question} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_factor_question okta_user_factor_question} Resource.
 func NewUserFactorQuestion(scope constructs.Construct, id *string, config *UserFactorQuestionConfig) UserFactorQuestion {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewUserFactorQuestion(scope constructs.Construct, id *string, config *UserF
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/user_factor_question okta_user_factor_question} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_factor_question okta_user_factor_question} Resource.
 func NewUserFactorQuestion_Override(u UserFactorQuestion, scope constructs.Construct, id *string, config *UserFactorQuestionConfig) {
 	_init_.Initialize()
 
@@ -428,7 +428,10 @@ func (j *jsiiProxy_UserFactorQuestion)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserFactorQuestion)SetCount(val *float64) {
+func (j *jsiiProxy_UserFactorQuestion)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package authserver
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/authserver/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/authserver/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/auth_server okta_auth_server}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server okta_auth_server}.
 type AuthServer interface {
 	cdktf.TerraformResource
 	Audiences() *[]*string
@@ -24,9 +24,9 @@ type AuthServer interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CredentialsLastRotated() *string
 	CredentialsNextRotation() *string
 	CredentialsRotationMode() *string
@@ -181,8 +181,8 @@ func (j *jsiiProxy_AuthServer) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AuthServer) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AuthServer) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -472,7 +472,7 @@ func (j *jsiiProxy_AuthServer) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/auth_server okta_auth_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server okta_auth_server} Resource.
 func NewAuthServer(scope constructs.Construct, id *string, config *AuthServerConfig) AuthServer {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewAuthServer(scope constructs.Construct, id *string, config *AuthServerCon
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/auth_server okta_auth_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server okta_auth_server} Resource.
 func NewAuthServer_Override(a AuthServer, scope constructs.Construct, id *string, config *AuthServerConfig) {
 	_init_.Initialize()
 
@@ -523,7 +523,10 @@ func (j *jsiiProxy_AuthServer)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AuthServer)SetCount(val *float64) {
+func (j *jsiiProxy_AuthServer)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

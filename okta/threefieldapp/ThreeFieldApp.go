@@ -2,14 +2,14 @@ package threefieldapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/threefieldapp/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/threefieldapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/three_field_app okta_three_field_app}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app okta_three_field_app}.
 type ThreeFieldApp interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -42,9 +42,9 @@ type ThreeFieldApp interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CredentialsScheme() *string
 	SetCredentialsScheme(val *string)
 	CredentialsSchemeInput() *string
@@ -399,8 +399,8 @@ func (j *jsiiProxy_ThreeFieldApp) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_ThreeFieldApp) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ThreeFieldApp) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -1080,7 +1080,7 @@ func (j *jsiiProxy_ThreeFieldApp) UsersInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/three_field_app okta_three_field_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app okta_three_field_app} Resource.
 func NewThreeFieldApp(scope constructs.Construct, id *string, config *ThreeFieldAppConfig) ThreeFieldApp {
 	_init_.Initialize()
 
@@ -1098,7 +1098,7 @@ func NewThreeFieldApp(scope constructs.Construct, id *string, config *ThreeField
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/three_field_app okta_three_field_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app okta_three_field_app} Resource.
 func NewThreeFieldApp_Override(t ThreeFieldApp, scope constructs.Construct, id *string, config *ThreeFieldAppConfig) {
 	_init_.Initialize()
 
@@ -1197,7 +1197,10 @@ func (j *jsiiProxy_ThreeFieldApp)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ThreeFieldApp)SetCount(val *float64) {
+func (j *jsiiProxy_ThreeFieldApp)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

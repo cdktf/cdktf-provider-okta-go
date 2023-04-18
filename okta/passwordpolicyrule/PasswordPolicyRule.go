@@ -2,14 +2,14 @@ package passwordpolicyrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/passwordpolicyrule/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/passwordpolicyrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule okta_password_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/password_policy_rule okta_password_policy_rule}.
 type PasswordPolicyRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type PasswordPolicyRule interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -182,8 +182,8 @@ func (j *jsiiProxy_PasswordPolicyRule) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_PasswordPolicyRule) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PasswordPolicyRule) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -573,7 +573,7 @@ func (j *jsiiProxy_PasswordPolicyRule) UsersExcludedInput() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule okta_password_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/password_policy_rule okta_password_policy_rule} Resource.
 func NewPasswordPolicyRule(scope constructs.Construct, id *string, config *PasswordPolicyRuleConfig) PasswordPolicyRule {
 	_init_.Initialize()
 
@@ -591,7 +591,7 @@ func NewPasswordPolicyRule(scope constructs.Construct, id *string, config *Passw
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule okta_password_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/password_policy_rule okta_password_policy_rule} Resource.
 func NewPasswordPolicyRule_Override(p PasswordPolicyRule, scope constructs.Construct, id *string, config *PasswordPolicyRuleConfig) {
 	_init_.Initialize()
 
@@ -613,7 +613,10 @@ func (j *jsiiProxy_PasswordPolicyRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PasswordPolicyRule)SetCount(val *float64) {
+func (j *jsiiProxy_PasswordPolicyRule)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

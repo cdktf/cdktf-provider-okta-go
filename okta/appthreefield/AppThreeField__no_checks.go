@@ -104,6 +104,10 @@ func (j *jsiiProxy_AppThreeField) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_AppThreeField) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppThreeField) validateSetCredentialsSchemeParameters(val *string) error {
 	return nil
 }

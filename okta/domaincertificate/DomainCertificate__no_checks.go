@@ -76,6 +76,10 @@ func (j *jsiiProxy_DomainCertificate) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_DomainCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DomainCertificate) validateSetDomainIdParameters(val *string) error {
 	return nil
 }

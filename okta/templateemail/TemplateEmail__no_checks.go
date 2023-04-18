@@ -72,6 +72,10 @@ func (j *jsiiProxy_TemplateEmail) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_TemplateEmail) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TemplateEmail) validateSetDefaultLanguageParameters(val *string) error {
 	return nil
 }

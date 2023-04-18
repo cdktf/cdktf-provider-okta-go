@@ -72,6 +72,10 @@ func (j *jsiiProxy_AuthServer) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_AuthServer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AuthServer) validateSetCredentialsRotationModeParameters(val *string) error {
 	return nil
 }

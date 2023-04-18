@@ -2,14 +2,14 @@ package groupmembership
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/groupmembership/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/groupmembership/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_membership okta_group_membership}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_membership okta_group_membership}.
 type GroupMembership interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GroupMembership interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -141,8 +141,8 @@ func (j *jsiiProxy_GroupMembership) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_GroupMembership) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GroupMembership) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_GroupMembership) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/group_membership okta_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_membership okta_group_membership} Resource.
 func NewGroupMembership(scope constructs.Construct, id *string, config *GroupMembershipConfig) GroupMembership {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewGroupMembership(scope constructs.Construct, id *string, config *GroupMem
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/group_membership okta_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_membership okta_group_membership} Resource.
 func NewGroupMembership_Override(g GroupMembership, scope constructs.Construct, id *string, config *GroupMembershipConfig) {
 	_init_.Initialize()
 
@@ -372,7 +372,10 @@ func (j *jsiiProxy_GroupMembership)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupMembership)SetCount(val *float64) {
+func (j *jsiiProxy_GroupMembership)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

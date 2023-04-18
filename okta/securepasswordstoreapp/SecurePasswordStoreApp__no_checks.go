@@ -100,6 +100,10 @@ func (j *jsiiProxy_SecurePasswordStoreApp) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_SecurePasswordStoreApp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurePasswordStoreApp) validateSetCredentialsSchemeParameters(val *string) error {
 	return nil
 }

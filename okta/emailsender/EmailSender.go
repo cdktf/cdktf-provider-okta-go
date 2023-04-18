@@ -2,14 +2,14 @@ package emailsender
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/emailsender/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/emailsender/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/email_sender okta_email_sender}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/email_sender okta_email_sender}.
 type EmailSender interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type EmailSender interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -146,8 +146,8 @@ func (j *jsiiProxy_EmailSender) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_EmailSender) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_EmailSender) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -377,7 +377,7 @@ func (j *jsiiProxy_EmailSender) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/email_sender okta_email_sender} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/email_sender okta_email_sender} Resource.
 func NewEmailSender(scope constructs.Construct, id *string, config *EmailSenderConfig) EmailSender {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewEmailSender(scope constructs.Construct, id *string, config *EmailSenderC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/email_sender okta_email_sender} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/email_sender okta_email_sender} Resource.
 func NewEmailSender_Override(e EmailSender, scope constructs.Construct, id *string, config *EmailSenderConfig) {
 	_init_.Initialize()
 
@@ -417,7 +417,10 @@ func (j *jsiiProxy_EmailSender)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmailSender)SetCount(val *float64) {
+func (j *jsiiProxy_EmailSender)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

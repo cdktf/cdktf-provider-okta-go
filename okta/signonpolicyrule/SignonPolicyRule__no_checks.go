@@ -84,6 +84,10 @@ func (j *jsiiProxy_SignonPolicyRule) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_SignonPolicyRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SignonPolicyRule) validateSetIdParameters(val *string) error {
 	return nil
 }

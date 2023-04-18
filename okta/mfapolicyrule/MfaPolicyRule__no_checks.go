@@ -76,6 +76,10 @@ func (j *jsiiProxy_MfaPolicyRule) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_MfaPolicyRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MfaPolicyRule) validateSetEnrollParameters(val *string) error {
 	return nil
 }

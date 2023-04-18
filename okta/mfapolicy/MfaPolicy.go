@@ -2,14 +2,14 @@ package mfapolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicy/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/mfapolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy okta_mfa_policy}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy okta_mfa_policy}.
 type MfaPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type MfaPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -242,8 +242,8 @@ func (j *jsiiProxy_MfaPolicy) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MfaPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MfaPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -933,7 +933,7 @@ func (j *jsiiProxy_MfaPolicy) YubikeyTokenInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy okta_mfa_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy okta_mfa_policy} Resource.
 func NewMfaPolicy(scope constructs.Construct, id *string, config *MfaPolicyConfig) MfaPolicy {
 	_init_.Initialize()
 
@@ -951,7 +951,7 @@ func NewMfaPolicy(scope constructs.Construct, id *string, config *MfaPolicyConfi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy okta_mfa_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy okta_mfa_policy} Resource.
 func NewMfaPolicy_Override(m MfaPolicy, scope constructs.Construct, id *string, config *MfaPolicyConfig) {
 	_init_.Initialize()
 
@@ -973,7 +973,10 @@ func (j *jsiiProxy_MfaPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MfaPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_MfaPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

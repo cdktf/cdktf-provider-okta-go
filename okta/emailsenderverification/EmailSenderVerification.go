@@ -2,14 +2,14 @@ package emailsenderverification
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/emailsenderverification/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/emailsenderverification/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/email_sender_verification okta_email_sender_verification}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/email_sender_verification okta_email_sender_verification}.
 type EmailSenderVerification interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type EmailSenderVerification interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -138,8 +138,8 @@ func (j *jsiiProxy_EmailSenderVerification) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_EmailSenderVerification) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_EmailSenderVerification) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -309,7 +309,7 @@ func (j *jsiiProxy_EmailSenderVerification) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/email_sender_verification okta_email_sender_verification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/email_sender_verification okta_email_sender_verification} Resource.
 func NewEmailSenderVerification(scope constructs.Construct, id *string, config *EmailSenderVerificationConfig) EmailSenderVerification {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewEmailSenderVerification(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/email_sender_verification okta_email_sender_verification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/email_sender_verification okta_email_sender_verification} Resource.
 func NewEmailSenderVerification_Override(e EmailSenderVerification, scope constructs.Construct, id *string, config *EmailSenderVerificationConfig) {
 	_init_.Initialize()
 
@@ -349,7 +349,10 @@ func (j *jsiiProxy_EmailSenderVerification)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmailSenderVerification)SetCount(val *float64) {
+func (j *jsiiProxy_EmailSenderVerification)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

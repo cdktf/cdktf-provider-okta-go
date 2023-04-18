@@ -2,14 +2,14 @@ package domaincertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/domaincertificate/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/domaincertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate okta_domain_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate okta_domain_certificate}.
 type DomainCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,9 +27,9 @@ type DomainCertificate interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -191,8 +191,8 @@ func (j *jsiiProxy_DomainCertificate) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DomainCertificate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DomainCertificate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -402,7 +402,7 @@ func (j *jsiiProxy_DomainCertificate) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate okta_domain_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate okta_domain_certificate} Resource.
 func NewDomainCertificate(scope constructs.Construct, id *string, config *DomainCertificateConfig) DomainCertificate {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewDomainCertificate(scope constructs.Construct, id *string, config *Domain
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate okta_domain_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate okta_domain_certificate} Resource.
 func NewDomainCertificate_Override(d DomainCertificate, scope constructs.Construct, id *string, config *DomainCertificateConfig) {
 	_init_.Initialize()
 
@@ -464,7 +464,10 @@ func (j *jsiiProxy_DomainCertificate)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DomainCertificate)SetCount(val *float64) {
+func (j *jsiiProxy_DomainCertificate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

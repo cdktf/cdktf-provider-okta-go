@@ -64,6 +64,10 @@ func validateDataOktaBrands_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataOktaBrands) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOktaBrands) validateSetIdParameters(val *string) error {
 	return nil
 }

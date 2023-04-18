@@ -68,6 +68,10 @@ func (j *jsiiProxy_UserBaseSchema) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_UserBaseSchema) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_UserBaseSchema) validateSetIdParameters(val *string) error {
 	return nil
 }

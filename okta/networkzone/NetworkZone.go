@@ -2,14 +2,14 @@ package networkzone
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/networkzone/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/networkzone/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/network_zone okta_network_zone}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/network_zone okta_network_zone}.
 type NetworkZone interface {
 	cdktf.TerraformResource
 	Asns() *[]*string
@@ -24,9 +24,9 @@ type NetworkZone interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -185,8 +185,8 @@ func (j *jsiiProxy_NetworkZone) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_NetworkZone) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_NetworkZone) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -476,7 +476,7 @@ func (j *jsiiProxy_NetworkZone) UsageInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/network_zone okta_network_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/network_zone okta_network_zone} Resource.
 func NewNetworkZone(scope constructs.Construct, id *string, config *NetworkZoneConfig) NetworkZone {
 	_init_.Initialize()
 
@@ -494,7 +494,7 @@ func NewNetworkZone(scope constructs.Construct, id *string, config *NetworkZoneC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/network_zone okta_network_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/network_zone okta_network_zone} Resource.
 func NewNetworkZone_Override(n NetworkZone, scope constructs.Construct, id *string, config *NetworkZoneConfig) {
 	_init_.Initialize()
 
@@ -527,7 +527,10 @@ func (j *jsiiProxy_NetworkZone)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkZone)SetCount(val *float64) {
+func (j *jsiiProxy_NetworkZone)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

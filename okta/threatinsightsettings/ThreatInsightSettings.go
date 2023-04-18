@@ -2,14 +2,14 @@ package threatinsightsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/threatinsightsettings/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/threatinsightsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/threat_insight_settings okta_threat_insight_settings}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/threat_insight_settings okta_threat_insight_settings}.
 type ThreatInsightSettings interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -24,9 +24,9 @@ type ThreatInsightSettings interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -162,8 +162,8 @@ func (j *jsiiProxy_ThreatInsightSettings) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_ThreatInsightSettings) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ThreatInsightSettings) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -333,7 +333,7 @@ func (j *jsiiProxy_ThreatInsightSettings) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/threat_insight_settings okta_threat_insight_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/threat_insight_settings okta_threat_insight_settings} Resource.
 func NewThreatInsightSettings(scope constructs.Construct, id *string, config *ThreatInsightSettingsConfig) ThreatInsightSettings {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewThreatInsightSettings(scope constructs.Construct, id *string, config *Th
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/threat_insight_settings okta_threat_insight_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/threat_insight_settings okta_threat_insight_settings} Resource.
 func NewThreatInsightSettings_Override(t ThreatInsightSettings, scope constructs.Construct, id *string, config *ThreatInsightSettingsConfig) {
 	_init_.Initialize()
 
@@ -384,7 +384,10 @@ func (j *jsiiProxy_ThreatInsightSettings)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ThreatInsightSettings)SetCount(val *float64) {
+func (j *jsiiProxy_ThreatInsightSettings)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

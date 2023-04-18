@@ -2,14 +2,14 @@ package socialidp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/socialidp/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/socialidp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/social_idp okta_social_idp}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/social_idp okta_social_idp}.
 type SocialIdp interface {
 	cdktf.TerraformResource
 	AccountLinkAction() *string
@@ -44,9 +44,9 @@ type SocialIdp interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -404,8 +404,8 @@ func (j *jsiiProxy_SocialIdp) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SocialIdp) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SocialIdp) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -975,7 +975,7 @@ func (j *jsiiProxy_SocialIdp) UsernameTemplateInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/social_idp okta_social_idp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/social_idp okta_social_idp} Resource.
 func NewSocialIdp(scope constructs.Construct, id *string, config *SocialIdpConfig) SocialIdp {
 	_init_.Initialize()
 
@@ -993,7 +993,7 @@ func NewSocialIdp(scope constructs.Construct, id *string, config *SocialIdpConfi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/social_idp okta_social_idp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/social_idp okta_social_idp} Resource.
 func NewSocialIdp_Override(s SocialIdp, scope constructs.Construct, id *string, config *SocialIdpConfig) {
 	_init_.Initialize()
 
@@ -1092,7 +1092,10 @@ func (j *jsiiProxy_SocialIdp)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SocialIdp)SetCount(val *float64) {
+func (j *jsiiProxy_SocialIdp)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

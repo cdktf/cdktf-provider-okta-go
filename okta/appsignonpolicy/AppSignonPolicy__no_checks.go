@@ -68,6 +68,10 @@ func (j *jsiiProxy_AppSignonPolicy) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_AppSignonPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppSignonPolicy) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

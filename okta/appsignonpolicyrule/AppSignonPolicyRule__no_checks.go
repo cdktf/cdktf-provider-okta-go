@@ -80,6 +80,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) validateSetConstraintsParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_AppSignonPolicyRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppSignonPolicyRule) validateSetCustomExpressionParameters(val *string) error {
 	return nil
 }

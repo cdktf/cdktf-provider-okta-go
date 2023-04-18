@@ -2,14 +2,14 @@ package dataoktabrands
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktabrands/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktabrands/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/d/brands okta_brands}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/brands okta_brands}.
 type DataOktaBrands interface {
 	cdktf.TerraformDataSource
 	Brands() DataOktaBrandsBrandsList
@@ -18,9 +18,9 @@ type DataOktaBrands interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DataOktaBrands) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaBrands) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataOktaBrands) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DataOktaBrands) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/d/brands okta_brands} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/brands okta_brands} Data Source.
 func NewDataOktaBrands(scope constructs.Construct, id *string, config *DataOktaBrandsConfig) DataOktaBrands {
 	_init_.Initialize()
 
@@ -287,7 +287,7 @@ func NewDataOktaBrands(scope constructs.Construct, id *string, config *DataOktaB
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/d/brands okta_brands} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/brands okta_brands} Data Source.
 func NewDataOktaBrands_Override(d DataOktaBrands, scope constructs.Construct, id *string, config *DataOktaBrandsConfig) {
 	_init_.Initialize()
 
@@ -298,7 +298,10 @@ func NewDataOktaBrands_Override(d DataOktaBrands, scope constructs.Construct, id
 	)
 }
 
-func (j *jsiiProxy_DataOktaBrands)SetCount(val *float64) {
+func (j *jsiiProxy_DataOktaBrands)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -92,6 +92,10 @@ func (j *jsiiProxy_IdpOidc) validateSetConnectionParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_IdpOidc) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdpOidc) validateSetDeprovisionedActionParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_AdminRoleCustom) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_AdminRoleCustom) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AdminRoleCustom) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

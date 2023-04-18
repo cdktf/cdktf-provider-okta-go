@@ -2,14 +2,14 @@ package factortotp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/factortotp/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/factortotp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/factor_totp okta_factor_totp}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/factor_totp okta_factor_totp}.
 type FactorTotp interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type FactorTotp interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -178,8 +178,8 @@ func (j *jsiiProxy_FactorTotp) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FactorTotp) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_FactorTotp) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -429,7 +429,7 @@ func (j *jsiiProxy_FactorTotp) TimeStepInput() *float64 {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/factor_totp okta_factor_totp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/factor_totp okta_factor_totp} Resource.
 func NewFactorTotp(scope constructs.Construct, id *string, config *FactorTotpConfig) FactorTotp {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewFactorTotp(scope constructs.Construct, id *string, config *FactorTotpCon
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/factor_totp okta_factor_totp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/factor_totp okta_factor_totp} Resource.
 func NewFactorTotp_Override(f FactorTotp, scope constructs.Construct, id *string, config *FactorTotpConfig) {
 	_init_.Initialize()
 
@@ -480,7 +480,10 @@ func (j *jsiiProxy_FactorTotp)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FactorTotp)SetCount(val *float64) {
+func (j *jsiiProxy_FactorTotp)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

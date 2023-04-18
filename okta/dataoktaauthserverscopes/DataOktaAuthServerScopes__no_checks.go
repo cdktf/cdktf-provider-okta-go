@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataOktaAuthServerScopes) validateSetAuthServerIdParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataOktaAuthServerScopes) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOktaAuthServerScopes) validateSetIdParameters(val *string) error {
 	return nil
 }

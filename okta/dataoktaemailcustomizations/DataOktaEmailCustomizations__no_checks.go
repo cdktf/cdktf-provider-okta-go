@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataOktaEmailCustomizations) validateSetBrandIdParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataOktaEmailCustomizations) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOktaEmailCustomizations) validateSetIdParameters(val *string) error {
 	return nil
 }

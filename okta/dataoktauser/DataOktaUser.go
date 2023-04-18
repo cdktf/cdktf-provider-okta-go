@@ -2,14 +2,14 @@ package dataoktauser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktauser/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktauser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/d/user okta_user}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user okta_user}.
 type DataOktaUser interface {
 	cdktf.TerraformDataSource
 	AdminRoles() *[]*string
@@ -23,9 +23,9 @@ type DataOktaUser interface {
 	ConstructNodeMetadata() *map[string]interface{}
 	CostCenter() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CountryCode() *string
 	CustomProfileAttributes() *string
 	DelayReadSeconds() *string
@@ -227,8 +227,8 @@ func (j *jsiiProxy_DataOktaUser) CostCenter() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaUser) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataOktaUser) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -798,7 +798,7 @@ func (j *jsiiProxy_DataOktaUser) ZipCode() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/d/user okta_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user okta_user} Data Source.
 func NewDataOktaUser(scope constructs.Construct, id *string, config *DataOktaUserConfig) DataOktaUser {
 	_init_.Initialize()
 
@@ -816,7 +816,7 @@ func NewDataOktaUser(scope constructs.Construct, id *string, config *DataOktaUse
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/d/user okta_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user okta_user} Data Source.
 func NewDataOktaUser_Override(d DataOktaUser, scope constructs.Construct, id *string, config *DataOktaUserConfig) {
 	_init_.Initialize()
 
@@ -838,7 +838,10 @@ func (j *jsiiProxy_DataOktaUser)SetCompoundSearchOperator(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaUser)SetCount(val *float64) {
+func (j *jsiiProxy_DataOktaUser)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

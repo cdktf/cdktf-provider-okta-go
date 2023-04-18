@@ -76,6 +76,10 @@ func (j *jsiiProxy_AuthServerScope) validateSetConsentParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_AuthServerScope) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AuthServerScope) validateSetDefaultParameters(val interface{}) error {
 	return nil
 }

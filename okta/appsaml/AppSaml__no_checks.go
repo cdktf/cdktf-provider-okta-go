@@ -128,6 +128,10 @@ func (j *jsiiProxy_AppSaml) validateSetConnectionParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_AppSaml) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppSaml) validateSetDefaultRelayStateParameters(val *string) error {
 	return nil
 }

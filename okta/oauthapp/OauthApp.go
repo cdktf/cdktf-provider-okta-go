@@ -2,14 +2,14 @@ package oauthapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/oauthapp/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/oauthapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/oauth_app okta_oauth_app}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/oauth_app okta_oauth_app}.
 type OauthApp interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -61,9 +61,9 @@ type OauthApp interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomClientId() *string
 	SetCustomClientId(val *string)
 	CustomClientIdInput() *string
@@ -611,8 +611,8 @@ func (j *jsiiProxy_OauthApp) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OauthApp) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OauthApp) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -1552,7 +1552,7 @@ func (j *jsiiProxy_OauthApp) WildcardRedirectInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/oauth_app okta_oauth_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/oauth_app okta_oauth_app} Resource.
 func NewOauthApp(scope constructs.Construct, id *string, config *OauthAppConfig) OauthApp {
 	_init_.Initialize()
 
@@ -1570,7 +1570,7 @@ func NewOauthApp(scope constructs.Construct, id *string, config *OauthAppConfig)
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/oauth_app okta_oauth_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/oauth_app okta_oauth_app} Resource.
 func NewOauthApp_Override(o OauthApp, scope constructs.Construct, id *string, config *OauthAppConfig) {
 	_init_.Initialize()
 
@@ -1735,7 +1735,10 @@ func (j *jsiiProxy_OauthApp)SetConsentMethod(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OauthApp)SetCount(val *float64) {
+func (j *jsiiProxy_OauthApp)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func (j *jsiiProxy_PolicyPasswordDefault) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_PolicyPasswordDefault) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PolicyPasswordDefault) validateSetEmailRecoveryParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package dataoktaemailcustomization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaemailcustomization/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaemailcustomization/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/d/email_customization okta_email_customization}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_customization okta_email_customization}.
 type DataOktaEmailCustomization interface {
 	cdktf.TerraformDataSource
 	Body() *string
@@ -21,9 +21,9 @@ type DataOktaEmailCustomization interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomizationId() *string
 	SetCustomizationId(val *string)
 	CustomizationIdInput() *string
@@ -158,8 +158,8 @@ func (j *jsiiProxy_DataOktaEmailCustomization) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaEmailCustomization) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataOktaEmailCustomization) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -369,7 +369,7 @@ func (j *jsiiProxy_DataOktaEmailCustomization) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/d/email_customization okta_email_customization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_customization okta_email_customization} Data Source.
 func NewDataOktaEmailCustomization(scope constructs.Construct, id *string, config *DataOktaEmailCustomizationConfig) DataOktaEmailCustomization {
 	_init_.Initialize()
 
@@ -387,7 +387,7 @@ func NewDataOktaEmailCustomization(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/d/email_customization okta_email_customization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_customization okta_email_customization} Data Source.
 func NewDataOktaEmailCustomization_Override(d DataOktaEmailCustomization, scope constructs.Construct, id *string, config *DataOktaEmailCustomizationConfig) {
 	_init_.Initialize()
 
@@ -409,7 +409,10 @@ func (j *jsiiProxy_DataOktaEmailCustomization)SetBrandId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaEmailCustomization)SetCount(val *float64) {
+func (j *jsiiProxy_DataOktaEmailCustomization)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

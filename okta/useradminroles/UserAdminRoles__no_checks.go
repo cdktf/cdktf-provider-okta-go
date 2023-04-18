@@ -72,6 +72,10 @@ func (j *jsiiProxy_UserAdminRoles) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_UserAdminRoles) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_UserAdminRoles) validateSetDisableNotificationsParameters(val interface{}) error {
 	return nil
 }

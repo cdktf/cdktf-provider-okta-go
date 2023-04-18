@@ -2,14 +2,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/provider/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta okta}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs okta}.
 type OktaProvider interface {
 	cdktf.TerraformProvider
 	AccessToken() *string
@@ -588,7 +588,7 @@ func (j *jsiiProxy_OktaProvider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta okta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs okta} Resource.
 func NewOktaProvider(scope constructs.Construct, id *string, config *OktaProviderConfig) OktaProvider {
 	_init_.Initialize()
 
@@ -606,7 +606,7 @@ func NewOktaProvider(scope constructs.Construct, id *string, config *OktaProvide
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta okta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs okta} Resource.
 func NewOktaProvider_Override(o OktaProvider, scope constructs.Construct, id *string, config *OktaProviderConfig) {
 	_init_.Initialize()
 

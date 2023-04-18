@@ -2,14 +2,14 @@ package captcha
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/captcha/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/captcha/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/captcha okta_captcha}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/captcha okta_captcha}.
 type Captcha interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type Captcha interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -147,8 +147,8 @@ func (j *jsiiProxy_Captcha) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Captcha) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Captcha) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -378,7 +378,7 @@ func (j *jsiiProxy_Captcha) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/captcha okta_captcha} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/captcha okta_captcha} Resource.
 func NewCaptcha(scope constructs.Construct, id *string, config *CaptchaConfig) Captcha {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewCaptcha(scope constructs.Construct, id *string, config *CaptchaConfig) C
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/captcha okta_captcha} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/captcha okta_captcha} Resource.
 func NewCaptcha_Override(c Captcha, scope constructs.Construct, id *string, config *CaptchaConfig) {
 	_init_.Initialize()
 
@@ -418,7 +418,10 @@ func (j *jsiiProxy_Captcha)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Captcha)SetCount(val *float64) {
+func (j *jsiiProxy_Captcha)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

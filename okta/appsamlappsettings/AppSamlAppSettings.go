@@ -2,14 +2,14 @@ package appsamlappsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/appsamlappsettings/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/appsamlappsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_saml_app_settings okta_app_saml_app_settings}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml_app_settings okta_app_saml_app_settings}.
 type AppSamlAppSettings interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -24,9 +24,9 @@ type AppSamlAppSettings interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -161,8 +161,8 @@ func (j *jsiiProxy_AppSamlAppSettings) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_AppSamlAppSettings) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AppSamlAppSettings) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_AppSamlAppSettings) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_saml_app_settings okta_app_saml_app_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml_app_settings okta_app_saml_app_settings} Resource.
 func NewAppSamlAppSettings(scope constructs.Construct, id *string, config *AppSamlAppSettingsConfig) AppSamlAppSettings {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewAppSamlAppSettings(scope constructs.Construct, id *string, config *AppSa
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_saml_app_settings okta_app_saml_app_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml_app_settings okta_app_saml_app_settings} Resource.
 func NewAppSamlAppSettings_Override(a AppSamlAppSettings, scope constructs.Construct, id *string, config *AppSamlAppSettingsConfig) {
 	_init_.Initialize()
 
@@ -383,7 +383,10 @@ func (j *jsiiProxy_AppSamlAppSettings)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSamlAppSettings)SetCount(val *float64) {
+func (j *jsiiProxy_AppSamlAppSettings)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

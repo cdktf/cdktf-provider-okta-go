@@ -88,6 +88,10 @@ func (j *jsiiProxy_GroupSchemaProperty) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_GroupSchemaProperty) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GroupSchemaProperty) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

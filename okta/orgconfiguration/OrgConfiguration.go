@@ -2,14 +2,14 @@ package orgconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/orgconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/orgconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/org_configuration okta_org_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_configuration okta_org_configuration}.
 type OrgConfiguration interface {
 	cdktf.TerraformResource
 	Address1() *string
@@ -36,9 +36,9 @@ type OrgConfiguration interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Country() *string
 	SetCountry(val *string)
 	CountryInput() *string
@@ -296,8 +296,8 @@ func (j *jsiiProxy_OrgConfiguration) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_OrgConfiguration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OrgConfiguration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -667,7 +667,7 @@ func (j *jsiiProxy_OrgConfiguration) WebsiteInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/org_configuration okta_org_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_configuration okta_org_configuration} Resource.
 func NewOrgConfiguration(scope constructs.Construct, id *string, config *OrgConfigurationConfig) OrgConfiguration {
 	_init_.Initialize()
 
@@ -685,7 +685,7 @@ func NewOrgConfiguration(scope constructs.Construct, id *string, config *OrgConf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/org_configuration okta_org_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_configuration okta_org_configuration} Resource.
 func NewOrgConfiguration_Override(o OrgConfiguration, scope constructs.Construct, id *string, config *OrgConfigurationConfig) {
 	_init_.Initialize()
 
@@ -762,7 +762,10 @@ func (j *jsiiProxy_OrgConfiguration)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OrgConfiguration)SetCount(val *float64) {
+func (j *jsiiProxy_OrgConfiguration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

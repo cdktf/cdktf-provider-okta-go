@@ -2,14 +2,14 @@ package appuserbaseschema
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/appuserbaseschema/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/appuserbaseschema/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema okta_app_user_base_schema}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user_base_schema okta_app_user_base_schema}.
 type AppUserBaseSchema interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -24,9 +24,9 @@ type AppUserBaseSchema interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -187,8 +187,8 @@ func (j *jsiiProxy_AppUserBaseSchema) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_AppUserBaseSchema) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AppUserBaseSchema) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -498,7 +498,7 @@ func (j *jsiiProxy_AppUserBaseSchema) UserTypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema okta_app_user_base_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user_base_schema okta_app_user_base_schema} Resource.
 func NewAppUserBaseSchema(scope constructs.Construct, id *string, config *AppUserBaseSchemaConfig) AppUserBaseSchema {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewAppUserBaseSchema(scope constructs.Construct, id *string, config *AppUse
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema okta_app_user_base_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user_base_schema okta_app_user_base_schema} Resource.
 func NewAppUserBaseSchema_Override(a AppUserBaseSchema, scope constructs.Construct, id *string, config *AppUserBaseSchemaConfig) {
 	_init_.Initialize()
 
@@ -549,7 +549,10 @@ func (j *jsiiProxy_AppUserBaseSchema)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppUserBaseSchema)SetCount(val *float64) {
+func (j *jsiiProxy_AppUserBaseSchema)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

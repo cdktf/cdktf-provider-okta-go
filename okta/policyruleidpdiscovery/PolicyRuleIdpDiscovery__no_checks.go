@@ -84,6 +84,10 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PolicyRuleIdpDiscovery) validateSetIdParameters(val *string) error {
 	return nil
 }

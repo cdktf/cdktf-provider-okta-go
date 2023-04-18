@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataOktaUsers) validateSetCompoundSearchOperatorParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataOktaUsers) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOktaUsers) validateSetDelayReadSecondsParameters(val *string) error {
 	return nil
 }

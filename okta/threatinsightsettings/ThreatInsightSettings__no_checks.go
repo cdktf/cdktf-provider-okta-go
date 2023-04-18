@@ -72,6 +72,10 @@ func (j *jsiiProxy_ThreatInsightSettings) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_ThreatInsightSettings) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ThreatInsightSettings) validateSetIdParameters(val *string) error {
 	return nil
 }

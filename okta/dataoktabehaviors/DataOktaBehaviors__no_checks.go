@@ -64,6 +64,10 @@ func validateDataOktaBehaviors_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_DataOktaBehaviors) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOktaBehaviors) validateSetIdParameters(val *string) error {
 	return nil
 }

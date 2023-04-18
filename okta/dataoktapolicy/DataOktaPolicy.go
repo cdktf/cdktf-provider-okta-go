@@ -2,14 +2,14 @@ package dataoktapolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktapolicy/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktapolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/d/policy okta_policy}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/policy okta_policy}.
 type DataOktaPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataOktaPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DataOktaPolicy) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataOktaPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -315,7 +315,7 @@ func (j *jsiiProxy_DataOktaPolicy) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/d/policy okta_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/policy okta_policy} Data Source.
 func NewDataOktaPolicy(scope constructs.Construct, id *string, config *DataOktaPolicyConfig) DataOktaPolicy {
 	_init_.Initialize()
 
@@ -333,7 +333,7 @@ func NewDataOktaPolicy(scope constructs.Construct, id *string, config *DataOktaP
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/d/policy okta_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/policy okta_policy} Data Source.
 func NewDataOktaPolicy_Override(d DataOktaPolicy, scope constructs.Construct, id *string, config *DataOktaPolicyConfig) {
 	_init_.Initialize()
 
@@ -344,7 +344,10 @@ func NewDataOktaPolicy_Override(d DataOktaPolicy, scope constructs.Construct, id
 	)
 }
 
-func (j *jsiiProxy_DataOktaPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_DataOktaPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

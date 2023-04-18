@@ -68,6 +68,10 @@ func (j *jsiiProxy_SamlIdpSigningKey) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_SamlIdpSigningKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SamlIdpSigningKey) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package securitynotificationemails
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/securitynotificationemails/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/securitynotificationemails/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/security_notification_emails okta_security_notification_emails}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/security_notification_emails okta_security_notification_emails}.
 type SecurityNotificationEmails interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type SecurityNotificationEmails interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -155,8 +155,8 @@ func (j *jsiiProxy_SecurityNotificationEmails) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SecurityNotificationEmails) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -406,7 +406,7 @@ func (j *jsiiProxy_SecurityNotificationEmails) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/security_notification_emails okta_security_notification_emails} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/security_notification_emails okta_security_notification_emails} Resource.
 func NewSecurityNotificationEmails(scope constructs.Construct, id *string, config *SecurityNotificationEmailsConfig) SecurityNotificationEmails {
 	_init_.Initialize()
 
@@ -424,7 +424,7 @@ func NewSecurityNotificationEmails(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/security_notification_emails okta_security_notification_emails} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/security_notification_emails okta_security_notification_emails} Resource.
 func NewSecurityNotificationEmails_Override(s SecurityNotificationEmails, scope constructs.Construct, id *string, config *SecurityNotificationEmailsConfig) {
 	_init_.Initialize()
 
@@ -446,7 +446,10 @@ func (j *jsiiProxy_SecurityNotificationEmails)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails)SetCount(val *float64) {
+func (j *jsiiProxy_SecurityNotificationEmails)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

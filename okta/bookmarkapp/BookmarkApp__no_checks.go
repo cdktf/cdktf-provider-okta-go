@@ -104,6 +104,10 @@ func (j *jsiiProxy_BookmarkApp) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_BookmarkApp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BookmarkApp) validateSetEnduserNoteParameters(val *string) error {
 	return nil
 }

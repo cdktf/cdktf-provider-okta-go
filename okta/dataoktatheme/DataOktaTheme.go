@@ -2,14 +2,14 @@ package dataoktatheme
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktatheme/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktatheme/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/d/theme okta_theme}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/theme okta_theme}.
 type DataOktaTheme interface {
 	cdktf.TerraformDataSource
 	BackgroundImageUrl() *string
@@ -21,9 +21,9 @@ type DataOktaTheme interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -162,8 +162,8 @@ func (j *jsiiProxy_DataOktaTheme) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaTheme) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataOktaTheme) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -423,7 +423,7 @@ func (j *jsiiProxy_DataOktaTheme) ThemeIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/d/theme okta_theme} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/theme okta_theme} Data Source.
 func NewDataOktaTheme(scope constructs.Construct, id *string, config *DataOktaThemeConfig) DataOktaTheme {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewDataOktaTheme(scope constructs.Construct, id *string, config *DataOktaTh
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/d/theme okta_theme} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/theme okta_theme} Data Source.
 func NewDataOktaTheme_Override(d DataOktaTheme, scope constructs.Construct, id *string, config *DataOktaThemeConfig) {
 	_init_.Initialize()
 
@@ -463,7 +463,10 @@ func (j *jsiiProxy_DataOktaTheme)SetBrandId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaTheme)SetCount(val *float64) {
+func (j *jsiiProxy_DataOktaTheme)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

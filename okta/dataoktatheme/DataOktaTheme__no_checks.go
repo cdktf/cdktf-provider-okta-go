@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataOktaTheme) validateSetBrandIdParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_DataOktaTheme) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOktaTheme) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

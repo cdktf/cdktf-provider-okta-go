@@ -72,6 +72,10 @@ func (j *jsiiProxy_FactorTotp) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_FactorTotp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FactorTotp) validateSetHmacAlgorithmParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package dataoktarolesubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktarolesubscription/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktarolesubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/d/role_subscription okta_role_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/role_subscription okta_role_subscription}.
 type DataOktaRoleSubscription interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataOktaRoleSubscription interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DataOktaRoleSubscription) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaRoleSubscription) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataOktaRoleSubscription) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -315,7 +315,7 @@ func (j *jsiiProxy_DataOktaRoleSubscription) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/d/role_subscription okta_role_subscription} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/role_subscription okta_role_subscription} Data Source.
 func NewDataOktaRoleSubscription(scope constructs.Construct, id *string, config *DataOktaRoleSubscriptionConfig) DataOktaRoleSubscription {
 	_init_.Initialize()
 
@@ -333,7 +333,7 @@ func NewDataOktaRoleSubscription(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/d/role_subscription okta_role_subscription} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/role_subscription okta_role_subscription} Data Source.
 func NewDataOktaRoleSubscription_Override(d DataOktaRoleSubscription, scope constructs.Construct, id *string, config *DataOktaRoleSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -344,7 +344,10 @@ func NewDataOktaRoleSubscription_Override(d DataOktaRoleSubscription, scope cons
 	)
 }
 
-func (j *jsiiProxy_DataOktaRoleSubscription)SetCount(val *float64) {
+func (j *jsiiProxy_DataOktaRoleSubscription)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

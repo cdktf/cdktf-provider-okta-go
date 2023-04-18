@@ -2,14 +2,14 @@ package passwordpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/passwordpolicy/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/passwordpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/password_policy okta_password_policy}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/password_policy okta_password_policy}.
 type PasswordPolicy interface {
 	cdktf.TerraformResource
 	AuthProvider() *string
@@ -27,9 +27,9 @@ type PasswordPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -294,8 +294,8 @@ func (j *jsiiProxy_PasswordPolicy) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_PasswordPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PasswordPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -1005,7 +1005,7 @@ func (j *jsiiProxy_PasswordPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/password_policy okta_password_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/password_policy okta_password_policy} Resource.
 func NewPasswordPolicy(scope constructs.Construct, id *string, config *PasswordPolicyConfig) PasswordPolicy {
 	_init_.Initialize()
 
@@ -1023,7 +1023,7 @@ func NewPasswordPolicy(scope constructs.Construct, id *string, config *PasswordP
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/password_policy okta_password_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/password_policy okta_password_policy} Resource.
 func NewPasswordPolicy_Override(p PasswordPolicy, scope constructs.Construct, id *string, config *PasswordPolicyConfig) {
 	_init_.Initialize()
 
@@ -1067,7 +1067,10 @@ func (j *jsiiProxy_PasswordPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PasswordPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_PasswordPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

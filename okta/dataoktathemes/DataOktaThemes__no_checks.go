@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataOktaThemes) validateSetBrandIdParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_DataOktaThemes) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOktaThemes) validateSetIdParameters(val *string) error {
 	return nil
 }

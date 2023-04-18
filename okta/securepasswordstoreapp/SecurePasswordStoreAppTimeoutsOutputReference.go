@@ -2,9 +2,9 @@ package securepasswordstoreapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/securepasswordstoreapp/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/securepasswordstoreapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

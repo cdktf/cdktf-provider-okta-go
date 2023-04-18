@@ -104,6 +104,10 @@ func (j *jsiiProxy_AppAutoLogin) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_AppAutoLogin) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppAutoLogin) validateSetCredentialsSchemeParameters(val *string) error {
 	return nil
 }

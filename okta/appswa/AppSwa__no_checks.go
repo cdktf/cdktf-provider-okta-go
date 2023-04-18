@@ -108,6 +108,10 @@ func (j *jsiiProxy_AppSwa) validateSetConnectionParameters(val interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_AppSwa) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppSwa) validateSetEnduserNoteParameters(val *string) error {
 	return nil
 }

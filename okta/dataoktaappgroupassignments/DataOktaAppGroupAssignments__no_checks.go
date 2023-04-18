@@ -64,6 +64,10 @@ func validateDataOktaAppGroupAssignments_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataOktaAppGroupAssignments) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOktaAppGroupAssignments) validateSetIdParameters(val *string) error {
 	return nil
 }

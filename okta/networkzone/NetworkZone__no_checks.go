@@ -72,6 +72,10 @@ func (j *jsiiProxy_NetworkZone) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_NetworkZone) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkZone) validateSetDynamicLocationsParameters(val *[]*string) error {
 	return nil
 }

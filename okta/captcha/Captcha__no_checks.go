@@ -68,6 +68,10 @@ func (j *jsiiProxy_Captcha) validateSetConnectionParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_Captcha) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Captcha) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_UserGroupMemberships) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_UserGroupMemberships) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_UserGroupMemberships) validateSetGroupsParameters(val *[]*string) error {
 	return nil
 }

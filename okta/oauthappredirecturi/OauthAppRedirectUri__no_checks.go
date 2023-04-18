@@ -72,6 +72,10 @@ func (j *jsiiProxy_OauthAppRedirectUri) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_OauthAppRedirectUri) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OauthAppRedirectUri) validateSetIdParameters(val *string) error {
 	return nil
 }

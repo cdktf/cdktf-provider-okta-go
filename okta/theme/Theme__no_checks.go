@@ -76,6 +76,10 @@ func (j *jsiiProxy_Theme) validateSetConnectionParameters(val interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_Theme) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Theme) validateSetEmailTemplateTouchPointVariantParameters(val *string) error {
 	return nil
 }

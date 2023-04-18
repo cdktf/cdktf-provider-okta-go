@@ -2,14 +2,14 @@ package factor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v6/factor/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/factor/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/okta/r/factor okta_factor}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/factor okta_factor}.
 type Factor interface {
 	cdktf.TerraformResource
 	Active() interface{}
@@ -24,9 +24,9 @@ type Factor interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -162,8 +162,8 @@ func (j *jsiiProxy_Factor) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Factor) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Factor) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -333,7 +333,7 @@ func (j *jsiiProxy_Factor) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/factor okta_factor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/factor okta_factor} Resource.
 func NewFactor(scope constructs.Construct, id *string, config *FactorConfig) Factor {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewFactor(scope constructs.Construct, id *string, config *FactorConfig) Fac
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/okta/r/factor okta_factor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/factor okta_factor} Resource.
 func NewFactor_Override(f Factor, scope constructs.Construct, id *string, config *FactorConfig) {
 	_init_.Initialize()
 
@@ -384,7 +384,10 @@ func (j *jsiiProxy_Factor)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Factor)SetCount(val *float64) {
+func (j *jsiiProxy_Factor)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

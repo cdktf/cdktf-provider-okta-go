@@ -96,6 +96,10 @@ func (j *jsiiProxy_IdpSocial) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_IdpSocial) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdpSocial) validateSetDeprovisionedActionParameters(val *string) error {
 	return nil
 }

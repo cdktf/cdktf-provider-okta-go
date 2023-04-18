@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataOktaAppSignonPolicy) validateSetAppIdParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_DataOktaAppSignonPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOktaAppSignonPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

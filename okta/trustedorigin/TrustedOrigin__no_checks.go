@@ -72,6 +72,10 @@ func (j *jsiiProxy_TrustedOrigin) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_TrustedOrigin) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TrustedOrigin) validateSetIdParameters(val *string) error {
 	return nil
 }
