@@ -2,14 +2,14 @@ package appswa
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/appswa/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/appswa/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa okta_app_swa}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa okta_app_swa}.
 type AppSwa interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -63,9 +63,6 @@ type AppSwa interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Groups() *[]*string
-	SetGroups(val *[]*string)
-	GroupsInput() *[]*string
 	HideIos() interface{}
 	SetHideIos(val interface{})
 	HideIosInput() interface{}
@@ -109,12 +106,6 @@ type AppSwa interface {
 	SetRedirectUrl(val *string)
 	RedirectUrlInput() *string
 	SignOnMode() *string
-	SkipGroups() interface{}
-	SetSkipGroups(val interface{})
-	SkipGroupsInput() interface{}
-	SkipUsers() interface{}
-	SetSkipUsers(val interface{})
-	SkipUsersInput() interface{}
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
@@ -147,8 +138,6 @@ type AppSwa interface {
 	UserNameTemplateType() *string
 	SetUserNameTemplateType(val *string)
 	UserNameTemplateTypeInput() *string
-	Users() AppSwaUsersList
-	UsersInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -175,7 +164,6 @@ type AppSwa interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *AppSwaTimeouts)
-	PutUsers(value interface{})
 	ResetAccessibilityErrorRedirectUrl()
 	ResetAccessibilityLoginRedirectUrl()
 	ResetAccessibilitySelfService()
@@ -185,7 +173,6 @@ type AppSwa interface {
 	ResetButtonField()
 	ResetCheckbox()
 	ResetEnduserNote()
-	ResetGroups()
 	ResetHideIos()
 	ResetHideWeb()
 	ResetId()
@@ -196,8 +183,6 @@ type AppSwa interface {
 	ResetPasswordField()
 	ResetPreconfiguredApp()
 	ResetRedirectUrl()
-	ResetSkipGroups()
-	ResetSkipUsers()
 	ResetStatus()
 	ResetTimeouts()
 	ResetUrl()
@@ -207,7 +192,6 @@ type AppSwa interface {
 	ResetUserNameTemplatePushStatus()
 	ResetUserNameTemplateSuffix()
 	ResetUserNameTemplateType()
-	ResetUsers()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -483,26 +467,6 @@ func (j *jsiiProxy_AppSwa) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppSwa) Groups() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"groups",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSwa) GroupsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"groupsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AppSwa) HideIos() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -743,46 +707,6 @@ func (j *jsiiProxy_AppSwa) SignOnMode() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppSwa) SkipGroups() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipGroups",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSwa) SkipGroupsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipGroupsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSwa) SkipUsers() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipUsers",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSwa) SkipUsersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipUsersInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AppSwa) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -993,28 +917,8 @@ func (j *jsiiProxy_AppSwa) UserNameTemplateTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppSwa) Users() AppSwaUsersList {
-	var returns AppSwaUsersList
-	_jsii_.Get(
-		j,
-		"users",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_AppSwa) UsersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"usersInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa okta_app_swa} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa okta_app_swa} Resource.
 func NewAppSwa(scope constructs.Construct, id *string, config *AppSwaConfig) AppSwa {
 	_init_.Initialize()
 
@@ -1032,7 +936,7 @@ func NewAppSwa(scope constructs.Construct, id *string, config *AppSwaConfig) App
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa okta_app_swa} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa okta_app_swa} Resource.
 func NewAppSwa_Override(a AppSwa, scope constructs.Construct, id *string, config *AppSwaConfig) {
 	_init_.Initialize()
 
@@ -1180,17 +1084,6 @@ func (j *jsiiProxy_AppSwa)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AppSwa)SetGroups(val *[]*string) {
-	if err := j.validateSetGroupsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"groups",
-		val,
-	)
-}
-
 func (j *jsiiProxy_AppSwa)SetHideIos(val interface{}) {
 	if err := j.validateSetHideIosParameters(val); err != nil {
 		panic(err)
@@ -1305,28 +1198,6 @@ func (j *jsiiProxy_AppSwa)SetRedirectUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"redirectUrl",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppSwa)SetSkipGroups(val interface{}) {
-	if err := j.validateSetSkipGroupsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipGroups",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppSwa)SetSkipUsers(val interface{}) {
-	if err := j.validateSetSkipUsersParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipUsers",
 		val,
 	)
 }
@@ -1696,17 +1567,6 @@ func (a *jsiiProxy_AppSwa) PutTimeouts(value *AppSwaTimeouts) {
 	)
 }
 
-func (a *jsiiProxy_AppSwa) PutUsers(value interface{}) {
-	if err := a.validatePutUsersParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		a,
-		"putUsers",
-		[]interface{}{value},
-	)
-}
-
 func (a *jsiiProxy_AppSwa) ResetAccessibilityErrorRedirectUrl() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1779,14 +1639,6 @@ func (a *jsiiProxy_AppSwa) ResetEnduserNote() {
 	)
 }
 
-func (a *jsiiProxy_AppSwa) ResetGroups() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetGroups",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AppSwa) ResetHideIos() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1847,22 +1699,6 @@ func (a *jsiiProxy_AppSwa) ResetRedirectUrl() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRedirectUrl",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppSwa) ResetSkipGroups() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSkipGroups",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppSwa) ResetSkipUsers() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSkipUsers",
 		nil, // no parameters
 	)
 }
@@ -1935,14 +1771,6 @@ func (a *jsiiProxy_AppSwa) ResetUserNameTemplateType() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetUserNameTemplateType",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppSwa) ResetUsers() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetUsers",
 		nil, // no parameters
 	)
 }

@@ -2,19 +2,16 @@ package user
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/user/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/user/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user okta_user}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user okta_user}.
 type User interface {
 	cdktf.TerraformResource
-	AdminRoles() *[]*string
-	SetAdminRoles(val *[]*string)
-	AdminRolesInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	City() *string
@@ -75,9 +72,6 @@ type User interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	GroupMemberships() *[]*string
-	SetGroupMemberships(val *[]*string)
-	GroupMembershipsInput() *[]*string
 	HonorificPrefix() *string
 	SetHonorificPrefix(val *string)
 	HonorificPrefixInput() *string
@@ -163,9 +157,6 @@ type User interface {
 	SecondEmail() *string
 	SetSecondEmail(val *string)
 	SecondEmailInput() *string
-	SkipRoles() interface{}
-	SetSkipRoles(val interface{})
-	SkipRolesInput() interface{}
 	State() *string
 	SetState(val *string)
 	StateInput() *string
@@ -219,7 +210,6 @@ type User interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutPasswordHash(value *UserPasswordHash)
-	ResetAdminRoles()
 	ResetCity()
 	ResetCostCenter()
 	ResetCountryCode()
@@ -230,7 +220,6 @@ type User interface {
 	ResetDivision()
 	ResetEmployeeNumber()
 	ResetExpirePasswordOnCreate()
-	ResetGroupMemberships()
 	ResetHonorificPrefix()
 	ResetHonorificSuffix()
 	ResetId()
@@ -255,7 +244,6 @@ type User interface {
 	ResetRecoveryAnswer()
 	ResetRecoveryQuestion()
 	ResetSecondEmail()
-	ResetSkipRoles()
 	ResetState()
 	ResetStatus()
 	ResetStreetAddress()
@@ -276,26 +264,6 @@ type User interface {
 // The jsii proxy struct for User
 type jsiiProxy_User struct {
 	internal.Type__cdktfTerraformResource
-}
-
-func (j *jsiiProxy_User) AdminRoles() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"adminRoles",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_User) AdminRolesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"adminRolesInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_User) CdktfStack() cdktf.TerraformStack {
@@ -613,26 +581,6 @@ func (j *jsiiProxy_User) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_User) GroupMemberships() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"groupMemberships",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_User) GroupMembershipsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"groupMembershipsInput",
 		&returns,
 	)
 	return returns
@@ -1158,26 +1106,6 @@ func (j *jsiiProxy_User) SecondEmailInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_User) SkipRoles() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipRoles",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_User) SkipRolesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipRolesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_User) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1349,7 +1277,7 @@ func (j *jsiiProxy_User) ZipCodeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user okta_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user okta_user} Resource.
 func NewUser(scope constructs.Construct, id *string, config *UserConfig) User {
 	_init_.Initialize()
 
@@ -1367,7 +1295,7 @@ func NewUser(scope constructs.Construct, id *string, config *UserConfig) User {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user okta_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user okta_user} Resource.
 func NewUser_Override(u User, scope constructs.Construct, id *string, config *UserConfig) {
 	_init_.Initialize()
 
@@ -1375,17 +1303,6 @@ func NewUser_Override(u User, scope constructs.Construct, id *string, config *Us
 		"@cdktf/provider-okta.user.User",
 		[]interface{}{scope, id, config},
 		u,
-	)
-}
-
-func (j *jsiiProxy_User)SetAdminRoles(val *[]*string) {
-	if err := j.validateSetAdminRolesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"adminRoles",
-		val,
 	)
 }
 
@@ -1555,17 +1472,6 @@ func (j *jsiiProxy_User)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_User)SetGroupMemberships(val *[]*string) {
-	if err := j.validateSetGroupMembershipsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"groupMemberships",
 		val,
 	)
 }
@@ -1838,17 +1744,6 @@ func (j *jsiiProxy_User)SetSecondEmail(val *string) {
 	_jsii_.Set(
 		j,
 		"secondEmail",
-		val,
-	)
-}
-
-func (j *jsiiProxy_User)SetSkipRoles(val interface{}) {
-	if err := j.validateSetSkipRolesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipRoles",
 		val,
 	)
 }
@@ -2207,14 +2102,6 @@ func (u *jsiiProxy_User) PutPasswordHash(value *UserPasswordHash) {
 	)
 }
 
-func (u *jsiiProxy_User) ResetAdminRoles() {
-	_jsii_.InvokeVoid(
-		u,
-		"resetAdminRoles",
-		nil, // no parameters
-	)
-}
-
 func (u *jsiiProxy_User) ResetCity() {
 	_jsii_.InvokeVoid(
 		u,
@@ -2291,14 +2178,6 @@ func (u *jsiiProxy_User) ResetExpirePasswordOnCreate() {
 	_jsii_.InvokeVoid(
 		u,
 		"resetExpirePasswordOnCreate",
-		nil, // no parameters
-	)
-}
-
-func (u *jsiiProxy_User) ResetGroupMemberships() {
-	_jsii_.InvokeVoid(
-		u,
-		"resetGroupMemberships",
 		nil, // no parameters
 	)
 }
@@ -2475,14 +2354,6 @@ func (u *jsiiProxy_User) ResetSecondEmail() {
 	_jsii_.InvokeVoid(
 		u,
 		"resetSecondEmail",
-		nil, // no parameters
-	)
-}
-
-func (u *jsiiProxy_User) ResetSkipRoles() {
-	_jsii_.InvokeVoid(
-		u,
-		"resetSkipRoles",
 		nil, // no parameters
 	)
 }

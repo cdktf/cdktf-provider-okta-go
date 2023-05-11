@@ -2,14 +2,14 @@ package appbasicauth
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/appbasicauth/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/appbasicauth/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth okta_app_basic_auth}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth okta_app_basic_auth}.
 type AppBasicAuth interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -60,9 +60,6 @@ type AppBasicAuth interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Groups() *[]*string
-	SetGroups(val *[]*string)
-	GroupsInput() *[]*string
 	HideIos() interface{}
 	SetHideIos(val interface{})
 	HideIosInput() interface{}
@@ -97,12 +94,6 @@ type AppBasicAuth interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SignOnMode() *string
-	SkipGroups() interface{}
-	SetSkipGroups(val interface{})
-	SkipGroupsInput() interface{}
-	SkipUsers() interface{}
-	SetSkipUsers(val interface{})
-	SkipUsersInput() interface{}
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
@@ -117,8 +108,6 @@ type AppBasicAuth interface {
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
-	Users() AppBasicAuthUsersList
-	UsersInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -145,7 +134,6 @@ type AppBasicAuth interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *AppBasicAuthTimeouts)
-	PutUsers(value interface{})
 	ResetAccessibilityErrorRedirectUrl()
 	ResetAccessibilityLoginRedirectUrl()
 	ResetAccessibilitySelfService()
@@ -153,7 +141,6 @@ type AppBasicAuth interface {
 	ResetAppLinksJson()
 	ResetAutoSubmitToolbar()
 	ResetEnduserNote()
-	ResetGroups()
 	ResetHideIos()
 	ResetHideWeb()
 	ResetId()
@@ -161,11 +148,8 @@ type AppBasicAuth interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetSkipGroups()
-	ResetSkipUsers()
 	ResetStatus()
 	ResetTimeouts()
-	ResetUsers()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -421,26 +405,6 @@ func (j *jsiiProxy_AppBasicAuth) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppBasicAuth) Groups() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"groups",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppBasicAuth) GroupsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"groupsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AppBasicAuth) HideIos() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -621,46 +585,6 @@ func (j *jsiiProxy_AppBasicAuth) SignOnMode() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppBasicAuth) SkipGroups() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipGroups",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppBasicAuth) SkipGroupsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipGroupsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppBasicAuth) SkipUsers() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipUsers",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppBasicAuth) SkipUsersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipUsersInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AppBasicAuth) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -751,28 +675,8 @@ func (j *jsiiProxy_AppBasicAuth) UrlInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppBasicAuth) Users() AppBasicAuthUsersList {
-	var returns AppBasicAuthUsersList
-	_jsii_.Get(
-		j,
-		"users",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_AppBasicAuth) UsersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"usersInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth okta_app_basic_auth} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth okta_app_basic_auth} Resource.
 func NewAppBasicAuth(scope constructs.Construct, id *string, config *AppBasicAuthConfig) AppBasicAuth {
 	_init_.Initialize()
 
@@ -790,7 +694,7 @@ func NewAppBasicAuth(scope constructs.Construct, id *string, config *AppBasicAut
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth okta_app_basic_auth} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth okta_app_basic_auth} Resource.
 func NewAppBasicAuth_Override(a AppBasicAuth, scope constructs.Construct, id *string, config *AppBasicAuthConfig) {
 	_init_.Initialize()
 
@@ -927,17 +831,6 @@ func (j *jsiiProxy_AppBasicAuth)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AppBasicAuth)SetGroups(val *[]*string) {
-	if err := j.validateSetGroupsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"groups",
-		val,
-	)
-}
-
 func (j *jsiiProxy_AppBasicAuth)SetHideIos(val interface{}) {
 	if err := j.validateSetHideIosParameters(val); err != nil {
 		panic(err)
@@ -1019,28 +912,6 @@ func (j *jsiiProxy_AppBasicAuth)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppBasicAuth)SetSkipGroups(val interface{}) {
-	if err := j.validateSetSkipGroupsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipGroups",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppBasicAuth)SetSkipUsers(val interface{}) {
-	if err := j.validateSetSkipUsersParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipUsers",
 		val,
 	)
 }
@@ -1344,17 +1215,6 @@ func (a *jsiiProxy_AppBasicAuth) PutTimeouts(value *AppBasicAuthTimeouts) {
 	)
 }
 
-func (a *jsiiProxy_AppBasicAuth) PutUsers(value interface{}) {
-	if err := a.validatePutUsersParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		a,
-		"putUsers",
-		[]interface{}{value},
-	)
-}
-
 func (a *jsiiProxy_AppBasicAuth) ResetAccessibilityErrorRedirectUrl() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1411,14 +1271,6 @@ func (a *jsiiProxy_AppBasicAuth) ResetEnduserNote() {
 	)
 }
 
-func (a *jsiiProxy_AppBasicAuth) ResetGroups() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetGroups",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AppBasicAuth) ResetHideIos() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1459,22 +1311,6 @@ func (a *jsiiProxy_AppBasicAuth) ResetOverrideLogicalId() {
 	)
 }
 
-func (a *jsiiProxy_AppBasicAuth) ResetSkipGroups() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSkipGroups",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppBasicAuth) ResetSkipUsers() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSkipUsers",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AppBasicAuth) ResetStatus() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1487,14 +1323,6 @@ func (a *jsiiProxy_AppBasicAuth) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetTimeouts",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppBasicAuth) ResetUsers() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetUsers",
 		nil, // no parameters
 	)
 }

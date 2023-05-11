@@ -2,14 +2,14 @@ package appsharedcredentials
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/appsharedcredentials/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/appsharedcredentials/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials okta_app_shared_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials okta_app_shared_credentials}.
 type AppSharedCredentials interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -63,9 +63,6 @@ type AppSharedCredentials interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Groups() *[]*string
-	SetGroups(val *[]*string)
-	GroupsInput() *[]*string
 	HideIos() interface{}
 	SetHideIos(val interface{})
 	HideIosInput() interface{}
@@ -115,12 +112,6 @@ type AppSharedCredentials interface {
 	SetSharedUsername(val *string)
 	SharedUsernameInput() *string
 	SignOnMode() *string
-	SkipGroups() interface{}
-	SetSkipGroups(val interface{})
-	SkipGroupsInput() interface{}
-	SkipUsers() interface{}
-	SetSkipUsers(val interface{})
-	SkipUsersInput() interface{}
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
@@ -153,8 +144,6 @@ type AppSharedCredentials interface {
 	UserNameTemplateType() *string
 	SetUserNameTemplateType(val *string)
 	UserNameTemplateTypeInput() *string
-	Users() AppSharedCredentialsUsersList
-	UsersInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -181,7 +170,6 @@ type AppSharedCredentials interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *AppSharedCredentialsTimeouts)
-	PutUsers(value interface{})
 	ResetAccessibilityErrorRedirectUrl()
 	ResetAccessibilityLoginRedirectUrl()
 	ResetAccessibilitySelfService()
@@ -191,7 +179,6 @@ type AppSharedCredentials interface {
 	ResetButtonField()
 	ResetCheckbox()
 	ResetEnduserNote()
-	ResetGroups()
 	ResetHideIos()
 	ResetHideWeb()
 	ResetId()
@@ -204,8 +191,6 @@ type AppSharedCredentials interface {
 	ResetRedirectUrl()
 	ResetSharedPassword()
 	ResetSharedUsername()
-	ResetSkipGroups()
-	ResetSkipUsers()
 	ResetStatus()
 	ResetTimeouts()
 	ResetUrl()
@@ -215,7 +200,6 @@ type AppSharedCredentials interface {
 	ResetUserNameTemplatePushStatus()
 	ResetUserNameTemplateSuffix()
 	ResetUserNameTemplateType()
-	ResetUsers()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -486,26 +470,6 @@ func (j *jsiiProxy_AppSharedCredentials) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSharedCredentials) Groups() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"groups",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSharedCredentials) GroupsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"groupsInput",
 		&returns,
 	)
 	return returns
@@ -791,46 +755,6 @@ func (j *jsiiProxy_AppSharedCredentials) SignOnMode() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppSharedCredentials) SkipGroups() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipGroups",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSharedCredentials) SkipGroupsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipGroupsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSharedCredentials) SkipUsers() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipUsers",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSharedCredentials) SkipUsersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipUsersInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AppSharedCredentials) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1041,28 +965,8 @@ func (j *jsiiProxy_AppSharedCredentials) UserNameTemplateTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppSharedCredentials) Users() AppSharedCredentialsUsersList {
-	var returns AppSharedCredentialsUsersList
-	_jsii_.Get(
-		j,
-		"users",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_AppSharedCredentials) UsersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"usersInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials okta_app_shared_credentials} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials okta_app_shared_credentials} Resource.
 func NewAppSharedCredentials(scope constructs.Construct, id *string, config *AppSharedCredentialsConfig) AppSharedCredentials {
 	_init_.Initialize()
 
@@ -1080,7 +984,7 @@ func NewAppSharedCredentials(scope constructs.Construct, id *string, config *App
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials okta_app_shared_credentials} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials okta_app_shared_credentials} Resource.
 func NewAppSharedCredentials_Override(a AppSharedCredentials, scope constructs.Construct, id *string, config *AppSharedCredentialsConfig) {
 	_init_.Initialize()
 
@@ -1228,17 +1132,6 @@ func (j *jsiiProxy_AppSharedCredentials)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetGroups(val *[]*string) {
-	if err := j.validateSetGroupsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"groups",
-		val,
-	)
-}
-
 func (j *jsiiProxy_AppSharedCredentials)SetHideIos(val interface{}) {
 	if err := j.validateSetHideIosParameters(val); err != nil {
 		panic(err)
@@ -1375,28 +1268,6 @@ func (j *jsiiProxy_AppSharedCredentials)SetSharedUsername(val *string) {
 	_jsii_.Set(
 		j,
 		"sharedUsername",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppSharedCredentials)SetSkipGroups(val interface{}) {
-	if err := j.validateSetSkipGroupsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipGroups",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppSharedCredentials)SetSkipUsers(val interface{}) {
-	if err := j.validateSetSkipUsersParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipUsers",
 		val,
 	)
 }
@@ -1766,17 +1637,6 @@ func (a *jsiiProxy_AppSharedCredentials) PutTimeouts(value *AppSharedCredentials
 	)
 }
 
-func (a *jsiiProxy_AppSharedCredentials) PutUsers(value interface{}) {
-	if err := a.validatePutUsersParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		a,
-		"putUsers",
-		[]interface{}{value},
-	)
-}
-
 func (a *jsiiProxy_AppSharedCredentials) ResetAccessibilityErrorRedirectUrl() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1845,14 +1705,6 @@ func (a *jsiiProxy_AppSharedCredentials) ResetEnduserNote() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetEnduserNote",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppSharedCredentials) ResetGroups() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetGroups",
 		nil, // no parameters
 	)
 }
@@ -1937,22 +1789,6 @@ func (a *jsiiProxy_AppSharedCredentials) ResetSharedUsername() {
 	)
 }
 
-func (a *jsiiProxy_AppSharedCredentials) ResetSkipGroups() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSkipGroups",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppSharedCredentials) ResetSkipUsers() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSkipUsers",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AppSharedCredentials) ResetStatus() {
 	_jsii_.InvokeVoid(
 		a,
@@ -2021,14 +1857,6 @@ func (a *jsiiProxy_AppSharedCredentials) ResetUserNameTemplateType() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetUserNameTemplateType",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppSharedCredentials) ResetUsers() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetUsers",
 		nil, // no parameters
 	)
 }

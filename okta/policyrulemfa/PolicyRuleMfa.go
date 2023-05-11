@@ -2,14 +2,14 @@ package policyrulemfa
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/policyrulemfa/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/policyrulemfa/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa okta_policy_rule_mfa}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa okta_policy_rule_mfa}.
 type PolicyRuleMfa interface {
 	cdktf.TerraformResource
 	AppExclude() PolicyRuleMfaAppExcludeList
@@ -64,11 +64,8 @@ type PolicyRuleMfa interface {
 	NetworkIncludesInput() *[]*string
 	// The tree node.
 	Node() constructs.Node
-	Policyid() *string
-	SetPolicyid(val *string)
 	PolicyId() *string
 	SetPolicyId(val *string)
-	PolicyidInput() *string
 	PolicyIdInput() *string
 	Priority() *float64
 	SetPriority(val *float64)
@@ -132,7 +129,6 @@ type PolicyRuleMfa interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPolicyid()
 	ResetPolicyId()
 	ResetPriority()
 	ResetStatus()
@@ -412,31 +408,11 @@ func (j *jsiiProxy_PolicyRuleMfa) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRuleMfa) Policyid() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"policyid",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_PolicyRuleMfa) PolicyId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"policyId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PolicyRuleMfa) PolicyidInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"policyidInput",
 		&returns,
 	)
 	return returns
@@ -573,7 +549,7 @@ func (j *jsiiProxy_PolicyRuleMfa) UsersExcludedInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa okta_policy_rule_mfa} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa okta_policy_rule_mfa} Resource.
 func NewPolicyRuleMfa(scope constructs.Construct, id *string, config *PolicyRuleMfaConfig) PolicyRuleMfa {
 	_init_.Initialize()
 
@@ -591,7 +567,7 @@ func NewPolicyRuleMfa(scope constructs.Construct, id *string, config *PolicyRule
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa okta_policy_rule_mfa} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa okta_policy_rule_mfa} Resource.
 func NewPolicyRuleMfa_Override(p PolicyRuleMfa, scope constructs.Construct, id *string, config *PolicyRuleMfaConfig) {
 	_init_.Initialize()
 
@@ -713,17 +689,6 @@ func (j *jsiiProxy_PolicyRuleMfa)SetNetworkIncludes(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"networkIncludes",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PolicyRuleMfa)SetPolicyid(val *string) {
-	if err := j.validateSetPolicyidParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"policyid",
 		val,
 	)
 }
@@ -1139,14 +1104,6 @@ func (p *jsiiProxy_PolicyRuleMfa) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PolicyRuleMfa) ResetPolicyid() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetPolicyid",
 		nil, // no parameters
 	)
 }

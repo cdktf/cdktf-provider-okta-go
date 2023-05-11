@@ -2,14 +2,14 @@ package dataoktaappsaml
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaappsaml/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaappsaml/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_saml okta_app_saml}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/app_saml okta_app_saml}.
 type DataOktaAppSaml interface {
 	cdktf.TerraformDataSource
 	AccessibilityErrorRedirectUrl() *string
@@ -89,12 +89,6 @@ type DataOktaAppSaml interface {
 	SingleLogoutCertificate() *string
 	SingleLogoutIssuer() *string
 	SingleLogoutUrl() *string
-	SkipGroups() interface{}
-	SetSkipGroups(val interface{})
-	SkipGroupsInput() interface{}
-	SkipUsers() interface{}
-	SetSkipUsers(val interface{})
-	SkipUsersInput() interface{}
 	SpIssuer() *string
 	SsoUrl() *string
 	Status() *string
@@ -144,8 +138,6 @@ type DataOktaAppSaml interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRequestCompressed()
-	ResetSkipGroups()
-	ResetSkipUsers()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -671,46 +663,6 @@ func (j *jsiiProxy_DataOktaAppSaml) SingleLogoutUrl() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaAppSaml) SkipGroups() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipGroups",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataOktaAppSaml) SkipGroupsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipGroupsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataOktaAppSaml) SkipUsers() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipUsers",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataOktaAppSaml) SkipUsersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipUsersInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataOktaAppSaml) SpIssuer() *string {
 	var returns *string
 	_jsii_.Get(
@@ -842,7 +794,7 @@ func (j *jsiiProxy_DataOktaAppSaml) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_saml okta_app_saml} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/app_saml okta_app_saml} Data Source.
 func NewDataOktaAppSaml(scope constructs.Construct, id *string, config *DataOktaAppSamlConfig) DataOktaAppSaml {
 	_init_.Initialize()
 
@@ -860,7 +812,7 @@ func NewDataOktaAppSaml(scope constructs.Construct, id *string, config *DataOkta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_saml okta_app_saml} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/app_saml okta_app_saml} Data Source.
 func NewDataOktaAppSaml_Override(d DataOktaAppSaml, scope constructs.Construct, id *string, config *DataOktaAppSamlConfig) {
 	_init_.Initialize()
 
@@ -968,28 +920,6 @@ func (j *jsiiProxy_DataOktaAppSaml)SetRequestCompressed(val interface{}) {
 	_jsii_.Set(
 		j,
 		"requestCompressed",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataOktaAppSaml)SetSkipGroups(val interface{}) {
-	if err := j.validateSetSkipGroupsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipGroups",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataOktaAppSaml)SetSkipUsers(val interface{}) {
-	if err := j.validateSetSkipUsersParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipUsers",
 		val,
 	)
 }
@@ -1304,22 +1234,6 @@ func (d *jsiiProxy_DataOktaAppSaml) ResetRequestCompressed() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRequestCompressed",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataOktaAppSaml) ResetSkipGroups() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSkipGroups",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataOktaAppSaml) ResetSkipUsers() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSkipUsers",
 		nil, // no parameters
 	)
 }

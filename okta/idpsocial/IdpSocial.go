@@ -2,14 +2,14 @@ package idpsocial
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/idpsocial/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/idpsocial/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social okta_idp_social}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social okta_idp_social}.
 type IdpSocial interface {
 	cdktf.TerraformResource
 	AccountLinkAction() *string
@@ -84,12 +84,6 @@ type IdpSocial interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	MatchAttribute() *string
-	SetMatchAttribute(val *string)
-	MatchAttributeInput() *string
-	MatchType() *string
-	SetMatchType(val *string)
-	MatchTypeInput() *string
 	MaxClockSkew() *float64
 	SetMaxClockSkew(val *float64)
 	MaxClockSkewInput() *float64
@@ -185,8 +179,6 @@ type IdpSocial interface {
 	ResetGroupsFilter()
 	ResetId()
 	ResetIssuerMode()
-	ResetMatchAttribute()
-	ResetMatchType()
 	ResetMaxClockSkew()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -604,46 +596,6 @@ func (j *jsiiProxy_IdpSocial) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
-func (j *jsiiProxy_IdpSocial) MatchAttribute() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"matchAttribute",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_IdpSocial) MatchAttributeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"matchAttributeInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_IdpSocial) MatchType() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"matchType",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_IdpSocial) MatchTypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"matchTypeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_IdpSocial) MaxClockSkew() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -975,7 +927,7 @@ func (j *jsiiProxy_IdpSocial) UsernameTemplateInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social okta_idp_social} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social okta_idp_social} Resource.
 func NewIdpSocial(scope constructs.Construct, id *string, config *IdpSocialConfig) IdpSocial {
 	_init_.Initialize()
 
@@ -993,7 +945,7 @@ func NewIdpSocial(scope constructs.Construct, id *string, config *IdpSocialConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social okta_idp_social} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social okta_idp_social} Resource.
 func NewIdpSocial_Override(i IdpSocial, scope constructs.Construct, id *string, config *IdpSocialConfig) {
 	_init_.Initialize()
 
@@ -1203,28 +1155,6 @@ func (j *jsiiProxy_IdpSocial)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_IdpSocial)SetMatchAttribute(val *string) {
-	if err := j.validateSetMatchAttributeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"matchAttribute",
-		val,
-	)
-}
-
-func (j *jsiiProxy_IdpSocial)SetMatchType(val *string) {
-	if err := j.validateSetMatchTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"matchType",
 		val,
 	)
 }
@@ -1754,22 +1684,6 @@ func (i *jsiiProxy_IdpSocial) ResetIssuerMode() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetIssuerMode",
-		nil, // no parameters
-	)
-}
-
-func (i *jsiiProxy_IdpSocial) ResetMatchAttribute() {
-	_jsii_.InvokeVoid(
-		i,
-		"resetMatchAttribute",
-		nil, // no parameters
-	)
-}
-
-func (i *jsiiProxy_IdpSocial) ResetMatchType() {
-	_jsii_.InvokeVoid(
-		i,
-		"resetMatchType",
 		nil, // no parameters
 	)
 }

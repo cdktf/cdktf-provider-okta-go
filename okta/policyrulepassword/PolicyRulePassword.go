@@ -2,14 +2,14 @@ package policyrulepassword
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/policyrulepassword/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/policyrulepassword/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_password okta_policy_rule_password}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_password okta_policy_rule_password}.
 type PolicyRulePassword interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -66,11 +66,8 @@ type PolicyRulePassword interface {
 	PasswordUnlock() *string
 	SetPasswordUnlock(val *string)
 	PasswordUnlockInput() *string
-	Policyid() *string
-	SetPolicyid(val *string)
 	PolicyId() *string
 	SetPolicyId(val *string)
-	PolicyidInput() *string
 	PolicyIdInput() *string
 	Priority() *float64
 	SetPriority(val *float64)
@@ -132,7 +129,6 @@ type PolicyRulePassword interface {
 	ResetPasswordChange()
 	ResetPasswordReset()
 	ResetPasswordUnlock()
-	ResetPolicyid()
 	ResetPolicyId()
 	ResetPriority()
 	ResetStatus()
@@ -412,31 +408,11 @@ func (j *jsiiProxy_PolicyRulePassword) PasswordUnlockInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRulePassword) Policyid() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"policyid",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_PolicyRulePassword) PolicyId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"policyId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PolicyRulePassword) PolicyidInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"policyidInput",
 		&returns,
 	)
 	return returns
@@ -573,7 +549,7 @@ func (j *jsiiProxy_PolicyRulePassword) UsersExcludedInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_password okta_policy_rule_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_password okta_policy_rule_password} Resource.
 func NewPolicyRulePassword(scope constructs.Construct, id *string, config *PolicyRulePasswordConfig) PolicyRulePassword {
 	_init_.Initialize()
 
@@ -591,7 +567,7 @@ func NewPolicyRulePassword(scope constructs.Construct, id *string, config *Polic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_password okta_policy_rule_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_password okta_policy_rule_password} Resource.
 func NewPolicyRulePassword_Override(p PolicyRulePassword, scope constructs.Construct, id *string, config *PolicyRulePasswordConfig) {
 	_init_.Initialize()
 
@@ -735,17 +711,6 @@ func (j *jsiiProxy_PolicyRulePassword)SetPasswordUnlock(val *string) {
 	_jsii_.Set(
 		j,
 		"passwordUnlock",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PolicyRulePassword)SetPolicyid(val *string) {
-	if err := j.validateSetPolicyidParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"policyid",
 		val,
 	)
 }
@@ -1139,14 +1104,6 @@ func (p *jsiiProxy_PolicyRulePassword) ResetPasswordUnlock() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetPasswordUnlock",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PolicyRulePassword) ResetPolicyid() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetPolicyid",
 		nil, // no parameters
 	)
 }

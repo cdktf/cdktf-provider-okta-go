@@ -2,14 +2,14 @@ package captchaorgwidesettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/captchaorgwidesettings/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/captchaorgwidesettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/captcha_org_wide_settings okta_captcha_org_wide_settings}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/captcha_org_wide_settings okta_captcha_org_wide_settings}.
 type CaptchaOrgWideSettings interface {
 	cdktf.TerraformResource
 	CaptchaId() *string
@@ -334,7 +334,7 @@ func (j *jsiiProxy_CaptchaOrgWideSettings) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/captcha_org_wide_settings okta_captcha_org_wide_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/captcha_org_wide_settings okta_captcha_org_wide_settings} Resource.
 func NewCaptchaOrgWideSettings(scope constructs.Construct, id *string, config *CaptchaOrgWideSettingsConfig) CaptchaOrgWideSettings {
 	_init_.Initialize()
 
@@ -352,7 +352,7 @@ func NewCaptchaOrgWideSettings(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/captcha_org_wide_settings okta_captcha_org_wide_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/captcha_org_wide_settings okta_captcha_org_wide_settings} Resource.
 func NewCaptchaOrgWideSettings_Override(c CaptchaOrgWideSettings, scope constructs.Construct, id *string, config *CaptchaOrgWideSettingsConfig) {
 	_init_.Initialize()
 

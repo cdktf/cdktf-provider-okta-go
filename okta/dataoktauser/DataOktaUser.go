@@ -2,14 +2,14 @@ package dataoktauser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktauser/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktauser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user okta_user}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/user okta_user}.
 type DataOktaUser interface {
 	cdktf.TerraformDataSource
 	AdminRoles() *[]*string
@@ -798,7 +798,7 @@ func (j *jsiiProxy_DataOktaUser) ZipCode() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user okta_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/user okta_user} Data Source.
 func NewDataOktaUser(scope constructs.Construct, id *string, config *DataOktaUserConfig) DataOktaUser {
 	_init_.Initialize()
 
@@ -816,7 +816,7 @@ func NewDataOktaUser(scope constructs.Construct, id *string, config *DataOktaUse
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user okta_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/user okta_user} Data Source.
 func NewDataOktaUser_Override(d DataOktaUser, scope constructs.Construct, id *string, config *DataOktaUserConfig) {
 	_init_.Initialize()
 

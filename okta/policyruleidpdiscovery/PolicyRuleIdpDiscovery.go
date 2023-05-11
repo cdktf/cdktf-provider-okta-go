@@ -2,14 +2,14 @@ package policyruleidpdiscovery
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/policyruleidpdiscovery/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/policyruleidpdiscovery/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery}.
 type PolicyRuleIdpDiscovery interface {
 	cdktf.TerraformResource
 	AppExclude() PolicyRuleIdpDiscoveryAppExcludeList
@@ -69,11 +69,8 @@ type PolicyRuleIdpDiscovery interface {
 	Node() constructs.Node
 	PlatformInclude() PolicyRuleIdpDiscoveryPlatformIncludeList
 	PlatformIncludeInput() interface{}
-	Policyid() *string
-	SetPolicyid(val *string)
 	PolicyId() *string
 	SetPolicyId(val *string)
-	PolicyidInput() *string
 	PolicyIdInput() *string
 	Priority() *float64
 	SetPriority(val *float64)
@@ -146,7 +143,6 @@ type PolicyRuleIdpDiscovery interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPlatformInclude()
-	ResetPolicyid()
 	ResetPolicyId()
 	ResetPriority()
 	ResetStatus()
@@ -468,31 +464,11 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery) PlatformIncludeInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery) Policyid() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"policyid",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_PolicyRuleIdpDiscovery) PolicyId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"policyId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PolicyRuleIdpDiscovery) PolicyidInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"policyidInput",
 		&returns,
 	)
 	return returns
@@ -669,7 +645,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery) UserIdentifierTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery} Resource.
 func NewPolicyRuleIdpDiscovery(scope constructs.Construct, id *string, config *PolicyRuleIdpDiscoveryConfig) PolicyRuleIdpDiscovery {
 	_init_.Initialize()
 
@@ -687,7 +663,7 @@ func NewPolicyRuleIdpDiscovery(scope constructs.Construct, id *string, config *P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery} Resource.
 func NewPolicyRuleIdpDiscovery_Override(p PolicyRuleIdpDiscovery, scope constructs.Construct, id *string, config *PolicyRuleIdpDiscoveryConfig) {
 	_init_.Initialize()
 
@@ -820,17 +796,6 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetNetworkIncludes(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"networkIncludes",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetPolicyid(val *string) {
-	if err := j.validateSetPolicyidParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"policyid",
 		val,
 	)
 }
@@ -1295,14 +1260,6 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) ResetPlatformInclude() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetPlatformInclude",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PolicyRuleIdpDiscovery) ResetPolicyid() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetPolicyid",
 		nil, // no parameters
 	)
 }

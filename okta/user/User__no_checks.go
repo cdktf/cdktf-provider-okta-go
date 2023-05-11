@@ -68,10 +68,6 @@ func validateUser_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_User) validateSetAdminRolesParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_User) validateSetCityParameters(val *string) error {
 	return nil
 }
@@ -125,10 +121,6 @@ func (j *jsiiProxy_User) validateSetExpirePasswordOnCreateParameters(val interfa
 }
 
 func (j *jsiiProxy_User) validateSetFirstNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_User) validateSetGroupMembershipsParameters(val *[]*string) error {
 	return nil
 }
 
@@ -225,10 +217,6 @@ func (j *jsiiProxy_User) validateSetRecoveryQuestionParameters(val *string) erro
 }
 
 func (j *jsiiProxy_User) validateSetSecondEmailParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_User) validateSetSkipRolesParameters(val interface{}) error {
 	return nil
 }
 

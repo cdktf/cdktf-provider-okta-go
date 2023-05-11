@@ -2,14 +2,14 @@ package appthreefield
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/appthreefield/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/appthreefield/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field okta_app_three_field}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field okta_app_three_field}.
 type AppThreeField interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -69,9 +69,6 @@ type AppThreeField interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Groups() *[]*string
-	SetGroups(val *[]*string)
-	GroupsInput() *[]*string
 	HideIos() interface{}
 	SetHideIos(val interface{})
 	HideIosInput() interface{}
@@ -118,12 +115,6 @@ type AppThreeField interface {
 	SetSharedUsername(val *string)
 	SharedUsernameInput() *string
 	SignOnMode() *string
-	SkipGroups() interface{}
-	SetSkipGroups(val interface{})
-	SkipGroupsInput() interface{}
-	SkipUsers() interface{}
-	SetSkipUsers(val interface{})
-	SkipUsersInput() interface{}
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
@@ -156,8 +147,6 @@ type AppThreeField interface {
 	UserNameTemplateType() *string
 	SetUserNameTemplateType(val *string)
 	UserNameTemplateTypeInput() *string
-	Users() AppThreeFieldUsersList
-	UsersInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -184,7 +173,6 @@ type AppThreeField interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *AppThreeFieldTimeouts)
-	PutUsers(value interface{})
 	ResetAccessibilityErrorRedirectUrl()
 	ResetAccessibilityLoginRedirectUrl()
 	ResetAccessibilitySelfService()
@@ -193,7 +181,6 @@ type AppThreeField interface {
 	ResetAutoSubmitToolbar()
 	ResetCredentialsScheme()
 	ResetEnduserNote()
-	ResetGroups()
 	ResetHideIos()
 	ResetHideWeb()
 	ResetId()
@@ -204,8 +191,6 @@ type AppThreeField interface {
 	ResetRevealPassword()
 	ResetSharedPassword()
 	ResetSharedUsername()
-	ResetSkipGroups()
-	ResetSkipUsers()
 	ResetStatus()
 	ResetTimeouts()
 	ResetUrlRegex()
@@ -213,7 +198,6 @@ type AppThreeField interface {
 	ResetUserNameTemplatePushStatus()
 	ResetUserNameTemplateSuffix()
 	ResetUserNameTemplateType()
-	ResetUsers()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -529,26 +513,6 @@ func (j *jsiiProxy_AppThreeField) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppThreeField) Groups() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"groups",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppThreeField) GroupsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"groupsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AppThreeField) HideIos() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -809,46 +773,6 @@ func (j *jsiiProxy_AppThreeField) SignOnMode() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppThreeField) SkipGroups() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipGroups",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppThreeField) SkipGroupsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipGroupsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppThreeField) SkipUsers() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipUsers",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppThreeField) SkipUsersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipUsersInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AppThreeField) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1059,28 +983,8 @@ func (j *jsiiProxy_AppThreeField) UserNameTemplateTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppThreeField) Users() AppThreeFieldUsersList {
-	var returns AppThreeFieldUsersList
-	_jsii_.Get(
-		j,
-		"users",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_AppThreeField) UsersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"usersInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field okta_app_three_field} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field okta_app_three_field} Resource.
 func NewAppThreeField(scope constructs.Construct, id *string, config *AppThreeFieldConfig) AppThreeField {
 	_init_.Initialize()
 
@@ -1098,7 +1002,7 @@ func NewAppThreeField(scope constructs.Construct, id *string, config *AppThreeFi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field okta_app_three_field} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field okta_app_three_field} Resource.
 func NewAppThreeField_Override(a AppThreeField, scope constructs.Construct, id *string, config *AppThreeFieldConfig) {
 	_init_.Initialize()
 
@@ -1268,17 +1172,6 @@ func (j *jsiiProxy_AppThreeField)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AppThreeField)SetGroups(val *[]*string) {
-	if err := j.validateSetGroupsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"groups",
-		val,
-	)
-}
-
 func (j *jsiiProxy_AppThreeField)SetHideIos(val interface{}) {
 	if err := j.validateSetHideIosParameters(val); err != nil {
 		panic(err)
@@ -1404,28 +1297,6 @@ func (j *jsiiProxy_AppThreeField)SetSharedUsername(val *string) {
 	_jsii_.Set(
 		j,
 		"sharedUsername",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppThreeField)SetSkipGroups(val interface{}) {
-	if err := j.validateSetSkipGroupsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipGroups",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppThreeField)SetSkipUsers(val interface{}) {
-	if err := j.validateSetSkipUsersParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipUsers",
 		val,
 	)
 }
@@ -1795,17 +1666,6 @@ func (a *jsiiProxy_AppThreeField) PutTimeouts(value *AppThreeFieldTimeouts) {
 	)
 }
 
-func (a *jsiiProxy_AppThreeField) PutUsers(value interface{}) {
-	if err := a.validatePutUsersParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		a,
-		"putUsers",
-		[]interface{}{value},
-	)
-}
-
 func (a *jsiiProxy_AppThreeField) ResetAccessibilityErrorRedirectUrl() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1866,14 +1726,6 @@ func (a *jsiiProxy_AppThreeField) ResetEnduserNote() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetEnduserNote",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppThreeField) ResetGroups() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetGroups",
 		nil, // no parameters
 	)
 }
@@ -1942,22 +1794,6 @@ func (a *jsiiProxy_AppThreeField) ResetSharedUsername() {
 	)
 }
 
-func (a *jsiiProxy_AppThreeField) ResetSkipGroups() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSkipGroups",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppThreeField) ResetSkipUsers() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSkipUsers",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AppThreeField) ResetStatus() {
 	_jsii_.InvokeVoid(
 		a,
@@ -2010,14 +1846,6 @@ func (a *jsiiProxy_AppThreeField) ResetUserNameTemplateType() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetUserNameTemplateType",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppThreeField) ResetUsers() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetUsers",
 		nil, // no parameters
 	)
 }

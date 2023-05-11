@@ -56,10 +56,6 @@ func (a *jsiiProxy_AppAutoLogin) validatePutTimeoutsParameters(value *AppAutoLog
 	return nil
 }
 
-func (a *jsiiProxy_AppAutoLogin) validatePutUsersParameters(value interface{}) error {
-	return nil
-}
-
 func validateAppAutoLogin_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -116,10 +112,6 @@ func (j *jsiiProxy_AppAutoLogin) validateSetEnduserNoteParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_AppAutoLogin) validateSetGroupsParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AppAutoLogin) validateSetHideIosParameters(val interface{}) error {
 	return nil
 }
@@ -169,14 +161,6 @@ func (j *jsiiProxy_AppAutoLogin) validateSetSignOnRedirectUrlParameters(val *str
 }
 
 func (j *jsiiProxy_AppAutoLogin) validateSetSignOnUrlParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppAutoLogin) validateSetSkipGroupsParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppAutoLogin) validateSetSkipUsersParameters(val interface{}) error {
 	return nil
 }
 

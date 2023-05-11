@@ -2,14 +2,14 @@ package dataoktaauthserverclaims
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaauthserverclaims/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaauthserverclaims/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/auth_server_claims okta_auth_server_claims}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/auth_server_claims okta_auth_server_claims}.
 type DataOktaAuthServerClaims interface {
 	cdktf.TerraformDataSource
 	AuthServerId() *string
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataOktaAuthServerClaims) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/auth_server_claims okta_auth_server_claims} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/auth_server_claims okta_auth_server_claims} Data Source.
 func NewDataOktaAuthServerClaims(scope constructs.Construct, id *string, config *DataOktaAuthServerClaimsConfig) DataOktaAuthServerClaims {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataOktaAuthServerClaims(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/auth_server_claims okta_auth_server_claims} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/auth_server_claims okta_auth_server_claims} Data Source.
 func NewDataOktaAuthServerClaims_Override(d DataOktaAuthServerClaims, scope constructs.Construct, id *string, config *DataOktaAuthServerClaimsConfig) {
 	_init_.Initialize()
 

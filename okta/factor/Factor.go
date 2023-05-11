@@ -2,14 +2,14 @@ package factor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/factor/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/factor/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/factor okta_factor}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/factor okta_factor}.
 type Factor interface {
 	cdktf.TerraformResource
 	Active() interface{}
@@ -333,7 +333,7 @@ func (j *jsiiProxy_Factor) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/factor okta_factor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/factor okta_factor} Resource.
 func NewFactor(scope constructs.Construct, id *string, config *FactorConfig) Factor {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewFactor(scope constructs.Construct, id *string, config *FactorConfig) Fac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/factor okta_factor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/factor okta_factor} Resource.
 func NewFactor_Override(f Factor, scope constructs.Construct, id *string, config *FactorConfig) {
 	_init_.Initialize()
 

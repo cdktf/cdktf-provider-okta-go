@@ -2,14 +2,14 @@ package appuserbaseschemaproperty
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/appuserbaseschemaproperty/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/appuserbaseschemaproperty/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user_base_schema_property okta_app_user_base_schema_property}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_user_base_schema_property okta_app_user_base_schema_property}.
 type AppUserBaseSchemaProperty interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -498,7 +498,7 @@ func (j *jsiiProxy_AppUserBaseSchemaProperty) UserTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user_base_schema_property okta_app_user_base_schema_property} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_user_base_schema_property okta_app_user_base_schema_property} Resource.
 func NewAppUserBaseSchemaProperty(scope constructs.Construct, id *string, config *AppUserBaseSchemaPropertyConfig) AppUserBaseSchemaProperty {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewAppUserBaseSchemaProperty(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user_base_schema_property okta_app_user_base_schema_property} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_user_base_schema_property okta_app_user_base_schema_property} Resource.
 func NewAppUserBaseSchemaProperty_Override(a AppUserBaseSchemaProperty, scope constructs.Construct, id *string, config *AppUserBaseSchemaPropertyConfig) {
 	_init_.Initialize()
 

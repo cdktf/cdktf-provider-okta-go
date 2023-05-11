@@ -96,14 +96,6 @@ func (j *jsiiProxy_Group) validateSetProvisionersParameters(val *[]interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_Group) validateSetSkipUsersParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_Group) validateSetUsersParameters(val *[]*string) error {
-	return nil
-}
-
 func validateNewGroupParameters(scope constructs.Construct, id *string, config *GroupConfig) error {
 	return nil
 }

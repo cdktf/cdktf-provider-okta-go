@@ -92,10 +92,6 @@ func (j *jsiiProxy_Domain) validateSetProvisionersParameters(val *[]interface{})
 	return nil
 }
 
-func (j *jsiiProxy_Domain) validateSetVerifyParameters(val interface{}) error {
-	return nil
-}
-
 func validateNewDomainParameters(scope constructs.Construct, id *string, config *DomainConfig) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package useradminroles
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/useradminroles/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/useradminroles/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_admin_roles okta_user_admin_roles}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user_admin_roles okta_user_admin_roles}.
 type UserAdminRoles interface {
 	cdktf.TerraformResource
 	AdminRoles() *[]*string
@@ -356,7 +356,7 @@ func (j *jsiiProxy_UserAdminRoles) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_admin_roles okta_user_admin_roles} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user_admin_roles okta_user_admin_roles} Resource.
 func NewUserAdminRoles(scope constructs.Construct, id *string, config *UserAdminRolesConfig) UserAdminRoles {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewUserAdminRoles(scope constructs.Construct, id *string, config *UserAdmin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_admin_roles okta_user_admin_roles} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user_admin_roles okta_user_admin_roles} Resource.
 func NewUserAdminRoles_Override(u UserAdminRoles, scope constructs.Construct, id *string, config *UserAdminRolesConfig) {
 	_init_.Initialize()
 

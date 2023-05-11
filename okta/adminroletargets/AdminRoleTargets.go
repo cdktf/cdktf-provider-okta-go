@@ -2,14 +2,14 @@ package adminroletargets
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/adminroletargets/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/adminroletargets/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_targets okta_admin_role_targets}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/admin_role_targets okta_admin_role_targets}.
 type AdminRoleTargets interface {
 	cdktf.TerraformResource
 	Apps() *[]*string
@@ -391,7 +391,7 @@ func (j *jsiiProxy_AdminRoleTargets) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_targets okta_admin_role_targets} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/admin_role_targets okta_admin_role_targets} Resource.
 func NewAdminRoleTargets(scope constructs.Construct, id *string, config *AdminRoleTargetsConfig) AdminRoleTargets {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewAdminRoleTargets(scope constructs.Construct, id *string, config *AdminRo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_targets okta_admin_role_targets} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/admin_role_targets okta_admin_role_targets} Resource.
 func NewAdminRoleTargets_Override(a AdminRoleTargets, scope constructs.Construct, id *string, config *AdminRoleTargetsConfig) {
 	_init_.Initialize()
 

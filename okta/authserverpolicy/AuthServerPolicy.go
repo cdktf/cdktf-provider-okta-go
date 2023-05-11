@@ -2,14 +2,14 @@ package authserverpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/authserverpolicy/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/authserverpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy okta_auth_server_policy}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy okta_auth_server_policy}.
 type AuthServerPolicy interface {
 	cdktf.TerraformResource
 	AuthServerId() *string
@@ -79,9 +79,6 @@ type AuthServerPolicy interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Type() *string
-	SetType(val *string)
-	TypeInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -112,7 +109,6 @@ type AuthServerPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetStatus()
-	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -428,28 +424,8 @@ func (j *jsiiProxy_AuthServerPolicy) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AuthServerPolicy) Type() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"type",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_AuthServerPolicy) TypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"typeInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy okta_auth_server_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy okta_auth_server_policy} Resource.
 func NewAuthServerPolicy(scope constructs.Construct, id *string, config *AuthServerPolicyConfig) AuthServerPolicy {
 	_init_.Initialize()
 
@@ -467,7 +443,7 @@ func NewAuthServerPolicy(scope constructs.Construct, id *string, config *AuthSer
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy okta_auth_server_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy okta_auth_server_policy} Resource.
 func NewAuthServerPolicy_Override(a AuthServerPolicy, scope constructs.Construct, id *string, config *AuthServerPolicyConfig) {
 	_init_.Initialize()
 
@@ -619,17 +595,6 @@ func (j *jsiiProxy_AuthServerPolicy)SetStatus(val *string) {
 	_jsii_.Set(
 		j,
 		"status",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AuthServerPolicy)SetType(val *string) {
-	if err := j.validateSetTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"type",
 		val,
 	)
 }
@@ -920,14 +885,6 @@ func (a *jsiiProxy_AuthServerPolicy) ResetStatus() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetStatus",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AuthServerPolicy) ResetType() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetType",
 		nil, // no parameters
 	)
 }

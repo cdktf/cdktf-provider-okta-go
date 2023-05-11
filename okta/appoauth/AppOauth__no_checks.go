@@ -64,10 +64,6 @@ func (a *jsiiProxy_AppOauth) validatePutTimeoutsParameters(value *AppOauthTimeou
 	return nil
 }
 
-func (a *jsiiProxy_AppOauth) validatePutUsersParameters(value interface{}) error {
-	return nil
-}
-
 func validateAppOauth_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -140,19 +136,11 @@ func (j *jsiiProxy_AppOauth) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_AppOauth) validateSetCustomClientIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AppOauth) validateSetEnduserNoteParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_AppOauth) validateSetGrantTypesParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppOauth) validateSetGroupsParameters(val *[]*string) error {
 	return nil
 }
 
@@ -241,14 +229,6 @@ func (j *jsiiProxy_AppOauth) validateSetRefreshTokenRotationParameters(val *stri
 }
 
 func (j *jsiiProxy_AppOauth) validateSetResponseTypesParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppOauth) validateSetSkipGroupsParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppOauth) validateSetSkipUsersParameters(val interface{}) error {
 	return nil
 }
 

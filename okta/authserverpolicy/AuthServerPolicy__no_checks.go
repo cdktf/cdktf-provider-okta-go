@@ -108,10 +108,6 @@ func (j *jsiiProxy_AuthServerPolicy) validateSetStatusParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_AuthServerPolicy) validateSetTypeParameters(val *string) error {
-	return nil
-}
-
 func validateNewAuthServerPolicyParameters(scope constructs.Construct, id *string, config *AuthServerPolicyConfig) error {
 	return nil
 }

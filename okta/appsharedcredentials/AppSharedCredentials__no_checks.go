@@ -56,10 +56,6 @@ func (a *jsiiProxy_AppSharedCredentials) validatePutTimeoutsParameters(value *Ap
 	return nil
 }
 
-func (a *jsiiProxy_AppSharedCredentials) validatePutUsersParameters(value interface{}) error {
-	return nil
-}
-
 func validateAppSharedCredentials_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -116,10 +112,6 @@ func (j *jsiiProxy_AppSharedCredentials) validateSetEnduserNoteParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_AppSharedCredentials) validateSetGroupsParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AppSharedCredentials) validateSetHideIosParameters(val interface{}) error {
 	return nil
 }
@@ -165,14 +157,6 @@ func (j *jsiiProxy_AppSharedCredentials) validateSetSharedPasswordParameters(val
 }
 
 func (j *jsiiProxy_AppSharedCredentials) validateSetSharedUsernameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppSharedCredentials) validateSetSkipGroupsParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppSharedCredentials) validateSetSkipUsersParameters(val interface{}) error {
 	return nil
 }
 

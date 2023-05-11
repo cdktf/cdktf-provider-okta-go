@@ -2,14 +2,14 @@ package domain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/domain/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/domain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain okta_domain}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/domain okta_domain}.
 type Domain interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -69,9 +69,6 @@ type Domain interface {
 	// Experimental.
 	TerraformResourceType() *string
 	ValidationStatus() *string
-	Verify() interface{}
-	SetVerify(val interface{})
-	VerifyInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -102,7 +99,6 @@ type Domain interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetVerify()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -358,28 +354,8 @@ func (j *jsiiProxy_Domain) ValidationStatus() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Domain) Verify() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"verify",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_Domain) VerifyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"verifyInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain okta_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/domain okta_domain} Resource.
 func NewDomain(scope constructs.Construct, id *string, config *DomainConfig) Domain {
 	_init_.Initialize()
 
@@ -397,7 +373,7 @@ func NewDomain(scope constructs.Construct, id *string, config *DomainConfig) Dom
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain okta_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/domain okta_domain} Resource.
 func NewDomain_Override(d Domain, scope constructs.Construct, id *string, config *DomainConfig) {
 	_init_.Initialize()
 
@@ -505,17 +481,6 @@ func (j *jsiiProxy_Domain)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Domain)SetVerify(val interface{}) {
-	if err := j.validateSetVerifyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"verify",
 		val,
 	)
 }
@@ -806,14 +771,6 @@ func (d *jsiiProxy_Domain) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_Domain) ResetVerify() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetVerify",
 		nil, // no parameters
 	)
 }

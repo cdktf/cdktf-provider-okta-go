@@ -136,10 +136,6 @@ func (j *jsiiProxy_PolicyRuleSignon) validateSetNetworkIncludesParameters(val *[
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleSignon) validateSetPolicyidParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_PolicyRuleSignon) validateSetPolicyIdParameters(val *string) error {
 	return nil
 }

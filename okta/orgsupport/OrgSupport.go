@@ -2,14 +2,14 @@ package orgsupport
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/orgsupport/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/orgsupport/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_support okta_org_support}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/org_support okta_org_support}.
 type OrgSupport interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_OrgSupport) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_support okta_org_support} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/org_support okta_org_support} Resource.
 func NewOrgSupport(scope constructs.Construct, id *string, config *OrgSupportConfig) OrgSupport {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewOrgSupport(scope constructs.Construct, id *string, config *OrgSupportCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_support okta_org_support} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/org_support okta_org_support} Resource.
 func NewOrgSupport_Override(o OrgSupport, scope constructs.Construct, id *string, config *OrgSupportConfig) {
 	_init_.Initialize()
 

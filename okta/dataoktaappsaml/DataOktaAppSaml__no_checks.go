@@ -92,14 +92,6 @@ func (j *jsiiProxy_DataOktaAppSaml) validateSetRequestCompressedParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaAppSaml) validateSetSkipGroupsParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataOktaAppSaml) validateSetSkipUsersParameters(val interface{}) error {
-	return nil
-}
-
 func validateNewDataOktaAppSamlParameters(scope constructs.Construct, id *string, config *DataOktaAppSamlConfig) error {
 	return nil
 }

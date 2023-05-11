@@ -2,14 +2,14 @@ package usertype
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/usertype/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/usertype/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_type okta_user_type}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user_type okta_user_type}.
 type UserType interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -355,7 +355,7 @@ func (j *jsiiProxy_UserType) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_type okta_user_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user_type okta_user_type} Resource.
 func NewUserType(scope constructs.Construct, id *string, config *UserTypeConfig) UserType {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewUserType(scope constructs.Construct, id *string, config *UserTypeConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_type okta_user_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user_type okta_user_type} Resource.
 func NewUserType_Override(u UserType, scope constructs.Construct, id *string, config *UserTypeConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package idpsamlkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/idpsamlkey/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/idpsamlkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_saml_key okta_idp_saml_key}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_saml_key okta_idp_saml_key}.
 type IdpSamlKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -375,7 +375,7 @@ func (j *jsiiProxy_IdpSamlKey) X5TS256() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_saml_key okta_idp_saml_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_saml_key okta_idp_saml_key} Resource.
 func NewIdpSamlKey(scope constructs.Construct, id *string, config *IdpSamlKeyConfig) IdpSamlKey {
 	_init_.Initialize()
 
@@ -393,7 +393,7 @@ func NewIdpSamlKey(scope constructs.Construct, id *string, config *IdpSamlKeyCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_saml_key okta_idp_saml_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_saml_key okta_idp_saml_key} Resource.
 func NewIdpSamlKey_Override(i IdpSamlKey, scope constructs.Construct, id *string, config *IdpSamlKeyConfig) {
 	_init_.Initialize()
 

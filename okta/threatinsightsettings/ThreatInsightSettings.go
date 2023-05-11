@@ -2,14 +2,14 @@ package threatinsightsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/threatinsightsettings/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/threatinsightsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/threat_insight_settings okta_threat_insight_settings}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/threat_insight_settings okta_threat_insight_settings}.
 type ThreatInsightSettings interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -333,7 +333,7 @@ func (j *jsiiProxy_ThreatInsightSettings) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/threat_insight_settings okta_threat_insight_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/threat_insight_settings okta_threat_insight_settings} Resource.
 func NewThreatInsightSettings(scope constructs.Construct, id *string, config *ThreatInsightSettingsConfig) ThreatInsightSettings {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewThreatInsightSettings(scope constructs.Construct, id *string, config *Th
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/threat_insight_settings okta_threat_insight_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/threat_insight_settings okta_threat_insight_settings} Resource.
 func NewThreatInsightSettings_Override(t ThreatInsightSettings, scope constructs.Construct, id *string, config *ThreatInsightSettingsConfig) {
 	_init_.Initialize()
 

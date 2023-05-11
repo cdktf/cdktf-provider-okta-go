@@ -2,14 +2,14 @@ package dataoktapolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktapolicy/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktapolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/policy okta_policy}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/policy okta_policy}.
 type DataOktaPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -315,7 +315,7 @@ func (j *jsiiProxy_DataOktaPolicy) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/policy okta_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/policy okta_policy} Data Source.
 func NewDataOktaPolicy(scope constructs.Construct, id *string, config *DataOktaPolicyConfig) DataOktaPolicy {
 	_init_.Initialize()
 
@@ -333,7 +333,7 @@ func NewDataOktaPolicy(scope constructs.Construct, id *string, config *DataOktaP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/policy okta_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/policy okta_policy} Data Source.
 func NewDataOktaPolicy_Override(d DataOktaPolicy, scope constructs.Construct, id *string, config *DataOktaPolicyConfig) {
 	_init_.Initialize()
 

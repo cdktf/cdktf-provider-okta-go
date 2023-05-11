@@ -2,14 +2,14 @@ package authserverdefault
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/authserverdefault/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/authserverdefault/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_default okta_auth_server_default}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_default okta_auth_server_default}.
 type AuthServerDefault interface {
 	cdktf.TerraformResource
 	Audiences() *[]*string
@@ -473,7 +473,7 @@ func (j *jsiiProxy_AuthServerDefault) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_default okta_auth_server_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_default okta_auth_server_default} Resource.
 func NewAuthServerDefault(scope constructs.Construct, id *string, config *AuthServerDefaultConfig) AuthServerDefault {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewAuthServerDefault(scope constructs.Construct, id *string, config *AuthSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_default okta_auth_server_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_default okta_auth_server_default} Resource.
 func NewAuthServerDefault_Override(a AuthServerDefault, scope constructs.Construct, id *string, config *AuthServerDefaultConfig) {
 	_init_.Initialize()
 

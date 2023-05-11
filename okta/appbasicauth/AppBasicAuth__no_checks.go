@@ -56,10 +56,6 @@ func (a *jsiiProxy_AppBasicAuth) validatePutTimeoutsParameters(value *AppBasicAu
 	return nil
 }
 
-func (a *jsiiProxy_AppBasicAuth) validatePutUsersParameters(value interface{}) error {
-	return nil
-}
-
 func validateAppBasicAuth_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -112,10 +108,6 @@ func (j *jsiiProxy_AppBasicAuth) validateSetEnduserNoteParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_AppBasicAuth) validateSetGroupsParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AppBasicAuth) validateSetHideIosParameters(val interface{}) error {
 	return nil
 }
@@ -141,14 +133,6 @@ func (j *jsiiProxy_AppBasicAuth) validateSetLogoParameters(val *string) error {
 }
 
 func (j *jsiiProxy_AppBasicAuth) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppBasicAuth) validateSetSkipGroupsParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppBasicAuth) validateSetSkipUsersParameters(val interface{}) error {
 	return nil
 }
 

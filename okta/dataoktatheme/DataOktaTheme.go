@@ -2,14 +2,14 @@ package dataoktatheme
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktatheme/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktatheme/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/theme okta_theme}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/theme okta_theme}.
 type DataOktaTheme interface {
 	cdktf.TerraformDataSource
 	BackgroundImageUrl() *string
@@ -423,7 +423,7 @@ func (j *jsiiProxy_DataOktaTheme) ThemeIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/theme okta_theme} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/theme okta_theme} Data Source.
 func NewDataOktaTheme(scope constructs.Construct, id *string, config *DataOktaThemeConfig) DataOktaTheme {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewDataOktaTheme(scope constructs.Construct, id *string, config *DataOktaTh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/theme okta_theme} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/theme okta_theme} Data Source.
 func NewDataOktaTheme_Override(d DataOktaTheme, scope constructs.Construct, id *string, config *DataOktaThemeConfig) {
 	_init_.Initialize()
 

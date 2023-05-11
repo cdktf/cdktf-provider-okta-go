@@ -2,14 +2,14 @@ package dataoktaappoauth
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaappoauth/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaappoauth/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_oauth okta_app_oauth}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/app_oauth okta_app_oauth}.
 type DataOktaAppOauth interface {
 	cdktf.TerraformDataSource
 	ActiveOnly() interface{}
@@ -40,7 +40,6 @@ type DataOktaAppOauth interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	GrantTypes() *[]*string
-	Groups() *[]*string
 	HideIos() cdktf.IResolvable
 	HideWeb() cdktf.IResolvable
 	Id() *string
@@ -74,12 +73,6 @@ type DataOktaAppOauth interface {
 	RawOverrides() interface{}
 	RedirectUris() *[]*string
 	ResponseTypes() *[]*string
-	SkipGroups() interface{}
-	SetSkipGroups(val interface{})
-	SkipGroupsInput() interface{}
-	SkipUsers() interface{}
-	SetSkipUsers(val interface{})
-	SkipUsersInput() interface{}
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -88,7 +81,6 @@ type DataOktaAppOauth interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
-	Users() *[]*string
 	WildcardRedirect() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -122,8 +114,6 @@ type DataOktaAppOauth interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetSkipGroups()
-	ResetSkipUsers()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -274,16 +264,6 @@ func (j *jsiiProxy_DataOktaAppOauth) GrantTypes() *[]*string {
 	_jsii_.Get(
 		j,
 		"grantTypes",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataOktaAppOauth) Groups() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"groups",
 		&returns,
 	)
 	return returns
@@ -509,46 +489,6 @@ func (j *jsiiProxy_DataOktaAppOauth) ResponseTypes() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaAppOauth) SkipGroups() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipGroups",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataOktaAppOauth) SkipGroupsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipGroupsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataOktaAppOauth) SkipUsers() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipUsers",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataOktaAppOauth) SkipUsersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipUsersInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataOktaAppOauth) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -599,16 +539,6 @@ func (j *jsiiProxy_DataOktaAppOauth) Type() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaAppOauth) Users() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"users",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataOktaAppOauth) WildcardRedirect() *string {
 	var returns *string
 	_jsii_.Get(
@@ -620,7 +550,7 @@ func (j *jsiiProxy_DataOktaAppOauth) WildcardRedirect() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_oauth okta_app_oauth} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/app_oauth okta_app_oauth} Data Source.
 func NewDataOktaAppOauth(scope constructs.Construct, id *string, config *DataOktaAppOauthConfig) DataOktaAppOauth {
 	_init_.Initialize()
 
@@ -638,7 +568,7 @@ func NewDataOktaAppOauth(scope constructs.Construct, id *string, config *DataOkt
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_oauth okta_app_oauth} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/app_oauth okta_app_oauth} Data Source.
 func NewDataOktaAppOauth_Override(d DataOktaAppOauth, scope constructs.Construct, id *string, config *DataOktaAppOauthConfig) {
 	_init_.Initialize()
 
@@ -735,28 +665,6 @@ func (j *jsiiProxy_DataOktaAppOauth)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataOktaAppOauth)SetSkipGroups(val interface{}) {
-	if err := j.validateSetSkipGroupsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipGroups",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataOktaAppOauth)SetSkipUsers(val interface{}) {
-	if err := j.validateSetSkipUsersParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipUsers",
 		val,
 	)
 }
@@ -1063,22 +971,6 @@ func (d *jsiiProxy_DataOktaAppOauth) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataOktaAppOauth) ResetSkipGroups() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSkipGroups",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataOktaAppOauth) ResetSkipUsers() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSkipUsers",
 		nil, // no parameters
 	)
 }

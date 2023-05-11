@@ -2,14 +2,14 @@ package dataoktaidpsaml
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaidpsaml/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaidpsaml/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/idp_saml okta_idp_saml}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/idp_saml okta_idp_saml}.
 type DataOktaIdpSaml interface {
 	cdktf.TerraformDataSource
 	AcsBinding() *string
@@ -414,7 +414,7 @@ func (j *jsiiProxy_DataOktaIdpSaml) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/idp_saml okta_idp_saml} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/idp_saml okta_idp_saml} Data Source.
 func NewDataOktaIdpSaml(scope constructs.Construct, id *string, config *DataOktaIdpSamlConfig) DataOktaIdpSaml {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewDataOktaIdpSaml(scope constructs.Construct, id *string, config *DataOkta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/idp_saml okta_idp_saml} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/idp_saml okta_idp_saml} Data Source.
 func NewDataOktaIdpSaml_Override(d DataOktaIdpSaml, scope constructs.Construct, id *string, config *DataOktaIdpSamlConfig) {
 	_init_.Initialize()
 

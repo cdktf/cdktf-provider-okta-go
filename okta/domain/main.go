@@ -46,7 +46,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCertificateSourceType", GoMethod: "ResetCertificateSourceType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVerify", GoMethod: "ResetVerify"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
@@ -55,8 +54,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "validationStatus", GoGetter: "ValidationStatus"},
-			_jsii_.MemberProperty{JsiiProperty: "verify", GoGetter: "Verify"},
-			_jsii_.MemberProperty{JsiiProperty: "verifyInput", GoGetter: "VerifyInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Domain{}
