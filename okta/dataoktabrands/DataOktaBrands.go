@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/brands okta_brands}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/brands okta_brands}.
 type DataOktaBrands interface {
 	cdktf.TerraformDataSource
 	Brands() DataOktaBrandsBrandsList
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DataOktaBrands) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/brands okta_brands} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/brands okta_brands} Data Source.
 func NewDataOktaBrands(scope constructs.Construct, id *string, config *DataOktaBrandsConfig) DataOktaBrands {
 	_init_.Initialize()
 
@@ -287,7 +287,7 @@ func NewDataOktaBrands(scope constructs.Construct, id *string, config *DataOktaB
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/brands okta_brands} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/brands okta_brands} Data Source.
 func NewDataOktaBrands_Override(d DataOktaBrands, scope constructs.Construct, id *string, config *DataOktaBrandsConfig) {
 	_init_.Initialize()
 

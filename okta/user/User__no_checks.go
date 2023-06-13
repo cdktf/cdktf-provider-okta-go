@@ -220,6 +220,10 @@ func (j *jsiiProxy_User) validateSetSecondEmailParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_User) validateSetSkipRolesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_User) validateSetStateParameters(val *string) error {
 	return nil
 }

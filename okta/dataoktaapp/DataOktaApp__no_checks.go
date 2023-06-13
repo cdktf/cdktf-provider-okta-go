@@ -88,6 +88,14 @@ func (j *jsiiProxy_DataOktaApp) validateSetLifecycleParameters(val *cdktf.Terraf
 	return nil
 }
 
+func (j *jsiiProxy_DataOktaApp) validateSetSkipGroupsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataOktaApp) validateSetSkipUsersParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewDataOktaAppParameters(scope constructs.Construct, id *string, config *DataOktaAppConfig) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group okta_group}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group okta_group}.
 type Group interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -64,6 +64,9 @@ type Group interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SkipUsers() interface{}
+	SetSkipUsers(val interface{})
+	SkipUsersInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -101,6 +104,7 @@ type Group interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSkipUsers()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -326,6 +330,26 @@ func (j *jsiiProxy_Group) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Group) SkipUsers() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipUsers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) SkipUsersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipUsersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Group) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -357,7 +381,7 @@ func (j *jsiiProxy_Group) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group okta_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group okta_group} Resource.
 func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group {
 	_init_.Initialize()
 
@@ -375,7 +399,7 @@ func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group okta_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group okta_group} Resource.
 func NewGroup_Override(g Group, scope constructs.Construct, id *string, config *GroupConfig) {
 	_init_.Initialize()
 
@@ -494,6 +518,17 @@ func (j *jsiiProxy_Group)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Group)SetSkipUsers(val interface{}) {
+	if err := j.validateSetSkipUsersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipUsers",
 		val,
 	)
 }
@@ -792,6 +827,14 @@ func (g *jsiiProxy_Group) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Group) ResetSkipUsers() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSkipUsers",
 		nil, // no parameters
 	)
 }
