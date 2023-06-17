@@ -2,14 +2,14 @@ package dataoktaauthserverclaim
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/dataoktaauthserverclaim/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktaauthserverclaim/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/auth_server_claim okta_auth_server_claim}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/auth_server_claim okta_auth_server_claim}.
 type DataOktaAuthServerClaim interface {
 	cdktf.TerraformDataSource
 	AlwaysIncludeInToken() cdktf.IResolvable
@@ -371,7 +371,7 @@ func (j *jsiiProxy_DataOktaAuthServerClaim) ValueType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/auth_server_claim okta_auth_server_claim} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/auth_server_claim okta_auth_server_claim} Data Source.
 func NewDataOktaAuthServerClaim(scope constructs.Construct, id *string, config *DataOktaAuthServerClaimConfig) DataOktaAuthServerClaim {
 	_init_.Initialize()
 
@@ -389,7 +389,7 @@ func NewDataOktaAuthServerClaim(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/auth_server_claim okta_auth_server_claim} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/auth_server_claim okta_auth_server_claim} Data Source.
 func NewDataOktaAuthServerClaim_Override(d DataOktaAuthServerClaim, scope constructs.Construct, id *string, config *DataOktaAuthServerClaimConfig) {
 	_init_.Initialize()
 

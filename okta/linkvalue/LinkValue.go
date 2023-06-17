@@ -2,14 +2,14 @@ package linkvalue
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/linkvalue/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/linkvalue/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/link_value okta_link_value}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/link_value okta_link_value}.
 type LinkValue interface {
 	cdktf.TerraformResource
 	AssociatedUserIds() *[]*string
@@ -356,7 +356,7 @@ func (j *jsiiProxy_LinkValue) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/link_value okta_link_value} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/link_value okta_link_value} Resource.
 func NewLinkValue(scope constructs.Construct, id *string, config *LinkValueConfig) LinkValue {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewLinkValue(scope constructs.Construct, id *string, config *LinkValueConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/link_value okta_link_value} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/link_value okta_link_value} Resource.
 func NewLinkValue_Override(l LinkValue, scope constructs.Construct, id *string, config *LinkValueConfig) {
 	_init_.Initialize()
 

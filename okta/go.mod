@@ -1,4 +1,4 @@
-module github.com/cdktf/cdktf-provider-okta-go/okta/v9
+module github.com/cdktf/cdktf-provider-okta-go/okta/v10
 
 go 1.18
 

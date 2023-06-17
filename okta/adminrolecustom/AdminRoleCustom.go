@@ -2,14 +2,14 @@ package adminrolecustom
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/adminrolecustom/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/adminrolecustom/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/admin_role_custom okta_admin_role_custom}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/admin_role_custom okta_admin_role_custom}.
 type AdminRoleCustom interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_AdminRoleCustom) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/admin_role_custom okta_admin_role_custom} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/admin_role_custom okta_admin_role_custom} Resource.
 func NewAdminRoleCustom(scope constructs.Construct, id *string, config *AdminRoleCustomConfig) AdminRoleCustom {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewAdminRoleCustom(scope constructs.Construct, id *string, config *AdminRol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/admin_role_custom okta_admin_role_custom} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/admin_role_custom okta_admin_role_custom} Resource.
 func NewAdminRoleCustom_Override(a AdminRoleCustom, scope constructs.Construct, id *string, config *AdminRoleCustomConfig) {
 	_init_.Initialize()
 

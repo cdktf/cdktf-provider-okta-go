@@ -2,14 +2,14 @@ package trustedorigin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/trustedorigin/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/trustedorigin/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/trusted_origin okta_trusted_origin}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/trusted_origin okta_trusted_origin}.
 type TrustedOrigin interface {
 	cdktf.TerraformResource
 	Active() interface{}
@@ -379,7 +379,7 @@ func (j *jsiiProxy_TrustedOrigin) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/trusted_origin okta_trusted_origin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/trusted_origin okta_trusted_origin} Resource.
 func NewTrustedOrigin(scope constructs.Construct, id *string, config *TrustedOriginConfig) TrustedOrigin {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewTrustedOrigin(scope constructs.Construct, id *string, config *TrustedOri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/trusted_origin okta_trusted_origin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/trusted_origin okta_trusted_origin} Resource.
 func NewTrustedOrigin_Override(t TrustedOrigin, scope constructs.Construct, id *string, config *TrustedOriginConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package policyruleidpdiscovery
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/policyruleidpdiscovery/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/policyruleidpdiscovery/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery}.
 type PolicyRuleIdpDiscovery interface {
 	cdktf.TerraformResource
 	AppExclude() PolicyRuleIdpDiscoveryAppExcludeList
@@ -645,7 +645,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery) UserIdentifierTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery} Resource.
 func NewPolicyRuleIdpDiscovery(scope constructs.Construct, id *string, config *PolicyRuleIdpDiscoveryConfig) PolicyRuleIdpDiscovery {
 	_init_.Initialize()
 
@@ -663,7 +663,7 @@ func NewPolicyRuleIdpDiscovery(scope constructs.Construct, id *string, config *P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery} Resource.
 func NewPolicyRuleIdpDiscovery_Override(p PolicyRuleIdpDiscovery, scope constructs.Construct, id *string, config *PolicyRuleIdpDiscoveryConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package eventhook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/eventhook/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/eventhook/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/event_hook okta_event_hook}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/event_hook okta_event_hook}.
 type EventHook interface {
 	cdktf.TerraformResource
 	Auth() *map[string]*string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_EventHook) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/event_hook okta_event_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/event_hook okta_event_hook} Resource.
 func NewEventHook(scope constructs.Construct, id *string, config *EventHookConfig) EventHook {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewEventHook(scope constructs.Construct, id *string, config *EventHookConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/event_hook okta_event_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/event_hook okta_event_hook} Resource.
 func NewEventHook_Override(e EventHook, scope constructs.Construct, id *string, config *EventHookConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package authserverpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/authserverpolicy/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/authserverpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_policy okta_auth_server_policy}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/auth_server_policy okta_auth_server_policy}.
 type AuthServerPolicy interface {
 	cdktf.TerraformResource
 	AuthServerId() *string
@@ -425,7 +425,7 @@ func (j *jsiiProxy_AuthServerPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_policy okta_auth_server_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/auth_server_policy okta_auth_server_policy} Resource.
 func NewAuthServerPolicy(scope constructs.Construct, id *string, config *AuthServerPolicyConfig) AuthServerPolicy {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewAuthServerPolicy(scope constructs.Construct, id *string, config *AuthSer
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_policy okta_auth_server_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/auth_server_policy okta_auth_server_policy} Resource.
 func NewAuthServerPolicy_Override(a AuthServerPolicy, scope constructs.Construct, id *string, config *AuthServerPolicyConfig) {
 	_init_.Initialize()
 

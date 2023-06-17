@@ -2,14 +2,14 @@ package idpsaml
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/idpsaml/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/idpsaml/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml okta_idp_saml}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml okta_idp_saml}.
 type IdpSaml interface {
 	cdktf.TerraformResource
 	AccountLinkAction() *string
@@ -1046,7 +1046,7 @@ func (j *jsiiProxy_IdpSaml) UserTypeId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml okta_idp_saml} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml okta_idp_saml} Resource.
 func NewIdpSaml(scope constructs.Construct, id *string, config *IdpSamlConfig) IdpSaml {
 	_init_.Initialize()
 
@@ -1064,7 +1064,7 @@ func NewIdpSaml(scope constructs.Construct, id *string, config *IdpSamlConfig) I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml okta_idp_saml} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml okta_idp_saml} Resource.
 func NewIdpSaml_Override(i IdpSaml, scope constructs.Construct, id *string, config *IdpSamlConfig) {
 	_init_.Initialize()
 

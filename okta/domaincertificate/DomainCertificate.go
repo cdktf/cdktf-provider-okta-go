@@ -2,14 +2,14 @@ package domaincertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/domaincertificate/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/domaincertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/domain_certificate okta_domain_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/domain_certificate okta_domain_certificate}.
 type DomainCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -402,7 +402,7 @@ func (j *jsiiProxy_DomainCertificate) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/domain_certificate okta_domain_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/domain_certificate okta_domain_certificate} Resource.
 func NewDomainCertificate(scope constructs.Construct, id *string, config *DomainCertificateConfig) DomainCertificate {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewDomainCertificate(scope constructs.Construct, id *string, config *Domain
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/domain_certificate okta_domain_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/domain_certificate okta_domain_certificate} Resource.
 func NewDomainCertificate_Override(d DomainCertificate, scope constructs.Construct, id *string, config *DomainCertificateConfig) {
 	_init_.Initialize()
 

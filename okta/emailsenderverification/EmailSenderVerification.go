@@ -2,14 +2,14 @@ package emailsenderverification
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/emailsenderverification/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/emailsenderverification/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/email_sender_verification okta_email_sender_verification}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/email_sender_verification okta_email_sender_verification}.
 type EmailSenderVerification interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -309,7 +309,7 @@ func (j *jsiiProxy_EmailSenderVerification) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/email_sender_verification okta_email_sender_verification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/email_sender_verification okta_email_sender_verification} Resource.
 func NewEmailSenderVerification(scope constructs.Construct, id *string, config *EmailSenderVerificationConfig) EmailSenderVerification {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewEmailSenderVerification(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/email_sender_verification okta_email_sender_verification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/email_sender_verification okta_email_sender_verification} Resource.
 func NewEmailSenderVerification_Override(e EmailSenderVerification, scope constructs.Construct, id *string, config *EmailSenderVerificationConfig) {
 	_init_.Initialize()
 

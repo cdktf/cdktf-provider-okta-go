@@ -2,14 +2,14 @@ package dataoktaidpoidc
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/dataoktaidpoidc/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktaidpoidc/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/idp_oidc okta_idp_oidc}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/idp_oidc okta_idp_oidc}.
 type DataOktaIdpOidc interface {
 	cdktf.TerraformDataSource
 	AuthorizationBinding() *string
@@ -458,7 +458,7 @@ func (j *jsiiProxy_DataOktaIdpOidc) UserInfoUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/idp_oidc okta_idp_oidc} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/idp_oidc okta_idp_oidc} Data Source.
 func NewDataOktaIdpOidc(scope constructs.Construct, id *string, config *DataOktaIdpOidcConfig) DataOktaIdpOidc {
 	_init_.Initialize()
 
@@ -476,7 +476,7 @@ func NewDataOktaIdpOidc(scope constructs.Construct, id *string, config *DataOkta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/idp_oidc okta_idp_oidc} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/idp_oidc okta_idp_oidc} Data Source.
 func NewDataOktaIdpOidc_Override(d DataOktaIdpOidc, scope constructs.Construct, id *string, config *DataOktaIdpOidcConfig) {
 	_init_.Initialize()
 

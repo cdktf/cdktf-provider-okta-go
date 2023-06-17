@@ -2,14 +2,14 @@ package dataoktaauthserverpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/dataoktaauthserverpolicy/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktaauthserverpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/auth_server_policy okta_auth_server_policy}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/auth_server_policy okta_auth_server_policy}.
 type DataOktaAuthServerPolicy interface {
 	cdktf.TerraformDataSource
 	AssignedClients() *[]*string
@@ -337,7 +337,7 @@ func (j *jsiiProxy_DataOktaAuthServerPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/auth_server_policy okta_auth_server_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/auth_server_policy okta_auth_server_policy} Data Source.
 func NewDataOktaAuthServerPolicy(scope constructs.Construct, id *string, config *DataOktaAuthServerPolicyConfig) DataOktaAuthServerPolicy {
 	_init_.Initialize()
 
@@ -355,7 +355,7 @@ func NewDataOktaAuthServerPolicy(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/auth_server_policy okta_auth_server_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/auth_server_policy okta_auth_server_policy} Data Source.
 func NewDataOktaAuthServerPolicy_Override(d DataOktaAuthServerPolicy, scope constructs.Construct, id *string, config *DataOktaAuthServerPolicyConfig) {
 	_init_.Initialize()
 

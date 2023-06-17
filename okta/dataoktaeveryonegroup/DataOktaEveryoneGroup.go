@@ -2,14 +2,14 @@ package dataoktaeveryonegroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/dataoktaeveryonegroup/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktaeveryonegroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/everyone_group okta_everyone_group}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/everyone_group okta_everyone_group}.
 type DataOktaEveryoneGroup interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -293,7 +293,7 @@ func (j *jsiiProxy_DataOktaEveryoneGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/everyone_group okta_everyone_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/everyone_group okta_everyone_group} Data Source.
 func NewDataOktaEveryoneGroup(scope constructs.Construct, id *string, config *DataOktaEveryoneGroupConfig) DataOktaEveryoneGroup {
 	_init_.Initialize()
 
@@ -311,7 +311,7 @@ func NewDataOktaEveryoneGroup(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/everyone_group okta_everyone_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/everyone_group okta_everyone_group} Data Source.
 func NewDataOktaEveryoneGroup_Override(d DataOktaEveryoneGroup, scope constructs.Construct, id *string, config *DataOktaEveryoneGroupConfig) {
 	_init_.Initialize()
 

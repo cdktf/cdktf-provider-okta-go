@@ -2,14 +2,14 @@ package authserverclaimdefault
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/authserverclaimdefault/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/authserverclaimdefault/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_claim_default okta_auth_server_claim_default}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/auth_server_claim_default okta_auth_server_claim_default}.
 type AuthServerClaimDefault interface {
 	cdktf.TerraformResource
 	AlwaysIncludeInToken() interface{}
@@ -424,7 +424,7 @@ func (j *jsiiProxy_AuthServerClaimDefault) ValueType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_claim_default okta_auth_server_claim_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/auth_server_claim_default okta_auth_server_claim_default} Resource.
 func NewAuthServerClaimDefault(scope constructs.Construct, id *string, config *AuthServerClaimDefaultConfig) AuthServerClaimDefault {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewAuthServerClaimDefault(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_claim_default okta_auth_server_claim_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/auth_server_claim_default okta_auth_server_claim_default} Resource.
 func NewAuthServerClaimDefault_Override(a AuthServerClaimDefault, scope constructs.Construct, id *string, config *AuthServerClaimDefaultConfig) {
 	_init_.Initialize()
 

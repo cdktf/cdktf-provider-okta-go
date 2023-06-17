@@ -2,14 +2,14 @@ package eventhookverification
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/eventhookverification/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/eventhookverification/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/event_hook_verification okta_event_hook_verification}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/event_hook_verification okta_event_hook_verification}.
 type EventHookVerification interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -309,7 +309,7 @@ func (j *jsiiProxy_EventHookVerification) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/event_hook_verification okta_event_hook_verification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/event_hook_verification okta_event_hook_verification} Resource.
 func NewEventHookVerification(scope constructs.Construct, id *string, config *EventHookVerificationConfig) EventHookVerification {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewEventHookVerification(scope constructs.Construct, id *string, config *Ev
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/event_hook_verification okta_event_hook_verification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/event_hook_verification okta_event_hook_verification} Resource.
 func NewEventHookVerification_Override(e EventHookVerification, scope constructs.Construct, id *string, config *EventHookVerificationConfig) {
 	_init_.Initialize()
 

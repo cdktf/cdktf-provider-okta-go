@@ -2,14 +2,14 @@ package dataoktausersecurityquestions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/dataoktausersecurityquestions/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktausersecurityquestions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/user_security_questions okta_user_security_questions}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/user_security_questions okta_user_security_questions}.
 type DataOktaUserSecurityQuestions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataOktaUserSecurityQuestions) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/user_security_questions okta_user_security_questions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/user_security_questions okta_user_security_questions} Data Source.
 func NewDataOktaUserSecurityQuestions(scope constructs.Construct, id *string, config *DataOktaUserSecurityQuestionsConfig) DataOktaUserSecurityQuestions {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataOktaUserSecurityQuestions(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/user_security_questions okta_user_security_questions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/user_security_questions okta_user_security_questions} Data Source.
 func NewDataOktaUserSecurityQuestions_Override(d DataOktaUserSecurityQuestions, scope constructs.Construct, id *string, config *DataOktaUserSecurityQuestionsConfig) {
 	_init_.Initialize()
 

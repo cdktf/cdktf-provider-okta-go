@@ -2,14 +2,14 @@ package profilemapping
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/profilemapping/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/profilemapping/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/profile_mapping okta_profile_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/profile_mapping okta_profile_mapping}.
 type ProfileMapping interface {
 	cdktf.TerraformResource
 	AlwaysApply() interface{}
@@ -448,7 +448,7 @@ func (j *jsiiProxy_ProfileMapping) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/profile_mapping okta_profile_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/profile_mapping okta_profile_mapping} Resource.
 func NewProfileMapping(scope constructs.Construct, id *string, config *ProfileMappingConfig) ProfileMapping {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewProfileMapping(scope constructs.Construct, id *string, config *ProfileMa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/profile_mapping okta_profile_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/profile_mapping okta_profile_mapping} Resource.
 func NewProfileMapping_Override(p ProfileMapping, scope constructs.Construct, id *string, config *ProfileMappingConfig) {
 	_init_.Initialize()
 

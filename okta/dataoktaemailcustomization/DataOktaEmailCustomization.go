@@ -2,14 +2,14 @@ package dataoktaemailcustomization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/dataoktaemailcustomization/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktaemailcustomization/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/email_customization okta_email_customization}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/email_customization okta_email_customization}.
 type DataOktaEmailCustomization interface {
 	cdktf.TerraformDataSource
 	Body() *string
@@ -369,7 +369,7 @@ func (j *jsiiProxy_DataOktaEmailCustomization) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/email_customization okta_email_customization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/email_customization okta_email_customization} Data Source.
 func NewDataOktaEmailCustomization(scope constructs.Construct, id *string, config *DataOktaEmailCustomizationConfig) DataOktaEmailCustomization {
 	_init_.Initialize()
 
@@ -387,7 +387,7 @@ func NewDataOktaEmailCustomization(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/email_customization okta_email_customization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/email_customization okta_email_customization} Data Source.
 func NewDataOktaEmailCustomization_Override(d DataOktaEmailCustomization, scope constructs.Construct, id *string, config *DataOktaEmailCustomizationConfig) {
 	_init_.Initialize()
 

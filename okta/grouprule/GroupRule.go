@@ -2,14 +2,14 @@ package grouprule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/grouprule/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/grouprule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_rule okta_group_rule}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule okta_group_rule}.
 type GroupRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -451,7 +451,7 @@ func (j *jsiiProxy_GroupRule) UsersExcludedInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_rule okta_group_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule okta_group_rule} Resource.
 func NewGroupRule(scope constructs.Construct, id *string, config *GroupRuleConfig) GroupRule {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewGroupRule(scope constructs.Construct, id *string, config *GroupRuleConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_rule okta_group_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule okta_group_rule} Resource.
 func NewGroupRule_Override(g GroupRule, scope constructs.Construct, id *string, config *GroupRuleConfig) {
 	_init_.Initialize()
 

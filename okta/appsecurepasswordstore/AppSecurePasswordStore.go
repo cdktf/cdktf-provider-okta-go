@@ -2,14 +2,14 @@ package appsecurepasswordstore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/appsecurepasswordstore/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/appsecurepasswordstore/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_secure_password_store okta_app_secure_password_store}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store okta_app_secure_password_store}.
 type AppSecurePasswordStore interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -1035,7 +1035,7 @@ func (j *jsiiProxy_AppSecurePasswordStore) UserNameTemplateTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_secure_password_store okta_app_secure_password_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store okta_app_secure_password_store} Resource.
 func NewAppSecurePasswordStore(scope constructs.Construct, id *string, config *AppSecurePasswordStoreConfig) AppSecurePasswordStore {
 	_init_.Initialize()
 
@@ -1053,7 +1053,7 @@ func NewAppSecurePasswordStore(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_secure_password_store okta_app_secure_password_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store okta_app_secure_password_store} Resource.
 func NewAppSecurePasswordStore_Override(a AppSecurePasswordStore, scope constructs.Construct, id *string, config *AppSecurePasswordStoreConfig) {
 	_init_.Initialize()
 

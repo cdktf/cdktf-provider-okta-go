@@ -2,14 +2,14 @@ package dataoktaauthserverscopes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/dataoktaauthserverscopes/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktaauthserverscopes/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/auth_server_scopes okta_auth_server_scopes}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/auth_server_scopes okta_auth_server_scopes}.
 type DataOktaAuthServerScopes interface {
 	cdktf.TerraformDataSource
 	AuthServerId() *string
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataOktaAuthServerScopes) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/auth_server_scopes okta_auth_server_scopes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/auth_server_scopes okta_auth_server_scopes} Data Source.
 func NewDataOktaAuthServerScopes(scope constructs.Construct, id *string, config *DataOktaAuthServerScopesConfig) DataOktaAuthServerScopes {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataOktaAuthServerScopes(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/auth_server_scopes okta_auth_server_scopes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/auth_server_scopes okta_auth_server_scopes} Data Source.
 func NewDataOktaAuthServerScopes_Override(d DataOktaAuthServerScopes, scope constructs.Construct, id *string, config *DataOktaAuthServerScopesConfig) {
 	_init_.Initialize()
 

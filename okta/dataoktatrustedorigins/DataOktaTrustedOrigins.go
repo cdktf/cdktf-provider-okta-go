@@ -2,14 +2,14 @@ package dataoktatrustedorigins
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/dataoktatrustedorigins/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktatrustedorigins/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/trusted_origins okta_trusted_origins}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/trusted_origins okta_trusted_origins}.
 type DataOktaTrustedOrigins interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -293,7 +293,7 @@ func (j *jsiiProxy_DataOktaTrustedOrigins) TrustedOrigins() DataOktaTrustedOrigi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/trusted_origins okta_trusted_origins} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/trusted_origins okta_trusted_origins} Data Source.
 func NewDataOktaTrustedOrigins(scope constructs.Construct, id *string, config *DataOktaTrustedOriginsConfig) DataOktaTrustedOrigins {
 	_init_.Initialize()
 
@@ -311,7 +311,7 @@ func NewDataOktaTrustedOrigins(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/trusted_origins okta_trusted_origins} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/trusted_origins okta_trusted_origins} Data Source.
 func NewDataOktaTrustedOrigins_Override(d DataOktaTrustedOrigins, scope constructs.Construct, id *string, config *DataOktaTrustedOriginsConfig) {
 	_init_.Initialize()
 

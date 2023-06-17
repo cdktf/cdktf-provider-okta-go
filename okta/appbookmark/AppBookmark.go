@@ -2,14 +2,14 @@ package appbookmark
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/appbookmark/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/appbookmark/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_bookmark okta_app_bookmark}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_bookmark okta_app_bookmark}.
 type AppBookmark interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -701,7 +701,7 @@ func (j *jsiiProxy_AppBookmark) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_bookmark okta_app_bookmark} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_bookmark okta_app_bookmark} Resource.
 func NewAppBookmark(scope constructs.Construct, id *string, config *AppBookmarkConfig) AppBookmark {
 	_init_.Initialize()
 
@@ -719,7 +719,7 @@ func NewAppBookmark(scope constructs.Construct, id *string, config *AppBookmarkC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_bookmark okta_app_bookmark} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_bookmark okta_app_bookmark} Resource.
 func NewAppBookmark_Override(a AppBookmark, scope constructs.Construct, id *string, config *AppBookmarkConfig) {
 	_init_.Initialize()
 

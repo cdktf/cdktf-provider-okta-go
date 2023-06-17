@@ -2,14 +2,14 @@ package appbasicauth
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/appbasicauth/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/appbasicauth/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_basic_auth okta_app_basic_auth}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_basic_auth okta_app_basic_auth}.
 type AppBasicAuth interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -676,7 +676,7 @@ func (j *jsiiProxy_AppBasicAuth) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_basic_auth okta_app_basic_auth} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_basic_auth okta_app_basic_auth} Resource.
 func NewAppBasicAuth(scope constructs.Construct, id *string, config *AppBasicAuthConfig) AppBasicAuth {
 	_init_.Initialize()
 
@@ -694,7 +694,7 @@ func NewAppBasicAuth(scope constructs.Construct, id *string, config *AppBasicAut
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_basic_auth okta_app_basic_auth} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_basic_auth okta_app_basic_auth} Resource.
 func NewAppBasicAuth_Override(a AppBasicAuth, scope constructs.Construct, id *string, config *AppBasicAuthConfig) {
 	_init_.Initialize()
 

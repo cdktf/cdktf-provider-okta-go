@@ -2,14 +2,14 @@ package appuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/appuser/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/appuser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_user okta_app_user}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_user okta_app_user}.
 type AppUser interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -439,7 +439,7 @@ func (j *jsiiProxy_AppUser) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_user okta_app_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_user okta_app_user} Resource.
 func NewAppUser(scope constructs.Construct, id *string, config *AppUserConfig) AppUser {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewAppUser(scope constructs.Construct, id *string, config *AppUserConfig) A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_user okta_app_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_user okta_app_user} Resource.
 func NewAppUser_Override(a AppUser, scope constructs.Construct, id *string, config *AppUserConfig) {
 	_init_.Initialize()
 

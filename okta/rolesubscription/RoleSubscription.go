@@ -2,14 +2,14 @@ package rolesubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/rolesubscription/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/rolesubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/role_subscription okta_role_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/role_subscription okta_role_subscription}.
 type RoleSubscription interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_RoleSubscription) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/role_subscription okta_role_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/role_subscription okta_role_subscription} Resource.
 func NewRoleSubscription(scope constructs.Construct, id *string, config *RoleSubscriptionConfig) RoleSubscription {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewRoleSubscription(scope constructs.Construct, id *string, config *RoleSub
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/role_subscription okta_role_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/role_subscription okta_role_subscription} Resource.
 func NewRoleSubscription_Override(r RoleSubscription, scope constructs.Construct, id *string, config *RoleSubscriptionConfig) {
 	_init_.Initialize()
 

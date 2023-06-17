@@ -2,14 +2,14 @@ package dataoktagroups
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/dataoktagroups/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktagroups/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/groups okta_groups}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/groups okta_groups}.
 type DataOktaGroups interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -341,7 +341,7 @@ func (j *jsiiProxy_DataOktaGroups) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/groups okta_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/groups okta_groups} Data Source.
 func NewDataOktaGroups(scope constructs.Construct, id *string, config *DataOktaGroupsConfig) DataOktaGroups {
 	_init_.Initialize()
 
@@ -359,7 +359,7 @@ func NewDataOktaGroups(scope constructs.Construct, id *string, config *DataOktaG
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/groups okta_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/groups okta_groups} Data Source.
 func NewDataOktaGroups_Override(d DataOktaGroups, scope constructs.Construct, id *string, config *DataOktaGroupsConfig) {
 	_init_.Initialize()
 

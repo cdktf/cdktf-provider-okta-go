@@ -2,14 +2,14 @@ package policysignon
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/policysignon/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/policysignon/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_signon okta_policy_signon}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/policy_signon okta_policy_signon}.
 type PolicySignon interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -405,7 +405,7 @@ func (j *jsiiProxy_PolicySignon) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_signon okta_policy_signon} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/policy_signon okta_policy_signon} Resource.
 func NewPolicySignon(scope constructs.Construct, id *string, config *PolicySignonConfig) PolicySignon {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewPolicySignon(scope constructs.Construct, id *string, config *PolicySigno
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_signon okta_policy_signon} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/policy_signon okta_policy_signon} Resource.
 func NewPolicySignon_Override(p PolicySignon, scope constructs.Construct, id *string, config *PolicySignonConfig) {
 	_init_.Initialize()
 

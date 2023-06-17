@@ -2,14 +2,14 @@ package policyrulesignon
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v9/policyrulesignon/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v10/policyrulesignon/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_signon okta_policy_rule_signon}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/policy_rule_signon okta_policy_rule_signon}.
 type PolicyRuleSignon interface {
 	cdktf.TerraformResource
 	Access() *string
@@ -837,7 +837,7 @@ func (j *jsiiProxy_PolicyRuleSignon) UsersExcludedInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_signon okta_policy_rule_signon} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/policy_rule_signon okta_policy_rule_signon} Resource.
 func NewPolicyRuleSignon(scope constructs.Construct, id *string, config *PolicyRuleSignonConfig) PolicyRuleSignon {
 	_init_.Initialize()
 
@@ -855,7 +855,7 @@ func NewPolicyRuleSignon(scope constructs.Construct, id *string, config *PolicyR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_signon okta_policy_rule_signon} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/policy_rule_signon okta_policy_rule_signon} Resource.
 func NewPolicyRuleSignon_Override(p PolicyRuleSignon, scope constructs.Construct, id *string, config *PolicyRuleSignonConfig) {
 	_init_.Initialize()
 
