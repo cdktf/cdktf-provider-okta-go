@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/admin_role_custom_assignments okta_admin_role_custom_assignments}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/admin_role_custom_assignments okta_admin_role_custom_assignments}.
 type AdminRoleCustomAssignments interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_AdminRoleCustomAssignments) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/admin_role_custom_assignments okta_admin_role_custom_assignments} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/admin_role_custom_assignments okta_admin_role_custom_assignments} Resource.
 func NewAdminRoleCustomAssignments(scope constructs.Construct, id *string, config *AdminRoleCustomAssignmentsConfig) AdminRoleCustomAssignments {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewAdminRoleCustomAssignments(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/admin_role_custom_assignments okta_admin_role_custom_assignments} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/admin_role_custom_assignments okta_admin_role_custom_assignments} Resource.
 func NewAdminRoleCustomAssignments_Override(a AdminRoleCustomAssignments, scope constructs.Construct, id *string, config *AdminRoleCustomAssignmentsConfig) {
 	_init_.Initialize()
 

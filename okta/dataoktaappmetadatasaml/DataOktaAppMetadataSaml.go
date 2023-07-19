@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/app_metadata_saml okta_app_metadata_saml}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/app_metadata_saml okta_app_metadata_saml}.
 type DataOktaAppMetadataSaml interface {
 	cdktf.TerraformDataSource
 	AppId() *string
@@ -371,7 +371,7 @@ func (j *jsiiProxy_DataOktaAppMetadataSaml) WantAuthnRequestsSigned() cdktf.IRes
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/app_metadata_saml okta_app_metadata_saml} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/app_metadata_saml okta_app_metadata_saml} Data Source.
 func NewDataOktaAppMetadataSaml(scope constructs.Construct, id *string, config *DataOktaAppMetadataSamlConfig) DataOktaAppMetadataSaml {
 	_init_.Initialize()
 
@@ -389,7 +389,7 @@ func NewDataOktaAppMetadataSaml(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/app_metadata_saml okta_app_metadata_saml} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/app_metadata_saml okta_app_metadata_saml} Data Source.
 func NewDataOktaAppMetadataSaml_Override(d DataOktaAppMetadataSaml, scope constructs.Construct, id *string, config *DataOktaAppMetadataSamlConfig) {
 	_init_.Initialize()
 

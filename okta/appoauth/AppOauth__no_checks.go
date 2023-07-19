@@ -164,6 +164,10 @@ func (j *jsiiProxy_AppOauth) validateSetIssuerModeParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_AppOauth) validateSetJwksUriParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppOauth) validateSetLabelParameters(val *string) error {
 	return nil
 }

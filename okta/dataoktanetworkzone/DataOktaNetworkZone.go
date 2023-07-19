@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/network_zone okta_network_zone}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/network_zone okta_network_zone}.
 type DataOktaNetworkZone interface {
 	cdktf.TerraformDataSource
 	Asns() *[]*string
@@ -55,6 +55,7 @@ type DataOktaNetworkZone interface {
 	Proxies() *[]*string
 	// Experimental.
 	RawOverrides() interface{}
+	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -308,6 +309,16 @@ func (j *jsiiProxy_DataOktaNetworkZone) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataOktaNetworkZone) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataOktaNetworkZone) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -359,7 +370,7 @@ func (j *jsiiProxy_DataOktaNetworkZone) Usage() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/network_zone okta_network_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/network_zone okta_network_zone} Data Source.
 func NewDataOktaNetworkZone(scope constructs.Construct, id *string, config *DataOktaNetworkZoneConfig) DataOktaNetworkZone {
 	_init_.Initialize()
 
@@ -377,7 +388,7 @@ func NewDataOktaNetworkZone(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/network_zone okta_network_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/network_zone okta_network_zone} Data Source.
 func NewDataOktaNetworkZone_Override(d DataOktaNetworkZone, scope constructs.Construct, id *string, config *DataOktaNetworkZoneConfig) {
 	_init_.Initialize()
 

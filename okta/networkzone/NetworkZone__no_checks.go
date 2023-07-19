@@ -108,6 +108,10 @@ func (j *jsiiProxy_NetworkZone) validateSetProxiesParameters(val *[]*string) err
 	return nil
 }
 
+func (j *jsiiProxy_NetworkZone) validateSetStatusParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkZone) validateSetTypeParameters(val *string) error {
 	return nil
 }

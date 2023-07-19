@@ -40,7 +40,7 @@ type EmailDomainDnsValidationRecordsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Values() *[]*string
+	Value() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -180,11 +180,11 @@ func (j *jsiiProxy_EmailDomainDnsValidationRecordsOutputReference) TerraformReso
 	return returns
 }
 
-func (j *jsiiProxy_EmailDomainDnsValidationRecordsOutputReference) Values() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_EmailDomainDnsValidationRecordsOutputReference) Value() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"values",
+		"value",
 		&returns,
 	)
 	return returns

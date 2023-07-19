@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/network_zone okta_network_zone}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone okta_network_zone}.
 type NetworkZone interface {
 	cdktf.TerraformResource
 	Asns() *[]*string
@@ -73,6 +73,9 @@ type NetworkZone interface {
 	ProxiesInput() *[]*string
 	// Experimental.
 	RawOverrides() interface{}
+	Status() *string
+	SetStatus(val *string)
+	StatusInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -119,6 +122,7 @@ type NetworkZone interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProxies()
+	ResetStatus()
 	ResetUsage()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -405,6 +409,26 @@ func (j *jsiiProxy_NetworkZone) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NetworkZone) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkZone) StatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"statusInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkZone) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -476,7 +500,7 @@ func (j *jsiiProxy_NetworkZone) UsageInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/network_zone okta_network_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone okta_network_zone} Resource.
 func NewNetworkZone(scope constructs.Construct, id *string, config *NetworkZoneConfig) NetworkZone {
 	_init_.Initialize()
 
@@ -494,7 +518,7 @@ func NewNetworkZone(scope constructs.Construct, id *string, config *NetworkZoneC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/network_zone okta_network_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone okta_network_zone} Resource.
 func NewNetworkZone_Override(n NetworkZone, scope constructs.Construct, id *string, config *NetworkZoneConfig) {
 	_init_.Initialize()
 
@@ -646,6 +670,17 @@ func (j *jsiiProxy_NetworkZone)SetProxies(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"proxies",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkZone)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"status",
 		val,
 	)
 }
@@ -990,6 +1025,14 @@ func (n *jsiiProxy_NetworkZone) ResetProxies() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetProxies",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkZone) ResetStatus() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetStatus",
 		nil, // no parameters
 	)
 }

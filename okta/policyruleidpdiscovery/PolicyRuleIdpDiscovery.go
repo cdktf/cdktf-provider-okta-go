@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery}.
 type PolicyRuleIdpDiscovery interface {
 	cdktf.TerraformResource
 	AppExclude() PolicyRuleIdpDiscoveryAppExcludeList
@@ -645,7 +645,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery) UserIdentifierTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery} Resource.
 func NewPolicyRuleIdpDiscovery(scope constructs.Construct, id *string, config *PolicyRuleIdpDiscoveryConfig) PolicyRuleIdpDiscovery {
 	_init_.Initialize()
 
@@ -663,7 +663,7 @@ func NewPolicyRuleIdpDiscovery(scope constructs.Construct, id *string, config *P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery} Resource.
 func NewPolicyRuleIdpDiscovery_Override(p PolicyRuleIdpDiscovery, scope constructs.Construct, id *string, config *PolicyRuleIdpDiscoveryConfig) {
 	_init_.Initialize()
 

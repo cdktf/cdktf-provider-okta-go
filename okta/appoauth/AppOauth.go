@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_oauth okta_app_oauth}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth okta_app_oauth}.
 type AppOauth interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -101,6 +101,9 @@ type AppOauth interface {
 	IssuerModeInput() *string
 	Jwks() AppOauthJwksList
 	JwksInput() interface{}
+	JwksUri() *string
+	SetJwksUri(val *string)
+	JwksUriInput() *string
 	Label() *string
 	SetLabel(val *string)
 	LabelInput() *string
@@ -250,6 +253,7 @@ type AppOauth interface {
 	ResetImplicitAssignment()
 	ResetIssuerMode()
 	ResetJwks()
+	ResetJwksUri()
 	ResetLoginMode()
 	ResetLoginScopes()
 	ResetLoginUri()
@@ -816,6 +820,26 @@ func (j *jsiiProxy_AppOauth) JwksInput() interface{} {
 	_jsii_.Get(
 		j,
 		"jwksInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppOauth) JwksUri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jwksUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppOauth) JwksUriInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jwksUriInput",
 		&returns,
 	)
 	return returns
@@ -1432,7 +1456,7 @@ func (j *jsiiProxy_AppOauth) WildcardRedirectInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_oauth okta_app_oauth} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth okta_app_oauth} Resource.
 func NewAppOauth(scope constructs.Construct, id *string, config *AppOauthConfig) AppOauth {
 	_init_.Initialize()
 
@@ -1450,7 +1474,7 @@ func NewAppOauth(scope constructs.Construct, id *string, config *AppOauthConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_oauth okta_app_oauth} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth okta_app_oauth} Resource.
 func NewAppOauth_Override(a AppOauth, scope constructs.Construct, id *string, config *AppOauthConfig) {
 	_init_.Initialize()
 
@@ -1715,6 +1739,17 @@ func (j *jsiiProxy_AppOauth)SetIssuerMode(val *string) {
 	_jsii_.Set(
 		j,
 		"issuerMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppOauth)SetJwksUri(val *string) {
+	if err := j.validateSetJwksUriParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jwksUri",
 		val,
 	)
 }
@@ -2484,6 +2519,14 @@ func (a *jsiiProxy_AppOauth) ResetJwks() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetJwks",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppOauth) ResetJwksUri() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetJwksUri",
 		nil, // no parameters
 	)
 }

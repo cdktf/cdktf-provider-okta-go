@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor_totp okta_factor_totp}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/factor_totp okta_factor_totp}.
 type FactorTotp interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -429,7 +429,7 @@ func (j *jsiiProxy_FactorTotp) TimeStepInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor_totp okta_factor_totp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/factor_totp okta_factor_totp} Resource.
 func NewFactorTotp(scope constructs.Construct, id *string, config *FactorTotpConfig) FactorTotp {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewFactorTotp(scope constructs.Construct, id *string, config *FactorTotpCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor_totp okta_factor_totp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/factor_totp okta_factor_totp} Resource.
 func NewFactorTotp_Override(f FactorTotp, scope constructs.Construct, id *string, config *FactorTotpConfig) {
 	_init_.Initialize()
 

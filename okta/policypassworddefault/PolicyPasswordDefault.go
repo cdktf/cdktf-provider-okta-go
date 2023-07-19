@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/policy_password_default okta_policy_password_default}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_password_default okta_policy_password_default}.
 type PolicyPasswordDefault interface {
 	cdktf.TerraformResource
 	CallRecovery() *string
@@ -928,7 +928,7 @@ func (j *jsiiProxy_PolicyPasswordDefault) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/policy_password_default okta_policy_password_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_password_default okta_policy_password_default} Resource.
 func NewPolicyPasswordDefault(scope constructs.Construct, id *string, config *PolicyPasswordDefaultConfig) PolicyPasswordDefault {
 	_init_.Initialize()
 
@@ -946,7 +946,7 @@ func NewPolicyPasswordDefault(scope constructs.Construct, id *string, config *Po
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/policy_password_default okta_policy_password_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_password_default okta_policy_password_default} Resource.
 func NewPolicyPasswordDefault_Override(p PolicyPasswordDefault, scope constructs.Construct, id *string, config *PolicyPasswordDefaultConfig) {
 	_init_.Initialize()
 

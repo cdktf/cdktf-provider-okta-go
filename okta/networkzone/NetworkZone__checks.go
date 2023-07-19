@@ -335,6 +335,14 @@ func (j *jsiiProxy_NetworkZone) validateSetProxiesParameters(val *[]*string) err
 	return nil
 }
 
+func (j *jsiiProxy_NetworkZone) validateSetStatusParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NetworkZone) validateSetTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

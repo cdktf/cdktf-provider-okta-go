@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_oauth_redirect_uri okta_app_oauth_redirect_uri}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth_redirect_uri okta_app_oauth_redirect_uri}.
 type AppOauthRedirectUri interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -332,7 +332,7 @@ func (j *jsiiProxy_AppOauthRedirectUri) UriInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_oauth_redirect_uri okta_app_oauth_redirect_uri} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth_redirect_uri okta_app_oauth_redirect_uri} Resource.
 func NewAppOauthRedirectUri(scope constructs.Construct, id *string, config *AppOauthRedirectUriConfig) AppOauthRedirectUri {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewAppOauthRedirectUri(scope constructs.Construct, id *string, config *AppO
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_oauth_redirect_uri okta_app_oauth_redirect_uri} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth_redirect_uri okta_app_oauth_redirect_uri} Resource.
 func NewAppOauthRedirectUri_Override(a AppOauthRedirectUri, scope constructs.Construct, id *string, config *AppOauthRedirectUriConfig) {
 	_init_.Initialize()
 

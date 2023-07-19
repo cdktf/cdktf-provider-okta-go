@@ -510,6 +510,14 @@ func (j *jsiiProxy_AppOauth) validateSetIssuerModeParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_AppOauth) validateSetJwksUriParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AppOauth) validateSetLabelParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
