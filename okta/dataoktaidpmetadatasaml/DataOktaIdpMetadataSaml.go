@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/idp_metadata_saml okta_idp_metadata_saml}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/idp_metadata_saml okta_idp_metadata_saml}.
 type DataOktaIdpMetadataSaml interface {
 	cdktf.TerraformDataSource
 	AssertionsSigned() cdktf.IResolvable
@@ -370,7 +370,7 @@ func (j *jsiiProxy_DataOktaIdpMetadataSaml) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/idp_metadata_saml okta_idp_metadata_saml} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/idp_metadata_saml okta_idp_metadata_saml} Data Source.
 func NewDataOktaIdpMetadataSaml(scope constructs.Construct, id *string, config *DataOktaIdpMetadataSamlConfig) DataOktaIdpMetadataSaml {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewDataOktaIdpMetadataSaml(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/idp_metadata_saml okta_idp_metadata_saml} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/idp_metadata_saml okta_idp_metadata_saml} Data Source.
 func NewDataOktaIdpMetadataSaml_Override(d DataOktaIdpMetadataSaml, scope constructs.Construct, id *string, config *DataOktaIdpMetadataSamlConfig) {
 	_init_.Initialize()
 

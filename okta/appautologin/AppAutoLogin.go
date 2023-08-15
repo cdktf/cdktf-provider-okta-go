@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login okta_app_auto_login}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_auto_login okta_app_auto_login}.
 type AppAutoLogin interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -918,7 +918,7 @@ func (j *jsiiProxy_AppAutoLogin) UserNameTemplateTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login okta_app_auto_login} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_auto_login okta_app_auto_login} Resource.
 func NewAppAutoLogin(scope constructs.Construct, id *string, config *AppAutoLoginConfig) AppAutoLogin {
 	_init_.Initialize()
 
@@ -936,7 +936,7 @@ func NewAppAutoLogin(scope constructs.Construct, id *string, config *AppAutoLogi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login okta_app_auto_login} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_auto_login okta_app_auto_login} Resource.
 func NewAppAutoLogin_Override(a AppAutoLogin, scope constructs.Construct, id *string, config *AppAutoLoginConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs okta}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs okta}.
 type OktaProvider interface {
 	cdktf.TerraformProvider
 	AccessToken() *string
@@ -588,7 +588,7 @@ func (j *jsiiProxy_OktaProvider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs okta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs okta} Resource.
 func NewOktaProvider(scope constructs.Construct, id *string, config *OktaProviderConfig) OktaProvider {
 	_init_.Initialize()
 
@@ -606,7 +606,7 @@ func NewOktaProvider(scope constructs.Construct, id *string, config *OktaProvide
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs okta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs okta} Resource.
 func NewOktaProvider_Override(o OktaProvider, scope constructs.Construct, id *string, config *OktaProviderConfig) {
 	_init_.Initialize()
 

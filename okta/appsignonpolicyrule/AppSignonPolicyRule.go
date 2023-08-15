@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_signon_policy_rule okta_app_signon_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_signon_policy_rule okta_app_signon_policy_rule}.
 type AppSignonPolicyRule interface {
 	cdktf.TerraformResource
 	Access() *string
@@ -37,6 +37,9 @@ type AppSignonPolicyRule interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DeviceAssurancesIncluded() *[]*string
+	SetDeviceAssurancesIncluded(val *[]*string)
+	DeviceAssurancesIncludedInput() *[]*string
 	DeviceIsManaged() interface{}
 	SetDeviceIsManaged(val interface{})
 	DeviceIsManagedInput() interface{}
@@ -158,6 +161,7 @@ type AppSignonPolicyRule interface {
 	ResetAccess()
 	ResetConstraints()
 	ResetCustomExpression()
+	ResetDeviceAssurancesIncluded()
 	ResetDeviceIsManaged()
 	ResetDeviceIsRegistered()
 	ResetFactorMode()
@@ -300,6 +304,26 @@ func (j *jsiiProxy_AppSignonPolicyRule) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSignonPolicyRule) DeviceAssurancesIncluded() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"deviceAssurancesIncluded",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSignonPolicyRule) DeviceAssurancesIncludedInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"deviceAssurancesIncludedInput",
 		&returns,
 	)
 	return returns
@@ -836,7 +860,7 @@ func (j *jsiiProxy_AppSignonPolicyRule) UserTypesIncludedInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_signon_policy_rule okta_app_signon_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_signon_policy_rule okta_app_signon_policy_rule} Resource.
 func NewAppSignonPolicyRule(scope constructs.Construct, id *string, config *AppSignonPolicyRuleConfig) AppSignonPolicyRule {
 	_init_.Initialize()
 
@@ -854,7 +878,7 @@ func NewAppSignonPolicyRule(scope constructs.Construct, id *string, config *AppS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_signon_policy_rule okta_app_signon_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_signon_policy_rule okta_app_signon_policy_rule} Resource.
 func NewAppSignonPolicyRule_Override(a AppSignonPolicyRule, scope constructs.Construct, id *string, config *AppSignonPolicyRuleConfig) {
 	_init_.Initialize()
 
@@ -924,6 +948,17 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppSignonPolicyRule)SetDeviceAssurancesIncluded(val *[]*string) {
+	if err := j.validateSetDeviceAssurancesIncludedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deviceAssurancesIncluded",
 		val,
 	)
 }
@@ -1483,6 +1518,14 @@ func (a *jsiiProxy_AppSignonPolicyRule) ResetCustomExpression() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetCustomExpression",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSignonPolicyRule) ResetDeviceAssurancesIncluded() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDeviceAssurancesIncluded",
 		nil, // no parameters
 	)
 }

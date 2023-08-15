@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/threat_insight_settings okta_threat_insight_settings}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/threat_insight_settings okta_threat_insight_settings}.
 type ThreatInsightSettings interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -333,7 +333,7 @@ func (j *jsiiProxy_ThreatInsightSettings) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/threat_insight_settings okta_threat_insight_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/threat_insight_settings okta_threat_insight_settings} Resource.
 func NewThreatInsightSettings(scope constructs.Construct, id *string, config *ThreatInsightSettingsConfig) ThreatInsightSettings {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewThreatInsightSettings(scope constructs.Construct, id *string, config *Th
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/threat_insight_settings okta_threat_insight_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/threat_insight_settings okta_threat_insight_settings} Resource.
 func NewThreatInsightSettings_Override(t ThreatInsightSettings, scope constructs.Construct, id *string, config *ThreatInsightSettingsConfig) {
 	_init_.Initialize()
 
