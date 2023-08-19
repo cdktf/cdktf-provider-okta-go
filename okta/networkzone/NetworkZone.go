@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/network_zone okta_network_zone}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/network_zone okta_network_zone}.
 type NetworkZone interface {
 	cdktf.TerraformResource
 	Asns() *[]*string
@@ -500,7 +500,7 @@ func (j *jsiiProxy_NetworkZone) UsageInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/network_zone okta_network_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/network_zone okta_network_zone} Resource.
 func NewNetworkZone(scope constructs.Construct, id *string, config *NetworkZoneConfig) NetworkZone {
 	_init_.Initialize()
 
@@ -518,7 +518,7 @@ func NewNetworkZone(scope constructs.Construct, id *string, config *NetworkZoneC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/network_zone okta_network_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/network_zone okta_network_zone} Resource.
 func NewNetworkZone_Override(n NetworkZone, scope constructs.Construct, id *string, config *NetworkZoneConfig) {
 	_init_.Initialize()
 

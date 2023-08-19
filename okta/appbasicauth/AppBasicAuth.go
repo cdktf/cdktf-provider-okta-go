@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth okta_app_basic_auth}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_basic_auth okta_app_basic_auth}.
 type AppBasicAuth interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -676,7 +676,7 @@ func (j *jsiiProxy_AppBasicAuth) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth okta_app_basic_auth} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_basic_auth okta_app_basic_auth} Resource.
 func NewAppBasicAuth(scope constructs.Construct, id *string, config *AppBasicAuthConfig) AppBasicAuth {
 	_init_.Initialize()
 
@@ -694,7 +694,7 @@ func NewAppBasicAuth(scope constructs.Construct, id *string, config *AppBasicAut
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth okta_app_basic_auth} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_basic_auth okta_app_basic_auth} Resource.
 func NewAppBasicAuth_Override(a AppBasicAuth, scope constructs.Construct, id *string, config *AppBasicAuthConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/domain_certificate okta_domain_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/domain_certificate okta_domain_certificate}.
 type DomainCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -402,7 +402,7 @@ func (j *jsiiProxy_DomainCertificate) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/domain_certificate okta_domain_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/domain_certificate okta_domain_certificate} Resource.
 func NewDomainCertificate(scope constructs.Construct, id *string, config *DomainCertificateConfig) DomainCertificate {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewDomainCertificate(scope constructs.Construct, id *string, config *Domain
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/domain_certificate okta_domain_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/domain_certificate okta_domain_certificate} Resource.
 func NewDomainCertificate_Override(d DomainCertificate, scope constructs.Construct, id *string, config *DomainCertificateConfig) {
 	_init_.Initialize()
 

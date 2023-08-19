@@ -21,16 +21,16 @@ type ThreatInsightSettingsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Specifies how Okta responds to authentication requests from suspicious IPs.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/threat_insight_settings#action ThreatInsightSettings#action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/threat_insight_settings#action ThreatInsightSettings#action}
 	Action *string `field:"required" json:"action" yaml:"action"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/threat_insight_settings#id ThreatInsightSettings#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/threat_insight_settings#id ThreatInsightSettings#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// List of Network Zone IDs to exclude to be not logged or blocked by Okta ThreatInsight and proceed to Sign On rules evaluation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/threat_insight_settings#network_excludes ThreatInsightSettings#network_excludes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/threat_insight_settings#network_excludes ThreatInsightSettings#network_excludes}
 	NetworkExcludes *[]*string `field:"optional" json:"networkExcludes" yaml:"networkExcludes"`
 }
 

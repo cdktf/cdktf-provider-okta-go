@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_oauth_api_scope okta_app_oauth_api_scope}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_oauth_api_scope okta_app_oauth_api_scope}.
 type AppOauthApiScope interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -355,7 +355,7 @@ func (j *jsiiProxy_AppOauthApiScope) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_oauth_api_scope okta_app_oauth_api_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_oauth_api_scope okta_app_oauth_api_scope} Resource.
 func NewAppOauthApiScope(scope constructs.Construct, id *string, config *AppOauthApiScopeConfig) AppOauthApiScope {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewAppOauthApiScope(scope constructs.Construct, id *string, config *AppOaut
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_oauth_api_scope okta_app_oauth_api_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_oauth_api_scope okta_app_oauth_api_scope} Resource.
 func NewAppOauthApiScope_Override(a AppOauthApiScope, scope constructs.Construct, id *string, config *AppOauthApiScopeConfig) {
 	_init_.Initialize()
 
