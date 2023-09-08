@@ -39,6 +39,7 @@ type DataOktaAuthServerScopesScopesOutputReference interface {
 	SetInternalValue(val *DataOktaAuthServerScopesScopes)
 	MetadataPublish() *string
 	Name() *string
+	Optional() cdktf.IResolvable
 	SystemAttribute() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
@@ -202,6 +203,16 @@ func (j *jsiiProxy_DataOktaAuthServerScopesScopesOutputReference) Name() *string
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOktaAuthServerScopesScopesOutputReference) Optional() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"optional",
 		&returns,
 	)
 	return returns

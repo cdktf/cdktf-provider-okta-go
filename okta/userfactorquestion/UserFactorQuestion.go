@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/user_factor_question okta_user_factor_question}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/user_factor_question okta_user_factor_question}.
 type UserFactorQuestion interface {
 	cdktf.TerraformResource
 	Answer() *string
@@ -380,7 +380,7 @@ func (j *jsiiProxy_UserFactorQuestion) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/user_factor_question okta_user_factor_question} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/user_factor_question okta_user_factor_question} Resource.
 func NewUserFactorQuestion(scope constructs.Construct, id *string, config *UserFactorQuestionConfig) UserFactorQuestion {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewUserFactorQuestion(scope constructs.Construct, id *string, config *UserF
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/user_factor_question okta_user_factor_question} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/user_factor_question okta_user_factor_question} Resource.
 func NewUserFactorQuestion_Override(u UserFactorQuestion, scope constructs.Construct, id *string, config *UserFactorQuestionConfig) {
 	_init_.Initialize()
 

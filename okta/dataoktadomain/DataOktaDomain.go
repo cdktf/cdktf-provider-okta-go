@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/domain okta_domain}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/domain okta_domain}.
 type DataOktaDomain interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -326,7 +326,7 @@ func (j *jsiiProxy_DataOktaDomain) ValidationStatus() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/domain okta_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/domain okta_domain} Data Source.
 func NewDataOktaDomain(scope constructs.Construct, id *string, config *DataOktaDomainConfig) DataOktaDomain {
 	_init_.Initialize()
 
@@ -344,7 +344,7 @@ func NewDataOktaDomain(scope constructs.Construct, id *string, config *DataOktaD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/domain okta_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/domain okta_domain} Data Source.
 func NewDataOktaDomain_Override(d DataOktaDomain, scope constructs.Construct, id *string, config *DataOktaDomainConfig) {
 	_init_.Initialize()
 

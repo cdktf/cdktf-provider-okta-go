@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_user_schema_property okta_app_user_schema_property}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_user_schema_property okta_app_user_schema_property}.
 type AppUserSchemaProperty interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -789,7 +789,7 @@ func (j *jsiiProxy_AppUserSchemaProperty) UserTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_user_schema_property okta_app_user_schema_property} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_user_schema_property okta_app_user_schema_property} Resource.
 func NewAppUserSchemaProperty(scope constructs.Construct, id *string, config *AppUserSchemaPropertyConfig) AppUserSchemaProperty {
 	_init_.Initialize()
 
@@ -807,7 +807,7 @@ func NewAppUserSchemaProperty(scope constructs.Construct, id *string, config *Ap
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_user_schema_property okta_app_user_schema_property} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_user_schema_property okta_app_user_schema_property} Resource.
 func NewAppUserSchemaProperty_Override(a AppUserSchemaProperty, scope constructs.Construct, id *string, config *AppUserSchemaPropertyConfig) {
 	_init_.Initialize()
 

@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/domain okta_domain}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/domain okta_domain}.
 type Domain interface {
 	cdktf.TerraformResource
+	BrandId() *string
+	SetBrandId(val *string)
+	BrandIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CertificateSourceType() *string
@@ -97,6 +100,7 @@ type Domain interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetBrandId()
 	ResetCertificateSourceType()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -115,6 +119,26 @@ type Domain interface {
 // The jsii proxy struct for Domain
 type jsiiProxy_Domain struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Domain) BrandId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"brandId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Domain) BrandIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"brandIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Domain) CdktfStack() cdktf.TerraformStack {
@@ -358,7 +382,7 @@ func (j *jsiiProxy_Domain) ValidationStatus() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/domain okta_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/domain okta_domain} Resource.
 func NewDomain(scope constructs.Construct, id *string, config *DomainConfig) Domain {
 	_init_.Initialize()
 
@@ -376,7 +400,7 @@ func NewDomain(scope constructs.Construct, id *string, config *DomainConfig) Dom
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/domain okta_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/domain okta_domain} Resource.
 func NewDomain_Override(d Domain, scope constructs.Construct, id *string, config *DomainConfig) {
 	_init_.Initialize()
 
@@ -384,6 +408,17 @@ func NewDomain_Override(d Domain, scope constructs.Construct, id *string, config
 		"@cdktf/provider-okta.domain.Domain",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_Domain)SetBrandId(val *string) {
+	if err := j.validateSetBrandIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"brandId",
+		val,
 	)
 }
 
@@ -751,6 +786,14 @@ func (d *jsiiProxy_Domain) OverrideLogicalId(newLogicalId *string) {
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_Domain) ResetBrandId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBrandId",
+		nil, // no parameters
 	)
 }
 
