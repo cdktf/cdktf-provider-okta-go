@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/email_domain_verification okta_email_domain_verification}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/email_domain_verification okta_email_domain_verification}.
 type EmailDomainVerification interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -312,7 +312,7 @@ func (j *jsiiProxy_EmailDomainVerification) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/email_domain_verification okta_email_domain_verification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/email_domain_verification okta_email_domain_verification} Resource.
 func NewEmailDomainVerification(scope constructs.Construct, id *string, config *EmailDomainVerificationConfig) EmailDomainVerification {
 	_init_.Initialize()
 
@@ -330,7 +330,7 @@ func NewEmailDomainVerification(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/email_domain_verification okta_email_domain_verification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/email_domain_verification okta_email_domain_verification} Resource.
 func NewEmailDomainVerification_Override(e EmailDomainVerification, scope constructs.Construct, id *string, config *EmailDomainVerificationConfig) {
 	_init_.Initialize()
 

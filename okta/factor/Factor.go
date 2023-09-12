@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/factor okta_factor}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/factor okta_factor}.
 type Factor interface {
 	cdktf.TerraformResource
 	Active() interface{}
@@ -336,7 +336,7 @@ func (j *jsiiProxy_Factor) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/factor okta_factor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/factor okta_factor} Resource.
 func NewFactor(scope constructs.Construct, id *string, config *FactorConfig) Factor {
 	_init_.Initialize()
 
@@ -354,7 +354,7 @@ func NewFactor(scope constructs.Construct, id *string, config *FactorConfig) Fac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/factor okta_factor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/factor okta_factor} Resource.
 func NewFactor_Override(f Factor, scope constructs.Construct, id *string, config *FactorConfig) {
 	_init_.Initialize()
 

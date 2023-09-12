@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_group_assignments okta_app_group_assignments}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/app_group_assignments okta_app_group_assignments}.
 type DataOktaAppGroupAssignments interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -271,7 +271,7 @@ func (j *jsiiProxy_DataOktaAppGroupAssignments) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_group_assignments okta_app_group_assignments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/app_group_assignments okta_app_group_assignments} Data Source.
 func NewDataOktaAppGroupAssignments(scope constructs.Construct, id *string, config *DataOktaAppGroupAssignmentsConfig) DataOktaAppGroupAssignments {
 	_init_.Initialize()
 
@@ -289,7 +289,7 @@ func NewDataOktaAppGroupAssignments(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_group_assignments okta_app_group_assignments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/app_group_assignments okta_app_group_assignments} Data Source.
 func NewDataOktaAppGroupAssignments_Override(d DataOktaAppGroupAssignments, scope constructs.Construct, id *string, config *DataOktaAppGroupAssignmentsConfig) {
 	_init_.Initialize()
 
