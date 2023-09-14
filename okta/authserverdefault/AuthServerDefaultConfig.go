@@ -24,17 +24,17 @@ type AuthServerDefaultConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Currently Okta only supports a single value here.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_default#audiences AuthServerDefault#audiences}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_default#audiences AuthServerDefault#audiences}
 	Audiences *[]*string `field:"optional" json:"audiences" yaml:"audiences"`
 	// Credential rotation mode, in many cases you cannot set this to MANUAL, the API will ignore the value and you will get a perpetual diff.
 	//
 	// This should rarely be used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_default#credentials_rotation_mode AuthServerDefault#credentials_rotation_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_default#credentials_rotation_mode AuthServerDefault#credentials_rotation_mode}
 	CredentialsRotationMode *string `field:"optional" json:"credentialsRotationMode" yaml:"credentialsRotationMode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_default#description AuthServerDefault#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_default#description AuthServerDefault#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_default#id AuthServerDefault#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_default#id AuthServerDefault#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -43,11 +43,11 @@ type AuthServerDefaultConfig struct {
 	//
 	// Indicates which value is specified in the issuer of the tokens that a Custom Authorization Server returns: the original Okta org domain URL or a custom domain URL
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_default#issuer_mode AuthServerDefault#issuer_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_default#issuer_mode AuthServerDefault#issuer_mode}
 	IssuerMode *string `field:"optional" json:"issuerMode" yaml:"issuerMode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_default#name AuthServerDefault#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_default#name AuthServerDefault#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_default#status AuthServerDefault#status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_default#status AuthServerDefault#status}.
 	Status *string `field:"optional" json:"status" yaml:"status"`
 }
 

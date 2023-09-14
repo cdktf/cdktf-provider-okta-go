@@ -52,6 +52,12 @@ type AppOauthJwksOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	X() *string
+	SetX(val *string)
+	XInput() *string
+	Y() *string
+	SetY(val *string)
+	YInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -78,6 +84,8 @@ type AppOauthJwksOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetE()
 	ResetN()
+	ResetX()
+	ResetY()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -243,6 +251,46 @@ func (j *jsiiProxy_AppOauthJwksOutputReference) TerraformResource() cdktf.IInter
 	return returns
 }
 
+func (j *jsiiProxy_AppOauthJwksOutputReference) X() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"x",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppOauthJwksOutputReference) XInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"xInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppOauthJwksOutputReference) Y() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"y",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppOauthJwksOutputReference) YInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"yInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewAppOauthJwksOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AppOauthJwksOutputReference {
 	_init_.Initialize()
@@ -366,6 +414,28 @@ func (j *jsiiProxy_AppOauthJwksOutputReference)SetTerraformResource(val cdktf.II
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppOauthJwksOutputReference)SetX(val *string) {
+	if err := j.validateSetXParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"x",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppOauthJwksOutputReference)SetY(val *string) {
+	if err := j.validateSetYParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"y",
 		val,
 	)
 }
@@ -568,6 +638,22 @@ func (a *jsiiProxy_AppOauthJwksOutputReference) ResetN() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetN",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppOauthJwksOutputReference) ResetX() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetX",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppOauthJwksOutputReference) ResetY() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetY",
 		nil, // no parameters
 	)
 }

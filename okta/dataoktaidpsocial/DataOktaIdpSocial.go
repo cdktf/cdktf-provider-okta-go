@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/idp_social okta_idp_social}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/idp_social okta_idp_social}.
 type DataOktaIdpSocial interface {
 	cdktf.TerraformDataSource
 	AccountLinkAction() *string
@@ -560,7 +560,7 @@ func (j *jsiiProxy_DataOktaIdpSocial) UsernameTemplate() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/idp_social okta_idp_social} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/idp_social okta_idp_social} Data Source.
 func NewDataOktaIdpSocial(scope constructs.Construct, id *string, config *DataOktaIdpSocialConfig) DataOktaIdpSocial {
 	_init_.Initialize()
 
@@ -578,7 +578,7 @@ func NewDataOktaIdpSocial(scope constructs.Construct, id *string, config *DataOk
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/idp_social okta_idp_social} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/idp_social okta_idp_social} Data Source.
 func NewDataOktaIdpSocial_Override(d DataOktaIdpSocial, scope constructs.Construct, id *string, config *DataOktaIdpSocialConfig) {
 	_init_.Initialize()
 

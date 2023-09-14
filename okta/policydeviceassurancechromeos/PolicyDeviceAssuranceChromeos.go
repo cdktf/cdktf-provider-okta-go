@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/policy_device_assurance_chromeos okta_policy_device_assurance_chromeos}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/policy_device_assurance_chromeos okta_policy_device_assurance_chromeos}.
 type PolicyDeviceAssuranceChromeos interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -690,7 +690,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspSiteIsolationEnabledInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/policy_device_assurance_chromeos okta_policy_device_assurance_chromeos} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/policy_device_assurance_chromeos okta_policy_device_assurance_chromeos} Resource.
 func NewPolicyDeviceAssuranceChromeos(scope constructs.Construct, id *string, config *PolicyDeviceAssuranceChromeosConfig) PolicyDeviceAssuranceChromeos {
 	_init_.Initialize()
 
@@ -708,7 +708,7 @@ func NewPolicyDeviceAssuranceChromeos(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/policy_device_assurance_chromeos okta_policy_device_assurance_chromeos} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/policy_device_assurance_chromeos okta_policy_device_assurance_chromeos} Resource.
 func NewPolicyDeviceAssuranceChromeos_Override(p PolicyDeviceAssuranceChromeos, scope constructs.Construct, id *string, config *PolicyDeviceAssuranceChromeosConfig) {
 	_init_.Initialize()
 

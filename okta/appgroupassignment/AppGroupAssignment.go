@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_group_assignment okta_app_group_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/app_group_assignment okta_app_group_assignment}.
 type AppGroupAssignment interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -431,7 +431,7 @@ func (j *jsiiProxy_AppGroupAssignment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_group_assignment okta_app_group_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/app_group_assignment okta_app_group_assignment} Resource.
 func NewAppGroupAssignment(scope constructs.Construct, id *string, config *AppGroupAssignmentConfig) AppGroupAssignment {
 	_init_.Initialize()
 
@@ -449,7 +449,7 @@ func NewAppGroupAssignment(scope constructs.Construct, id *string, config *AppGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_group_assignment okta_app_group_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/app_group_assignment okta_app_group_assignment} Resource.
 func NewAppGroupAssignment_Override(a AppGroupAssignment, scope constructs.Construct, id *string, config *AppGroupAssignmentConfig) {
 	_init_.Initialize()
 

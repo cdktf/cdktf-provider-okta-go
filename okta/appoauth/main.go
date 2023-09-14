@@ -309,10 +309,16 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "nInput", GoGetter: "NInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetE", GoMethod: "ResetE"},
 			_jsii_.MemberMethod{JsiiMethod: "resetN", GoMethod: "ResetN"},
+			_jsii_.MemberMethod{JsiiMethod: "resetX", GoMethod: "ResetX"},
+			_jsii_.MemberMethod{JsiiMethod: "resetY", GoMethod: "ResetY"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "x", GoGetter: "X"},
+			_jsii_.MemberProperty{JsiiProperty: "xInput", GoGetter: "XInput"},
+			_jsii_.MemberProperty{JsiiProperty: "y", GoGetter: "Y"},
+			_jsii_.MemberProperty{JsiiProperty: "yInput", GoGetter: "YInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AppOauthJwksOutputReference{}

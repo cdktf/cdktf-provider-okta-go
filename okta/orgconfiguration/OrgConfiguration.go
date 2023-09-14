@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/org_configuration okta_org_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/org_configuration okta_org_configuration}.
 type OrgConfiguration interface {
 	cdktf.TerraformResource
 	Address1() *string
@@ -670,7 +670,7 @@ func (j *jsiiProxy_OrgConfiguration) WebsiteInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/org_configuration okta_org_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/org_configuration okta_org_configuration} Resource.
 func NewOrgConfiguration(scope constructs.Construct, id *string, config *OrgConfigurationConfig) OrgConfiguration {
 	_init_.Initialize()
 
@@ -688,7 +688,7 @@ func NewOrgConfiguration(scope constructs.Construct, id *string, config *OrgConf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/org_configuration okta_org_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/org_configuration okta_org_configuration} Resource.
 func NewOrgConfiguration_Override(o OrgConfiguration, scope constructs.Construct, id *string, config *OrgConfigurationConfig) {
 	_init_.Initialize()
 
