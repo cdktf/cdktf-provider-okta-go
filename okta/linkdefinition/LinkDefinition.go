@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/link_definition okta_link_definition}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/link_definition okta_link_definition}.
 type LinkDefinition interface {
 	cdktf.TerraformResource
 	AssociatedDescription() *string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_LinkDefinition) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/link_definition okta_link_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/link_definition okta_link_definition} Resource.
 func NewLinkDefinition(scope constructs.Construct, id *string, config *LinkDefinitionConfig) LinkDefinition {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewLinkDefinition(scope constructs.Construct, id *string, config *LinkDefin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/link_definition okta_link_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/link_definition okta_link_definition} Resource.
 func NewLinkDefinition_Override(l LinkDefinition, scope constructs.Construct, id *string, config *LinkDefinitionConfig) {
 	_init_.Initialize()
 

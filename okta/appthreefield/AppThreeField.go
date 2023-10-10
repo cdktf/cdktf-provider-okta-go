@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/app_three_field okta_app_three_field}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/app_three_field okta_app_three_field}.
 type AppThreeField interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -987,7 +987,7 @@ func (j *jsiiProxy_AppThreeField) UserNameTemplateTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/app_three_field okta_app_three_field} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/app_three_field okta_app_three_field} Resource.
 func NewAppThreeField(scope constructs.Construct, id *string, config *AppThreeFieldConfig) AppThreeField {
 	_init_.Initialize()
 
@@ -1005,7 +1005,7 @@ func NewAppThreeField(scope constructs.Construct, id *string, config *AppThreeFi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/app_three_field okta_app_three_field} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/app_three_field okta_app_three_field} Resource.
 func NewAppThreeField_Override(a AppThreeField, scope constructs.Construct, id *string, config *AppThreeFieldConfig) {
 	_init_.Initialize()
 

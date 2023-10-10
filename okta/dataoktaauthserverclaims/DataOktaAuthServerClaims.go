@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/auth_server_claims okta_auth_server_claims}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/auth_server_claims okta_auth_server_claims}.
 type DataOktaAuthServerClaims interface {
 	cdktf.TerraformDataSource
 	AuthServerId() *string
@@ -295,7 +295,7 @@ func (j *jsiiProxy_DataOktaAuthServerClaims) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/auth_server_claims okta_auth_server_claims} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/auth_server_claims okta_auth_server_claims} Data Source.
 func NewDataOktaAuthServerClaims(scope constructs.Construct, id *string, config *DataOktaAuthServerClaimsConfig) DataOktaAuthServerClaims {
 	_init_.Initialize()
 
@@ -313,7 +313,7 @@ func NewDataOktaAuthServerClaims(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/auth_server_claims okta_auth_server_claims} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/auth_server_claims okta_auth_server_claims} Data Source.
 func NewDataOktaAuthServerClaims_Override(d DataOktaAuthServerClaims, scope constructs.Construct, id *string, config *DataOktaAuthServerClaimsConfig) {
 	_init_.Initialize()
 

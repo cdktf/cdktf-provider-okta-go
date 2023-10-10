@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/idp_oidc okta_idp_oidc}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/idp_oidc okta_idp_oidc}.
 type IdpOidc interface {
 	cdktf.TerraformResource
 	AccountLinkAction() *string
@@ -1068,7 +1068,7 @@ func (j *jsiiProxy_IdpOidc) UserTypeId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/idp_oidc okta_idp_oidc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/idp_oidc okta_idp_oidc} Resource.
 func NewIdpOidc(scope constructs.Construct, id *string, config *IdpOidcConfig) IdpOidc {
 	_init_.Initialize()
 
@@ -1086,7 +1086,7 @@ func NewIdpOidc(scope constructs.Construct, id *string, config *IdpOidcConfig) I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/idp_oidc okta_idp_oidc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/idp_oidc okta_idp_oidc} Resource.
 func NewIdpOidc_Override(i IdpOidc, scope constructs.Construct, id *string, config *IdpOidcConfig) {
 	_init_.Initialize()
 

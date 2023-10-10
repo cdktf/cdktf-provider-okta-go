@@ -24,7 +24,7 @@ type DataOktaDomainConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Brand ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/domain#domain_id_or_name DataOktaDomain#domain_id_or_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/domain#domain_id_or_name DataOktaDomain#domain_id_or_name}
 	DomainIdOrName *string `field:"required" json:"domainIdOrName" yaml:"domainIdOrName"`
 }
 
