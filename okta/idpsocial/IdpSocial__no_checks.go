@@ -7,6 +7,10 @@ package idpsocial
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IdpSocial) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdpSocial) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (i *jsiiProxy_IdpSocial) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (i *jsiiProxy_IdpSocial) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdpSocial) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IdpSocial) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdpSocial) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIdpSocial_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

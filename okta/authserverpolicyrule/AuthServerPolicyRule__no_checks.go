@@ -7,6 +7,10 @@ package authserverpolicyrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AuthServerPolicyRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuthServerPolicyRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_AuthServerPolicyRule) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (a *jsiiProxy_AuthServerPolicyRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuthServerPolicyRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AuthServerPolicyRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuthServerPolicyRule) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAuthServerPolicyRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

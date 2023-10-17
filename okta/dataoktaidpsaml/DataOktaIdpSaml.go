@@ -5,10 +5,10 @@ package dataoktaidpsaml
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v11/dataoktaidpsaml/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaidpsaml/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -512,6 +512,25 @@ func (j *jsiiProxy_DataOktaIdpSaml)SetProvider(val cdktf.TerraformProvider) {
 		"provider",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataOktaIdpSaml resource upon running "cdktf plan <stack-name>".
+func DataOktaIdpSaml_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataOktaIdpSaml_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

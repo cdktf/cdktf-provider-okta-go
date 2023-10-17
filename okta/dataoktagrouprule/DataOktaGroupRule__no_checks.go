@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataOktaGroupRule) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func validateDataOktaGroupRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOktaGroupRule_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package appsaml
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppSaml) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSaml) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AppSaml) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (a *jsiiProxy_AppSaml) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSaml) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppSaml) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (a *jsiiProxy_AppSaml) validatePutAttributeStatementsParameters(value inter
 }
 
 func (a *jsiiProxy_AppSaml) validatePutTimeoutsParameters(value *AppSamlTimeouts) error {
+	return nil
+}
+
+func validateAppSaml_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

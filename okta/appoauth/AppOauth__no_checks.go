@@ -7,6 +7,10 @@ package appoauth
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppOauth) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppOauth) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AppOauth) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (a *jsiiProxy_AppOauth) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppOauth) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppOauth) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (a *jsiiProxy_AppOauth) validatePutJwksParameters(value interface{}) error 
 }
 
 func (a *jsiiProxy_AppOauth) validatePutTimeoutsParameters(value *AppOauthTimeouts) error {
+	return nil
+}
+
+func validateAppOauth_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

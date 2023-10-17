@@ -7,6 +7,10 @@ package factortotp
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FactorTotp) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FactorTotp) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (f *jsiiProxy_FactorTotp) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (f *jsiiProxy_FactorTotp) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FactorTotp) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (f *jsiiProxy_FactorTotp) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FactorTotp) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateFactorTotp_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

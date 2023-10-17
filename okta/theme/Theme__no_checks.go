@@ -7,6 +7,10 @@ package theme
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_Theme) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_Theme) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (t *jsiiProxy_Theme) validateGetStringMapAttributeParameters(terraformAttri
 	return nil
 }
 
+func (t *jsiiProxy_Theme) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_Theme) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (t *jsiiProxy_Theme) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_Theme) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateTheme_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

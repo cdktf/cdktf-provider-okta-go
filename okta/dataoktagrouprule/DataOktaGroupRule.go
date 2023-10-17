@@ -5,10 +5,10 @@ package dataoktagrouprule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v11/dataoktagrouprule/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktagrouprule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -459,6 +459,25 @@ func (j *jsiiProxy_DataOktaGroupRule)SetStatus(val *string) {
 		"status",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataOktaGroupRule resource upon running "cdktf plan <stack-name>".
+func DataOktaGroupRule_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataOktaGroupRule_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.dataOktaGroupRule.DataOktaGroupRule",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

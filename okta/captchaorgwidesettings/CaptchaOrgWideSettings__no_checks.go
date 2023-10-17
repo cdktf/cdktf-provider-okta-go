@@ -7,6 +7,10 @@ package captchaorgwidesettings
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CaptchaOrgWideSettings) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CaptchaOrgWideSettings) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (c *jsiiProxy_CaptchaOrgWideSettings) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (c *jsiiProxy_CaptchaOrgWideSettings) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CaptchaOrgWideSettings) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_CaptchaOrgWideSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CaptchaOrgWideSettings) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCaptchaOrgWideSettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

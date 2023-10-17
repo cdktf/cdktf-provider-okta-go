@@ -7,6 +7,10 @@ package brand
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_Brand) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_Brand) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (b *jsiiProxy_Brand) validateGetStringMapAttributeParameters(terraformAttri
 	return nil
 }
 
+func (b *jsiiProxy_Brand) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_Brand) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (b *jsiiProxy_Brand) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_Brand) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateBrand_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

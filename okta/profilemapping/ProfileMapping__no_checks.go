@@ -7,6 +7,10 @@ package profilemapping
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_ProfileMapping) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProfileMapping) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_ProfileMapping) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (p *jsiiProxy_ProfileMapping) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProfileMapping) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProfileMapping) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (p *jsiiProxy_ProfileMapping) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (p *jsiiProxy_ProfileMapping) validatePutMappingsParameters(value interface{}) error {
+	return nil
+}
+
+func validateProfileMapping_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

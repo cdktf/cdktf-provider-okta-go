@@ -7,6 +7,10 @@ package usertype
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (u *jsiiProxy_UserType) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserType) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (u *jsiiProxy_UserType) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (u *jsiiProxy_UserType) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserType) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (u *jsiiProxy_UserType) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserType) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateUserType_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

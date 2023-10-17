@@ -7,6 +7,10 @@ package appthreefield
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppThreeField) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppThreeField) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AppThreeField) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (a *jsiiProxy_AppThreeField) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppThreeField) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppThreeField) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AppThreeField) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (a *jsiiProxy_AppThreeField) validatePutTimeoutsParameters(value *AppThreeFieldTimeouts) error {
+	return nil
+}
+
+func validateAppThreeField_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

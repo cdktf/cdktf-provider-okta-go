@@ -7,6 +7,10 @@ package appsharedcredentials
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppSharedCredentials) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSharedCredentials) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AppSharedCredentials) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (a *jsiiProxy_AppSharedCredentials) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSharedCredentials) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppSharedCredentials) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AppSharedCredentials) validateOverrideLogicalIdParameters(new
 }
 
 func (a *jsiiProxy_AppSharedCredentials) validatePutTimeoutsParameters(value *AppSharedCredentialsTimeouts) error {
+	return nil
+}
+
+func validateAppSharedCredentials_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

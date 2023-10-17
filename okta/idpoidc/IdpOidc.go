@@ -5,10 +5,10 @@ package idpoidc
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v11/idpoidc/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v12/idpoidc/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -162,6 +162,9 @@ type IdpOidc interface {
 	SetUsernameTemplate(val *string)
 	UsernameTemplateInput() *string
 	UserTypeId() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -183,7 +186,12 @@ type IdpOidc interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -1528,6 +1536,25 @@ func (j *jsiiProxy_IdpOidc)SetUsernameTemplate(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a IdpOidc resource upon running "cdktf plan <stack-name>".
+func IdpOidc_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateIdpOidc_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.idpOidc.IdpOidc",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -1610,6 +1637,17 @@ func IdpOidc_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (i *jsiiProxy_IdpOidc) AddMoveTarget(moveTarget *string) {
+	if err := i.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (i *jsiiProxy_IdpOidc) AddOverride(path *string, value interface{}) {
@@ -1767,6 +1805,17 @@ func (i *jsiiProxy_IdpOidc) GetStringMapAttribute(terraformAttribute *string) *m
 	return returns
 }
 
+func (i *jsiiProxy_IdpOidc) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := i.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (i *jsiiProxy_IdpOidc) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1781,6 +1830,17 @@ func (i *jsiiProxy_IdpOidc) InterpolationForAttribute(terraformAttribute *string
 	)
 
 	return returns
+}
+
+func (i *jsiiProxy_IdpOidc) MoveTo(moveTarget *string, index interface{}) {
+	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (i *jsiiProxy_IdpOidc) OverrideLogicalId(newLogicalId *string) {

@@ -7,6 +7,10 @@ package appbookmark
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppBookmark) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppBookmark) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AppBookmark) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (a *jsiiProxy_AppBookmark) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppBookmark) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppBookmark) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AppBookmark) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (a *jsiiProxy_AppBookmark) validatePutTimeoutsParameters(value *AppBookmarkTimeouts) error {
+	return nil
+}
+
+func validateAppBookmark_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

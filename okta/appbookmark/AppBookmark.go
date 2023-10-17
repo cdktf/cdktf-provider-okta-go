@@ -5,10 +5,10 @@ package appbookmark
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v11/appbookmark/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v12/appbookmark/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -114,6 +114,9 @@ type AppBookmark interface {
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -135,7 +138,12 @@ type AppBookmark interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -977,6 +985,25 @@ func (j *jsiiProxy_AppBookmark)SetUrl(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a AppBookmark resource upon running "cdktf plan <stack-name>".
+func AppBookmark_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateAppBookmark_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.appBookmark.AppBookmark",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -1059,6 +1086,17 @@ func AppBookmark_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (a *jsiiProxy_AppBookmark) AddMoveTarget(moveTarget *string) {
+	if err := a.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (a *jsiiProxy_AppBookmark) AddOverride(path *string, value interface{}) {
@@ -1216,6 +1254,17 @@ func (a *jsiiProxy_AppBookmark) GetStringMapAttribute(terraformAttribute *string
 	return returns
 }
 
+func (a *jsiiProxy_AppBookmark) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := a.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (a *jsiiProxy_AppBookmark) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1230,6 +1279,17 @@ func (a *jsiiProxy_AppBookmark) InterpolationForAttribute(terraformAttribute *st
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AppBookmark) MoveTo(moveTarget *string, index interface{}) {
+	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (a *jsiiProxy_AppBookmark) OverrideLogicalId(newLogicalId *string) {

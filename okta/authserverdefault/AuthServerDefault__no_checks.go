@@ -7,6 +7,10 @@ package authserverdefault
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AuthServerDefault) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuthServerDefault) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_AuthServerDefault) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (a *jsiiProxy_AuthServerDefault) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuthServerDefault) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AuthServerDefault) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuthServerDefault) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAuthServerDefault_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

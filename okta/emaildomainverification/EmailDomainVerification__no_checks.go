@@ -7,6 +7,10 @@ package emaildomainverification
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EmailDomainVerification) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailDomainVerification) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (e *jsiiProxy_EmailDomainVerification) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (e *jsiiProxy_EmailDomainVerification) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailDomainVerification) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_EmailDomainVerification) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailDomainVerification) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateEmailDomainVerification_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

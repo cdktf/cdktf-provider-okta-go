@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-okta.userSchemaProperty.UserSchemaProperty",
 		reflect.TypeOf((*UserSchemaProperty)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arrayEnum", GoGetter: "ArrayEnum"},
 			_jsii_.MemberProperty{JsiiProperty: "arrayEnumInput", GoGetter: "ArrayEnumInput"},
@@ -48,6 +49,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "index", GoGetter: "Index"},
 			_jsii_.MemberProperty{JsiiProperty: "indexInput", GoGetter: "IndexInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -60,6 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maxLengthInput", GoGetter: "MaxLengthInput"},
 			_jsii_.MemberProperty{JsiiProperty: "minLength", GoGetter: "MinLength"},
 			_jsii_.MemberProperty{JsiiProperty: "minLengthInput", GoGetter: "MinLengthInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "oneOf", GoGetter: "OneOf"},
 			_jsii_.MemberProperty{JsiiProperty: "oneOfInput", GoGetter: "OneOfInput"},

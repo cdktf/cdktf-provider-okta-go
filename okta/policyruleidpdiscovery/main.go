@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery",
 		reflect.TypeOf((*PolicyRuleIdpDiscovery)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "appExclude", GoGetter: "AppExclude"},
 			_jsii_.MemberProperty{JsiiProperty: "appExcludeInput", GoGetter: "AppExcludeInput"},
@@ -42,8 +43,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "idpIdInput", GoGetter: "IdpIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "idpType", GoGetter: "IdpType"},
 			_jsii_.MemberProperty{JsiiProperty: "idpTypeInput", GoGetter: "IdpTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "networkConnection", GoGetter: "NetworkConnection"},

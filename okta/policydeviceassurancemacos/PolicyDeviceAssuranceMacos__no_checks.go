@@ -7,6 +7,10 @@ package policydeviceassurancemacos
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PolicyDeviceAssuranceMacos) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyDeviceAssuranceMacos) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (p *jsiiProxy_PolicyDeviceAssuranceMacos) validateGetStringMapAttributePara
 	return nil
 }
 
+func (p *jsiiProxy_PolicyDeviceAssuranceMacos) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyDeviceAssuranceMacos) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (p *jsiiProxy_PolicyDeviceAssuranceMacos) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyDeviceAssuranceMacos) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validatePolicyDeviceAssuranceMacos_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

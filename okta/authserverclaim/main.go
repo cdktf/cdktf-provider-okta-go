@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-okta.authServerClaim.AuthServerClaim",
 		reflect.TypeOf((*AuthServerClaim)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "alwaysIncludeInToken", GoGetter: "AlwaysIncludeInToken"},
 			_jsii_.MemberProperty{JsiiProperty: "alwaysIncludeInTokenInput", GoGetter: "AlwaysIncludeInTokenInput"},
@@ -42,8 +43,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "groupFilterTypeInput", GoGetter: "GroupFilterTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

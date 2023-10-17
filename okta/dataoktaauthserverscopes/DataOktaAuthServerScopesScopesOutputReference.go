@@ -5,9 +5,9 @@ package dataoktaauthserverscopes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v11/dataoktaauthserverscopes/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaauthserverscopes/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

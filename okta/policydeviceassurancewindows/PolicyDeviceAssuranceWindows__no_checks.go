@@ -7,6 +7,10 @@ package policydeviceassurancewindows
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PolicyDeviceAssuranceWindows) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyDeviceAssuranceWindows) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (p *jsiiProxy_PolicyDeviceAssuranceWindows) validateGetStringMapAttributePa
 	return nil
 }
 
+func (p *jsiiProxy_PolicyDeviceAssuranceWindows) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyDeviceAssuranceWindows) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (p *jsiiProxy_PolicyDeviceAssuranceWindows) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyDeviceAssuranceWindows) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validatePolicyDeviceAssuranceWindows_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

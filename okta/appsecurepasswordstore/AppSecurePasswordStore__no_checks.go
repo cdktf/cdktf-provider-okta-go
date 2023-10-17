@@ -7,6 +7,10 @@ package appsecurepasswordstore
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppSecurePasswordStore) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSecurePasswordStore) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AppSecurePasswordStore) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (a *jsiiProxy_AppSecurePasswordStore) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSecurePasswordStore) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppSecurePasswordStore) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AppSecurePasswordStore) validateOverrideLogicalIdParameters(n
 }
 
 func (a *jsiiProxy_AppSecurePasswordStore) validatePutTimeoutsParameters(value *AppSecurePasswordStoreTimeouts) error {
+	return nil
+}
+
+func validateAppSecurePasswordStore_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

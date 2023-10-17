@@ -16,6 +16,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "access", GoGetter: "Access"},
 			_jsii_.MemberProperty{JsiiProperty: "accessInput", GoGetter: "AccessInput"},
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "authtype", GoGetter: "Authtype"},
 			_jsii_.MemberProperty{JsiiProperty: "authtypeInput", GoGetter: "AuthtypeInput"},
@@ -46,6 +47,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "identityProviderIdsInput", GoGetter: "IdentityProviderIdsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "identityProviderInput", GoGetter: "IdentityProviderInput"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "mfaLifetime", GoGetter: "MfaLifetime"},
@@ -56,6 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "mfaRememberDeviceInput", GoGetter: "MfaRememberDeviceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mfaRequired", GoGetter: "MfaRequired"},
 			_jsii_.MemberProperty{JsiiProperty: "mfaRequiredInput", GoGetter: "MfaRequiredInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "networkConnection", GoGetter: "NetworkConnection"},

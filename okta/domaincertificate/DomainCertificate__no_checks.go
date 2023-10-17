@@ -7,6 +7,10 @@ package domaincertificate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DomainCertificate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DomainCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (d *jsiiProxy_DomainCertificate) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (d *jsiiProxy_DomainCertificate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DomainCertificate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (d *jsiiProxy_DomainCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DomainCertificate) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateDomainCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

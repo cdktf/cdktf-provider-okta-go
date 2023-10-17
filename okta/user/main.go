@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-okta.user.User",
 		reflect.TypeOf((*User)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "city", GoGetter: "City"},
@@ -62,6 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "honorificSuffixInput", GoGetter: "HonorificSuffixInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lastName", GoGetter: "LastName"},
 			_jsii_.MemberProperty{JsiiProperty: "lastNameInput", GoGetter: "LastNameInput"},
@@ -78,6 +80,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "middleNameInput", GoGetter: "MiddleNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mobilePhone", GoGetter: "MobilePhone"},
 			_jsii_.MemberProperty{JsiiProperty: "mobilePhoneInput", GoGetter: "MobilePhoneInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "nickName", GoGetter: "NickName"},
 			_jsii_.MemberProperty{JsiiProperty: "nickNameInput", GoGetter: "NickNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
