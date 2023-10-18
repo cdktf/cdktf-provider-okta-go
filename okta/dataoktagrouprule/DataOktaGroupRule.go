@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/group_rule okta_group_rule}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/group_rule okta_group_rule}.
 type DataOktaGroupRule interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -353,7 +353,7 @@ func (j *jsiiProxy_DataOktaGroupRule) UsersExcluded() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/group_rule okta_group_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/group_rule okta_group_rule} Data Source.
 func NewDataOktaGroupRule(scope constructs.Construct, id *string, config *DataOktaGroupRuleConfig) DataOktaGroupRule {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewDataOktaGroupRule(scope constructs.Construct, id *string, config *DataOk
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/group_rule okta_group_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/group_rule okta_group_rule} Data Source.
 func NewDataOktaGroupRule_Override(d DataOktaGroupRule, scope constructs.Construct, id *string, config *DataOktaGroupRuleConfig) {
 	_init_.Initialize()
 

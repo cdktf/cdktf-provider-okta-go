@@ -175,6 +175,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) validateSetReAuthenticationFrequencyPara
 	return nil
 }
 
+func (j *jsiiProxy_AppSignonPolicyRule) validateSetRiskScoreParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppSignonPolicyRule) validateSetStatusParameters(val *string) error {
 	return nil
 }

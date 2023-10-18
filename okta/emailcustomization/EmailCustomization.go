@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/email_customization okta_email_customization}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/email_customization okta_email_customization}.
 type EmailCustomization interface {
 	cdktf.TerraformResource
 	Body() *string
@@ -461,7 +461,7 @@ func (j *jsiiProxy_EmailCustomization) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/email_customization okta_email_customization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/email_customization okta_email_customization} Resource.
 func NewEmailCustomization(scope constructs.Construct, id *string, config *EmailCustomizationConfig) EmailCustomization {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewEmailCustomization(scope constructs.Construct, id *string, config *Email
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/email_customization okta_email_customization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/email_customization okta_email_customization} Resource.
 func NewEmailCustomization_Override(e EmailCustomization, scope constructs.Construct, id *string, config *EmailCustomizationConfig) {
 	_init_.Initialize()
 

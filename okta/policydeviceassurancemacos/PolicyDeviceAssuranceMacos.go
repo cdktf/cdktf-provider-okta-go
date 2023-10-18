@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/policy_device_assurance_macos okta_policy_device_assurance_macos}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/policy_device_assurance_macos okta_policy_device_assurance_macos}.
 type PolicyDeviceAssuranceMacos interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -794,7 +794,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspSiteIsolationEnabledInput() i
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/policy_device_assurance_macos okta_policy_device_assurance_macos} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/policy_device_assurance_macos okta_policy_device_assurance_macos} Resource.
 func NewPolicyDeviceAssuranceMacos(scope constructs.Construct, id *string, config *PolicyDeviceAssuranceMacosConfig) PolicyDeviceAssuranceMacos {
 	_init_.Initialize()
 
@@ -812,7 +812,7 @@ func NewPolicyDeviceAssuranceMacos(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/policy_device_assurance_macos okta_policy_device_assurance_macos} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/policy_device_assurance_macos okta_policy_device_assurance_macos} Resource.
 func NewPolicyDeviceAssuranceMacos_Override(p PolicyDeviceAssuranceMacos, scope constructs.Construct, id *string, config *PolicyDeviceAssuranceMacosConfig) {
 	_init_.Initialize()
 

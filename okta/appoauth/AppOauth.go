@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/app_oauth okta_app_oauth}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/app_oauth okta_app_oauth}.
 type AppOauth interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -1467,7 +1467,7 @@ func (j *jsiiProxy_AppOauth) WildcardRedirectInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/app_oauth okta_app_oauth} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/app_oauth okta_app_oauth} Resource.
 func NewAppOauth(scope constructs.Construct, id *string, config *AppOauthConfig) AppOauth {
 	_init_.Initialize()
 
@@ -1485,7 +1485,7 @@ func NewAppOauth(scope constructs.Construct, id *string, config *AppOauthConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/app_oauth okta_app_oauth} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/app_oauth okta_app_oauth} Resource.
 func NewAppOauth_Override(a AppOauth, scope constructs.Construct, id *string, config *AppOauthConfig) {
 	_init_.Initialize()
 
