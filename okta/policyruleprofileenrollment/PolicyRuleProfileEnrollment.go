@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/policy_rule_profile_enrollment okta_policy_rule_profile_enrollment}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/policy_rule_profile_enrollment okta_policy_rule_profile_enrollment}.
 type PolicyRuleProfileEnrollment interface {
 	cdktf.TerraformResource
 	Access() *string
@@ -63,6 +63,9 @@ type PolicyRuleProfileEnrollment interface {
 	PolicyIdInput() *string
 	ProfileAttributes() PolicyRuleProfileEnrollmentProfileAttributesList
 	ProfileAttributesInput() interface{}
+	ProgressiveProfilingAction() *string
+	SetProgressiveProfilingAction(val *string)
+	ProgressiveProfilingActionInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -131,6 +134,7 @@ type PolicyRuleProfileEnrollment interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProfileAttributes()
+	ResetProgressiveProfilingAction()
 	ResetTargetGroupId()
 	ResetUiSchemaId()
 	SynthesizeAttributes() *map[string]interface{}
@@ -378,6 +382,26 @@ func (j *jsiiProxy_PolicyRuleProfileEnrollment) ProfileAttributesInput() interfa
 	return returns
 }
 
+func (j *jsiiProxy_PolicyRuleProfileEnrollment) ProgressiveProfilingAction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"progressiveProfilingAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PolicyRuleProfileEnrollment) ProgressiveProfilingActionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"progressiveProfilingActionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PolicyRuleProfileEnrollment) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -509,7 +533,7 @@ func (j *jsiiProxy_PolicyRuleProfileEnrollment) UnknownUserActionInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/policy_rule_profile_enrollment okta_policy_rule_profile_enrollment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/policy_rule_profile_enrollment okta_policy_rule_profile_enrollment} Resource.
 func NewPolicyRuleProfileEnrollment(scope constructs.Construct, id *string, config *PolicyRuleProfileEnrollmentConfig) PolicyRuleProfileEnrollment {
 	_init_.Initialize()
 
@@ -527,7 +551,7 @@ func NewPolicyRuleProfileEnrollment(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/policy_rule_profile_enrollment okta_policy_rule_profile_enrollment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/policy_rule_profile_enrollment okta_policy_rule_profile_enrollment} Resource.
 func NewPolicyRuleProfileEnrollment_Override(p PolicyRuleProfileEnrollment, scope constructs.Construct, id *string, config *PolicyRuleProfileEnrollmentConfig) {
 	_init_.Initialize()
 
@@ -638,6 +662,17 @@ func (j *jsiiProxy_PolicyRuleProfileEnrollment)SetPolicyId(val *string) {
 	_jsii_.Set(
 		j,
 		"policyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PolicyRuleProfileEnrollment)SetProgressiveProfilingAction(val *string) {
+	if err := j.validateSetProgressiveProfilingActionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"progressiveProfilingAction",
 		val,
 	)
 }
@@ -1067,6 +1102,14 @@ func (p *jsiiProxy_PolicyRuleProfileEnrollment) ResetProfileAttributes() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetProfileAttributes",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PolicyRuleProfileEnrollment) ResetProgressiveProfilingAction() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetProgressiveProfilingAction",
 		nil, // no parameters
 	)
 }

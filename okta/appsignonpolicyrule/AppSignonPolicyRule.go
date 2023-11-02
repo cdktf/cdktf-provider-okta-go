@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/app_signon_policy_rule okta_app_signon_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_signon_policy_rule okta_app_signon_policy_rule}.
 type AppSignonPolicyRule interface {
 	cdktf.TerraformResource
 	Access() *string
@@ -117,6 +117,7 @@ type AppSignonPolicyRule interface {
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
+	SystemAttribute() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -764,6 +765,16 @@ func (j *jsiiProxy_AppSignonPolicyRule) StatusInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AppSignonPolicyRule) SystemAttribute() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"systemAttribute",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppSignonPolicyRule) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -895,7 +906,7 @@ func (j *jsiiProxy_AppSignonPolicyRule) UserTypesIncludedInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/app_signon_policy_rule okta_app_signon_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_signon_policy_rule okta_app_signon_policy_rule} Resource.
 func NewAppSignonPolicyRule(scope constructs.Construct, id *string, config *AppSignonPolicyRuleConfig) AppSignonPolicyRule {
 	_init_.Initialize()
 
@@ -913,7 +924,7 @@ func NewAppSignonPolicyRule(scope constructs.Construct, id *string, config *AppS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/app_signon_policy_rule okta_app_signon_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_signon_policy_rule okta_app_signon_policy_rule} Resource.
 func NewAppSignonPolicyRule_Override(a AppSignonPolicyRule, scope constructs.Construct, id *string, config *AppSignonPolicyRuleConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/auth_server_claim_default okta_auth_server_claim_default}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/auth_server_claim_default okta_auth_server_claim_default}.
 type AuthServerClaimDefault interface {
 	cdktf.TerraformResource
 	AlwaysIncludeInToken() interface{}
@@ -435,7 +435,7 @@ func (j *jsiiProxy_AuthServerClaimDefault) ValueType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/auth_server_claim_default okta_auth_server_claim_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/auth_server_claim_default okta_auth_server_claim_default} Resource.
 func NewAuthServerClaimDefault(scope constructs.Construct, id *string, config *AuthServerClaimDefaultConfig) AuthServerClaimDefault {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewAuthServerClaimDefault(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/auth_server_claim_default okta_auth_server_claim_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/auth_server_claim_default okta_auth_server_claim_default} Resource.
 func NewAuthServerClaimDefault_Override(a AuthServerClaimDefault, scope constructs.Construct, id *string, config *AuthServerClaimDefaultConfig) {
 	_init_.Initialize()
 

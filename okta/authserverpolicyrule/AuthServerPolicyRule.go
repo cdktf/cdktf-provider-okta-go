@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/auth_server_policy_rule okta_auth_server_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/auth_server_policy_rule okta_auth_server_policy_rule}.
 type AuthServerPolicyRule interface {
 	cdktf.TerraformResource
 	AccessTokenLifetimeMinutes() *float64
@@ -97,6 +97,7 @@ type AuthServerPolicyRule interface {
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
+	SystemAttribute() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -585,6 +586,16 @@ func (j *jsiiProxy_AuthServerPolicyRule) StatusInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AuthServerPolicyRule) SystemAttribute() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"systemAttribute",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AuthServerPolicyRule) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -676,7 +687,7 @@ func (j *jsiiProxy_AuthServerPolicyRule) UserWhitelistInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/auth_server_policy_rule okta_auth_server_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/auth_server_policy_rule okta_auth_server_policy_rule} Resource.
 func NewAuthServerPolicyRule(scope constructs.Construct, id *string, config *AuthServerPolicyRuleConfig) AuthServerPolicyRule {
 	_init_.Initialize()
 
@@ -694,7 +705,7 @@ func NewAuthServerPolicyRule(scope constructs.Construct, id *string, config *Aut
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/auth_server_policy_rule okta_auth_server_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/auth_server_policy_rule okta_auth_server_policy_rule} Resource.
 func NewAuthServerPolicyRule_Override(a AuthServerPolicyRule, scope constructs.Construct, id *string, config *AuthServerPolicyRuleConfig) {
 	_init_.Initialize()
 

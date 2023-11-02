@@ -24,24 +24,24 @@ type AuthServerClaimDefaultConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Auth server ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/auth_server_claim_default#auth_server_id AuthServerClaimDefault#auth_server_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/auth_server_claim_default#auth_server_id AuthServerClaimDefault#auth_server_id}
 	AuthServerId *string `field:"required" json:"authServerId" yaml:"authServerId"`
 	// Default auth server claim name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/auth_server_claim_default#name AuthServerClaimDefault#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/auth_server_claim_default#name AuthServerClaimDefault#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Specifies whether to include claims in token.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/auth_server_claim_default#always_include_in_token AuthServerClaimDefault#always_include_in_token}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/auth_server_claim_default#always_include_in_token AuthServerClaimDefault#always_include_in_token}
 	AlwaysIncludeInToken interface{} `field:"optional" json:"alwaysIncludeInToken" yaml:"alwaysIncludeInToken"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/auth_server_claim_default#id AuthServerClaimDefault#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/auth_server_claim_default#id AuthServerClaimDefault#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The value of the claim.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/auth_server_claim_default#value AuthServerClaimDefault#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/auth_server_claim_default#value AuthServerClaimDefault#value}
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

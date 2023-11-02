@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/org_metadata okta_org_metadata}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/org_metadata okta_org_metadata}.
 type DataOktaOrgMetadata interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -281,7 +281,7 @@ func (j *jsiiProxy_DataOktaOrgMetadata) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/org_metadata okta_org_metadata} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/org_metadata okta_org_metadata} Data Source.
 func NewDataOktaOrgMetadata(scope constructs.Construct, id *string, config *DataOktaOrgMetadataConfig) DataOktaOrgMetadata {
 	_init_.Initialize()
 
@@ -299,7 +299,7 @@ func NewDataOktaOrgMetadata(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/org_metadata okta_org_metadata} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/org_metadata okta_org_metadata} Data Source.
 func NewDataOktaOrgMetadata_Override(d DataOktaOrgMetadata, scope constructs.Construct, id *string, config *DataOktaOrgMetadataConfig) {
 	_init_.Initialize()
 

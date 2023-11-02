@@ -24,14 +24,14 @@ type DataOktaNetworkZoneConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of the network zone to retrieve, conflicts with `name`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/network_zone#id DataOktaNetworkZone#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/network_zone#id DataOktaNetworkZone#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Name of the network zone to retrieve, conflicts with `id`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/network_zone#name DataOktaNetworkZone#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/network_zone#name DataOktaNetworkZone#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 
