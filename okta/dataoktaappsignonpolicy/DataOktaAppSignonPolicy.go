@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/app_signon_policy okta_app_signon_policy}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/app_signon_policy okta_app_signon_policy}.
 type DataOktaAppSignonPolicy interface {
 	cdktf.TerraformDataSource
 	AppId() *string
@@ -295,7 +295,7 @@ func (j *jsiiProxy_DataOktaAppSignonPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/app_signon_policy okta_app_signon_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/app_signon_policy okta_app_signon_policy} Data Source.
 func NewDataOktaAppSignonPolicy(scope constructs.Construct, id *string, config *DataOktaAppSignonPolicyConfig) DataOktaAppSignonPolicy {
 	_init_.Initialize()
 
@@ -313,7 +313,7 @@ func NewDataOktaAppSignonPolicy(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/app_signon_policy okta_app_signon_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/app_signon_policy okta_app_signon_policy} Data Source.
 func NewDataOktaAppSignonPolicy_Override(d DataOktaAppSignonPolicy, scope constructs.Construct, id *string, config *DataOktaAppSignonPolicyConfig) {
 	_init_.Initialize()
 
