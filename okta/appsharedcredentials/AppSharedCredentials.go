@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_shared_credentials okta_app_shared_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_shared_credentials okta_app_shared_credentials}.
 type AppSharedCredentials interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -977,7 +977,7 @@ func (j *jsiiProxy_AppSharedCredentials) UserNameTemplateTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_shared_credentials okta_app_shared_credentials} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_shared_credentials okta_app_shared_credentials} Resource.
 func NewAppSharedCredentials(scope constructs.Construct, id *string, config *AppSharedCredentialsConfig) AppSharedCredentials {
 	_init_.Initialize()
 
@@ -995,7 +995,7 @@ func NewAppSharedCredentials(scope constructs.Construct, id *string, config *App
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_shared_credentials okta_app_shared_credentials} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_shared_credentials okta_app_shared_credentials} Resource.
 func NewAppSharedCredentials_Override(a AppSharedCredentials, scope constructs.Construct, id *string, config *AppSharedCredentialsConfig) {
 	_init_.Initialize()
 

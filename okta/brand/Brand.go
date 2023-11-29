@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/brand okta_brand}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand okta_brand}.
 type Brand interface {
 	cdktf.TerraformResource
 	AgreeToCustomPrivacyPolicy() interface{}
@@ -50,8 +50,6 @@ type Brand interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EmailDomainId() *string
-	SetEmailDomainId(val *string)
-	EmailDomainIdInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -133,7 +131,6 @@ type Brand interface {
 	ResetDefaultAppAppInstanceId()
 	ResetDefaultAppAppLinkName()
 	ResetDefaultAppClassicApplicationUri()
-	ResetEmailDomainId()
 	ResetLocale()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -329,16 +326,6 @@ func (j *jsiiProxy_Brand) EmailDomainId() *string {
 	_jsii_.Get(
 		j,
 		"emailDomainId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Brand) EmailDomainIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"emailDomainIdInput",
 		&returns,
 	)
 	return returns
@@ -545,7 +532,7 @@ func (j *jsiiProxy_Brand) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/brand okta_brand} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand okta_brand} Resource.
 func NewBrand(scope constructs.Construct, id *string, config *BrandConfig) Brand {
 	_init_.Initialize()
 
@@ -563,7 +550,7 @@ func NewBrand(scope constructs.Construct, id *string, config *BrandConfig) Brand
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/brand okta_brand} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand okta_brand} Resource.
 func NewBrand_Override(b Brand, scope constructs.Construct, id *string, config *BrandConfig) {
 	_init_.Initialize()
 
@@ -666,17 +653,6 @@ func (j *jsiiProxy_Brand)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Brand)SetEmailDomainId(val *string) {
-	if err := j.validateSetEmailDomainIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"emailDomainId",
 		val,
 	)
 }
@@ -1114,14 +1090,6 @@ func (b *jsiiProxy_Brand) ResetDefaultAppClassicApplicationUri() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetDefaultAppClassicApplicationUri",
-		nil, // no parameters
-	)
-}
-
-func (b *jsiiProxy_Brand) ResetEmailDomainId() {
-	_jsii_.InvokeVoid(
-		b,
-		"resetEmailDomainId",
 		nil, // no parameters
 	)
 }

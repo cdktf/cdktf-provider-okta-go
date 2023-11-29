@@ -115,10 +115,6 @@ func (j *jsiiProxy_Brand) validateSetDefaultAppClassicApplicationUriParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_Brand) validateSetEmailDomainIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_Brand) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
