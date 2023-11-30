@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/email_template okta_email_template}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/email_template okta_email_template}.
 type DataOktaEmailTemplate interface {
 	cdktf.TerraformDataSource
 	BrandId() *string
@@ -318,7 +318,7 @@ func (j *jsiiProxy_DataOktaEmailTemplate) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/email_template okta_email_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/email_template okta_email_template} Data Source.
 func NewDataOktaEmailTemplate(scope constructs.Construct, id *string, config *DataOktaEmailTemplateConfig) DataOktaEmailTemplate {
 	_init_.Initialize()
 
@@ -336,7 +336,7 @@ func NewDataOktaEmailTemplate(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/email_template okta_email_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/email_template okta_email_template} Data Source.
 func NewDataOktaEmailTemplate_Override(d DataOktaEmailTemplate, scope constructs.Construct, id *string, config *DataOktaEmailTemplateConfig) {
 	_init_.Initialize()
 
