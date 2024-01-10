@@ -59,7 +59,15 @@ func (s *jsiiProxy_SecurityNotificationEmails) validateInterpolationForAttribute
 	return nil
 }
 
+func (s *jsiiProxy_SecurityNotificationEmails) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityNotificationEmails) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityNotificationEmails) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) validateInterpolationForAttribu
 	return nil
 }
 
+func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

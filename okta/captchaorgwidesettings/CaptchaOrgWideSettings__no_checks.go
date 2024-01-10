@@ -59,7 +59,15 @@ func (c *jsiiProxy_CaptchaOrgWideSettings) validateInterpolationForAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_CaptchaOrgWideSettings) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CaptchaOrgWideSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CaptchaOrgWideSettings) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

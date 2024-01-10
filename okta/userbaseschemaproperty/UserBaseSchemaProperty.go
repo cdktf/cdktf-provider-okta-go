@@ -5,10 +5,10 @@ package userbaseschemaproperty
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v12/userbaseschemaproperty/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v13/userbaseschemaproperty/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -112,12 +112,22 @@ type UserBaseSchemaProperty interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -131,6 +141,9 @@ type UserBaseSchemaProperty interface {
 	ResetRequired()
 	ResetUserType()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -951,6 +964,19 @@ func (u *jsiiProxy_UserBaseSchemaProperty) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
+func (u *jsiiProxy_UserBaseSchemaProperty) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		u,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (u *jsiiProxy_UserBaseSchemaProperty) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := u.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -978,6 +1004,17 @@ func (u *jsiiProxy_UserBaseSchemaProperty) InterpolationForAttribute(terraformAt
 	return returns
 }
 
+func (u *jsiiProxy_UserBaseSchemaProperty) MoveFromId(id *string) {
+	if err := u.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		u,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (u *jsiiProxy_UserBaseSchemaProperty) MoveTo(moveTarget *string, index interface{}) {
 	if err := u.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -986,6 +1023,17 @@ func (u *jsiiProxy_UserBaseSchemaProperty) MoveTo(moveTarget *string, index inte
 		u,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (u *jsiiProxy_UserBaseSchemaProperty) MoveToId(id *string) {
+	if err := u.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		u,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -1062,6 +1110,32 @@ func (u *jsiiProxy_UserBaseSchemaProperty) SynthesizeAttributes() *map[string]in
 	_jsii_.Invoke(
 		u,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (u *jsiiProxy_UserBaseSchemaProperty) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		u,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (u *jsiiProxy_UserBaseSchemaProperty) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		u,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

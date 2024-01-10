@@ -59,7 +59,15 @@ func (a *jsiiProxy_AppThreeField) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (a *jsiiProxy_AppThreeField) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppThreeField) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppThreeField) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

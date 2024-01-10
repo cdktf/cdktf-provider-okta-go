@@ -59,7 +59,15 @@ func (u *jsiiProxy_UserGroupMemberships) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (u *jsiiProxy_UserGroupMemberships) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserGroupMemberships) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserGroupMemberships) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (a *jsiiProxy_AppOauthPostLogoutRedirectUri) validateInterpolationForAttrib
 	return nil
 }
 
+func (a *jsiiProxy_AppOauthPostLogoutRedirectUri) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppOauthPostLogoutRedirectUri) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppOauthPostLogoutRedirectUri) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (i *jsiiProxy_IdpSocial) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (i *jsiiProxy_IdpSocial) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdpSocial) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdpSocial) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (a *jsiiProxy_AppSecurePasswordStore) validateInterpolationForAttributePara
 	return nil
 }
 
+func (a *jsiiProxy_AppSecurePasswordStore) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSecurePasswordStore) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppSecurePasswordStore) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

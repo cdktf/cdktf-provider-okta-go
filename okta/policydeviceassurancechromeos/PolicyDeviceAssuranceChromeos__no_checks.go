@@ -59,7 +59,15 @@ func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) validateInterpolationForAttrib
 	return nil
 }
 
+func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

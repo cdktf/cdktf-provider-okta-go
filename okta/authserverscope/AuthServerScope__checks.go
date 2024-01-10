@@ -122,6 +122,14 @@ func (a *jsiiProxy_AuthServerScope) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (a *jsiiProxy_AuthServerScope) validateMoveFromIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AuthServerScope) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
@@ -178,6 +186,14 @@ func (a *jsiiProxy_AuthServerScope) validateMoveToParameters(moveTarget *string,
 		// ok
 	default:
 		return fmt.Errorf("parameter index must be one of the allowed types: *string, *float64; received %#v (a %T)", index, index)
+	}
+
+	return nil
+}
+
+func (a *jsiiProxy_AuthServerScope) validateMoveToIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
 	return nil

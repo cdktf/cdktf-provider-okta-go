@@ -59,7 +59,15 @@ func (g *jsiiProxy_GroupSchemaProperty) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (g *jsiiProxy_GroupSchemaProperty) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GroupSchemaProperty) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GroupSchemaProperty) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

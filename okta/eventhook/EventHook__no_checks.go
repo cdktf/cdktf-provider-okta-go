@@ -59,7 +59,15 @@ func (e *jsiiProxy_EventHook) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (e *jsiiProxy_EventHook) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventHook) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventHook) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

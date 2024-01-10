@@ -59,7 +59,15 @@ func (p *jsiiProxy_PolicyProfileEnrollmentApps) validateInterpolationForAttribut
 	return nil
 }
 
+func (p *jsiiProxy_PolicyProfileEnrollmentApps) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyProfileEnrollmentApps) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PolicyProfileEnrollmentApps) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

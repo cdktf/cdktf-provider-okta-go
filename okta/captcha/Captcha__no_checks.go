@@ -59,7 +59,15 @@ func (c *jsiiProxy_Captcha) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (c *jsiiProxy_Captcha) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Captcha) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_Captcha) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

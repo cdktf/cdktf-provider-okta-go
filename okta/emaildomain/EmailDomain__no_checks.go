@@ -59,7 +59,15 @@ func (e *jsiiProxy_EmailDomain) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (e *jsiiProxy_EmailDomain) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmailDomain) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

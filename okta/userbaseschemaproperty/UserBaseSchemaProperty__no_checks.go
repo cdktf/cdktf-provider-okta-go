@@ -59,7 +59,15 @@ func (u *jsiiProxy_UserBaseSchemaProperty) validateInterpolationForAttributePara
 	return nil
 }
 
+func (u *jsiiProxy_UserBaseSchemaProperty) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserBaseSchemaProperty) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserBaseSchemaProperty) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
