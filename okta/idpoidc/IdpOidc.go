@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/idp_oidc okta_idp_oidc}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/idp_oidc okta_idp_oidc}.
 type IdpOidc interface {
 	cdktf.TerraformResource
 	AccountLinkAction() *string
@@ -99,6 +99,9 @@ type IdpOidc interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PkceRequired() interface{}
+	SetPkceRequired(val interface{})
+	PkceRequiredInput() interface{}
 	ProfileMaster() interface{}
 	SetProfileMaster(val interface{})
 	ProfileMasterInput() interface{}
@@ -218,6 +221,7 @@ type IdpOidc interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPkceRequired()
 	ResetProfileMaster()
 	ResetProtocolType()
 	ResetProvisioningAction()
@@ -708,6 +712,26 @@ func (j *jsiiProxy_IdpOidc) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_IdpOidc) PkceRequired() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pkceRequired",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdpOidc) PkceRequiredInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pkceRequiredInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IdpOidc) ProfileMaster() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1089,7 +1113,7 @@ func (j *jsiiProxy_IdpOidc) UserTypeId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/idp_oidc okta_idp_oidc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/idp_oidc okta_idp_oidc} Resource.
 func NewIdpOidc(scope constructs.Construct, id *string, config *IdpOidcConfig) IdpOidc {
 	_init_.Initialize()
 
@@ -1107,7 +1131,7 @@ func NewIdpOidc(scope constructs.Construct, id *string, config *IdpOidcConfig) I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/idp_oidc okta_idp_oidc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/idp_oidc okta_idp_oidc} Resource.
 func NewIdpOidc_Override(i IdpOidc, scope constructs.Construct, id *string, config *IdpOidcConfig) {
 	_init_.Initialize()
 
@@ -1361,6 +1385,17 @@ func (j *jsiiProxy_IdpOidc)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IdpOidc)SetPkceRequired(val interface{}) {
+	if err := j.validateSetPkceRequiredParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pkceRequired",
 		val,
 	)
 }
@@ -1986,6 +2021,14 @@ func (i *jsiiProxy_IdpOidc) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdpOidc) ResetPkceRequired() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetPkceRequired",
 		nil, // no parameters
 	)
 }

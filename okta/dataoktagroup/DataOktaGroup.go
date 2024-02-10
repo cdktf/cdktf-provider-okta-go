@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/group okta_group}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/data-sources/group okta_group}.
 type DataOktaGroup interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -383,7 +383,7 @@ func (j *jsiiProxy_DataOktaGroup) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/group okta_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/data-sources/group okta_group} Data Source.
 func NewDataOktaGroup(scope constructs.Construct, id *string, config *DataOktaGroupConfig) DataOktaGroup {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewDataOktaGroup(scope constructs.Construct, id *string, config *DataOktaGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/group okta_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/data-sources/group okta_group} Data Source.
 func NewDataOktaGroup_Override(d DataOktaGroup, scope constructs.Construct, id *string, config *DataOktaGroupConfig) {
 	_init_.Initialize()
 
