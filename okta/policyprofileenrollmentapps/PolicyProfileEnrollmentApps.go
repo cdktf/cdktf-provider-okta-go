@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/policy_profile_enrollment_apps okta_policy_profile_enrollment_apps}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_profile_enrollment_apps okta_policy_profile_enrollment_apps}.
 type PolicyProfileEnrollmentApps interface {
 	cdktf.TerraformResource
 	Apps() *[]*string
@@ -368,7 +368,7 @@ func (j *jsiiProxy_PolicyProfileEnrollmentApps) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/policy_profile_enrollment_apps okta_policy_profile_enrollment_apps} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_profile_enrollment_apps okta_policy_profile_enrollment_apps} Resource.
 func NewPolicyProfileEnrollmentApps(scope constructs.Construct, id *string, config *PolicyProfileEnrollmentAppsConfig) PolicyProfileEnrollmentApps {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewPolicyProfileEnrollmentApps(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/policy_profile_enrollment_apps okta_policy_profile_enrollment_apps} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_profile_enrollment_apps okta_policy_profile_enrollment_apps} Resource.
 func NewPolicyProfileEnrollmentApps_Override(p PolicyProfileEnrollmentApps, scope constructs.Construct, id *string, config *PolicyProfileEnrollmentAppsConfig) {
 	_init_.Initialize()
 

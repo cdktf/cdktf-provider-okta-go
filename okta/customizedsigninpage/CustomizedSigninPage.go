@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/customized_signin_page okta_customized_signin_page}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/customized_signin_page okta_customized_signin_page}.
 type CustomizedSigninPage interface {
 	cdktf.TerraformResource
 	BrandId() *string
@@ -401,7 +401,7 @@ func (j *jsiiProxy_CustomizedSigninPage) WidgetVersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/customized_signin_page okta_customized_signin_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/customized_signin_page okta_customized_signin_page} Resource.
 func NewCustomizedSigninPage(scope constructs.Construct, id *string, config *CustomizedSigninPageConfig) CustomizedSigninPage {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewCustomizedSigninPage(scope constructs.Construct, id *string, config *Cus
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/customized_signin_page okta_customized_signin_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/customized_signin_page okta_customized_signin_page} Resource.
 func NewCustomizedSigninPage_Override(c CustomizedSigninPage, scope constructs.Construct, id *string, config *CustomizedSigninPageConfig) {
 	_init_.Initialize()
 

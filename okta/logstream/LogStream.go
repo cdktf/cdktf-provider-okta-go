@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/log_stream okta_log_stream}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/log_stream okta_log_stream}.
 type LogStream interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_LogStream) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/log_stream okta_log_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/log_stream okta_log_stream} Resource.
 func NewLogStream(scope constructs.Construct, id *string, config *LogStreamConfig) LogStream {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewLogStream(scope constructs.Construct, id *string, config *LogStreamConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/log_stream okta_log_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/log_stream okta_log_stream} Resource.
 func NewLogStream_Override(l LogStream, scope constructs.Construct, id *string, config *LogStreamConfig) {
 	_init_.Initialize()
 

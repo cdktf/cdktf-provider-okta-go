@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_oauth_role_assignment okta_app_oauth_role_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_oauth_role_assignment okta_app_oauth_role_assignment}.
 type AppOauthRoleAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -413,7 +413,7 @@ func (j *jsiiProxy_AppOauthRoleAssignment) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_oauth_role_assignment okta_app_oauth_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_oauth_role_assignment okta_app_oauth_role_assignment} Resource.
 func NewAppOauthRoleAssignment(scope constructs.Construct, id *string, config *AppOauthRoleAssignmentConfig) AppOauthRoleAssignment {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewAppOauthRoleAssignment(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_oauth_role_assignment okta_app_oauth_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_oauth_role_assignment okta_app_oauth_role_assignment} Resource.
 func NewAppOauthRoleAssignment_Override(a AppOauthRoleAssignment, scope constructs.Construct, id *string, config *AppOauthRoleAssignmentConfig) {
 	_init_.Initialize()
 

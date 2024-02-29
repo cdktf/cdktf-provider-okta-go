@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/policy_device_assurance_android okta_policy_device_assurance_android}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_device_assurance_android okta_policy_device_assurance_android}.
 type PolicyDeviceAssuranceAndroid interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -495,7 +495,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/policy_device_assurance_android okta_policy_device_assurance_android} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_device_assurance_android okta_policy_device_assurance_android} Resource.
 func NewPolicyDeviceAssuranceAndroid(scope constructs.Construct, id *string, config *PolicyDeviceAssuranceAndroidConfig) PolicyDeviceAssuranceAndroid {
 	_init_.Initialize()
 
@@ -513,7 +513,7 @@ func NewPolicyDeviceAssuranceAndroid(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/policy_device_assurance_android okta_policy_device_assurance_android} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_device_assurance_android okta_policy_device_assurance_android} Resource.
 func NewPolicyDeviceAssuranceAndroid_Override(p PolicyDeviceAssuranceAndroid, scope constructs.Construct, id *string, config *PolicyDeviceAssuranceAndroidConfig) {
 	_init_.Initialize()
 
