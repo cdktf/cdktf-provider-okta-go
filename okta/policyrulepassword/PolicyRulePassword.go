@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_password okta_policy_rule_password}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password okta_policy_rule_password}.
 type PolicyRulePassword interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -573,7 +573,7 @@ func (j *jsiiProxy_PolicyRulePassword) UsersExcludedInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_password okta_policy_rule_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password okta_policy_rule_password} Resource.
 func NewPolicyRulePassword(scope constructs.Construct, id *string, config *PolicyRulePasswordConfig) PolicyRulePassword {
 	_init_.Initialize()
 
@@ -591,7 +591,7 @@ func NewPolicyRulePassword(scope constructs.Construct, id *string, config *Polic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_password okta_policy_rule_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password okta_policy_rule_password} Resource.
 func NewPolicyRulePassword_Override(p PolicyRulePassword, scope constructs.Construct, id *string, config *PolicyRulePasswordConfig) {
 	_init_.Initialize()
 

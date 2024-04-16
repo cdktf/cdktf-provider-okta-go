@@ -22,21 +22,21 @@ type PolicyDeviceAssuranceIosConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Policy device assurance name.
+	// Name of the device assurance policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_device_assurance_ios#name PolicyDeviceAssuranceIos#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_device_assurance_ios#name PolicyDeviceAssuranceIos#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// The device jailbreak. Only for android and iOS platform.
+	// Is the device jailbroken in the device assurance policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_device_assurance_ios#jailbreak PolicyDeviceAssuranceIos#jailbreak}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_device_assurance_ios#jailbreak PolicyDeviceAssuranceIos#jailbreak}
 	Jailbreak interface{} `field:"optional" json:"jailbreak" yaml:"jailbreak"`
-	// The device os minimum version.
+	// Minimum os version of the device in the device assurance policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_device_assurance_ios#os_version PolicyDeviceAssuranceIos#os_version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_device_assurance_ios#os_version PolicyDeviceAssuranceIos#os_version}
 	OsVersion *string `field:"optional" json:"osVersion" yaml:"osVersion"`
-	// List of screenlock type, can be BIOMETRIC or BIOMETRIC, PASSCODE.
+	// List of screenlock type, can be `BIOMETRIC` or `BIOMETRIC, PASSCODE`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_device_assurance_ios#screenlock_type PolicyDeviceAssuranceIos#screenlock_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_device_assurance_ios#screenlock_type PolicyDeviceAssuranceIos#screenlock_type}
 	ScreenlockType *[]*string `field:"optional" json:"screenlockType" yaml:"screenlockType"`
 }
 

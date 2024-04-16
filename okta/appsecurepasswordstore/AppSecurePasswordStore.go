@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_secure_password_store okta_app_secure_password_store}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_secure_password_store okta_app_secure_password_store}.
 type AppSecurePasswordStore interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -1059,7 +1059,7 @@ func (j *jsiiProxy_AppSecurePasswordStore) UserNameTemplateTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_secure_password_store okta_app_secure_password_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_secure_password_store okta_app_secure_password_store} Resource.
 func NewAppSecurePasswordStore(scope constructs.Construct, id *string, config *AppSecurePasswordStoreConfig) AppSecurePasswordStore {
 	_init_.Initialize()
 
@@ -1077,7 +1077,7 @@ func NewAppSecurePasswordStore(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_secure_password_store okta_app_secure_password_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_secure_password_store okta_app_secure_password_store} Resource.
 func NewAppSecurePasswordStore_Override(a AppSecurePasswordStore, scope constructs.Construct, id *string, config *AppSecurePasswordStoreConfig) {
 	_init_.Initialize()
 

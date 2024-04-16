@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon okta_policy_rule_signon}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon okta_policy_rule_signon}.
 type PolicyRuleSignon interface {
 	cdktf.TerraformResource
 	Access() *string
@@ -111,6 +111,9 @@ type PolicyRuleSignon interface {
 	RiscLevel() *string
 	SetRiscLevel(val *string)
 	RiscLevelInput() *string
+	RiskLevel() *string
+	SetRiskLevel(val *string)
+	RiskLevelInput() *string
 	SessionIdle() *float64
 	SetSessionIdle(val *float64)
 	SessionIdleInput() *float64
@@ -197,6 +200,7 @@ type PolicyRuleSignon interface {
 	ResetPrimaryFactor()
 	ResetPriority()
 	ResetRiscLevel()
+	ResetRiskLevel()
 	ResetSessionIdle()
 	ResetSessionLifetime()
 	ResetSessionPersistent()
@@ -730,6 +734,26 @@ func (j *jsiiProxy_PolicyRuleSignon) RiscLevelInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_PolicyRuleSignon) RiskLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"riskLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PolicyRuleSignon) RiskLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"riskLevelInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PolicyRuleSignon) SessionIdle() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -861,7 +885,7 @@ func (j *jsiiProxy_PolicyRuleSignon) UsersExcludedInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon okta_policy_rule_signon} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon okta_policy_rule_signon} Resource.
 func NewPolicyRuleSignon(scope constructs.Construct, id *string, config *PolicyRuleSignonConfig) PolicyRuleSignon {
 	_init_.Initialize()
 
@@ -879,7 +903,7 @@ func NewPolicyRuleSignon(scope constructs.Construct, id *string, config *PolicyR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon okta_policy_rule_signon} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon okta_policy_rule_signon} Resource.
 func NewPolicyRuleSignon_Override(p PolicyRuleSignon, scope constructs.Construct, id *string, config *PolicyRuleSignonConfig) {
 	_init_.Initialize()
 
@@ -1152,6 +1176,17 @@ func (j *jsiiProxy_PolicyRuleSignon)SetRiscLevel(val *string) {
 	_jsii_.Set(
 		j,
 		"riscLevel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PolicyRuleSignon)SetRiskLevel(val *string) {
+	if err := j.validateSetRiskLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"riskLevel",
 		val,
 	)
 }
@@ -1723,6 +1758,14 @@ func (p *jsiiProxy_PolicyRuleSignon) ResetRiscLevel() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetRiscLevel",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PolicyRuleSignon) ResetRiskLevel() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRiskLevel",
 		nil, // no parameters
 	)
 }

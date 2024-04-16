@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_mfa_default okta_policy_mfa_default}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_mfa_default okta_policy_mfa_default}.
 type PolicyMfaDefault interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -893,7 +893,7 @@ func (j *jsiiProxy_PolicyMfaDefault) YubikeyTokenInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_mfa_default okta_policy_mfa_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_mfa_default okta_policy_mfa_default} Resource.
 func NewPolicyMfaDefault(scope constructs.Construct, id *string, config *PolicyMfaDefaultConfig) PolicyMfaDefault {
 	_init_.Initialize()
 
@@ -911,7 +911,7 @@ func NewPolicyMfaDefault(scope constructs.Construct, id *string, config *PolicyM
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_mfa_default okta_policy_mfa_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_mfa_default okta_policy_mfa_default} Resource.
 func NewPolicyMfaDefault_Override(p PolicyMfaDefault, scope constructs.Construct, id *string, config *PolicyMfaDefaultConfig) {
 	_init_.Initialize()
 

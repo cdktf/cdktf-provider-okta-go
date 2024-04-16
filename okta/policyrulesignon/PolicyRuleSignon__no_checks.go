@@ -183,6 +183,10 @@ func (j *jsiiProxy_PolicyRuleSignon) validateSetRiscLevelParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_PolicyRuleSignon) validateSetRiskLevelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PolicyRuleSignon) validateSetSessionIdleParameters(val *float64) error {
 	return nil
 }
