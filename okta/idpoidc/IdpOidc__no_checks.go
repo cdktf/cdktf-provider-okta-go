@@ -175,6 +175,10 @@ func (j *jsiiProxy_IdpOidc) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_IdpOidc) validateSetPkceRequiredParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdpOidc) validateSetProfileMasterParameters(val interface{}) error {
 	return nil
 }

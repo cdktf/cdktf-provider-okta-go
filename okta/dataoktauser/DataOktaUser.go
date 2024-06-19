@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/data-sources/user okta_user}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/data-sources/user okta_user}.
 type DataOktaUser interface {
 	cdktf.TerraformDataSource
 	AdminRoles() *[]*string
@@ -805,7 +805,7 @@ func (j *jsiiProxy_DataOktaUser) ZipCode() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/data-sources/user okta_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/data-sources/user okta_user} Data Source.
 func NewDataOktaUser(scope constructs.Construct, id *string, config *DataOktaUserConfig) DataOktaUser {
 	_init_.Initialize()
 
@@ -823,7 +823,7 @@ func NewDataOktaUser(scope constructs.Construct, id *string, config *DataOktaUse
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/data-sources/user okta_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/data-sources/user okta_user} Data Source.
 func NewDataOktaUser_Override(d DataOktaUser, scope constructs.Construct, id *string, config *DataOktaUserConfig) {
 	_init_.Initialize()
 

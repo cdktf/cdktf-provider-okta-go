@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page okta_customized_signin_page}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/customized_signin_page okta_customized_signin_page}.
 type CustomizedSigninPage interface {
 	cdktf.TerraformResource
 	BrandId() *string
@@ -71,6 +71,7 @@ type CustomizedSigninPage interface {
 	// Experimental.
 	TerraformResourceType() *string
 	WidgetCustomizations() CustomizedSigninPageWidgetCustomizationsOutputReference
+	WidgetCustomizationsInput() interface{}
 	WidgetVersion() *string
 	SetWidgetVersion(val *string)
 	WidgetVersionInput() *string
@@ -118,10 +119,12 @@ type CustomizedSigninPage interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutContentSecurityPolicySetting(value *CustomizedSigninPageContentSecurityPolicySetting)
+	PutWidgetCustomizations(value *CustomizedSigninPageWidgetCustomizations)
 	ResetContentSecurityPolicySetting()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetWidgetCustomizations()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -380,6 +383,16 @@ func (j *jsiiProxy_CustomizedSigninPage) WidgetCustomizations() CustomizedSignin
 	return returns
 }
 
+func (j *jsiiProxy_CustomizedSigninPage) WidgetCustomizationsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"widgetCustomizationsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CustomizedSigninPage) WidgetVersion() *string {
 	var returns *string
 	_jsii_.Get(
@@ -401,7 +414,7 @@ func (j *jsiiProxy_CustomizedSigninPage) WidgetVersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page okta_customized_signin_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/customized_signin_page okta_customized_signin_page} Resource.
 func NewCustomizedSigninPage(scope constructs.Construct, id *string, config *CustomizedSigninPageConfig) CustomizedSigninPage {
 	_init_.Initialize()
 
@@ -419,7 +432,7 @@ func NewCustomizedSigninPage(scope constructs.Construct, id *string, config *Cus
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page okta_customized_signin_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/customized_signin_page okta_customized_signin_page} Resource.
 func NewCustomizedSigninPage_Override(c CustomizedSigninPage, scope constructs.Construct, id *string, config *CustomizedSigninPageConfig) {
 	_init_.Initialize()
 
@@ -895,6 +908,17 @@ func (c *jsiiProxy_CustomizedSigninPage) PutContentSecurityPolicySetting(value *
 	)
 }
 
+func (c *jsiiProxy_CustomizedSigninPage) PutWidgetCustomizations(value *CustomizedSigninPageWidgetCustomizations) {
+	if err := c.validatePutWidgetCustomizationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putWidgetCustomizations",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CustomizedSigninPage) ResetContentSecurityPolicySetting() {
 	_jsii_.InvokeVoid(
 		c,
@@ -907,6 +931,14 @@ func (c *jsiiProxy_CustomizedSigninPage) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CustomizedSigninPage) ResetWidgetCustomizations() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetWidgetCustomizations",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/data-sources/app okta_app}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/data-sources/app okta_app}.
 type DataOktaApp interface {
 	cdktf.TerraformDataSource
 	ActiveOnly() interface{}
@@ -440,7 +440,7 @@ func (j *jsiiProxy_DataOktaApp) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/data-sources/app okta_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/data-sources/app okta_app} Data Source.
 func NewDataOktaApp(scope constructs.Construct, id *string, config *DataOktaAppConfig) DataOktaApp {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewDataOktaApp(scope constructs.Construct, id *string, config *DataOktaAppC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/data-sources/app okta_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/data-sources/app okta_app} Data Source.
 func NewDataOktaApp_Override(d DataOktaApp, scope constructs.Construct, id *string, config *DataOktaAppConfig) {
 	_init_.Initialize()
 

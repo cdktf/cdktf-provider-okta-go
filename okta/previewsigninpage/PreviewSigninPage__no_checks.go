@@ -79,6 +79,10 @@ func (p *jsiiProxy_PreviewSigninPage) validatePutContentSecurityPolicySettingPar
 	return nil
 }
 
+func (p *jsiiProxy_PreviewSigninPage) validatePutWidgetCustomizationsParameters(value *PreviewSigninPageWidgetCustomizations) error {
+	return nil
+}
+
 func validatePreviewSigninPage_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

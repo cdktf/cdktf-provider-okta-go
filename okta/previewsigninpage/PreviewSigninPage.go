@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/preview_signin_page okta_preview_signin_page}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/preview_signin_page okta_preview_signin_page}.
 type PreviewSigninPage interface {
 	cdktf.TerraformResource
 	BrandId() *string
@@ -71,6 +71,7 @@ type PreviewSigninPage interface {
 	// Experimental.
 	TerraformResourceType() *string
 	WidgetCustomizations() PreviewSigninPageWidgetCustomizationsOutputReference
+	WidgetCustomizationsInput() interface{}
 	WidgetVersion() *string
 	SetWidgetVersion(val *string)
 	WidgetVersionInput() *string
@@ -118,10 +119,12 @@ type PreviewSigninPage interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutContentSecurityPolicySetting(value *PreviewSigninPageContentSecurityPolicySetting)
+	PutWidgetCustomizations(value *PreviewSigninPageWidgetCustomizations)
 	ResetContentSecurityPolicySetting()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetWidgetCustomizations()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -380,6 +383,16 @@ func (j *jsiiProxy_PreviewSigninPage) WidgetCustomizations() PreviewSigninPageWi
 	return returns
 }
 
+func (j *jsiiProxy_PreviewSigninPage) WidgetCustomizationsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"widgetCustomizationsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PreviewSigninPage) WidgetVersion() *string {
 	var returns *string
 	_jsii_.Get(
@@ -401,7 +414,7 @@ func (j *jsiiProxy_PreviewSigninPage) WidgetVersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/preview_signin_page okta_preview_signin_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/preview_signin_page okta_preview_signin_page} Resource.
 func NewPreviewSigninPage(scope constructs.Construct, id *string, config *PreviewSigninPageConfig) PreviewSigninPage {
 	_init_.Initialize()
 
@@ -419,7 +432,7 @@ func NewPreviewSigninPage(scope constructs.Construct, id *string, config *Previe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/preview_signin_page okta_preview_signin_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/preview_signin_page okta_preview_signin_page} Resource.
 func NewPreviewSigninPage_Override(p PreviewSigninPage, scope constructs.Construct, id *string, config *PreviewSigninPageConfig) {
 	_init_.Initialize()
 
@@ -895,6 +908,17 @@ func (p *jsiiProxy_PreviewSigninPage) PutContentSecurityPolicySetting(value *Pre
 	)
 }
 
+func (p *jsiiProxy_PreviewSigninPage) PutWidgetCustomizations(value *PreviewSigninPageWidgetCustomizations) {
+	if err := p.validatePutWidgetCustomizationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putWidgetCustomizations",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PreviewSigninPage) ResetContentSecurityPolicySetting() {
 	_jsii_.InvokeVoid(
 		p,
@@ -907,6 +931,14 @@ func (p *jsiiProxy_PreviewSigninPage) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PreviewSigninPage) ResetWidgetCustomizations() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetWidgetCustomizations",
 		nil, // no parameters
 	)
 }

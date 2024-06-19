@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/idp_social okta_idp_social}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/idp_social okta_idp_social}.
 type IdpSocial interface {
 	cdktf.TerraformResource
 	AccountLinkAction() *string
@@ -137,6 +137,11 @@ type IdpSocial interface {
 	TerraformResourceType() *string
 	TokenBinding() *string
 	TokenUrl() *string
+	TrustAudience() *string
+	TrustIssuer() *string
+	TrustKid() *string
+	TrustRevocation() *string
+	TrustRevocationCacheLifetime() *float64
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -910,6 +915,56 @@ func (j *jsiiProxy_IdpSocial) TokenUrl() *string {
 	return returns
 }
 
+func (j *jsiiProxy_IdpSocial) TrustAudience() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"trustAudience",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdpSocial) TrustIssuer() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"trustIssuer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdpSocial) TrustKid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"trustKid",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdpSocial) TrustRevocation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"trustRevocation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdpSocial) TrustRevocationCacheLifetime() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"trustRevocationCacheLifetime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IdpSocial) Type() *string {
 	var returns *string
 	_jsii_.Get(
@@ -951,7 +1006,7 @@ func (j *jsiiProxy_IdpSocial) UsernameTemplateInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/idp_social okta_idp_social} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/idp_social okta_idp_social} Resource.
 func NewIdpSocial(scope constructs.Construct, id *string, config *IdpSocialConfig) IdpSocial {
 	_init_.Initialize()
 
@@ -969,7 +1024,7 @@ func NewIdpSocial(scope constructs.Construct, id *string, config *IdpSocialConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/idp_social okta_idp_social} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/idp_social okta_idp_social} Resource.
 func NewIdpSocial_Override(i IdpSocial, scope constructs.Construct, id *string, config *IdpSocialConfig) {
 	_init_.Initialize()
 

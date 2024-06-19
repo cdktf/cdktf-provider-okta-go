@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_mfa okta_policy_mfa}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_mfa okta_policy_mfa}.
 type PolicyMfa interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -957,7 +957,7 @@ func (j *jsiiProxy_PolicyMfa) YubikeyTokenInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_mfa okta_policy_mfa} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_mfa okta_policy_mfa} Resource.
 func NewPolicyMfa(scope constructs.Construct, id *string, config *PolicyMfaConfig) PolicyMfa {
 	_init_.Initialize()
 
@@ -975,7 +975,7 @@ func NewPolicyMfa(scope constructs.Construct, id *string, config *PolicyMfaConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_mfa okta_policy_mfa} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_mfa okta_policy_mfa} Resource.
 func NewPolicyMfa_Override(p PolicyMfa, scope constructs.Construct, id *string, config *PolicyMfaConfig) {
 	_init_.Initialize()
 

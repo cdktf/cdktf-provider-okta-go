@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/template_sms okta_template_sms}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/template_sms okta_template_sms}.
 type TemplateSms interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_TemplateSms) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/template_sms okta_template_sms} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/template_sms okta_template_sms} Resource.
 func NewTemplateSms(scope constructs.Construct, id *string, config *TemplateSmsConfig) TemplateSms {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewTemplateSms(scope constructs.Construct, id *string, config *TemplateSmsC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/template_sms okta_template_sms} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/template_sms okta_template_sms} Resource.
 func NewTemplateSms_Override(t TemplateSms, scope constructs.Construct, id *string, config *TemplateSmsConfig) {
 	_init_.Initialize()
 

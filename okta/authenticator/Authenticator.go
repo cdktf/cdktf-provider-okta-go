@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator okta_authenticator}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/authenticator okta_authenticator}.
 type Authenticator interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -45,6 +45,9 @@ type Authenticator interface {
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
+	LegacyIgnoreName() interface{}
+	SetLegacyIgnoreName(val interface{})
+	LegacyIgnoreNameInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -147,6 +150,7 @@ type Authenticator interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetLegacyIgnoreName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -293,6 +297,26 @@ func (j *jsiiProxy_Authenticator) KeyInput() *string {
 	_jsii_.Get(
 		j,
 		"keyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Authenticator) LegacyIgnoreName() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"legacyIgnoreName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Authenticator) LegacyIgnoreNameInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"legacyIgnoreNameInput",
 		&returns,
 	)
 	return returns
@@ -629,7 +653,7 @@ func (j *jsiiProxy_Authenticator) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator okta_authenticator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/authenticator okta_authenticator} Resource.
 func NewAuthenticator(scope constructs.Construct, id *string, config *AuthenticatorConfig) Authenticator {
 	_init_.Initialize()
 
@@ -647,7 +671,7 @@ func NewAuthenticator(scope constructs.Construct, id *string, config *Authentica
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator okta_authenticator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/authenticator okta_authenticator} Resource.
 func NewAuthenticator_Override(a Authenticator, scope constructs.Construct, id *string, config *AuthenticatorConfig) {
 	_init_.Initialize()
 
@@ -714,6 +738,17 @@ func (j *jsiiProxy_Authenticator)SetKey(val *string) {
 	_jsii_.Set(
 		j,
 		"key",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Authenticator)SetLegacyIgnoreName(val interface{}) {
+	if err := j.validateSetLegacyIgnoreNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"legacyIgnoreName",
 		val,
 	)
 }
@@ -1226,6 +1261,14 @@ func (a *jsiiProxy_Authenticator) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Authenticator) ResetLegacyIgnoreName() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetLegacyIgnoreName",
 		nil, // no parameters
 	)
 }
