@@ -107,6 +107,10 @@ func (j *jsiiProxy_NetworkZone) validateSetDynamicLocationsParameters(val *[]*st
 	return nil
 }
 
+func (j *jsiiProxy_NetworkZone) validateSetDynamicLocationsExcludeParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkZone) validateSetDynamicProxyTypeParameters(val *string) error {
 	return nil
 }
@@ -116,6 +120,14 @@ func (j *jsiiProxy_NetworkZone) validateSetGatewaysParameters(val *[]*string) er
 }
 
 func (j *jsiiProxy_NetworkZone) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetworkZone) validateSetIpServiceCategoriesExcludeParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetworkZone) validateSetIpServiceCategoriesIncludeParameters(val *[]*string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/data-sources/network_zone okta_network_zone}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone okta_network_zone}.
 type DataOktaNetworkZone interface {
 	cdktf.TerraformDataSource
 	Asns() *[]*string
@@ -29,6 +29,9 @@ type DataOktaNetworkZone interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DynamicLocations() *[]*string
+	DynamicLocationsExclude() *[]*string
+	SetDynamicLocationsExclude(val *[]*string)
+	DynamicLocationsExcludeInput() *[]*string
 	DynamicProxyType() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -42,6 +45,12 @@ type DataOktaNetworkZone interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpServiceCategoriesExclude() *[]*string
+	SetIpServiceCategoriesExclude(val *[]*string)
+	IpServiceCategoriesExcludeInput() *[]*string
+	IpServiceCategoriesInclude() *[]*string
+	SetIpServiceCategoriesInclude(val *[]*string)
+	IpServiceCategoriesIncludeInput() *[]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -92,7 +101,10 @@ type DataOktaNetworkZone interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDynamicLocationsExclude()
 	ResetId()
+	ResetIpServiceCategoriesExclude()
+	ResetIpServiceCategoriesInclude()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -176,6 +188,26 @@ func (j *jsiiProxy_DataOktaNetworkZone) DynamicLocations() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataOktaNetworkZone) DynamicLocationsExclude() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dynamicLocationsExclude",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOktaNetworkZone) DynamicLocationsExcludeInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dynamicLocationsExcludeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataOktaNetworkZone) DynamicProxyType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -241,6 +273,46 @@ func (j *jsiiProxy_DataOktaNetworkZone) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOktaNetworkZone) IpServiceCategoriesExclude() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipServiceCategoriesExclude",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOktaNetworkZone) IpServiceCategoriesExcludeInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipServiceCategoriesExcludeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOktaNetworkZone) IpServiceCategoriesInclude() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipServiceCategoriesInclude",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOktaNetworkZone) IpServiceCategoriesIncludeInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipServiceCategoriesIncludeInput",
 		&returns,
 	)
 	return returns
@@ -377,7 +449,7 @@ func (j *jsiiProxy_DataOktaNetworkZone) Usage() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/data-sources/network_zone okta_network_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone okta_network_zone} Data Source.
 func NewDataOktaNetworkZone(scope constructs.Construct, id *string, config *DataOktaNetworkZoneConfig) DataOktaNetworkZone {
 	_init_.Initialize()
 
@@ -395,7 +467,7 @@ func NewDataOktaNetworkZone(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/data-sources/network_zone okta_network_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone okta_network_zone} Data Source.
 func NewDataOktaNetworkZone_Override(d DataOktaNetworkZone, scope constructs.Construct, id *string, config *DataOktaNetworkZoneConfig) {
 	_init_.Initialize()
 
@@ -425,6 +497,17 @@ func (j *jsiiProxy_DataOktaNetworkZone)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_DataOktaNetworkZone)SetDynamicLocationsExclude(val *[]*string) {
+	if err := j.validateSetDynamicLocationsExcludeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dynamicLocationsExclude",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataOktaNetworkZone)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -440,6 +523,28 @@ func (j *jsiiProxy_DataOktaNetworkZone)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataOktaNetworkZone)SetIpServiceCategoriesExclude(val *[]*string) {
+	if err := j.validateSetIpServiceCategoriesExcludeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipServiceCategoriesExclude",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataOktaNetworkZone)SetIpServiceCategoriesInclude(val *[]*string) {
+	if err := j.validateSetIpServiceCategoriesIncludeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipServiceCategoriesInclude",
 		val,
 	)
 }
@@ -759,10 +864,34 @@ func (d *jsiiProxy_DataOktaNetworkZone) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (d *jsiiProxy_DataOktaNetworkZone) ResetDynamicLocationsExclude() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDynamicLocationsExclude",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataOktaNetworkZone) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataOktaNetworkZone) ResetIpServiceCategoriesExclude() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIpServiceCategoriesExclude",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataOktaNetworkZone) ResetIpServiceCategoriesInclude() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIpServiceCategoriesInclude",
 		nil, // no parameters
 	)
 }

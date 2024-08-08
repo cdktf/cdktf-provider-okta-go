@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/network_zone okta_network_zone}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/network_zone okta_network_zone}.
 type NetworkZone interface {
 	cdktf.TerraformResource
 	Asns() *[]*string
@@ -36,6 +36,9 @@ type NetworkZone interface {
 	SetDependsOn(val *[]*string)
 	DynamicLocations() *[]*string
 	SetDynamicLocations(val *[]*string)
+	DynamicLocationsExclude() *[]*string
+	SetDynamicLocationsExclude(val *[]*string)
+	DynamicLocationsExcludeInput() *[]*string
 	DynamicLocationsInput() *[]*string
 	DynamicProxyType() *string
 	SetDynamicProxyType(val *string)
@@ -54,6 +57,12 @@ type NetworkZone interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpServiceCategoriesExclude() *[]*string
+	SetIpServiceCategoriesExclude(val *[]*string)
+	IpServiceCategoriesExcludeInput() *[]*string
+	IpServiceCategoriesInclude() *[]*string
+	SetIpServiceCategoriesInclude(val *[]*string)
+	IpServiceCategoriesIncludeInput() *[]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -136,9 +145,12 @@ type NetworkZone interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAsns()
 	ResetDynamicLocations()
+	ResetDynamicLocationsExclude()
 	ResetDynamicProxyType()
 	ResetGateways()
 	ResetId()
+	ResetIpServiceCategoriesExclude()
+	ResetIpServiceCategoriesInclude()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -243,6 +255,26 @@ func (j *jsiiProxy_NetworkZone) DynamicLocations() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_NetworkZone) DynamicLocationsExclude() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dynamicLocationsExclude",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkZone) DynamicLocationsExcludeInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dynamicLocationsExcludeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkZone) DynamicLocationsInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -338,6 +370,46 @@ func (j *jsiiProxy_NetworkZone) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkZone) IpServiceCategoriesExclude() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipServiceCategoriesExclude",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkZone) IpServiceCategoriesExcludeInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipServiceCategoriesExcludeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkZone) IpServiceCategoriesInclude() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipServiceCategoriesInclude",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkZone) IpServiceCategoriesIncludeInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipServiceCategoriesIncludeInput",
 		&returns,
 	)
 	return returns
@@ -524,7 +596,7 @@ func (j *jsiiProxy_NetworkZone) UsageInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/network_zone okta_network_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/network_zone okta_network_zone} Resource.
 func NewNetworkZone(scope constructs.Construct, id *string, config *NetworkZoneConfig) NetworkZone {
 	_init_.Initialize()
 
@@ -542,7 +614,7 @@ func NewNetworkZone(scope constructs.Construct, id *string, config *NetworkZoneC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/network_zone okta_network_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/network_zone okta_network_zone} Resource.
 func NewNetworkZone_Override(n NetworkZone, scope constructs.Construct, id *string, config *NetworkZoneConfig) {
 	_init_.Initialize()
 
@@ -605,6 +677,17 @@ func (j *jsiiProxy_NetworkZone)SetDynamicLocations(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_NetworkZone)SetDynamicLocationsExclude(val *[]*string) {
+	if err := j.validateSetDynamicLocationsExcludeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dynamicLocationsExclude",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NetworkZone)SetDynamicProxyType(val *string) {
 	if err := j.validateSetDynamicProxyTypeParameters(val); err != nil {
 		panic(err)
@@ -642,6 +725,28 @@ func (j *jsiiProxy_NetworkZone)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkZone)SetIpServiceCategoriesExclude(val *[]*string) {
+	if err := j.validateSetIpServiceCategoriesExcludeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipServiceCategoriesExclude",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkZone)SetIpServiceCategoriesInclude(val *[]*string) {
+	if err := j.validateSetIpServiceCategoriesIncludeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipServiceCategoriesInclude",
 		val,
 	)
 }
@@ -1100,6 +1205,14 @@ func (n *jsiiProxy_NetworkZone) ResetDynamicLocations() {
 	)
 }
 
+func (n *jsiiProxy_NetworkZone) ResetDynamicLocationsExclude() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetDynamicLocationsExclude",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NetworkZone) ResetDynamicProxyType() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1120,6 +1233,22 @@ func (n *jsiiProxy_NetworkZone) ResetId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkZone) ResetIpServiceCategoriesExclude() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetIpServiceCategoriesExclude",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkZone) ResetIpServiceCategoriesInclude() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetIpServiceCategoriesInclude",
 		nil, // no parameters
 	)
 }

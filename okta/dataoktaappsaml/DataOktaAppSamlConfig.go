@@ -24,11 +24,11 @@ type DataOktaAppSamlConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Search only ACTIVE applications.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/data-sources/app_saml#active_only DataOktaAppSaml#active_only}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/app_saml#active_only DataOktaAppSaml#active_only}
 	ActiveOnly interface{} `field:"optional" json:"activeOnly" yaml:"activeOnly"`
 	// Id of application to retrieve, conflicts with label and label_prefix.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/data-sources/app_saml#id DataOktaAppSaml#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/app_saml#id DataOktaAppSaml#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -39,26 +39,26 @@ type DataOktaAppSamlConfig struct {
 	// 				uses the ?q=<label> query parameter exposed by Okta's API. It should be noted that at this time
 	// 				this searches both name and label. This is used to avoid paginating through all applications.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/data-sources/app_saml#label DataOktaAppSaml#label}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/app_saml#label DataOktaAppSaml#label}
 	Label *string `field:"optional" json:"label" yaml:"label"`
 	// Label prefix of the app to retrieve, conflicts with label and id.
 	//
 	// This will tell the
 	// 				provider to do a starts with query as opposed to an equals query.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/data-sources/app_saml#label_prefix DataOktaAppSaml#label_prefix}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/app_saml#label_prefix DataOktaAppSaml#label_prefix}
 	LabelPrefix *string `field:"optional" json:"labelPrefix" yaml:"labelPrefix"`
 	// Denotes whether the request is compressed or not.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/data-sources/app_saml#request_compressed DataOktaAppSaml#request_compressed}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/app_saml#request_compressed DataOktaAppSaml#request_compressed}
 	RequestCompressed interface{} `field:"optional" json:"requestCompressed" yaml:"requestCompressed"`
 	// Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/data-sources/app_saml#skip_groups DataOktaAppSaml#skip_groups}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/app_saml#skip_groups DataOktaAppSaml#skip_groups}
 	SkipGroups interface{} `field:"optional" json:"skipGroups" yaml:"skipGroups"`
 	// Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/data-sources/app_saml#skip_users DataOktaAppSaml#skip_users}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/app_saml#skip_users DataOktaAppSaml#skip_users}
 	SkipUsers interface{} `field:"optional" json:"skipUsers" yaml:"skipUsers"`
 }
 

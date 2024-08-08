@@ -211,7 +211,31 @@ func (j *jsiiProxy_DataOktaNetworkZone) validateSetCountParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_DataOktaNetworkZone) validateSetDynamicLocationsExcludeParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataOktaNetworkZone) validateSetIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataOktaNetworkZone) validateSetIpServiceCategoriesExcludeParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataOktaNetworkZone) validateSetIpServiceCategoriesIncludeParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
