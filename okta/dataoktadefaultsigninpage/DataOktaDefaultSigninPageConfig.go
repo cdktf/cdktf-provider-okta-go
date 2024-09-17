@@ -24,7 +24,7 @@ type DataOktaDefaultSigninPageConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// brand id of the preview signin page.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/default_signin_page#brand_id DataOktaDefaultSigninPage#brand_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/default_signin_page#brand_id DataOktaDefaultSigninPage#brand_id}
 	BrandId *string `field:"required" json:"brandId" yaml:"brandId"`
 }
 

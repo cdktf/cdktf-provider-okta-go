@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/default_signin_page okta_default_signin_page}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/default_signin_page okta_default_signin_page}.
 type DataOktaDefaultSigninPage interface {
 	cdktf.TerraformDataSource
 	BrandId() *string
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DataOktaDefaultSigninPage) WidgetVersion() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/default_signin_page okta_default_signin_page} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/default_signin_page okta_default_signin_page} Data Source.
 func NewDataOktaDefaultSigninPage(scope constructs.Construct, id *string, config *DataOktaDefaultSigninPageConfig) DataOktaDefaultSigninPage {
 	_init_.Initialize()
 
@@ -337,7 +337,7 @@ func NewDataOktaDefaultSigninPage(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/default_signin_page okta_default_signin_page} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/default_signin_page okta_default_signin_page} Data Source.
 func NewDataOktaDefaultSigninPage_Override(d DataOktaDefaultSigninPage, scope constructs.Construct, id *string, config *DataOktaDefaultSigninPageConfig) {
 	_init_.Initialize()
 

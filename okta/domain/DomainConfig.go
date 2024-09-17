@@ -24,19 +24,19 @@ type DomainConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Custom Domain name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/domain#name Domain#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/domain#name Domain#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Brand id of the domain.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/domain#brand_id Domain#brand_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/domain#brand_id Domain#brand_id}
 	BrandId *string `field:"optional" json:"brandId" yaml:"brandId"`
 	// Certificate source type that indicates whether the certificate is provided by the user or Okta.
 	//
 	// Accepted values: `MANUAL`, `OKTA_MANAGED`. Warning: Use of OKTA_MANAGED requires a feature flag to be enabled. Default value = MANUAL
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/domain#certificate_source_type Domain#certificate_source_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/domain#certificate_source_type Domain#certificate_source_type}
 	CertificateSourceType *string `field:"optional" json:"certificateSourceType" yaml:"certificateSourceType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/domain#id Domain#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/domain#id Domain#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/authenticator okta_authenticator}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/authenticator okta_authenticator}.
 type DataOktaAuthenticator interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_DataOktaAuthenticator) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/authenticator okta_authenticator} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/authenticator okta_authenticator} Data Source.
 func NewDataOktaAuthenticator(scope constructs.Construct, id *string, config *DataOktaAuthenticatorConfig) DataOktaAuthenticator {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewDataOktaAuthenticator(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/authenticator okta_authenticator} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/authenticator okta_authenticator} Data Source.
 func NewDataOktaAuthenticator_Override(d DataOktaAuthenticator, scope constructs.Construct, id *string, config *DataOktaAuthenticatorConfig) {
 	_init_.Initialize()
 

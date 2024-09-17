@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/resource_set okta_resource_set}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/resource_set okta_resource_set}.
 type ResourceSet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_ResourceSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/resource_set okta_resource_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/resource_set okta_resource_set} Resource.
 func NewResourceSet(scope constructs.Construct, id *string, config *ResourceSetConfig) ResourceSet {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewResourceSet(scope constructs.Construct, id *string, config *ResourceSetC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/resource_set okta_resource_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/resource_set okta_resource_set} Resource.
 func NewResourceSet_Override(r ResourceSet, scope constructs.Construct, id *string, config *ResourceSetConfig) {
 	_init_.Initialize()
 

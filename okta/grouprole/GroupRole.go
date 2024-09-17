@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/group_role okta_group_role}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_role okta_group_role}.
 type GroupRole interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -64,6 +64,12 @@ type GroupRole interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ResourceSetId() *string
+	SetResourceSetId(val *string)
+	ResourceSetIdInput() *string
+	RoleId() *string
+	SetRoleId(val *string)
+	RoleIdInput() *string
 	RoleType() *string
 	SetRoleType(val *string)
 	RoleTypeInput() *string
@@ -127,6 +133,8 @@ type GroupRole interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetResourceSetId()
+	ResetRoleId()
 	ResetTargetAppList()
 	ResetTargetGroupList()
 	SynthesizeAttributes() *map[string]interface{}
@@ -337,6 +345,46 @@ func (j *jsiiProxy_GroupRole) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GroupRole) ResourceSetId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceSetId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupRole) ResourceSetIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceSetIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupRole) RoleId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GroupRole) RoleIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GroupRole) RoleType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -428,7 +476,7 @@ func (j *jsiiProxy_GroupRole) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/group_role okta_group_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_role okta_group_role} Resource.
 func NewGroupRole(scope constructs.Construct, id *string, config *GroupRoleConfig) GroupRole {
 	_init_.Initialize()
 
@@ -446,7 +494,7 @@ func NewGroupRole(scope constructs.Construct, id *string, config *GroupRoleConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/group_role okta_group_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_role okta_group_role} Resource.
 func NewGroupRole_Override(g GroupRole, scope constructs.Construct, id *string, config *GroupRoleConfig) {
 	_init_.Initialize()
 
@@ -554,6 +602,28 @@ func (j *jsiiProxy_GroupRole)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GroupRole)SetResourceSetId(val *string) {
+	if err := j.validateSetResourceSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceSetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GroupRole)SetRoleId(val *string) {
+	if err := j.validateSetRoleIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"roleId",
 		val,
 	)
 }
@@ -964,6 +1034,22 @@ func (g *jsiiProxy_GroupRole) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GroupRole) ResetResourceSetId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetResourceSetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GroupRole) ResetRoleId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRoleId",
 		nil, // no parameters
 	)
 }

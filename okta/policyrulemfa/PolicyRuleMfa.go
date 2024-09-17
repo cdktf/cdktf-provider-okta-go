@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_rule_mfa okta_policy_rule_mfa}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/policy_rule_mfa okta_policy_rule_mfa}.
 type PolicyRuleMfa interface {
 	cdktf.TerraformResource
 	AppExclude() PolicyRuleMfaAppExcludeList
@@ -573,7 +573,7 @@ func (j *jsiiProxy_PolicyRuleMfa) UsersExcludedInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_rule_mfa okta_policy_rule_mfa} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/policy_rule_mfa okta_policy_rule_mfa} Resource.
 func NewPolicyRuleMfa(scope constructs.Construct, id *string, config *PolicyRuleMfaConfig) PolicyRuleMfa {
 	_init_.Initialize()
 
@@ -591,7 +591,7 @@ func NewPolicyRuleMfa(scope constructs.Construct, id *string, config *PolicyRule
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_rule_mfa okta_policy_rule_mfa} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/policy_rule_mfa okta_policy_rule_mfa} Resource.
 func NewPolicyRuleMfa_Override(p PolicyRuleMfa, scope constructs.Construct, id *string, config *PolicyRuleMfaConfig) {
 	_init_.Initialize()
 

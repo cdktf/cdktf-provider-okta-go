@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/log_stream okta_log_stream}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/log_stream okta_log_stream}.
 type DataOktaLogStream interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataOktaLogStream) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/log_stream okta_log_stream} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/log_stream okta_log_stream} Data Source.
 func NewDataOktaLogStream(scope constructs.Construct, id *string, config *DataOktaLogStreamConfig) DataOktaLogStream {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataOktaLogStream(scope constructs.Construct, id *string, config *DataOk
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/log_stream okta_log_stream} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/log_stream okta_log_stream} Data Source.
 func NewDataOktaLogStream_Override(d DataOktaLogStream, scope constructs.Construct, id *string, config *DataOktaLogStreamConfig) {
 	_init_.Initialize()
 
