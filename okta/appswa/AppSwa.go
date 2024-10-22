@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_swa okta_app_swa}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_swa okta_app_swa}.
 type AppSwa interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -942,7 +942,7 @@ func (j *jsiiProxy_AppSwa) UserNameTemplateTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_swa okta_app_swa} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_swa okta_app_swa} Resource.
 func NewAppSwa(scope constructs.Construct, id *string, config *AppSwaConfig) AppSwa {
 	_init_.Initialize()
 
@@ -960,7 +960,7 @@ func NewAppSwa(scope constructs.Construct, id *string, config *AppSwaConfig) App
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_swa okta_app_swa} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_swa okta_app_swa} Resource.
 func NewAppSwa_Override(a AppSwa, scope constructs.Construct, id *string, config *AppSwaConfig) {
 	_init_.Initialize()
 

@@ -24,11 +24,11 @@ type AppAccessPolicyAssignmentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The application ID; this value is immutable and can not be updated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_access_policy_assignment#app_id AppAccessPolicyAssignment#app_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_access_policy_assignment#app_id AppAccessPolicyAssignment#app_id}
 	AppId *string `field:"required" json:"appId" yaml:"appId"`
 	// The access policy ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_access_policy_assignment#policy_id AppAccessPolicyAssignment#policy_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_access_policy_assignment#policy_id AppAccessPolicyAssignment#policy_id}
 	PolicyId *string `field:"required" json:"policyId" yaml:"policyId"`
 }
 

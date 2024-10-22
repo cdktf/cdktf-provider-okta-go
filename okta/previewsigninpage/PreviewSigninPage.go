@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/preview_signin_page okta_preview_signin_page}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/preview_signin_page okta_preview_signin_page}.
 type PreviewSigninPage interface {
 	cdktf.TerraformResource
 	BrandId() *string
@@ -414,7 +414,7 @@ func (j *jsiiProxy_PreviewSigninPage) WidgetVersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/preview_signin_page okta_preview_signin_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/preview_signin_page okta_preview_signin_page} Resource.
 func NewPreviewSigninPage(scope constructs.Construct, id *string, config *PreviewSigninPageConfig) PreviewSigninPage {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewPreviewSigninPage(scope constructs.Construct, id *string, config *Previe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/preview_signin_page okta_preview_signin_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/preview_signin_page okta_preview_signin_page} Resource.
 func NewPreviewSigninPage_Override(p PreviewSigninPage, scope constructs.Construct, id *string, config *PreviewSigninPageConfig) {
 	_init_.Initialize()
 
