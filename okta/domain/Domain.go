@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/domain okta_domain}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/domain okta_domain}.
 type Domain interface {
 	cdktf.TerraformResource
 	BrandId() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_Domain) ValidationStatus() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/domain okta_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/domain okta_domain} Resource.
 func NewDomain(scope constructs.Construct, id *string, config *DomainConfig) Domain {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewDomain(scope constructs.Construct, id *string, config *DomainConfig) Dom
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/domain okta_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/domain okta_domain} Resource.
 func NewDomain_Override(d Domain, scope constructs.Construct, id *string, config *DomainConfig) {
 	_init_.Initialize()
 

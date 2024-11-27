@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_group_assignments okta_app_group_assignments}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_group_assignments okta_app_group_assignments}.
 type AppGroupAssignments interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -113,6 +113,7 @@ type AppGroupAssignments interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutGroup(value interface{})
+	ResetGroup()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -356,7 +357,7 @@ func (j *jsiiProxy_AppGroupAssignments) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_group_assignments okta_app_group_assignments} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_group_assignments okta_app_group_assignments} Resource.
 func NewAppGroupAssignments(scope constructs.Construct, id *string, config *AppGroupAssignmentsConfig) AppGroupAssignments {
 	_init_.Initialize()
 
@@ -374,7 +375,7 @@ func NewAppGroupAssignments(scope constructs.Construct, id *string, config *AppG
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_group_assignments okta_app_group_assignments} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_group_assignments okta_app_group_assignments} Resource.
 func NewAppGroupAssignments_Override(a AppGroupAssignments, scope constructs.Construct, id *string, config *AppGroupAssignmentsConfig) {
 	_init_.Initialize()
 
@@ -836,6 +837,14 @@ func (a *jsiiProxy_AppGroupAssignments) PutGroup(value interface{}) {
 		a,
 		"putGroup",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppGroupAssignments) ResetGroup() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetGroup",
+		nil, // no parameters
 	)
 }
 
