@@ -396,6 +396,14 @@ func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetEmailVerificationPara
 	return nil
 }
 
+func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetEnrollAuthenticatorTypesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

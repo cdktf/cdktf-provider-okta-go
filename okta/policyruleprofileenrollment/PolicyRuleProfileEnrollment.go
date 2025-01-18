@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/policy_rule_profile_enrollment okta_policy_rule_profile_enrollment}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/policy_rule_profile_enrollment okta_policy_rule_profile_enrollment}.
 type PolicyRuleProfileEnrollment interface {
 	cdktf.TerraformResource
 	Access() *string
@@ -37,6 +37,9 @@ type PolicyRuleProfileEnrollment interface {
 	EmailVerification() interface{}
 	SetEmailVerification(val interface{})
 	EmailVerificationInput() interface{}
+	EnrollAuthenticatorTypes() *[]*string
+	SetEnrollAuthenticatorTypes(val *[]*string)
+	EnrollAuthenticatorTypesInput() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -138,6 +141,7 @@ type PolicyRuleProfileEnrollment interface {
 	PutProfileAttributes(value interface{})
 	ResetAccess()
 	ResetEmailVerification()
+	ResetEnrollAuthenticatorTypes()
 	ResetId()
 	ResetInlineHookId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -250,6 +254,26 @@ func (j *jsiiProxy_PolicyRuleProfileEnrollment) EmailVerificationInput() interfa
 	_jsii_.Get(
 		j,
 		"emailVerificationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PolicyRuleProfileEnrollment) EnrollAuthenticatorTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"enrollAuthenticatorTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PolicyRuleProfileEnrollment) EnrollAuthenticatorTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"enrollAuthenticatorTypesInput",
 		&returns,
 	)
 	return returns
@@ -546,7 +570,7 @@ func (j *jsiiProxy_PolicyRuleProfileEnrollment) UnknownUserActionInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/policy_rule_profile_enrollment okta_policy_rule_profile_enrollment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/policy_rule_profile_enrollment okta_policy_rule_profile_enrollment} Resource.
 func NewPolicyRuleProfileEnrollment(scope constructs.Construct, id *string, config *PolicyRuleProfileEnrollmentConfig) PolicyRuleProfileEnrollment {
 	_init_.Initialize()
 
@@ -564,7 +588,7 @@ func NewPolicyRuleProfileEnrollment(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/policy_rule_profile_enrollment okta_policy_rule_profile_enrollment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/policy_rule_profile_enrollment okta_policy_rule_profile_enrollment} Resource.
 func NewPolicyRuleProfileEnrollment_Override(p PolicyRuleProfileEnrollment, scope constructs.Construct, id *string, config *PolicyRuleProfileEnrollmentConfig) {
 	_init_.Initialize()
 
@@ -623,6 +647,17 @@ func (j *jsiiProxy_PolicyRuleProfileEnrollment)SetEmailVerification(val interfac
 	_jsii_.Set(
 		j,
 		"emailVerification",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PolicyRuleProfileEnrollment)SetEnrollAuthenticatorTypes(val *[]*string) {
+	if err := j.validateSetEnrollAuthenticatorTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enrollAuthenticatorTypes",
 		val,
 	)
 }
@@ -1118,6 +1153,14 @@ func (p *jsiiProxy_PolicyRuleProfileEnrollment) ResetEmailVerification() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetEmailVerification",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PolicyRuleProfileEnrollment) ResetEnrollAuthenticatorTypes() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetEnrollAuthenticatorTypes",
 		nil, // no parameters
 	)
 }

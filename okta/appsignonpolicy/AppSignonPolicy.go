@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy okta_app_signon_policy}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy okta_app_signon_policy}.
 type AppSignonPolicy interface {
 	cdktf.TerraformResource
+	CatchAll() interface{}
+	SetCatchAll(val interface{})
+	CatchAllInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -27,6 +30,7 @@ type AppSignonPolicy interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DefaultRuleId() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -43,8 +47,6 @@ type AppSignonPolicy interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -113,7 +115,7 @@ type AppSignonPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
+	ResetCatchAll()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -133,6 +135,26 @@ type AppSignonPolicy interface {
 // The jsii proxy struct for AppSignonPolicy
 type jsiiProxy_AppSignonPolicy struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_AppSignonPolicy) CatchAll() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"catchAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSignonPolicy) CatchAllInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"catchAllInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AppSignonPolicy) CdktfStack() cdktf.TerraformStack {
@@ -170,6 +192,16 @@ func (j *jsiiProxy_AppSignonPolicy) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSignonPolicy) DefaultRuleId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultRuleId",
 		&returns,
 	)
 	return returns
@@ -240,16 +272,6 @@ func (j *jsiiProxy_AppSignonPolicy) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppSignonPolicy) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -356,7 +378,7 @@ func (j *jsiiProxy_AppSignonPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy okta_app_signon_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy okta_app_signon_policy} Resource.
 func NewAppSignonPolicy(scope constructs.Construct, id *string, config *AppSignonPolicyConfig) AppSignonPolicy {
 	_init_.Initialize()
 
@@ -374,7 +396,7 @@ func NewAppSignonPolicy(scope constructs.Construct, id *string, config *AppSigno
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy okta_app_signon_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy okta_app_signon_policy} Resource.
 func NewAppSignonPolicy_Override(a AppSignonPolicy, scope constructs.Construct, id *string, config *AppSignonPolicyConfig) {
 	_init_.Initialize()
 
@@ -382,6 +404,17 @@ func NewAppSignonPolicy_Override(a AppSignonPolicy, scope constructs.Construct, 
 		"@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AppSignonPolicy)SetCatchAll(val interface{}) {
+	if err := j.validateSetCatchAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"catchAll",
+		val,
 	)
 }
 
@@ -430,17 +463,6 @@ func (j *jsiiProxy_AppSignonPolicy)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppSignonPolicy)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -839,10 +861,10 @@ func (a *jsiiProxy_AppSignonPolicy) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (a *jsiiProxy_AppSignonPolicy) ResetId() {
+func (a *jsiiProxy_AppSignonPolicy) ResetCatchAll() {
 	_jsii_.InvokeVoid(
 		a,
-		"resetId",
+		"resetCatchAll",
 		nil, // no parameters
 	)
 }

@@ -91,6 +91,10 @@ func validateAppSignonPolicy_IsTerraformResourceParameters(x interface{}) error 
 	return nil
 }
 
+func (j *jsiiProxy_AppSignonPolicy) validateSetCatchAllParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppSignonPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -100,10 +104,6 @@ func (j *jsiiProxy_AppSignonPolicy) validateSetCountParameters(val interface{}) 
 }
 
 func (j *jsiiProxy_AppSignonPolicy) validateSetDescriptionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_AppSignonPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }
 

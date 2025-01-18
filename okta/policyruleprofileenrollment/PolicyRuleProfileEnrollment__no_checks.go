@@ -111,6 +111,10 @@ func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetEmailVerificationPara
 	return nil
 }
 
+func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetEnrollAuthenticatorTypesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PolicyRuleProfileEnrollment) validateSetIdParameters(val *string) error {
 	return nil
 }
