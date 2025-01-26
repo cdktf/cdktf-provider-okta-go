@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy okta_app_signon_policy}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/app_signon_policy okta_app_signon_policy}.
 type AppSignonPolicy interface {
 	cdktf.TerraformResource
 	CatchAll() interface{}
@@ -378,7 +378,7 @@ func (j *jsiiProxy_AppSignonPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy okta_app_signon_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/app_signon_policy okta_app_signon_policy} Resource.
 func NewAppSignonPolicy(scope constructs.Construct, id *string, config *AppSignonPolicyConfig) AppSignonPolicy {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewAppSignonPolicy(scope constructs.Construct, id *string, config *AppSigno
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy okta_app_signon_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/app_signon_policy okta_app_signon_policy} Resource.
 func NewAppSignonPolicy_Override(a AppSignonPolicy, scope constructs.Construct, id *string, config *AppSignonPolicyConfig) {
 	_init_.Initialize()
 

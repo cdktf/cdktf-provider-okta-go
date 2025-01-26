@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_access_policy_assignment okta_app_access_policy_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/app_access_policy_assignment okta_app_access_policy_assignment}.
 type AppAccessPolicyAssignment interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -343,7 +343,7 @@ func (j *jsiiProxy_AppAccessPolicyAssignment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_access_policy_assignment okta_app_access_policy_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/app_access_policy_assignment okta_app_access_policy_assignment} Resource.
 func NewAppAccessPolicyAssignment(scope constructs.Construct, id *string, config *AppAccessPolicyAssignmentConfig) AppAccessPolicyAssignment {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewAppAccessPolicyAssignment(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_access_policy_assignment okta_app_access_policy_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/app_access_policy_assignment okta_app_access_policy_assignment} Resource.
 func NewAppAccessPolicyAssignment_Override(a AppAccessPolicyAssignment, scope constructs.Construct, id *string, config *AppAccessPolicyAssignmentConfig) {
 	_init_.Initialize()
 
