@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/data-sources/device_assurance_policy okta_device_assurance_policy}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/data-sources/device_assurance_policy okta_device_assurance_policy}.
 type DataOktaDeviceAssurancePolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_DataOktaDeviceAssurancePolicy) ThirdPartySignalProviderInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/data-sources/device_assurance_policy okta_device_assurance_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/data-sources/device_assurance_policy okta_device_assurance_policy} Data Source.
 func NewDataOktaDeviceAssurancePolicy(scope constructs.Construct, id *string, config *DataOktaDeviceAssurancePolicyConfig) DataOktaDeviceAssurancePolicy {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewDataOktaDeviceAssurancePolicy(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/data-sources/device_assurance_policy okta_device_assurance_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/data-sources/device_assurance_policy okta_device_assurance_policy} Data Source.
 func NewDataOktaDeviceAssurancePolicy_Override(d DataOktaDeviceAssurancePolicy, scope constructs.Construct, id *string, config *DataOktaDeviceAssurancePolicyConfig) {
 	_init_.Initialize()
 

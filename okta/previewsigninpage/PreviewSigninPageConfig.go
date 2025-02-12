@@ -24,11 +24,11 @@ type PreviewSigninPageConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// brand id of the preview signin page.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/preview_signin_page#brand_id PreviewSigninPage#brand_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/preview_signin_page#brand_id PreviewSigninPage#brand_id}
 	BrandId *string `field:"required" json:"brandId" yaml:"brandId"`
 	// page content of the preview signin page.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/preview_signin_page#page_content PreviewSigninPage#page_content}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/preview_signin_page#page_content PreviewSigninPage#page_content}
 	PageContent *string `field:"required" json:"pageContent" yaml:"pageContent"`
 	// widget version specified as a Semver.
 	//
@@ -39,15 +39,15 @@ type PreviewSigninPageConfig struct {
 	// 			5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 5.10, 5.11, 5.12, 5.13, 5.14, 5.15, 5.16, 6.0, 6.1, 6.2, 6.3, 6.4, 6.5,
 	// 			6.6, 6.7, 6.8, 6.9, 7.0, 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8, 7.9, 7.10, 7.11, 7.12, 7.13.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/preview_signin_page#widget_version PreviewSigninPage#widget_version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/preview_signin_page#widget_version PreviewSigninPage#widget_version}
 	WidgetVersion *string `field:"required" json:"widgetVersion" yaml:"widgetVersion"`
 	// content_security_policy_setting block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/preview_signin_page#content_security_policy_setting PreviewSigninPage#content_security_policy_setting}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/preview_signin_page#content_security_policy_setting PreviewSigninPage#content_security_policy_setting}
 	ContentSecurityPolicySetting *PreviewSigninPageContentSecurityPolicySetting `field:"optional" json:"contentSecurityPolicySetting" yaml:"contentSecurityPolicySetting"`
 	// widget_customizations block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/preview_signin_page#widget_customizations PreviewSigninPage#widget_customizations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/preview_signin_page#widget_customizations PreviewSigninPage#widget_customizations}
 	WidgetCustomizations *PreviewSigninPageWidgetCustomizations `field:"optional" json:"widgetCustomizations" yaml:"widgetCustomizations"`
 }
 

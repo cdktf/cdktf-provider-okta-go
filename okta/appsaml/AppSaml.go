@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/app_saml okta_app_saml}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/app_saml okta_app_saml}.
 type AppSaml interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -1591,7 +1591,7 @@ func (j *jsiiProxy_AppSaml) UserNameTemplateTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/app_saml okta_app_saml} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/app_saml okta_app_saml} Resource.
 func NewAppSaml(scope constructs.Construct, id *string, config *AppSamlConfig) AppSaml {
 	_init_.Initialize()
 
@@ -1609,7 +1609,7 @@ func NewAppSaml(scope constructs.Construct, id *string, config *AppSamlConfig) A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/app_saml okta_app_saml} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/app_saml okta_app_saml} Resource.
 func NewAppSaml_Override(a AppSaml, scope constructs.Construct, id *string, config *AppSamlConfig) {
 	_init_.Initialize()
 

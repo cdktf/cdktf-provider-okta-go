@@ -1,6 +1,6 @@
-# CDKTF Go bindings for okta/okta provider version 4.13.1
+# CDKTF Go bindings for okta/okta provider version 4.14.0
 
-This repo builds and publishes the [Terraform okta provider](https://registry.terraform.io/providers/okta/okta/4.13.1/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform okta provider](https://registry.terraform.io/providers/okta/okta/4.14.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Go Package
 
@@ -23,7 +23,7 @@ This project is explicitly not tracking the Terraform okta provider version 1:1.
 These are the upstream dependencies:
 
 * [CDK for Terraform](https://cdk.tf)
-* [Terraform okta provider](https://registry.terraform.io/providers/okta/okta/4.13.1)
+* [Terraform okta provider](https://registry.terraform.io/providers/okta/okta/4.14.0)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
