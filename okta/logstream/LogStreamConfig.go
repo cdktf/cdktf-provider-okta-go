@@ -24,19 +24,19 @@ type LogStreamConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Unique name for the Log Stream object.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/log_stream#name LogStream#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/log_stream#name LogStream#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Streaming provider used - 'aws_eventbridge' or 'splunk_cloud_logstreaming'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/log_stream#type LogStream#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/log_stream#type LogStream#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// settings block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/log_stream#settings LogStream#settings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/log_stream#settings LogStream#settings}
 	Settings *LogStreamSettings `field:"optional" json:"settings" yaml:"settings"`
 	// Stream status.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/log_stream#status LogStream#status}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/log_stream#status LogStream#status}
 	Status *string `field:"optional" json:"status" yaml:"status"`
 }
 

@@ -24,17 +24,17 @@ type AppSignonPolicyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Description of the policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/app_signon_policy#description AppSignonPolicy#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/app_signon_policy#description AppSignonPolicy#description}
 	Description *string `field:"required" json:"description" yaml:"description"`
 	// Name of the policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/app_signon_policy#name AppSignonPolicy#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/app_signon_policy#name AppSignonPolicy#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Default rules of the policy set to `DENY` or not.
+	// If false, the default rule of the policy is set access to `DENY`.
 	//
-	// If `false`, it is set to `DENY`. **WARNING** setting this attribute to false change the OKTA default behavior. Use at your own risk. This is only apply during creation, so import or update will not work
+	// Otherwise default behavior of the default rule is to leave access at `ALLOW`.  **WARNING** setting this attribute to false changes policy rule's default behavior. Use at your own risk. This is only applied during creation and does not affect import or update.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/app_signon_policy#catch_all AppSignonPolicy#catch_all}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/app_signon_policy#catch_all AppSignonPolicy#catch_all}
 	CatchAll interface{} `field:"optional" json:"catchAll" yaml:"catchAll"`
 }
 

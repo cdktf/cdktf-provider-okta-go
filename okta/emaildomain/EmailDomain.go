@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/email_domain okta_email_domain}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/email_domain okta_email_domain}.
 type EmailDomain interface {
 	cdktf.TerraformResource
 	BrandId() *string
@@ -424,7 +424,7 @@ func (j *jsiiProxy_EmailDomain) ValidationStatus() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/email_domain okta_email_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/email_domain okta_email_domain} Resource.
 func NewEmailDomain(scope constructs.Construct, id *string, config *EmailDomainConfig) EmailDomain {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewEmailDomain(scope constructs.Construct, id *string, config *EmailDomainC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/email_domain okta_email_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/email_domain okta_email_domain} Resource.
 func NewEmailDomain_Override(e EmailDomain, scope constructs.Construct, id *string, config *EmailDomainConfig) {
 	_init_.Initialize()
 

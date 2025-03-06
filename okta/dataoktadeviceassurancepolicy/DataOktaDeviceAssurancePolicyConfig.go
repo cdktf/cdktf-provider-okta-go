@@ -24,22 +24,22 @@ type DataOktaDeviceAssurancePolicyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of the user type to retrieve, conflicts with `name`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/data-sources/device_assurance_policy#id DataOktaDeviceAssurancePolicy#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/data-sources/device_assurance_policy#id DataOktaDeviceAssurancePolicy#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Name of user type to retrieve, conflicts with `id`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/data-sources/device_assurance_policy#name DataOktaDeviceAssurancePolicy#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/data-sources/device_assurance_policy#name DataOktaDeviceAssurancePolicy#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Indicates if the device contains a secure hardware functionality.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/data-sources/device_assurance_policy#secure_hardware_present DataOktaDeviceAssurancePolicy#secure_hardware_present}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/data-sources/device_assurance_policy#secure_hardware_present DataOktaDeviceAssurancePolicy#secure_hardware_present}
 	SecureHardwarePresent interface{} `field:"optional" json:"secureHardwarePresent" yaml:"secureHardwarePresent"`
 	// Indicates if the device contains a secure hardware functionality.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/data-sources/device_assurance_policy#third_party_signal_provider DataOktaDeviceAssurancePolicy#third_party_signal_provider}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/data-sources/device_assurance_policy#third_party_signal_provider DataOktaDeviceAssurancePolicy#third_party_signal_provider}
 	ThirdPartySignalProvider *DataOktaDeviceAssurancePolicyThirdPartySignalProvider `field:"optional" json:"thirdPartySignalProvider" yaml:"thirdPartySignalProvider"`
 }
 
