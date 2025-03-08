@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/data-sources/app_saml okta_app_saml}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/app_saml okta_app_saml}.
 type DataOktaAppSaml interface {
 	cdktf.TerraformDataSource
 	AccessibilityErrorRedirectUrl() *string
@@ -849,7 +849,7 @@ func (j *jsiiProxy_DataOktaAppSaml) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/data-sources/app_saml okta_app_saml} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/app_saml okta_app_saml} Data Source.
 func NewDataOktaAppSaml(scope constructs.Construct, id *string, config *DataOktaAppSamlConfig) DataOktaAppSaml {
 	_init_.Initialize()
 
@@ -867,7 +867,7 @@ func NewDataOktaAppSaml(scope constructs.Construct, id *string, config *DataOkta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/data-sources/app_saml okta_app_saml} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/app_saml okta_app_saml} Data Source.
 func NewDataOktaAppSaml_Override(d DataOktaAppSaml, scope constructs.Construct, id *string, config *DataOktaAppSamlConfig) {
 	_init_.Initialize()
 

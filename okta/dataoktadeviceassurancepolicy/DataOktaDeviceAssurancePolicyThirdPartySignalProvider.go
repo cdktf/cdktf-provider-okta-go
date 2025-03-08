@@ -5,7 +5,7 @@ package dataoktadeviceassurancepolicy
 
 
 type DataOktaDeviceAssurancePolicyThirdPartySignalProvider struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/data-sources/device_assurance_policy#dtc DataOktaDeviceAssurancePolicy#dtc}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/device_assurance_policy#dtc DataOktaDeviceAssurancePolicy#dtc}.
 	Dtc *DataOktaDeviceAssurancePolicyThirdPartySignalProviderDtc `field:"optional" json:"dtc" yaml:"dtc"`
 }
 

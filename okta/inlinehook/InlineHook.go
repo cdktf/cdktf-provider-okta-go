@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook okta_inline_hook}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook okta_inline_hook}.
 type InlineHook interface {
 	cdktf.TerraformResource
 	Auth() *map[string]*string
@@ -23,6 +23,9 @@ type InlineHook interface {
 	Channel() *map[string]*string
 	SetChannel(val *map[string]*string)
 	ChannelInput() *map[string]*string
+	ChannelJson() *string
+	SetChannelJson(val *string)
+	ChannelJsonInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -129,6 +132,8 @@ type InlineHook interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutHeaders(value interface{})
 	ResetAuth()
+	ResetChannel()
+	ResetChannelJson()
 	ResetHeaders()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -198,6 +203,26 @@ func (j *jsiiProxy_InlineHook) ChannelInput() *map[string]*string {
 	_jsii_.Get(
 		j,
 		"channelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InlineHook) ChannelJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"channelJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InlineHook) ChannelJsonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"channelJsonInput",
 		&returns,
 	)
 	return returns
@@ -474,7 +499,7 @@ func (j *jsiiProxy_InlineHook) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook okta_inline_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook okta_inline_hook} Resource.
 func NewInlineHook(scope constructs.Construct, id *string, config *InlineHookConfig) InlineHook {
 	_init_.Initialize()
 
@@ -492,7 +517,7 @@ func NewInlineHook(scope constructs.Construct, id *string, config *InlineHookCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook okta_inline_hook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook okta_inline_hook} Resource.
 func NewInlineHook_Override(i InlineHook, scope constructs.Construct, id *string, config *InlineHookConfig) {
 	_init_.Initialize()
 
@@ -521,6 +546,17 @@ func (j *jsiiProxy_InlineHook)SetChannel(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"channel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_InlineHook)SetChannelJson(val *string) {
+	if err := j.validateSetChannelJsonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"channelJson",
 		val,
 	)
 }
@@ -1016,6 +1052,22 @@ func (i *jsiiProxy_InlineHook) ResetAuth() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetAuth",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_InlineHook) ResetChannel() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetChannel",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_InlineHook) ResetChannelJson() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetChannelJson",
 		nil, // no parameters
 	)
 }

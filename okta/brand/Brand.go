@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/brand okta_brand}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/brand okta_brand}.
 type Brand interface {
 	cdktf.TerraformResource
 	AgreeToCustomPrivacyPolicy() interface{}
@@ -545,7 +545,7 @@ func (j *jsiiProxy_Brand) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/brand okta_brand} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/brand okta_brand} Resource.
 func NewBrand(scope constructs.Construct, id *string, config *BrandConfig) Brand {
 	_init_.Initialize()
 
@@ -563,7 +563,7 @@ func NewBrand(scope constructs.Construct, id *string, config *BrandConfig) Brand
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/brand okta_brand} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/brand okta_brand} Resource.
 func NewBrand_Override(b Brand, scope constructs.Construct, id *string, config *BrandConfig) {
 	_init_.Initialize()
 

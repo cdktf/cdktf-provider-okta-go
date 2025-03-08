@@ -103,6 +103,10 @@ func (j *jsiiProxy_InlineHook) validateSetChannelParameters(val *map[string]*str
 	return nil
 }
 
+func (j *jsiiProxy_InlineHook) validateSetChannelJsonParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_InlineHook) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

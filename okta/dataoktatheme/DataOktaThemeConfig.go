@@ -24,11 +24,11 @@ type DataOktaThemeConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Brand ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/data-sources/theme#brand_id DataOktaTheme#brand_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/theme#brand_id DataOktaTheme#brand_id}
 	BrandId *string `field:"required" json:"brandId" yaml:"brandId"`
 	// Theme ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/data-sources/theme#theme_id DataOktaTheme#theme_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/theme#theme_id DataOktaTheme#theme_id}
 	ThemeId *string `field:"required" json:"themeId" yaml:"themeId"`
 }
 

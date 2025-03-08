@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/trusted_server okta_trusted_server}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/trusted_server okta_trusted_server}.
 type TrustedServer interface {
 	cdktf.TerraformResource
 	AuthServerId() *string
@@ -343,7 +343,7 @@ func (j *jsiiProxy_TrustedServer) TrustedInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/trusted_server okta_trusted_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/trusted_server okta_trusted_server} Resource.
 func NewTrustedServer(scope constructs.Construct, id *string, config *TrustedServerConfig) TrustedServer {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewTrustedServer(scope constructs.Construct, id *string, config *TrustedSer
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/trusted_server okta_trusted_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/trusted_server okta_trusted_server} Resource.
 func NewTrustedServer_Override(t TrustedServer, scope constructs.Construct, id *string, config *TrustedServerConfig) {
 	_init_.Initialize()
 
