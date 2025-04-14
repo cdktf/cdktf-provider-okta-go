@@ -115,6 +115,10 @@ func (j *jsiiProxy_AppSignonPolicy) validateSetNameParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_AppSignonPolicy) validateSetPriorityParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppSignonPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

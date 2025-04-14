@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/app_signon_policy okta_app_signon_policy}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_signon_policy okta_app_signon_policy}.
 type AppSignonPolicy interface {
 	cdktf.TerraformResource
 	CatchAll() interface{}
@@ -56,6 +56,9 @@ type AppSignonPolicy interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Priority() *float64
+	SetPriority(val *float64)
+	PriorityInput() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -119,6 +122,7 @@ type AppSignonPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPriority()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -317,6 +321,26 @@ func (j *jsiiProxy_AppSignonPolicy) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_AppSignonPolicy) Priority() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"priority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSignonPolicy) PriorityInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"priorityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppSignonPolicy) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -378,7 +402,7 @@ func (j *jsiiProxy_AppSignonPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/app_signon_policy okta_app_signon_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_signon_policy okta_app_signon_policy} Resource.
 func NewAppSignonPolicy(scope constructs.Construct, id *string, config *AppSignonPolicyConfig) AppSignonPolicy {
 	_init_.Initialize()
 
@@ -396,7 +420,7 @@ func NewAppSignonPolicy(scope constructs.Construct, id *string, config *AppSigno
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/app_signon_policy okta_app_signon_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_signon_policy okta_app_signon_policy} Resource.
 func NewAppSignonPolicy_Override(a AppSignonPolicy, scope constructs.Construct, id *string, config *AppSignonPolicyConfig) {
 	_init_.Initialize()
 
@@ -485,6 +509,17 @@ func (j *jsiiProxy_AppSignonPolicy)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppSignonPolicy)SetPriority(val *float64) {
+	if err := j.validateSetPriorityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"priority",
 		val,
 	)
 }
@@ -873,6 +908,14 @@ func (a *jsiiProxy_AppSignonPolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSignonPolicy) ResetPriority() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPriority",
 		nil, // no parameters
 	)
 }

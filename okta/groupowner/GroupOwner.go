@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/group_owner okta_group_owner}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/group_owner okta_group_owner}.
 type GroupOwner interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -410,7 +410,7 @@ func (j *jsiiProxy_GroupOwner) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/group_owner okta_group_owner} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/group_owner okta_group_owner} Resource.
 func NewGroupOwner(scope constructs.Construct, id *string, config *GroupOwnerConfig) GroupOwner {
 	_init_.Initialize()
 
@@ -428,7 +428,7 @@ func NewGroupOwner(scope constructs.Construct, id *string, config *GroupOwnerCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/group_owner okta_group_owner} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/group_owner okta_group_owner} Resource.
 func NewGroupOwner_Override(g GroupOwner, scope constructs.Construct, id *string, config *GroupOwnerConfig) {
 	_init_.Initialize()
 

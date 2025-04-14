@@ -79,6 +79,10 @@ func (a *jsiiProxy_AppGroupAssignments) validatePutGroupParameters(value interfa
 	return nil
 }
 
+func (a *jsiiProxy_AppGroupAssignments) validatePutTimeoutsParameters(value *AppGroupAssignmentsTimeouts) error {
+	return nil
+}
+
 func validateAppGroupAssignments_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

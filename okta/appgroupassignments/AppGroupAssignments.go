@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/app_group_assignments okta_app_group_assignments}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_group_assignments okta_app_group_assignments}.
 type AppGroupAssignments interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -69,6 +69,8 @@ type AppGroupAssignments interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() AppGroupAssignmentsTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -113,11 +115,13 @@ type AppGroupAssignments interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutGroup(value interface{})
+	PutTimeouts(value *AppGroupAssignmentsTimeouts)
 	ResetGroup()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -356,8 +360,28 @@ func (j *jsiiProxy_AppGroupAssignments) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AppGroupAssignments) Timeouts() AppGroupAssignmentsTimeoutsOutputReference {
+	var returns AppGroupAssignmentsTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/app_group_assignments okta_app_group_assignments} Resource.
+func (j *jsiiProxy_AppGroupAssignments) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_group_assignments okta_app_group_assignments} Resource.
 func NewAppGroupAssignments(scope constructs.Construct, id *string, config *AppGroupAssignmentsConfig) AppGroupAssignments {
 	_init_.Initialize()
 
@@ -375,7 +399,7 @@ func NewAppGroupAssignments(scope constructs.Construct, id *string, config *AppG
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/app_group_assignments okta_app_group_assignments} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_group_assignments okta_app_group_assignments} Resource.
 func NewAppGroupAssignments_Override(a AppGroupAssignments, scope constructs.Construct, id *string, config *AppGroupAssignmentsConfig) {
 	_init_.Initialize()
 
@@ -840,6 +864,17 @@ func (a *jsiiProxy_AppGroupAssignments) PutGroup(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AppGroupAssignments) PutTimeouts(value *AppGroupAssignmentsTimeouts) {
+	if err := a.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppGroupAssignments) ResetGroup() {
 	_jsii_.InvokeVoid(
 		a,
@@ -860,6 +895,14 @@ func (a *jsiiProxy_AppGroupAssignments) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppGroupAssignments) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }
