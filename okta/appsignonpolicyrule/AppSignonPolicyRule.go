@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_signon_policy_rule okta_app_signon_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_signon_policy_rule okta_app_signon_policy_rule}.
 type AppSignonPolicyRule interface {
 	cdktf.TerraformResource
 	Access() *string
@@ -20,6 +20,9 @@ type AppSignonPolicyRule interface {
 	AccessInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Chains() *[]*string
+	SetChains(val *[]*string)
+	ChainsInput() *[]*string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -184,6 +187,7 @@ type AppSignonPolicyRule interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutPlatformInclude(value interface{})
 	ResetAccess()
+	ResetChains()
 	ResetConstraints()
 	ResetCustomExpression()
 	ResetDeviceAssurancesIncluded()
@@ -253,6 +257,26 @@ func (j *jsiiProxy_AppSignonPolicyRule) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSignonPolicyRule) Chains() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"chains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSignonPolicyRule) ChainsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"chainsInput",
 		&returns,
 	)
 	return returns
@@ -919,7 +943,7 @@ func (j *jsiiProxy_AppSignonPolicyRule) UserTypesIncludedInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_signon_policy_rule okta_app_signon_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_signon_policy_rule okta_app_signon_policy_rule} Resource.
 func NewAppSignonPolicyRule(scope constructs.Construct, id *string, config *AppSignonPolicyRuleConfig) AppSignonPolicyRule {
 	_init_.Initialize()
 
@@ -937,7 +961,7 @@ func NewAppSignonPolicyRule(scope constructs.Construct, id *string, config *AppS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_signon_policy_rule okta_app_signon_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_signon_policy_rule okta_app_signon_policy_rule} Resource.
 func NewAppSignonPolicyRule_Override(a AppSignonPolicyRule, scope constructs.Construct, id *string, config *AppSignonPolicyRuleConfig) {
 	_init_.Initialize()
 
@@ -955,6 +979,17 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetAccess(val *string) {
 	_jsii_.Set(
 		j,
 		"access",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppSignonPolicyRule)SetChains(val *[]*string) {
+	if err := j.validateSetChainsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"chains",
 		val,
 	)
 }
@@ -1659,6 +1694,14 @@ func (a *jsiiProxy_AppSignonPolicyRule) ResetAccess() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAccess",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSignonPolicyRule) ResetChains() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetChains",
 		nil, // no parameters
 	)
 }

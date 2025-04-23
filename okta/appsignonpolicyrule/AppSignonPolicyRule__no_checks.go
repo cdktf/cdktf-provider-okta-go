@@ -99,6 +99,10 @@ func (j *jsiiProxy_AppSignonPolicyRule) validateSetAccessParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_AppSignonPolicyRule) validateSetChainsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppSignonPolicyRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

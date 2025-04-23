@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/policy_device_assurance_windows okta_policy_device_assurance_windows}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_device_assurance_windows okta_policy_device_assurance_windows}.
 type PolicyDeviceAssuranceWindows interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -951,7 +951,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspWindowsUserDomainInput() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/policy_device_assurance_windows okta_policy_device_assurance_windows} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_device_assurance_windows okta_policy_device_assurance_windows} Resource.
 func NewPolicyDeviceAssuranceWindows(scope constructs.Construct, id *string, config *PolicyDeviceAssuranceWindowsConfig) PolicyDeviceAssuranceWindows {
 	_init_.Initialize()
 
@@ -969,7 +969,7 @@ func NewPolicyDeviceAssuranceWindows(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/policy_device_assurance_windows okta_policy_device_assurance_windows} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_device_assurance_windows okta_policy_device_assurance_windows} Resource.
 func NewPolicyDeviceAssuranceWindows_Override(p PolicyDeviceAssuranceWindows, scope constructs.Construct, id *string, config *PolicyDeviceAssuranceWindowsConfig) {
 	_init_.Initialize()
 

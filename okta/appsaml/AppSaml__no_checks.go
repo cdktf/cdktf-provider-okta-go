@@ -75,6 +75,10 @@ func (a *jsiiProxy_AppSaml) validateOverrideLogicalIdParameters(newLogicalId *st
 	return nil
 }
 
+func (a *jsiiProxy_AppSaml) validatePutAcsEndpointsIndicesParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSaml) validatePutAttributeStatementsParameters(value interface{}) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/groups okta_groups}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups okta_groups}.
 type DataOktaGroups interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -43,6 +43,9 @@ type DataOktaGroups interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Limit() *float64
+	SetLimit(val *float64)
+	LimitInput() *float64
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -92,6 +95,7 @@ type DataOktaGroups interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetLimit()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -227,6 +231,26 @@ func (j *jsiiProxy_DataOktaGroups) Lifecycle() *cdktf.TerraformResourceLifecycle
 	return returns
 }
 
+func (j *jsiiProxy_DataOktaGroups) Limit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"limit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOktaGroups) LimitInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataOktaGroups) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -348,7 +372,7 @@ func (j *jsiiProxy_DataOktaGroups) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/groups okta_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups okta_groups} Data Source.
 func NewDataOktaGroups(scope constructs.Construct, id *string, config *DataOktaGroupsConfig) DataOktaGroups {
 	_init_.Initialize()
 
@@ -366,7 +390,7 @@ func NewDataOktaGroups(scope constructs.Construct, id *string, config *DataOktaG
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/groups okta_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups okta_groups} Data Source.
 func NewDataOktaGroups_Override(d DataOktaGroups, scope constructs.Construct, id *string, config *DataOktaGroupsConfig) {
 	_init_.Initialize()
 
@@ -422,6 +446,17 @@ func (j *jsiiProxy_DataOktaGroups)SetLifecycle(val *cdktf.TerraformResourceLifec
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataOktaGroups)SetLimit(val *float64) {
+	if err := j.validateSetLimitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"limit",
 		val,
 	)
 }
@@ -756,6 +791,14 @@ func (d *jsiiProxy_DataOktaGroups) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataOktaGroups) ResetLimit() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLimit",
 		nil, // no parameters
 	)
 }

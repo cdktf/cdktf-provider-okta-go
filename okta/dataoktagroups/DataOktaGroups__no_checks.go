@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataOktaGroups) validateSetLifecycleParameters(val *cdktf.Ter
 	return nil
 }
 
+func (j *jsiiProxy_DataOktaGroups) validateSetLimitParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOktaGroups) validateSetQParameters(val *string) error {
 	return nil
 }

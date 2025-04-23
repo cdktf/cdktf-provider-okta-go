@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml okta_app_saml}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml okta_app_saml}.
 type AppSaml interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -26,6 +26,8 @@ type AppSaml interface {
 	AccessibilitySelfServiceInput() interface{}
 	AcsEndpoints() *[]*string
 	SetAcsEndpoints(val *[]*string)
+	AcsEndpointsIndices() AppSamlAcsEndpointsIndicesList
+	AcsEndpointsIndicesInput() interface{}
 	AcsEndpointsInput() *[]*string
 	AdminNote() *string
 	SetAdminNote(val *string)
@@ -260,12 +262,14 @@ type AppSaml interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAcsEndpointsIndices(value interface{})
 	PutAttributeStatements(value interface{})
 	PutTimeouts(value *AppSamlTimeouts)
 	ResetAccessibilityErrorRedirectUrl()
 	ResetAccessibilityLoginRedirectUrl()
 	ResetAccessibilitySelfService()
 	ResetAcsEndpoints()
+	ResetAcsEndpointsIndices()
 	ResetAdminNote()
 	ResetAppLinksJson()
 	ResetAppSettingsJson()
@@ -395,6 +399,26 @@ func (j *jsiiProxy_AppSaml) AcsEndpoints() *[]*string {
 	_jsii_.Get(
 		j,
 		"acsEndpoints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSaml) AcsEndpointsIndices() AppSamlAcsEndpointsIndicesList {
+	var returns AppSamlAcsEndpointsIndicesList
+	_jsii_.Get(
+		j,
+		"acsEndpointsIndices",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppSaml) AcsEndpointsIndicesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"acsEndpointsIndicesInput",
 		&returns,
 	)
 	return returns
@@ -1591,7 +1615,7 @@ func (j *jsiiProxy_AppSaml) UserNameTemplateTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml okta_app_saml} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml okta_app_saml} Resource.
 func NewAppSaml(scope constructs.Construct, id *string, config *AppSamlConfig) AppSaml {
 	_init_.Initialize()
 
@@ -1609,7 +1633,7 @@ func NewAppSaml(scope constructs.Construct, id *string, config *AppSamlConfig) A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml okta_app_saml} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml okta_app_saml} Resource.
 func NewAppSaml_Override(a AppSaml, scope constructs.Construct, id *string, config *AppSamlConfig) {
 	_init_.Initialize()
 
@@ -2547,6 +2571,17 @@ func (a *jsiiProxy_AppSaml) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (a *jsiiProxy_AppSaml) PutAcsEndpointsIndices(value interface{}) {
+	if err := a.validatePutAcsEndpointsIndicesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putAcsEndpointsIndices",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppSaml) PutAttributeStatements(value interface{}) {
 	if err := a.validatePutAttributeStatementsParameters(value); err != nil {
 		panic(err)
@@ -2597,6 +2632,14 @@ func (a *jsiiProxy_AppSaml) ResetAcsEndpoints() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAcsEndpoints",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppSaml) ResetAcsEndpointsIndices() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAcsEndpointsIndices",
 		nil, // no parameters
 	)
 }

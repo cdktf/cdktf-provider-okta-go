@@ -24,11 +24,11 @@ type TrustedServerConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Authorization server ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/trusted_server#auth_server_id TrustedServer#auth_server_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/trusted_server#auth_server_id TrustedServer#auth_server_id}
 	AuthServerId *string `field:"required" json:"authServerId" yaml:"authServerId"`
 	// A list of the authorization server IDs user want to trust.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/trusted_server#trusted TrustedServer#trusted}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/trusted_server#trusted TrustedServer#trusted}
 	Trusted *[]*string `field:"required" json:"trusted" yaml:"trusted"`
 }
 

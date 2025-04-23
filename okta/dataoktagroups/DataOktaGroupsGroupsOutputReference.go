@@ -36,6 +36,7 @@ type DataOktaGroupsGroupsOutputReference interface {
 	InternalValue() *DataOktaGroupsGroups
 	SetInternalValue(val *DataOktaGroupsGroups)
 	Name() *string
+	Source() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -169,6 +170,16 @@ func (j *jsiiProxy_DataOktaGroupsGroupsOutputReference) Name() *string {
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOktaGroupsGroupsOutputReference) Source() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"source",
 		&returns,
 	)
 	return returns

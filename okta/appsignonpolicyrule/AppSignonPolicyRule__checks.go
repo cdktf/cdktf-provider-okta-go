@@ -286,6 +286,14 @@ func (j *jsiiProxy_AppSignonPolicyRule) validateSetAccessParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_AppSignonPolicyRule) validateSetChainsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AppSignonPolicyRule) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
