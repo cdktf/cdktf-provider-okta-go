@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa okta_policy_mfa}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa okta_policy_mfa}.
 type PolicyMfa interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -130,6 +130,9 @@ type PolicyMfa interface {
 	SecurityQuestion() *map[string]*string
 	SetSecurityQuestion(val *map[string]*string)
 	SecurityQuestionInput() *map[string]*string
+	SmartCardIdp() *map[string]*string
+	SetSmartCardIdp(val *map[string]*string)
+	SmartCardIdpInput() *map[string]*string
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
@@ -218,6 +221,7 @@ type PolicyMfa interface {
 	ResetPriority()
 	ResetRsaToken()
 	ResetSecurityQuestion()
+	ResetSmartCardIdp()
 	ResetStatus()
 	ResetSymantecVip()
 	ResetWebauthn()
@@ -870,6 +874,26 @@ func (j *jsiiProxy_PolicyMfa) SecurityQuestionInput() *map[string]*string {
 	return returns
 }
 
+func (j *jsiiProxy_PolicyMfa) SmartCardIdp() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"smartCardIdp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PolicyMfa) SmartCardIdpInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"smartCardIdpInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PolicyMfa) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -981,7 +1005,7 @@ func (j *jsiiProxy_PolicyMfa) YubikeyTokenInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa okta_policy_mfa} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa okta_policy_mfa} Resource.
 func NewPolicyMfa(scope constructs.Construct, id *string, config *PolicyMfaConfig) PolicyMfa {
 	_init_.Initialize()
 
@@ -999,7 +1023,7 @@ func NewPolicyMfa(scope constructs.Construct, id *string, config *PolicyMfaConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa okta_policy_mfa} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa okta_policy_mfa} Resource.
 func NewPolicyMfa_Override(p PolicyMfa, scope constructs.Construct, id *string, config *PolicyMfaConfig) {
 	_init_.Initialize()
 
@@ -1349,6 +1373,17 @@ func (j *jsiiProxy_PolicyMfa)SetSecurityQuestion(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"securityQuestion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PolicyMfa)SetSmartCardIdp(val *map[string]*string) {
+	if err := j.validateSetSmartCardIdpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"smartCardIdp",
 		val,
 	)
 }
@@ -1946,6 +1981,14 @@ func (p *jsiiProxy_PolicyMfa) ResetSecurityQuestion() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetSecurityQuestion",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PolicyMfa) ResetSmartCardIdp() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSmartCardIdp",
 		nil, // no parameters
 	)
 }

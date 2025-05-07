@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/idp_saml okta_idp_saml}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/idp_saml okta_idp_saml}.
 type IdpSaml interface {
 	cdktf.TerraformResource
 	AccountLinkAction() *string
@@ -65,6 +65,9 @@ type IdpSaml interface {
 	GroupsFilter() *[]*string
 	SetGroupsFilter(val *[]*string)
 	GroupsFilterInput() *[]*string
+	HonorPersistentNameId() interface{}
+	SetHonorPersistentNameId(val interface{})
+	HonorPersistentNameIdInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -209,6 +212,7 @@ type IdpSaml interface {
 	ResetGroupsAssignment()
 	ResetGroupsAttribute()
 	ResetGroupsFilter()
+	ResetHonorPersistentNameId()
 	ResetId()
 	ResetIssuerMode()
 	ResetMaxClockSkew()
@@ -504,6 +508,26 @@ func (j *jsiiProxy_IdpSaml) GroupsFilterInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"groupsFilterInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdpSaml) HonorPersistentNameId() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"honorPersistentNameId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdpSaml) HonorPersistentNameIdInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"honorPersistentNameIdInput",
 		&returns,
 	)
 	return returns
@@ -1070,7 +1094,7 @@ func (j *jsiiProxy_IdpSaml) UserTypeId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/idp_saml okta_idp_saml} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/idp_saml okta_idp_saml} Resource.
 func NewIdpSaml(scope constructs.Construct, id *string, config *IdpSamlConfig) IdpSaml {
 	_init_.Initialize()
 
@@ -1088,7 +1112,7 @@ func NewIdpSaml(scope constructs.Construct, id *string, config *IdpSamlConfig) I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/idp_saml okta_idp_saml} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/idp_saml okta_idp_saml} Resource.
 func NewIdpSaml_Override(i IdpSaml, scope constructs.Construct, id *string, config *IdpSamlConfig) {
 	_init_.Initialize()
 
@@ -1221,6 +1245,17 @@ func (j *jsiiProxy_IdpSaml)SetGroupsFilter(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"groupsFilter",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IdpSaml)SetHonorPersistentNameId(val interface{}) {
+	if err := j.validateSetHonorPersistentNameIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"honorPersistentNameId",
 		val,
 	)
 }
@@ -1921,6 +1956,14 @@ func (i *jsiiProxy_IdpSaml) ResetGroupsFilter() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetGroupsFilter",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdpSaml) ResetHonorPersistentNameId() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetHonorPersistentNameId",
 		nil, // no parameters
 	)
 }

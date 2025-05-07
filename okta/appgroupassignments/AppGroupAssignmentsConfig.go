@@ -24,20 +24,20 @@ type AppGroupAssignmentsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the application to assign a group to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_group_assignments#app_id AppGroupAssignments#app_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/app_group_assignments#app_id AppGroupAssignments#app_id}
 	AppId *string `field:"required" json:"appId" yaml:"appId"`
 	// group block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_group_assignments#group AppGroupAssignments#group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/app_group_assignments#group AppGroupAssignments#group}
 	Group interface{} `field:"optional" json:"group" yaml:"group"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_group_assignments#id AppGroupAssignments#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/app_group_assignments#id AppGroupAssignments#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_group_assignments#timeouts AppGroupAssignments#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/app_group_assignments#timeouts AppGroupAssignments#timeouts}
 	Timeouts *AppGroupAssignmentsTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set okta_resource_set}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set okta_resource_set}.
 type ResourceSet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,6 +67,9 @@ type ResourceSet interface {
 	Resources() *[]*string
 	SetResources(val *[]*string)
 	ResourcesInput() *[]*string
+	ResourcesOrn() *[]*string
+	SetResourcesOrn(val *[]*string)
+	ResourcesOrnInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -121,6 +124,7 @@ type ResourceSet interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetResources()
+	ResetResourcesOrn()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -349,6 +353,26 @@ func (j *jsiiProxy_ResourceSet) ResourcesInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_ResourceSet) ResourcesOrn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"resourcesOrn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ResourceSet) ResourcesOrnInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"resourcesOrnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ResourceSet) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -380,7 +404,7 @@ func (j *jsiiProxy_ResourceSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set okta_resource_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set okta_resource_set} Resource.
 func NewResourceSet(scope constructs.Construct, id *string, config *ResourceSetConfig) ResourceSet {
 	_init_.Initialize()
 
@@ -398,7 +422,7 @@ func NewResourceSet(scope constructs.Construct, id *string, config *ResourceSetC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set okta_resource_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set okta_resource_set} Resource.
 func NewResourceSet_Override(r ResourceSet, scope constructs.Construct, id *string, config *ResourceSetConfig) {
 	_init_.Initialize()
 
@@ -517,6 +541,17 @@ func (j *jsiiProxy_ResourceSet)SetResources(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"resources",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ResourceSet)SetResourcesOrn(val *[]*string) {
+	if err := j.validateSetResourcesOrnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourcesOrn",
 		val,
 	)
 }
@@ -894,6 +929,14 @@ func (r *jsiiProxy_ResourceSet) ResetResources() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetResources",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_ResourceSet) ResetResourcesOrn() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetResourcesOrn",
 		nil, // no parameters
 	)
 }

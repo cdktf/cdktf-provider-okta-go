@@ -207,6 +207,10 @@ func (j *jsiiProxy_PolicyMfa) validateSetSecurityQuestionParameters(val *map[str
 	return nil
 }
 
+func (j *jsiiProxy_PolicyMfa) validateSetSmartCardIdpParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PolicyMfa) validateSetStatusParameters(val *string) error {
 	return nil
 }

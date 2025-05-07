@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/domain_verification okta_domain_verification}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/domain_verification okta_domain_verification}.
 type DomainVerification interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_DomainVerification) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/domain_verification okta_domain_verification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/domain_verification okta_domain_verification} Resource.
 func NewDomainVerification(scope constructs.Construct, id *string, config *DomainVerificationConfig) DomainVerification {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewDomainVerification(scope constructs.Construct, id *string, config *Domai
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/domain_verification okta_domain_verification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/domain_verification okta_domain_verification} Resource.
 func NewDomainVerification_Override(d DomainVerification, scope constructs.Construct, id *string, config *DomainVerificationConfig) {
 	_init_.Initialize()
 

@@ -131,6 +131,10 @@ func (j *jsiiProxy_IdpSaml) validateSetGroupsFilterParameters(val *[]*string) er
 	return nil
 }
 
+func (j *jsiiProxy_IdpSaml) validateSetHonorPersistentNameIdParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdpSaml) validateSetIdParameters(val *string) error {
 	return nil
 }

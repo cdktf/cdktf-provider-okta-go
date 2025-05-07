@@ -123,6 +123,10 @@ func (j *jsiiProxy_ResourceSet) validateSetResourcesParameters(val *[]*string) e
 	return nil
 }
 
+func (j *jsiiProxy_ResourceSet) validateSetResourcesOrnParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewResourceSetParameters(scope constructs.Construct, id *string, config *ResourceSetConfig) error {
 	return nil
 }

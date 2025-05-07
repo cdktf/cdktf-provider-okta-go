@@ -423,6 +423,14 @@ func (j *jsiiProxy_ResourceSet) validateSetResourcesParameters(val *[]*string) e
 	return nil
 }
 
+func (j *jsiiProxy_ResourceSet) validateSetResourcesOrnParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewResourceSetParameters(scope constructs.Construct, id *string, config *ResourceSetConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

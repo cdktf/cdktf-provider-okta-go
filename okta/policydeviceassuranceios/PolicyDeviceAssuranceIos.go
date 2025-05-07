@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_device_assurance_ios okta_policy_device_assurance_ios}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_device_assurance_ios okta_policy_device_assurance_ios}.
 type PolicyDeviceAssuranceIos interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -447,7 +447,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceIos) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_device_assurance_ios okta_policy_device_assurance_ios} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_device_assurance_ios okta_policy_device_assurance_ios} Resource.
 func NewPolicyDeviceAssuranceIos(scope constructs.Construct, id *string, config *PolicyDeviceAssuranceIosConfig) PolicyDeviceAssuranceIos {
 	_init_.Initialize()
 
@@ -465,7 +465,7 @@ func NewPolicyDeviceAssuranceIos(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_device_assurance_ios okta_policy_device_assurance_ios} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_device_assurance_ios okta_policy_device_assurance_ios} Resource.
 func NewPolicyDeviceAssuranceIos_Override(p PolicyDeviceAssuranceIos, scope constructs.Construct, id *string, config *PolicyDeviceAssuranceIosConfig) {
 	_init_.Initialize()
 

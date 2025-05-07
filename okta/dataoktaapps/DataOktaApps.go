@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps okta_apps}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/apps okta_apps}.
 type DataOktaApps interface {
 	cdktf.TerraformDataSource
 	ActiveOnly() interface{}
@@ -58,6 +58,9 @@ type DataOktaApps interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	Q() *string
+	SetQ(val *string)
+	QInput() *string
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -101,6 +104,7 @@ type DataOktaApps interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetQ()
 	ResetUseOptimization()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -311,6 +315,26 @@ func (j *jsiiProxy_DataOktaApps) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_DataOktaApps) Q() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"q",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataOktaApps) QInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"qInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataOktaApps) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -372,7 +396,7 @@ func (j *jsiiProxy_DataOktaApps) UseOptimizationInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps okta_apps} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/apps okta_apps} Data Source.
 func NewDataOktaApps(scope constructs.Construct, id *string, config *DataOktaAppsConfig) DataOktaApps {
 	_init_.Initialize()
 
@@ -390,7 +414,7 @@ func NewDataOktaApps(scope constructs.Construct, id *string, config *DataOktaApp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps okta_apps} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/apps okta_apps} Data Source.
 func NewDataOktaApps_Override(d DataOktaApps, scope constructs.Construct, id *string, config *DataOktaAppsConfig) {
 	_init_.Initialize()
 
@@ -487,6 +511,17 @@ func (j *jsiiProxy_DataOktaApps)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataOktaApps)SetQ(val *string) {
+	if err := j.validateSetQParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"q",
 		val,
 	)
 }
@@ -823,6 +858,14 @@ func (d *jsiiProxy_DataOktaApps) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataOktaApps) ResetQ() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetQ",
 		nil, // no parameters
 	)
 }

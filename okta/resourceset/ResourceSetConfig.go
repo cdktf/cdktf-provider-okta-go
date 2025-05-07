@@ -24,22 +24,28 @@ type ResourceSetConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A description of the Resource Set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set#description ResourceSet#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set#description ResourceSet#description}
 	Description *string `field:"required" json:"description" yaml:"description"`
 	// Unique name given to the Resource Set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set#label ResourceSet#label}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set#label ResourceSet#label}
 	Label *string `field:"required" json:"label" yaml:"label"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set#id ResourceSet#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set#id ResourceSet#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The endpoints that reference the resources to be included in the new Resource Set.
 	//
-	// At least one endpoint must be specified when creating resource set.
+	// At least one endpoint must be specified when creating resource set. Only one of 'resources' or 'resources_orn' can be specified.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set#resources ResourceSet#resources}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set#resources ResourceSet#resources}
 	Resources *[]*string `field:"optional" json:"resources" yaml:"resources"`
+	// The orn(Okta Resource Name) that reference the resources to be included in the new Resource Set.
+	//
+	// At least one orn must be specified when creating resource set. Only one of 'resources' or 'resources_orn' can be specified.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set#resources_orn ResourceSet#resources_orn}
+	ResourcesOrn *[]*string `field:"optional" json:"resourcesOrn" yaml:"resourcesOrn"`
 }
 

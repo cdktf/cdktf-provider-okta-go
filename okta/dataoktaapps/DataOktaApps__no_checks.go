@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataOktaApps) validateSetLifecycleParameters(val *cdktf.Terra
 	return nil
 }
 
+func (j *jsiiProxy_DataOktaApps) validateSetQParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataOktaApps) validateSetUseOptimizationParameters(val interface{}) error {
 	return nil
 }

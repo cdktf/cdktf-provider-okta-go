@@ -275,6 +275,14 @@ func (j *jsiiProxy_DataOktaApps) validateSetLifecycleParameters(val *cdktf.Terra
 	return nil
 }
 
+func (j *jsiiProxy_DataOktaApps) validateSetQParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataOktaApps) validateSetUseOptimizationParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
