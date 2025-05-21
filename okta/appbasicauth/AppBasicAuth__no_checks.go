@@ -131,6 +131,10 @@ func (j *jsiiProxy_AppBasicAuth) validateSetCountParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_AppBasicAuth) validateSetCredentialsSchemeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppBasicAuth) validateSetEnduserNoteParameters(val *string) error {
 	return nil
 }
@@ -163,11 +167,39 @@ func (j *jsiiProxy_AppBasicAuth) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_AppBasicAuth) validateSetRevealPasswordParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AppBasicAuth) validateSetSharedPasswordParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AppBasicAuth) validateSetSharedUsernameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppBasicAuth) validateSetStatusParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_AppBasicAuth) validateSetUrlParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AppBasicAuth) validateSetUserNameTemplateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AppBasicAuth) validateSetUserNameTemplatePushStatusParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AppBasicAuth) validateSetUserNameTemplateSuffixParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AppBasicAuth) validateSetUserNameTemplateTypeParameters(val *string) error {
 	return nil
 }
 

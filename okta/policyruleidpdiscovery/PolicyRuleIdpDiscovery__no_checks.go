@@ -83,6 +83,10 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) validatePutAppIncludeParameters(value
 	return nil
 }
 
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) validatePutIdpProvidersParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyRuleIdpDiscovery) validatePutPlatformIncludeParameters(value interface{}) error {
 	return nil
 }
@@ -116,14 +120,6 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery) validateSetCountParameters(val interf
 }
 
 func (j *jsiiProxy_PolicyRuleIdpDiscovery) validateSetIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_PolicyRuleIdpDiscovery) validateSetIdpIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_PolicyRuleIdpDiscovery) validateSetIdpTypeParameters(val *string) error {
 	return nil
 }
 

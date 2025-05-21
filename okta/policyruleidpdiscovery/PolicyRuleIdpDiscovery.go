@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery}.
 type PolicyRuleIdpDiscovery interface {
 	cdktf.TerraformResource
 	AppExclude() PolicyRuleIdpDiscoveryAppExcludeList
@@ -46,12 +46,8 @@ type PolicyRuleIdpDiscovery interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IdpId() *string
-	SetIdpId(val *string)
-	IdpIdInput() *string
-	IdpType() *string
-	SetIdpType(val *string)
-	IdpTypeInput() *string
+	IdpProviders() PolicyRuleIdpDiscoveryIdpProvidersList
+	IdpProvidersInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -150,13 +146,13 @@ type PolicyRuleIdpDiscovery interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAppExclude(value interface{})
 	PutAppInclude(value interface{})
+	PutIdpProviders(value interface{})
 	PutPlatformInclude(value interface{})
 	PutUserIdentifierPatterns(value interface{})
 	ResetAppExclude()
 	ResetAppInclude()
 	ResetId()
-	ResetIdpId()
-	ResetIdpType()
+	ResetIdpProviders()
 	ResetNetworkConnection()
 	ResetNetworkExcludes()
 	ResetNetworkIncludes()
@@ -328,41 +324,21 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery) IdpId() *string {
-	var returns *string
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) IdpProviders() PolicyRuleIdpDiscoveryIdpProvidersList {
+	var returns PolicyRuleIdpDiscoveryIdpProvidersList
 	_jsii_.Get(
 		j,
-		"idpId",
+		"idpProviders",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery) IdpIdInput() *string {
-	var returns *string
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) IdpProvidersInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
-		"idpIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PolicyRuleIdpDiscovery) IdpType() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idpType",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PolicyRuleIdpDiscovery) IdpTypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idpTypeInput",
+		"idpProvidersInput",
 		&returns,
 	)
 	return returns
@@ -669,7 +645,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery) UserIdentifierTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery} Resource.
 func NewPolicyRuleIdpDiscovery(scope constructs.Construct, id *string, config *PolicyRuleIdpDiscoveryConfig) PolicyRuleIdpDiscovery {
 	_init_.Initialize()
 
@@ -687,7 +663,7 @@ func NewPolicyRuleIdpDiscovery(scope constructs.Construct, id *string, config *P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery} Resource.
 func NewPolicyRuleIdpDiscovery_Override(p PolicyRuleIdpDiscovery, scope constructs.Construct, id *string, config *PolicyRuleIdpDiscoveryConfig) {
 	_init_.Initialize()
 
@@ -743,28 +719,6 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetIdpId(val *string) {
-	if err := j.validateSetIdpIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"idpId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetIdpType(val *string) {
-	if err := j.validateSetIdpTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"idpType",
 		val,
 	)
 }
@@ -1273,6 +1227,17 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) PutAppInclude(value interface{}) {
 	)
 }
 
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) PutIdpProviders(value interface{}) {
+	if err := p.validatePutIdpProvidersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putIdpProviders",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PolicyRuleIdpDiscovery) PutPlatformInclude(value interface{}) {
 	if err := p.validatePutPlatformIncludeParameters(value); err != nil {
 		panic(err)
@@ -1319,18 +1284,10 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) ResetId() {
 	)
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscovery) ResetIdpId() {
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) ResetIdpProviders() {
 	_jsii_.InvokeVoid(
 		p,
-		"resetIdpId",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PolicyRuleIdpDiscovery) ResetIdpType() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetIdpType",
+		"resetIdpProviders",
 		nil, // no parameters
 	)
 }

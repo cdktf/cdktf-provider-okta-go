@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/email_template_settings okta_email_template_settings}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_template_settings okta_email_template_settings}.
 type EmailTemplateSettings interface {
 	cdktf.TerraformResource
 	BrandId() *string
@@ -366,7 +366,7 @@ func (j *jsiiProxy_EmailTemplateSettings) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/email_template_settings okta_email_template_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_template_settings okta_email_template_settings} Resource.
 func NewEmailTemplateSettings(scope constructs.Construct, id *string, config *EmailTemplateSettingsConfig) EmailTemplateSettings {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewEmailTemplateSettings(scope constructs.Construct, id *string, config *Em
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/email_template_settings okta_email_template_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_template_settings okta_email_template_settings} Resource.
 func NewEmailTemplateSettings_Override(e EmailTemplateSettings, scope constructs.Construct, id *string, config *EmailTemplateSettingsConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/app_basic_auth okta_app_basic_auth}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/app_basic_auth okta_app_basic_auth}.
 type AppBasicAuth interface {
 	cdktf.TerraformResource
 	AccessibilityErrorRedirectUrl() *string
@@ -48,6 +48,9 @@ type AppBasicAuth interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CredentialsScheme() *string
+	SetCredentialsScheme(val *string)
+	CredentialsSchemeInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -96,6 +99,15 @@ type AppBasicAuth interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RevealPassword() interface{}
+	SetRevealPassword(val interface{})
+	RevealPasswordInput() interface{}
+	SharedPassword() *string
+	SetSharedPassword(val *string)
+	SharedPasswordInput() *string
+	SharedUsername() *string
+	SetSharedUsername(val *string)
+	SharedUsernameInput() *string
 	SignOnMode() *string
 	Status() *string
 	SetStatus(val *string)
@@ -111,6 +123,18 @@ type AppBasicAuth interface {
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
+	UserNameTemplate() *string
+	SetUserNameTemplate(val *string)
+	UserNameTemplateInput() *string
+	UserNameTemplatePushStatus() *string
+	SetUserNameTemplatePushStatus(val *string)
+	UserNameTemplatePushStatusInput() *string
+	UserNameTemplateSuffix() *string
+	SetUserNameTemplateSuffix(val *string)
+	UserNameTemplateSuffixInput() *string
+	UserNameTemplateType() *string
+	SetUserNameTemplateType(val *string)
+	UserNameTemplateTypeInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -161,6 +185,7 @@ type AppBasicAuth interface {
 	ResetAdminNote()
 	ResetAppLinksJson()
 	ResetAutoSubmitToolbar()
+	ResetCredentialsScheme()
 	ResetEnduserNote()
 	ResetHideIos()
 	ResetHideWeb()
@@ -169,8 +194,15 @@ type AppBasicAuth interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRevealPassword()
+	ResetSharedPassword()
+	ResetSharedUsername()
 	ResetStatus()
 	ResetTimeouts()
+	ResetUserNameTemplate()
+	ResetUserNameTemplatePushStatus()
+	ResetUserNameTemplateSuffix()
+	ResetUserNameTemplateType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -364,6 +396,26 @@ func (j *jsiiProxy_AppBasicAuth) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppBasicAuth) CredentialsScheme() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialsScheme",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppBasicAuth) CredentialsSchemeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialsSchemeInput",
 		&returns,
 	)
 	return returns
@@ -599,6 +651,66 @@ func (j *jsiiProxy_AppBasicAuth) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AppBasicAuth) RevealPassword() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"revealPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppBasicAuth) RevealPasswordInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"revealPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppBasicAuth) SharedPassword() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sharedPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppBasicAuth) SharedPasswordInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sharedPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppBasicAuth) SharedUsername() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sharedUsername",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppBasicAuth) SharedUsernameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sharedUsernameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppBasicAuth) SignOnMode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -699,8 +811,88 @@ func (j *jsiiProxy_AppBasicAuth) UrlInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AppBasicAuth) UserNameTemplate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userNameTemplate",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/app_basic_auth okta_app_basic_auth} Resource.
+func (j *jsiiProxy_AppBasicAuth) UserNameTemplateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userNameTemplateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppBasicAuth) UserNameTemplatePushStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userNameTemplatePushStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppBasicAuth) UserNameTemplatePushStatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userNameTemplatePushStatusInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppBasicAuth) UserNameTemplateSuffix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userNameTemplateSuffix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppBasicAuth) UserNameTemplateSuffixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userNameTemplateSuffixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppBasicAuth) UserNameTemplateType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userNameTemplateType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppBasicAuth) UserNameTemplateTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userNameTemplateTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/app_basic_auth okta_app_basic_auth} Resource.
 func NewAppBasicAuth(scope constructs.Construct, id *string, config *AppBasicAuthConfig) AppBasicAuth {
 	_init_.Initialize()
 
@@ -718,7 +910,7 @@ func NewAppBasicAuth(scope constructs.Construct, id *string, config *AppBasicAut
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/app_basic_auth okta_app_basic_auth} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/app_basic_auth okta_app_basic_auth} Resource.
 func NewAppBasicAuth_Override(a AppBasicAuth, scope constructs.Construct, id *string, config *AppBasicAuthConfig) {
 	_init_.Initialize()
 
@@ -824,6 +1016,17 @@ func (j *jsiiProxy_AppBasicAuth)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppBasicAuth)SetCredentialsScheme(val *string) {
+	if err := j.validateSetCredentialsSchemeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"credentialsScheme",
 		val,
 	)
 }
@@ -940,6 +1143,39 @@ func (j *jsiiProxy_AppBasicAuth)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+func (j *jsiiProxy_AppBasicAuth)SetRevealPassword(val interface{}) {
+	if err := j.validateSetRevealPasswordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"revealPassword",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppBasicAuth)SetSharedPassword(val *string) {
+	if err := j.validateSetSharedPasswordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sharedPassword",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppBasicAuth)SetSharedUsername(val *string) {
+	if err := j.validateSetSharedUsernameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sharedUsername",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AppBasicAuth)SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
@@ -958,6 +1194,50 @@ func (j *jsiiProxy_AppBasicAuth)SetUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"url",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppBasicAuth)SetUserNameTemplate(val *string) {
+	if err := j.validateSetUserNameTemplateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userNameTemplate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppBasicAuth)SetUserNameTemplatePushStatus(val *string) {
+	if err := j.validateSetUserNameTemplatePushStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userNameTemplatePushStatus",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppBasicAuth)SetUserNameTemplateSuffix(val *string) {
+	if err := j.validateSetUserNameTemplateSuffixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userNameTemplateSuffix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppBasicAuth)SetUserNameTemplateType(val *string) {
+	if err := j.validateSetUserNameTemplateTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userNameTemplateType",
 		val,
 	)
 }
@@ -1374,6 +1654,14 @@ func (a *jsiiProxy_AppBasicAuth) ResetAutoSubmitToolbar() {
 	)
 }
 
+func (a *jsiiProxy_AppBasicAuth) ResetCredentialsScheme() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCredentialsScheme",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AppBasicAuth) ResetEnduserNote() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1422,6 +1710,30 @@ func (a *jsiiProxy_AppBasicAuth) ResetOverrideLogicalId() {
 	)
 }
 
+func (a *jsiiProxy_AppBasicAuth) ResetRevealPassword() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRevealPassword",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppBasicAuth) ResetSharedPassword() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSharedPassword",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppBasicAuth) ResetSharedUsername() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSharedUsername",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AppBasicAuth) ResetStatus() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1434,6 +1746,38 @@ func (a *jsiiProxy_AppBasicAuth) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppBasicAuth) ResetUserNameTemplate() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUserNameTemplate",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppBasicAuth) ResetUserNameTemplatePushStatus() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUserNameTemplatePushStatus",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppBasicAuth) ResetUserNameTemplateSuffix() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUserNameTemplateSuffix",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppBasicAuth) ResetUserNameTemplateType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUserNameTemplateType",
 		nil, // no parameters
 	)
 }
