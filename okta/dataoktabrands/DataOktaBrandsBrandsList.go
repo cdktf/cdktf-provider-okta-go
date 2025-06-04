@@ -5,9 +5,9 @@ package dataoktabrands
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-okta-go/okta/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktabrands/internal"
+	"github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktabrands/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
