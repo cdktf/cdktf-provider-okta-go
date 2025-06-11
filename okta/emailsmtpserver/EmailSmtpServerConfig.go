@@ -24,29 +24,29 @@ type EmailSmtpServerConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Human-readable name for your SMTP server.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_smtp_server#alias EmailSmtpServer#alias}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/email_smtp_server#alias EmailSmtpServer#alias}
 	Alias *string `field:"required" json:"alias" yaml:"alias"`
 	// Hostname or IP address of your SMTP server.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_smtp_server#host EmailSmtpServer#host}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/email_smtp_server#host EmailSmtpServer#host}
 	Host *string `field:"required" json:"host" yaml:"host"`
 	// User name of the email domain.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_smtp_server#password EmailSmtpServer#password}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/email_smtp_server#password EmailSmtpServer#password}
 	Password *string `field:"required" json:"password" yaml:"password"`
 	// Port number of your SMTP server.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_smtp_server#port EmailSmtpServer#port}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/email_smtp_server#port EmailSmtpServer#port}
 	Port *float64 `field:"required" json:"port" yaml:"port"`
 	// Display name of the email domain.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_smtp_server#username EmailSmtpServer#username}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/email_smtp_server#username EmailSmtpServer#username}
 	Username *string `field:"required" json:"username" yaml:"username"`
 	// If true, routes all email traffic through your SMTP server.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_smtp_server#enabled EmailSmtpServer#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/email_smtp_server#enabled EmailSmtpServer#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_smtp_server#id EmailSmtpServer#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/email_smtp_server#id EmailSmtpServer#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/user_base_schema_property okta_user_base_schema_property}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/user_base_schema_property okta_user_base_schema_property}.
 type UserBaseSchemaProperty interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -499,7 +499,7 @@ func (j *jsiiProxy_UserBaseSchemaProperty) UserTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/user_base_schema_property okta_user_base_schema_property} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/user_base_schema_property okta_user_base_schema_property} Resource.
 func NewUserBaseSchemaProperty(scope constructs.Construct, id *string, config *UserBaseSchemaPropertyConfig) UserBaseSchemaProperty {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewUserBaseSchemaProperty(scope constructs.Construct, id *string, config *U
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/user_base_schema_property okta_user_base_schema_property} Resource.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/user_base_schema_property okta_user_base_schema_property} Resource.
 func NewUserBaseSchemaProperty_Override(u UserBaseSchemaProperty, scope constructs.Construct, id *string, config *UserBaseSchemaPropertyConfig) {
 	_init_.Initialize()
 

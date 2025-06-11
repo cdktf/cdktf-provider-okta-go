@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/data-sources/email_smtp_server okta_email_smtp_server}.
+// Represents a {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/data-sources/email_smtp_server okta_email_smtp_server}.
 type DataOktaEmailSmtpServer interface {
 	cdktf.TerraformDataSource
 	Alias() *string
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DataOktaEmailSmtpServer) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/data-sources/email_smtp_server okta_email_smtp_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/data-sources/email_smtp_server okta_email_smtp_server} Data Source.
 func NewDataOktaEmailSmtpServer(scope constructs.Construct, id *string, config *DataOktaEmailSmtpServerConfig) DataOktaEmailSmtpServer {
 	_init_.Initialize()
 
@@ -337,7 +337,7 @@ func NewDataOktaEmailSmtpServer(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/data-sources/email_smtp_server okta_email_smtp_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/data-sources/email_smtp_server okta_email_smtp_server} Data Source.
 func NewDataOktaEmailSmtpServer_Override(d DataOktaEmailSmtpServer, scope constructs.Construct, id *string, config *DataOktaEmailSmtpServerConfig) {
 	_init_.Initialize()
 
