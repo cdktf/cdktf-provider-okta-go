@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppAutoLoginTimeoutsOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (a *jsiiProxy_AppAutoLoginTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppAutoLoginTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppAutoLoginTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppAutoLoginTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

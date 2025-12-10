@@ -15,7 +15,7 @@ func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList) validateGetPara
 	return nil
 }
 
-func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

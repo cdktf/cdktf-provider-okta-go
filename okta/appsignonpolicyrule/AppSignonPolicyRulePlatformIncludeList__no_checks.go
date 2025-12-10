@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeList) validateGetParameters
 	return nil
 }
 
-func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

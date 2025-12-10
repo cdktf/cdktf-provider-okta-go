@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppSamlAttributeStatementsList) validateGetParameters(index *
 	return nil
 }
 
-func (a *jsiiProxy_AppSamlAttributeStatementsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSamlAttributeStatementsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

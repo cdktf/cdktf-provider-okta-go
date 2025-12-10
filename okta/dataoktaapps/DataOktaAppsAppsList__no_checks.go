@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOktaAppsAppsList) validateGetParameters(index *float64) e
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaAppsAppsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaAppsAppsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

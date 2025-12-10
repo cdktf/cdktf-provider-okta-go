@@ -15,7 +15,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeList) validateGetParameters(i
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

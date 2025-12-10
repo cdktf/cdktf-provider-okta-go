@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOktaUsersUsersList) validateGetParameters(index *float64)
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaUsersUsersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaUsersUsersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

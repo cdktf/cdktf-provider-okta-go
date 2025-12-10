@@ -43,11 +43,11 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) 
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOktaDeviceAssurancePolicyOsVersionConstraintList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaDeviceAssurancePolicyOsVersionConstraintList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaDeviceAssurancePolicyOsVersionConstraintList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

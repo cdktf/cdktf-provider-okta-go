@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppSecurePasswordStoreTimeoutsOutputReference) validateGetStr
 	return nil
 }
 
-func (a *jsiiProxy_AppSecurePasswordStoreTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppSecurePasswordStoreTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppSecurePasswordStoreTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSecurePasswordStoreTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

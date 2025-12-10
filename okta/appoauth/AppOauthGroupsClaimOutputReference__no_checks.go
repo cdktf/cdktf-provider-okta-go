@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppOauthGroupsClaimOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

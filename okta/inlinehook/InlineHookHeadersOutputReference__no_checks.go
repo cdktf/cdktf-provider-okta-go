@@ -43,11 +43,11 @@ func (i *jsiiProxy_InlineHookHeadersOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (i *jsiiProxy_InlineHookHeadersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_InlineHookHeadersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_InlineHookHeadersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_InlineHookHeadersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

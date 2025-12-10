@@ -29,9 +29,9 @@ func (a *jsiiProxy_AppOauthJwksList) validateGetParameters(index *float64) error
 	return nil
 }
 
-func (a *jsiiProxy_AppOauthJwksList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_AppOauthJwksList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

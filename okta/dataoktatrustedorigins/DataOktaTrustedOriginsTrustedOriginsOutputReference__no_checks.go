@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

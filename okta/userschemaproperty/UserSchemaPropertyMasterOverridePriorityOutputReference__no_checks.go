@@ -43,11 +43,11 @@ func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) vali
 	return nil
 }
 
-func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

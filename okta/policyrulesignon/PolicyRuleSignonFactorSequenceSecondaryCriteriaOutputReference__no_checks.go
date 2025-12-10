@@ -43,11 +43,11 @@ func (p *jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReferenc
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

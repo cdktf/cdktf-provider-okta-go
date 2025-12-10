@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOktaEmailCustomizationsEmailCustomizationsList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaEmailCustomizationsEmailCustomizationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaEmailCustomizationsEmailCustomizationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

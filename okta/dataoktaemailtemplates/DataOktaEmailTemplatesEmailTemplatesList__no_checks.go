@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaEmailTemplatesEmailTemplatesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

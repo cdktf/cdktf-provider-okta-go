@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOktaAuthServerScopesScopesList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaAuthServerScopesScopesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaAuthServerScopesScopesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

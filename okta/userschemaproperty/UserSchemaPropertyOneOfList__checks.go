@@ -29,9 +29,9 @@ func (u *jsiiProxy_UserSchemaPropertyOneOfList) validateGetParameters(index *flo
 	return nil
 }
 
-func (u *jsiiProxy_UserSchemaPropertyOneOfList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (u *jsiiProxy_UserSchemaPropertyOneOfList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

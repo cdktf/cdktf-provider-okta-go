@@ -15,7 +15,7 @@ func (p *jsiiProxy_PolicyRuleMfaAppIncludeList) validateGetParameters(index *flo
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleMfaAppIncludeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PolicyRuleMfaAppIncludeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

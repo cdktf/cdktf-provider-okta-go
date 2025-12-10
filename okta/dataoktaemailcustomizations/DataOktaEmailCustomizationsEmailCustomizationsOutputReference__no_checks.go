@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOktaEmailCustomizationsEmailCustomizationsOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaEmailCustomizationsEmailCustomizationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOktaEmailCustomizationsEmailCustomizationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaEmailCustomizationsEmailCustomizationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaEmailCustomizationsEmailCustomizationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

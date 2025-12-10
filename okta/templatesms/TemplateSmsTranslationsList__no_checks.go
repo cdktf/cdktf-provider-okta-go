@@ -15,7 +15,7 @@ func (t *jsiiProxy_TemplateSmsTranslationsList) validateGetParameters(index *flo
 	return nil
 }
 
-func (t *jsiiProxy_TemplateSmsTranslationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TemplateSmsTranslationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

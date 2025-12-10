@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOktaDomainDnsRecordsList) validateGetParameters(index *fl
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaDomainDnsRecordsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaDomainDnsRecordsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (u *jsiiProxy_UserPasswordHashOutputReference) validateGetStringMapAttribut
 	return nil
 }
 
-func (u *jsiiProxy_UserPasswordHashOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (u *jsiiProxy_UserPasswordHashOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (u *jsiiProxy_UserPasswordHashOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (u *jsiiProxy_UserPasswordHashOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

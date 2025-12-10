@@ -15,7 +15,7 @@ func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityList) validateGetPar
 	return nil
 }
 
-func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

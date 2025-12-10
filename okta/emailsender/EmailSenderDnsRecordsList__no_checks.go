@@ -15,7 +15,7 @@ func (e *jsiiProxy_EmailSenderDnsRecordsList) validateGetParameters(index *float
 	return nil
 }
 
-func (e *jsiiProxy_EmailSenderDnsRecordsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmailSenderDnsRecordsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

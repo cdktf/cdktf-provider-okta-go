@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppSamlKeysList) validateGetParameters(index *float64) error 
 	return nil
 }
 
-func (a *jsiiProxy_AppSamlKeysList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSamlKeysList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

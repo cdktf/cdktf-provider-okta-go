@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOktaUserSecurityQuestionsQuestionsList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaUserSecurityQuestionsQuestionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaUserSecurityQuestionsQuestionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

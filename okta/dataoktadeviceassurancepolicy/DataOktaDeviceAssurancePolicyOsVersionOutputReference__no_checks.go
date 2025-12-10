@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOktaDeviceAssurancePolicyOsVersionOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaDeviceAssurancePolicyOsVersionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOktaDeviceAssurancePolicyOsVersionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaDeviceAssurancePolicyOsVersionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaDeviceAssurancePolicyOsVersionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

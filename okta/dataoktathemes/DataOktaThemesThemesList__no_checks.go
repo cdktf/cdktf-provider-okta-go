@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOktaThemesThemesList) validateGetParameters(index *float6
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaThemesThemesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaThemesThemesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

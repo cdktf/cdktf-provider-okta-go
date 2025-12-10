@@ -15,7 +15,7 @@ func (p *jsiiProxy_PolicyRuleSignonFactorSequenceList) validateGetParameters(ind
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleSignonFactorSequenceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PolicyRuleSignonFactorSequenceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

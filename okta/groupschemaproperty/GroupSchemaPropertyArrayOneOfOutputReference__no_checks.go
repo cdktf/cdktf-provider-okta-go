@@ -43,11 +43,11 @@ func (g *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) validateGetStri
 	return nil
 }
 
-func (g *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

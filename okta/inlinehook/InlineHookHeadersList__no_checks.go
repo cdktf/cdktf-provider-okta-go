@@ -15,7 +15,7 @@ func (i *jsiiProxy_InlineHookHeadersList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (i *jsiiProxy_InlineHookHeadersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_InlineHookHeadersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

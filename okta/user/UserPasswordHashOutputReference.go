@@ -78,13 +78,13 @@ type UserPasswordHashOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetSalt()
 	ResetSaltOrder()
 	ResetWorkFactor()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -575,8 +575,8 @@ func (u *jsiiProxy_UserPasswordHashOutputReference) InterpolationAsList() cdktf.
 	return returns
 }
 
-func (u *jsiiProxy_UserPasswordHashOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := u.validateInterpolationForAttributeParameters(property); err != nil {
+func (u *jsiiProxy_UserPasswordHashOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := u.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -584,7 +584,7 @@ func (u *jsiiProxy_UserPasswordHashOutputReference) InterpolationForAttribute(pr
 	_jsii_.Invoke(
 		u,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -615,8 +615,8 @@ func (u *jsiiProxy_UserPasswordHashOutputReference) ResetWorkFactor() {
 	)
 }
 
-func (u *jsiiProxy_UserPasswordHashOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := u.validateResolveParameters(_context); err != nil {
+func (u *jsiiProxy_UserPasswordHashOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := u.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -624,7 +624,7 @@ func (u *jsiiProxy_UserPasswordHashOutputReference) Resolve(_context cdktf.IReso
 	_jsii_.Invoke(
 		u,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

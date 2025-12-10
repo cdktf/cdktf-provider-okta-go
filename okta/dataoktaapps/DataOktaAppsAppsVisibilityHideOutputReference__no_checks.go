@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOktaAppsAppsVisibilityHideOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaAppsAppsVisibilityHideOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOktaAppsAppsVisibilityHideOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaAppsAppsVisibilityHideOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaAppsAppsVisibilityHideOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

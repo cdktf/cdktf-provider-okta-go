@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataOktaBrandsBrandsOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaBrandsBrandsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOktaBrandsBrandsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaBrandsBrandsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaBrandsBrandsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

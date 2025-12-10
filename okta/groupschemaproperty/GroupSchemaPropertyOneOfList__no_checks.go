@@ -15,7 +15,7 @@ func (g *jsiiProxy_GroupSchemaPropertyOneOfList) validateGetParameters(index *fl
 	return nil
 }
 
-func (g *jsiiProxy_GroupSchemaPropertyOneOfList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GroupSchemaPropertyOneOfList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppUserSchemaPropertyArrayOneOfList) validateGetParameters(in
 	return nil
 }
 
-func (a *jsiiProxy_AppUserSchemaPropertyArrayOneOfList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppUserSchemaPropertyArrayOneOfList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

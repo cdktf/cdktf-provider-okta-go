@@ -15,7 +15,7 @@ func (e *jsiiProxy_EventHookHeadersList) validateGetParameters(index *float64) e
 	return nil
 }
 
-func (e *jsiiProxy_EventHookHeadersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventHookHeadersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

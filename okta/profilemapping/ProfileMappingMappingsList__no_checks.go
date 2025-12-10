@@ -15,7 +15,7 @@ func (p *jsiiProxy_ProfileMappingMappingsList) validateGetParameters(index *floa
 	return nil
 }
 
-func (p *jsiiProxy_ProfileMappingMappingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_ProfileMappingMappingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

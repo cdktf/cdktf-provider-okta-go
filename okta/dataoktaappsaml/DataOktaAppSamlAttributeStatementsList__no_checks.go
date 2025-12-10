@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataOktaAppSamlAttributeStatementsList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaAppSamlAttributeStatementsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaAppSamlAttributeStatementsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

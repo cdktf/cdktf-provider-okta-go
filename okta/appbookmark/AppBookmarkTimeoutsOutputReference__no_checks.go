@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppBookmarkTimeoutsOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (a *jsiiProxy_AppBookmarkTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppBookmarkTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppBookmarkTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppBookmarkTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

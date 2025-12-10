@@ -15,7 +15,7 @@ func (p *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesList) validateGet
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

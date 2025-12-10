@@ -15,7 +15,7 @@ func (u *jsiiProxy_UserSchemaPropertyArrayOneOfList) validateGetParameters(index
 	return nil
 }
 
-func (u *jsiiProxy_UserSchemaPropertyArrayOneOfList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (u *jsiiProxy_UserSchemaPropertyArrayOneOfList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
